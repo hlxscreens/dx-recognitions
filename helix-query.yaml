@@ -3,7 +3,7 @@ indices:
   channels:
     include:
       - '/content/screens/**'
-    target: '/internal/screens/channels'
+    target: '/content/internal/channels'
     properties:
       title:
         select: head > meta[property="og:title"]
@@ -35,7 +35,7 @@ indices:
   channel-manifest:
     include:
       - '/content/screens/**'
-    target: '/internal/screens/manifests'
+    target: '/content/internal/manifests'
     properties:
       title:
         select: head > meta[property="og:title"]
@@ -65,7 +65,7 @@ indices:
         select: body img
         values: |
           attribute(el, 'src')
-      background:
-        select: head > meta[name="background"]
-        value:  |
-          attribute(el, 'content')
+      fragments:
+        select: body .fragment a
+        values: |
+          attribute(el, 'href')
