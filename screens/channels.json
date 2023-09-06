@@ -1,0 +1,14 @@
+{
+  "channels": [
+    {
+      "manifestPath": "/content/screens/main.manifest.json",
+      "lastModified": "2023-09-06T08:53:23.941Z",
+      "externalId": "/content/screens/main",
+      "title": "",
+      "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/main.html"
+    }
+  ],
+  "metadata": {
+    "providerType": "franklin"
+  }
+}
