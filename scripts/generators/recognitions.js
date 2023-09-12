@@ -75,6 +75,23 @@ const getAssets = async (host, path) => {
   return assets;
 };
 
+async function processFragments($, host) {
+  const links = $('main .fragment a');
+  const fragmentPaths = [];
+  $(links).each(async (_i, link) => {
+    fragmentPaths.push($(link).attr('href'));
+  });
+
+  const assets = [];
+  // eslint-disable-next-line no-restricted-syntax
+  for (const fragmentPath of fragmentPaths) {
+    const fragmentAssets = await getAssets(host, fragmentPath);
+    assets.push(...fragmentAssets);
+  }
+
+  return assets;
+}
+
 export default class HtmlGenerator {
   static generateHTML = async (host, path) => {
     console.log(`running carousel from sheet generator for ${path}`);
@@ -93,12 +110,8 @@ export default class HtmlGenerator {
       const $ = load(franklinMarkup);
 
       // get assets from all fragments
-      const links = $('main .fragment a');
-      $(links).each(async (i, link) => {
-        const fragmentPath = $(link).attr('href');
-        const fragmentAssets = await getAssets(host, fragmentPath);
-        additionalAssets.push(...fragmentAssets);
-      });
+      const fragmentAssets = await processFragments($, host);
+      additionalAssets.push(...fragmentAssets);
 
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());

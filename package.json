@@ -8,7 +8,7 @@
     "lint:js": "eslint .",
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
     "lint": "npm run lint:js && npm run lint:css",
-    "generate-offlineresources": "node scripts/generate-offline-resources.js helixManifest='/content/internal/manifests' helixChannelsList='/content/internal/channels'"
+    "generate-offlineresources": "node scripts/generate-offline-resources.js helixManifest='/content/internal/manifests' helixChannelsList='/content/internal/channels' customDomain='https://dx-recognitions.aem-screens.net'"
   },
   "repository": {
     "type": "git",
