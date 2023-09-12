@@ -1,0 +1,67 @@
+{
+  "version": "3.0",
+  "timestamp": 1694529414411,
+  "entries": [
+    {
+      "path": "/content/screens/main.html",
+      "timestamp": 1694529414411
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1694524125000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1694524125000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1694524125000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/content/screens/managers/hanish/main.html",
+      "timestamp": 1694464093000
+    },
+    {
+      "path": "/content/screens/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
+      "hash": "11a5509560b392b69ae5de441d8b7f273372939bd"
+    },
+    {
+      "path": "/content/screens/managers/hanish/main.plain.html",
+      "timestamp": 1694464093000
+    },
+    {
+      "path": "/content/screens/managers/varun/main.html",
+      "timestamp": 1694520920000
+    },
+    {
+      "path": "/content/screens/managers/varun/main.plain.html",
+      "timestamp": 1694520920000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}

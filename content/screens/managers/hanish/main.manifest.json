@@ -1,0 +1,63 @@
+{
+  "version": "3.0",
+  "timestamp": 1694529418181,
+  "entries": [
+    {
+      "path": "/content/screens/managers/hanish/main.html",
+      "timestamp": 1694529418181
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1694524125000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1694524125000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/content/screens/managers/hanish/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
+      "hash": "11a5509560b392b69ae5de441d8b7f273372939bd"
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1694524125000
+    },
+    {
+      "path": "/content/screens/managers/hanish/recognitions.json",
+      "timestamp": 1694464076000
+    },
+    {
+      "path": "https://s7d2.scene7.com/is/image/IMGDIR/sandsinh",
+      "timestamp": 1693534561000
+    },
+    {
+      "path": "/content/screens/managers/hanish/media_18e06290ebf341e0f0a59361f775cd853892b382b.jpeg",
+      "hash": "18e06290ebf341e0f0a59361f775cd853892b382b"
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1694524126000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
