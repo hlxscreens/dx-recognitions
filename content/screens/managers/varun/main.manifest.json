@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1694524126000,
+  "timestamp": 1694546789033,
   "entries": [
     {
       "path": "/content/screens/managers/varun/main.html",
-      "timestamp": 1694520920000
+      "timestamp": 1694546789033
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -28,19 +28,19 @@
     },
     {
       "path": "/content/screens/managers/varun/recognitions.json",
-      "timestamp": 1693995808000
+      "timestamp": 1694543704000
     },
     {
-      "path": "https://s7d2.scene7.com/is/image/IMGDIR/mochanda",
+      "path": "/is/image/IMGDIR/mochanda",
       "timestamp": 1692929930000
     },
     {
-      "path": "https://s7d2.scene7.com/is/image/IMGDIR/anujmaha",
+      "path": "/is/image/IMGDIR/anujmaha",
       "timestamp": 1693535714000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1694524126000
+      "timestamp": 1694543591000
     },
     {
       "path": "/blocks/carousel/utils.js",

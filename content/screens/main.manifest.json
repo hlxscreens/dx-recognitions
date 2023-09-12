@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1694524126000,
+  "timestamp": 1694546777815,
   "entries": [
     {
       "path": "/content/screens/main.html",
-      "timestamp": 1694510978000
+      "timestamp": 1694546777815
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -24,7 +24,7 @@
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1694524126000
+      "timestamp": 1694543591000
     },
     {
       "path": "/blocks/carousel/utils.js",
@@ -39,7 +39,7 @@
       "timestamp": 1694464076000
     },
     {
-      "path": "https://s7d2.scene7.com/is/image/IMGDIR/sandsinh",
+      "path": "/is/image/IMGDIR/sandsinh",
       "timestamp": 1693534561000
     },
     {
@@ -48,19 +48,19 @@
     },
     {
       "path": "/content/screens/managers/varun/recognitions.json",
-      "timestamp": 1693995808000
+      "timestamp": 1694543704000
     },
     {
-      "path": "https://s7d2.scene7.com/is/image/IMGDIR/mochanda",
+      "path": "/is/image/IMGDIR/mochanda",
       "timestamp": 1692929930000
     },
     {
-      "path": "https://s7d2.scene7.com/is/image/IMGDIR/anujmaha",
+      "path": "/is/image/IMGDIR/anujmaha",
       "timestamp": 1693535714000
     },
     {
       "path": "/content/screens/managers/hanish/main.html",
-      "timestamp": 1694464093000
+      "timestamp": 1694520792000
     },
     {
       "path": "/content/screens/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
@@ -68,7 +68,7 @@
     },
     {
       "path": "/content/screens/managers/hanish/main.plain.html",
-      "timestamp": 1694464093000
+      "timestamp": 1694520792000
     },
     {
       "path": "/content/screens/managers/varun/main.html",

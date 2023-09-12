@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1694524126000,
+  "timestamp": 1694546789212,
   "entries": [
     {
       "path": "/content/screens/managers/hanish/main.html",
-      "timestamp": 1694464093000
+      "timestamp": 1694546789212
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -31,7 +31,7 @@
       "timestamp": 1694464076000
     },
     {
-      "path": "https://s7d2.scene7.com/is/image/IMGDIR/sandsinh",
+      "path": "/is/image/IMGDIR/sandsinh",
       "timestamp": 1693534561000
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1694524126000
+      "timestamp": 1694543591000
     },
     {
       "path": "/blocks/carousel/utils.js",

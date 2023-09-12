@@ -2,21 +2,21 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-09-12T13:08:46.000Z",
+      "lastModified": "2023-09-12T19:26:17.815Z",
       "externalId": "/content/screens/main",
       "title": "Dx India Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/varun/main.manifest.json",
-      "lastModified": "2023-09-12T13:08:46.000Z",
+      "lastModified": "2023-09-12T19:26:29.033Z",
       "externalId": "/content/screens/managers/varun/main",
       "title": "Org Varun Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/varun/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/hanish/main.manifest.json",
-      "lastModified": "2023-09-12T13:08:46.000Z",
+      "lastModified": "2023-09-12T19:26:29.212Z",
       "externalId": "/content/screens/managers/hanish/main",
       "title": "Org Hanish Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/hanish/main.html"
