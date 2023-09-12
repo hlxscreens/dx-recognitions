@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1694546777815,
+  "timestamp": 1694543704000,
   "entries": [
     {
       "path": "/content/screens/main.html",
-      "timestamp": 1694546777815
+      "timestamp": 1694510978000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -57,6 +57,14 @@
     {
       "path": "/is/image/IMGDIR/anujmaha",
       "timestamp": 1693535714000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1694524126000
     },
     {
       "path": "/content/screens/managers/hanish/main.html",

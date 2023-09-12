@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1694546789033,
+  "timestamp": 1694543704000,
   "entries": [
     {
       "path": "/content/screens/managers/varun/main.html",
-      "timestamp": 1694546789033
+      "timestamp": 1694520920000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -48,6 +48,14 @@
     },
     {
       "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1694524126000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
       "timestamp": 1694524126000
     }
   ],

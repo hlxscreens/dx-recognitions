@@ -88,7 +88,8 @@ async function processFragments($, host) {
     const fragmentAssets = await getAssets(host, fragmentPath);
     assets.push(...fragmentAssets);
   }
-
+  assets.push('/blocks/fragment/fragment.js');
+  assets.push('/blocks/fragment/fragment.css');
   return assets;
 }
 
