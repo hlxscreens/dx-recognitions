@@ -91,6 +91,15 @@ export default class HtmlGenerator {
       // Get default franklin markup for path
       const franklinMarkup = await getFranklinMarkup(host, path);
       const $ = load(franklinMarkup);
+
+      // get assets from all fragments
+      const links = $('main .fragment a');
+      $(links).each(async (i, link) => {
+        const fragmentPath = $(link).attr('href');
+        const fragmentAssets = await getAssets(host, fragmentPath);
+        additionalAssets.push(...fragmentAssets);
+      });
+
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());
     } catch (error) {
