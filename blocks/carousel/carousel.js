@@ -87,7 +87,7 @@ async function buildCarouselFromSheet(block) {
             try {
               const assetDetails = sheetData[row];
               if (!assetDetails['Image URL']) {
-                assetDetails['Image URL'] = `https://s7d2.scene7.com/is/image/IMGDIR/${assetDetails.LDAP}`;
+                assetDetails['Image URL'] = `/is/image/IMGDIR/${assetDetails.LDAP}`;
               }
               validateDateFormat(assetDetails['Start Date']);
               validateDateFormat(assetDetails['End Date']);
