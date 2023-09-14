@@ -1,0 +1,55 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    transition: transform 0.01s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
+    gap: 15vh;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-item-figure img{
+    object-fit: contain;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 5%;
+}
+
+.carousel-item-figure figcaption {
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.carousel-item-congratulation {
+    font-size: 4rem;
+}
+.carousel-item-description {
+    max-width: 60vw;
+}
