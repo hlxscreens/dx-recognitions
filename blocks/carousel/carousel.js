@@ -89,7 +89,7 @@ async function buildCarouselFromSheet(block) {
               validateDateFormat(assetDetails['Start Date']);
               validateDateFormat(assetDetails['End Date']);
               assets.push({
-                link: assetDetails['Image URL'] ? assetDetails['Image URL'] : `https://s7d2.scene7.com/is/image/IMGDIR/${assetDetails.LDAP}`,
+                link: assetDetails['Image URL'] ? assetDetails['Image URL'] : `/is/image/IMGDIR/${assetDetails.LDAP}`,
                 startDate: assetDetails['Start Date'],
                 endDate: assetDetails['End Date'],
                 description: assetDetails.Description,
