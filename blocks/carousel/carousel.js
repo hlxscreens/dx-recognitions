@@ -5,6 +5,8 @@ import {
   createDivWithClass,
 } from './utils.js';
 
+import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
+
 const TIMEOUTS = {
   timeouts: [],
   setTimeout(fn, delay) {
@@ -86,17 +88,14 @@ async function buildCarouselFromSheet(block) {
           for (let row = 0; row < sheetData.length; row += 1) {
             try {
               const assetDetails = sheetData[row];
-              if (!assetDetails['Image URL']) {
-                assetDetails['Image URL'] = `/is/image/IMGDIR/${assetDetails.LDAP}`;
-              }
               validateDateFormat(assetDetails['Start Date']);
               validateDateFormat(assetDetails['End Date']);
               assets.push({
-                link: assetDetails['Image URL'],
+                link: assetDetails['Image URL'] ? assetDetails['Image URL'] : `/is/image/IMGDIR/${assetDetails.LDAP}`,
                 startDate: assetDetails['Start Date'],
                 endDate: assetDetails['End Date'],
                 description: assetDetails.Description,
-                ldap: assetDetails.LDAP,
+                name: assetDetails.Name,
                 background,
               });
             } catch (err) {
@@ -123,19 +122,25 @@ async function buildCarouselFromSheet(block) {
       const carouselItem = createDivWithClass('carousel-item');
       carouselItem.setAttribute('start-date', asset.startDate);
       carouselItem.setAttribute('end-date', asset.endDate);
-      const img = document.createElement('img');
-      img.src = asset.link;
-      const imgCaption = document.createElement('figcaption');
-      imgCaption.innerText = asset.ldap;
 
+      // Create the image
       const imgContainer = createDivWithClass('carousel-item-figure');
+      const img = createOptimizedPicture(asset.link);
       imgContainer.appendChild(img);
-      imgContainer.appendChild(imgCaption);
+
+      // Create the description
       const descriptionContainer = createDivWithClass('carousel-item-description');
+      const name = createDivWithClass('name');
+      const line = createDivWithClass('line');
+      name.innerText = asset.name;
+      descriptionContainer.appendChild(name);
+      descriptionContainer.appendChild(line);
       descriptionContainer.appendChild(document.createTextNode(asset.description));
-      const congratulationText = createDivWithClass('carousel-item-congratulation');
-      congratulationText.innerText = 'Congratulations';
-      carouselItem.appendChild(congratulationText);
+
+      const heading = createDivWithClass('carousel-item-heading');
+      heading.innerText = 'DX India Recognitions';
+
+      carouselItem.appendChild(heading);
       carouselItem.appendChild(imgContainer);
       carouselItem.appendChild(descriptionContainer);
       carouselItem.appendChild(asset.background.cloneNode(true));
