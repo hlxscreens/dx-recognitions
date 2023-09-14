@@ -52,6 +52,35 @@
     --heading-font-size-xs: 22px;
   }
 }
+@font-face {
+  font-family: 'AdobeCleanBlack';
+  src: url('/fonts/AdobeClean/AdobeClean-Black.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AdobeCleanMedium';
+  src: url('/fonts/AdobeClean/AdobeClean-Medium.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AdobeCleanBold';
+  src: url('/fonts/AdobeClean/AdobeClean-Bold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AdobeCleanExtraBold';
+  src: url('/fonts/AdobeClean/AdobeClean-ExtraBold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AdobeClean';
+  src: url('/fonts/AdobeClean/AdobeClean-Regular.otf') format('opentype');
+  font-display: swap;
+}
 
 body {
   font-size: var(--body-font-size-m);

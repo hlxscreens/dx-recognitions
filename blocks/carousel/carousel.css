@@ -2,8 +2,6 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
     overflow: hidden;
 }
 
@@ -16,40 +14,76 @@ html {
 
 .carousel-item {
     flex: 0 0 100%;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-areas:
+        "...... header header ......"
+        "...... figure  description   ......"
+        "...... figure  description   ......"
+        "...... figure  description  ......"
+        "...... figure  description ......"
+        "...... ...... ......  ......";
     align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
     color: white;
-    gap: 15vh;
 }
 
+/* background image */
 .carousel-item img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
+/* header */
+.carousel-item-heading {
+    grid-area: header;
+    justify-self: center;
+    font-family: 'AdobeCleanExtraBold';
+    font-size: var(--heading-font-size-xxl);
+}
+
+/* figure */
+.carousel-item-figure {
+    grid-area: figure;
+    justify-self: center;
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    border-radius: 0% 50% 50% 0%;
+    position: relative;
+}
+
 .carousel-item-figure img{
-    object-fit: contain;
+    object-fit: cover;
     width: 15vw;
     height: 15vw;
-    border-radius: 5%;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: red solid 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.carousel-item-figure figcaption {
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-}
-
-.carousel-item-congratulation {
-    font-size: 4rem;
-}
+/* description */
 .carousel-item-description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     max-width: 60vw;
+    grid-area: description;
+    justify-self: center;
+    justify-items: center;
+    font-family: 'AdobeClean';
+}
+.carousel-item-description .name {
+    color: #fff;
+    font-size: var(--heading-font-size-l);
+    font-family: 'AdobeCleanBold';
+}
+.line {
+    border-bottom: 1px solid #ffffff;
+    width: 40%;
 }
