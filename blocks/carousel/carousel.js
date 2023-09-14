@@ -5,6 +5,8 @@ import {
   createDivWithClass,
 } from './utils.js';
 
+import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
+
 const TIMEOUTS = {
   timeouts: [],
   setTimeout(fn, delay) {
@@ -123,8 +125,7 @@ async function buildCarouselFromSheet(block) {
 
       // Create the image
       const imgContainer = createDivWithClass('carousel-item-figure');
-      const img = document.createElement('img');
-      img.src = asset.link;
+      const img = createOptimizedPicture(asset.link);
       imgContainer.appendChild(img);
 
       // Create the description
