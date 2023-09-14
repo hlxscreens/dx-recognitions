@@ -4,7 +4,7 @@ The tutorial guide to use this boilerplate code is present [here](https://main--
 
 ## Environments
 - Preview: https://main--dx-recognitions--hlxscreens.hlx.page/
-- Live: https://main--dx-recognitions--hlxscreens.hlx.live/
+- Live: https://dx-recognitions.aem-screens.net/content/screens/main
 
 ## Installation
 
