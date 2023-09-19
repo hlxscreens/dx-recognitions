@@ -173,6 +173,13 @@ export default async function decorate(block) {
 
   const carouselTrack = document.querySelector('.carousel-track');
   const carouselItems = carouselTrack.querySelectorAll('.carousel-item');
+  // sort carousel items alphabetically
+  [...carouselItems]
+    .sort((a, b) => (a.querySelector('.name').innerText || '\uFFFF')
+      .localeCompare((b.querySelector('.name').innerText || '\uFFFF')))
+    .forEach((item, index) => {
+      item.style.order = index;
+    });
   const totalItems = carouselItems.length;
   let currentIndex = -1;
   const DEFAULT_ITEM_DURATION = 10 * 1000;
