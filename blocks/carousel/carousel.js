@@ -98,6 +98,7 @@ async function buildCarouselFromSheet(block) {
                 endDate: assetDetails['End Date'],
                 description: assetDetails.Description,
                 name: assetDetails.Name,
+                heading: assetDetails.Heading,
                 background,
               });
             } catch (err) {
@@ -140,7 +141,11 @@ async function buildCarouselFromSheet(block) {
       descriptionContainer.appendChild(document.createTextNode(asset.description));
 
       const heading = createDivWithClass('carousel-item-heading');
-      heading.innerText = 'DX India Recognitions';
+      if (asset.heading) {
+        heading.innerText = asset.heading;
+      } else {
+        heading.innerText = 'DX India Recognitions';
+      }
 
       carouselItem.appendChild(heading);
       carouselItem.appendChild(imgContainer);
