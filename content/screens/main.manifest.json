@@ -1,49 +1,61 @@
 {
   "version": "3.0",
-  "timestamp": 1694688265306,
+  "timestamp": 1695110973003,
   "entries": [
     {
       "path": "/content/screens/main.html",
-      "timestamp": 1694688265306
+      "timestamp": 1695110973003
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1694524125000
+      "timestamp": 1693984897000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1694524125000
+      "timestamp": 1693984897000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1694524126000
+      "timestamp": 1694693520000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1694524125000
+      "timestamp": 1693984897000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1694543591000
+      "timestamp": 1694693520000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1694524126000
+      "timestamp": 1694688044000
     },
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1694524126000
+      "timestamp": 1694693520000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
+      "timestamp": 1694693520000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
+      "timestamp": 1694693520000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
+      "timestamp": 1694693520000
     },
     {
       "path": "/content/screens/managers/hanish/recognitions.json",
-      "timestamp": 1694464076000
+      "timestamp": 1694689274000
     },
     {
       "path": "/is/image/IMGDIR/sandsinh"
     },
     {
       "path": "/content/screens/managers/varun/recognitions.json",
-      "timestamp": 1694543704000
+      "timestamp": 1694689190000
     },
     {
       "path": "/is/image/IMGDIR/mochanda"
@@ -53,11 +65,11 @@
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1694524126000
+      "timestamp": 1694688044000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1694524126000
+      "timestamp": 1694688044000
     },
     {
       "path": "/content/screens/managers/hanish/main.html",
