@@ -106,6 +106,10 @@ export default class HtmlGenerator {
       additionalAssets.push('/blocks/carousel/utils.js');
       additionalAssets.push('/blocks/carousel/carousel.css');
 
+      additionalAssets.push('/fonts/AdobeClean/AdobeClean-Regular.otf');
+      additionalAssets.push('/fonts/AdobeClean/AdobeClean-Bold.otf');
+      additionalAssets.push('/fonts/AdobeClean/AdobeClean-ExtraBold.otf');
+
       // Get default franklin markup for path
       const franklinMarkup = await getFranklinMarkup(host, path);
       const $ = load(franklinMarkup);
