@@ -9,6 +9,8 @@ const getFranklinMarkup = async (host, path) => {
   return resp.text();
 };
 
+const extractMediaFromPath = (path) => path.trim().substring(path.indexOf('/media_'));
+
 const extractSheetData = async (host, path) => {
   // Get default franklin markup for path
   const franklinMarkup = await getFranklinMarkup(host, path);
@@ -61,6 +63,8 @@ const getAssets = async (host, path) => {
             const assetDetails = sheetData[row];
             if (!assetDetails['Image URL']) {
               assetDetails['Image URL'] = `/is/image/IMGDIR/${assetDetails.LDAP}`;
+            } else {
+              assetDetails['Image URL'] = extractMediaFromPath(assetDetails['Image URL']);
             }
             assets.push(assetDetails['Image URL']);
           } catch (err) {
