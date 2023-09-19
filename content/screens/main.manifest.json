@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1695110973003,
+  "timestamp": 1694693520000,
   "entries": [
     {
       "path": "/content/screens/main.html",
-      "timestamp": 1695110973003
+      "timestamp": 1694689308000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -52,6 +52,10 @@
     },
     {
       "path": "/is/image/IMGDIR/sandsinh"
+    },
+    {
+      "path": "/content/screens/media_18e06290ebf341e0f0a59361f775cd853892b382b.jpeg",
+      "hash": "18e06290ebf341e0f0a59361f775cd853892b382b"
     },
     {
       "path": "/content/screens/managers/varun/recognitions.json",
