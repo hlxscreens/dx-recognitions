@@ -20,6 +20,8 @@ const TIMEOUTS = {
   },
 };
 
+const extractMediaFromPath = (path) => `.${path.trim().substring(path.indexOf('/media_'))}`;
+
 async function buildCarouselFromSheet(block) {
   const fetchData = async (url) => {
     let result = '';
@@ -91,7 +93,7 @@ async function buildCarouselFromSheet(block) {
               validateDateFormat(assetDetails['Start Date']);
               validateDateFormat(assetDetails['End Date']);
               assets.push({
-                link: assetDetails['Image URL'] ? assetDetails['Image URL'] : `/is/image/IMGDIR/${assetDetails.LDAP}`,
+                link: assetDetails['Image URL'] ? extractMediaFromPath(assetDetails['Image URL']) : `/is/image/IMGDIR/${assetDetails.LDAP}`,
                 startDate: assetDetails['Start Date'],
                 endDate: assetDetails['End Date'],
                 description: assetDetails.Description,
