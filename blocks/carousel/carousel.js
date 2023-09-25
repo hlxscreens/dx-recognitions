@@ -92,7 +92,7 @@ async function buildCarouselFromSheet(block) {
               const assetDetails = sheetData[row];
               validateDateFormat(assetDetails['Start Date']);
               validateDateFormat(assetDetails['End Date']);
-              const profileImages = assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap}.jpeg`);
+              const profileImages = assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap}`);
               carouselItems.push({
                 images: assetDetails['Image URL'] ? [extractMediaFromPath(assetDetails['Image URL'])] : profileImages,
                 startDate: assetDetails['Start Date'],
@@ -207,8 +207,8 @@ export default async function decorate(block) {
   const carouselItems = carouselTrack.querySelectorAll('.carousel-item');
   // sort carousel items alphabetically
   [...carouselItems]
-    .sort((a, b) => (a.querySelector('.title').innerText || '\uFFFF')
-      .localeCompare((b.querySelector('.title').innerText || '\uFFFF')))
+    .sort((a, b) => (a.querySelector('.title')?.innerText || '\uFFFF')
+      .localeCompare((b.querySelector('.title')?.innerText || '\uFFFF')))
     .forEach((item, index) => {
       item.style.order = index;
     });
