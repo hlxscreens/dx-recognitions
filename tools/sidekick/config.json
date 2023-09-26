@@ -1,0 +1,19 @@
+{
+  "project": "My Screen Project",
+  "plugins": [
+    {
+      "id": "edit-preview",
+      "excludePaths": [ "**spreadsheets**" ]
+    },
+    {
+      "id": "preview-sheet",
+      "title": "Preview Sheet",
+      "event": "preview-sheet",
+      "passConfig": true,
+      "passReferrer": true,
+      "url": "/tools/preview-sheet/index.html",
+      "excludePaths": [ "**" ],
+      "includePaths": [ "**spreadsheets**" ]
+    }
+  ]
+}
