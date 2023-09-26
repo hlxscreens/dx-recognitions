@@ -59,8 +59,8 @@ html {
 }
 
 .carousel-item-figure {
-    padding: 1vmax;
-    margin: 1vmax;
+    padding: 1rem;
+    margin: 1rem;
     max-inline-size: 20vmax;
     flex: 1;
     text-align: center;

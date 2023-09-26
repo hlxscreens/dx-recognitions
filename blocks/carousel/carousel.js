@@ -148,7 +148,8 @@ async function buildCarouselFromSheet(block) {
           const notFoundImg = createOptimizedPicture('/icons/not-found.png');
           // set equal width if more than one image
           if (asset.images.length > 1) {
-            notFoundImg.querySelector('img').style.width = '15vmin';
+            notFoundImg.querySelector('img').style.width = '20vmin';
+            notFoundImg.querySelector('img').style.height = '20vmin';
           }
           img.replaceWith(notFoundImg);
         };
@@ -157,7 +158,8 @@ async function buildCarouselFromSheet(block) {
 
         // set equal width if more than one image
         if (asset.images.length > 1) {
-          img.querySelector('img').style.width = '15vmin';
+          img.querySelector('img').style.width = '20vmin';
+          img.querySelector('img').style.height = '20vmin';
           // names in caption for multiple images
           const figureCaption = createDivWithClass('carousel-item-figure-caption');
           figureCaption.innerText = asset.names[index];
