@@ -63,7 +63,7 @@ const previewAndRedirect = async () => {
   const url = new URL(previewUrl);
   const sheetPath = url.pathname;
   console.log("sheetPath is " + sheetPath);
-  const pagePath = `${sheetPath.slice(0, -16)}main`;//remove .json
+  const pagePath = `${sheetPath.slice(0, -17)}main`;//remove .json
   await previewAndCacheClear(owner, repo, ref, sheetPath);
   await previewAndCacheClear(owner, repo, ref, pagePath);
   window.location.replace(pagePath);
