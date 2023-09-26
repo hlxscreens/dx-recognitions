@@ -68,6 +68,12 @@ async function loadEager(doc) {
     document.body.classList.add('appear');
     await waitForLCP(LCP_BLOCKS);
   }
+
+  if (document.querySelector('helix-sidekick')) {
+    await import('../tools/sidekick/plugins.js');
+  } else {
+    document.addEventListener('helix-sidekick-ready', () => import('../tools/sidekick/plugins.js'), { once: true });
+  }
 }
 
 /**
