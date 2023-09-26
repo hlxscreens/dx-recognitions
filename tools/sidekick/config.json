@@ -1,6 +1,7 @@
 {
   "project": "My Screen Project",
   "liveHost": "dx-recognitions.aem-screens.net",
+  "host": "dx-recognitions.aem-screens.net",
   "plugins": [
     {
       "id": "edit-preview",
