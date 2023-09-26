@@ -70,13 +70,13 @@ async function buildCarouselFromSheet(block) {
     throw new Error(`Invalid sheet type: ${sheetDataResponse[':type']}`);
   };
 
-  const getAssets = async () => {
+  const getCarouselItems = async () => {
     const sheetDetails = extractSheetData() || [];
     console.log(JSON.stringify(sheetDetails));
     if (sheetDetails.length === 0) {
       console.warn('No sheet data available during HTML generation');
     }
-    const assets = [];
+    const carouselItems = [];
     let errorFlag = false;
     for (let sheetIndex = 0; sheetIndex < sheetDetails.length; sheetIndex += 1) {
       try {
@@ -92,13 +92,15 @@ async function buildCarouselFromSheet(block) {
               const assetDetails = sheetData[row];
               validateDateFormat(assetDetails['Start Date']);
               validateDateFormat(assetDetails['End Date']);
-              assets.push({
-                link: assetDetails['Image URL'] ? extractMediaFromPath(assetDetails['Image URL']) : `/is/image/IMGDIR/${assetDetails.LDAP}`,
+              const profileImages = assetDetails.LDAP ? assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap}`) : [];
+              carouselItems.push({
+                images: assetDetails['Image URL'] ? [extractMediaFromPath(assetDetails['Image URL'])] : profileImages,
                 startDate: assetDetails['Start Date'],
                 endDate: assetDetails['End Date'],
                 description: assetDetails.Description,
-                name: assetDetails.Name,
+                names: assetDetails.Name.split(','),
                 heading: assetDetails.Heading,
+                title: assetDetails.Title,
                 background,
               });
             } catch (err) {
@@ -111,12 +113,12 @@ async function buildCarouselFromSheet(block) {
         console.warn(`Error while processing sheet ${JSON.stringify(sheetDetails[sheetIndex])}`, err);
       }
     }
-    if (assets.length === 0 && errorFlag) {
+    if (carouselItems.length === 0 && errorFlag) {
       // Don't create HTML with no assets when there was an error
       console.log('Skipping HTML generation due to assets length zero along with error occurrence');
-      return assets;
+      return carouselItems;
     }
-    return assets;
+    return carouselItems;
   };
 
   const createContainerFromData = (assets) => {
@@ -126,26 +128,58 @@ async function buildCarouselFromSheet(block) {
       carouselItem.setAttribute('start-date', asset.startDate);
       carouselItem.setAttribute('end-date', asset.endDate);
 
-      // Create the image
-      const imgContainer = createDivWithClass('carousel-item-figure');
-      const img = createOptimizedPicture(asset.link);
-      imgContainer.appendChild(img);
-
-      // Create the description
-      const descriptionContainer = createDivWithClass('carousel-item-description');
-      const name = createDivWithClass('name');
-      const line = createDivWithClass('line');
-      name.innerText = asset.name;
-      descriptionContainer.appendChild(name);
-      descriptionContainer.appendChild(line);
-      descriptionContainer.appendChild(document.createTextNode(asset.description));
-
       const heading = createDivWithClass('carousel-item-heading');
       if (asset.heading) {
         heading.innerText = asset.heading;
       } else {
         heading.innerText = 'DX India Recognitions';
       }
+
+      const imgContainer = createDivWithClass('carousel-item-images');
+
+      // Create the image(s)
+      asset.images.forEach((image, index) => {
+        const figure = createDivWithClass('carousel-item-figure');
+        const img = createOptimizedPicture(image);
+
+        img.querySelector('img').onerror = (event) => {
+          event.target.onerror = null;
+          console.log(event);
+          const notFoundImg = createOptimizedPicture('/icons/not-found.png');
+          // set equal width if more than one image
+          if (asset.images.length > 1) {
+            notFoundImg.querySelector('img').style.width = '20vmin';
+            notFoundImg.querySelector('img').style.height = '20vmin';
+          }
+          img.replaceWith(notFoundImg);
+        };
+
+        figure.appendChild(img);
+
+        // set equal width if more than one image
+        if (asset.images.length > 1) {
+          img.querySelector('img').style.width = '20vmin';
+          img.querySelector('img').style.height = '20vmin';
+          // names in caption for multiple images
+          const figureCaption = createDivWithClass('carousel-item-figure-caption');
+          figureCaption.innerText = asset.names[index];
+          figure.appendChild(figureCaption);
+        }
+        imgContainer.appendChild(figure);
+      });
+
+      // Create the description
+      const descriptionContainer = createDivWithClass('carousel-item-description');
+      // title if present or name if single name
+      if (asset.title || (asset.names.length === 1 && asset.names[0] !== '')) {
+        const name = createDivWithClass('title');
+        const line = createDivWithClass('line');
+        name.innerText = asset.title || asset.names[0];
+        descriptionContainer.appendChild(name);
+        descriptionContainer.appendChild(line);
+      }
+
+      descriptionContainer.appendChild(document.createTextNode(asset.description));
 
       carouselItem.appendChild(heading);
       carouselItem.appendChild(imgContainer);
@@ -156,7 +190,7 @@ async function buildCarouselFromSheet(block) {
     return carouselItems;
   };
 
-  const assets = await getAssets();
+  const assets = await getCarouselItems();
   return createContainerFromData(assets);
 }
 
@@ -175,8 +209,8 @@ export default async function decorate(block) {
   const carouselItems = carouselTrack.querySelectorAll('.carousel-item');
   // sort carousel items alphabetically
   [...carouselItems]
-    .sort((a, b) => (a.querySelector('.name').innerText || '\uFFFF')
-      .localeCompare((b.querySelector('.name').innerText || '\uFFFF')))
+    .sort((a, b) => (a.querySelector('.title')?.innerText || '\uFFFF')
+      .localeCompare((b.querySelector('.title')?.innerText || '\uFFFF')))
     .forEach((item, index) => {
       item.style.order = index;
     });
