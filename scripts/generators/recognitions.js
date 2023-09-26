@@ -61,12 +61,13 @@ const getAssets = async (host, path) => {
         for (let row = 0; row < sheetData.length; row += 1) {
           try {
             const assetDetails = sheetData[row];
-            if (!assetDetails['Image URL']) {
-              assetDetails['Image URL'] = `/is/image/IMGDIR/${assetDetails.LDAP}`;
-            } else {
-              assetDetails['Image URL'] = extractMediaFromPath(assetDetails['Image URL']);
+            const profileImages = assetDetails.LDAP ? assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap}`) : [];
+            if (assetDetails['Image URL']) {
+              assets.push(extractMediaFromPath(assetDetails['Image URL']));
             }
-            assets.push(assetDetails['Image URL']);
+            if (profileImages.length > 0) {
+              assets.push(...profileImages);
+            }
           } catch (err) {
             console.warn(`Error while processing asset ${JSON.stringify(sheetData[row])}`, err);
           }
@@ -110,6 +111,7 @@ export default class HtmlGenerator {
       additionalAssets.push('/blocks/carousel/utils.js');
       additionalAssets.push('/blocks/carousel/carousel.css');
 
+      additionalAssets.push('/icons/not-found.png');
       additionalAssets.push('/fonts/AdobeClean/AdobeClean-Regular.otf');
       additionalAssets.push('/fonts/AdobeClean/AdobeClean-Bold.otf');
       additionalAssets.push('/fonts/AdobeClean/AdobeClean-ExtraBold.otf');

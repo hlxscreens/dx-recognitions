@@ -92,7 +92,7 @@ async function buildCarouselFromSheet(block) {
               const assetDetails = sheetData[row];
               validateDateFormat(assetDetails['Start Date']);
               validateDateFormat(assetDetails['End Date']);
-              const profileImages = assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap}`);
+              const profileImages = assetDetails.LDAP ? assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap}`) : [];
               carouselItems.push({
                 images: assetDetails['Image URL'] ? [extractMediaFromPath(assetDetails['Image URL'])] : profileImages,
                 startDate: assetDetails['Start Date'],
