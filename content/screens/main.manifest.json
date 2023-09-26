@@ -1,99 +1,177 @@
 {
   "version": "3.0",
-  "timestamp": 1694693520000,
+  "timestamp": 1695726629410,
   "entries": [
     {
       "path": "/content/screens/main.html",
-      "timestamp": 1694689308000
+      "timestamp": 1695726629410
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1693984897000
+      "timestamp": 1695632067000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1693984897000
+      "timestamp": 1695632067000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1694693520000
+      "timestamp": 1695632067000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1693984897000
+      "timestamp": 1695632067000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1694693520000
+      "timestamp": 1695726349000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1694688044000
+      "timestamp": 1695632067000
     },
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1694693520000
+      "timestamp": 1695726349000
+    },
+    {
+      "path": "/icons/not-found.png",
+      "timestamp": 1695632068000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1694693520000
+      "timestamp": 1695632067000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1694693520000
+      "timestamp": 1695632067000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1694693520000
+      "timestamp": 1695632067000
     },
     {
-      "path": "/content/screens/managers/hanish/recognitions.json",
-      "timestamp": 1694689274000
+      "path": "/content/screens/managers/varu/recognitions.json",
+      "timestamp": 1695722902000
     },
     {
-      "path": "/is/image/IMGDIR/sandsinh"
+      "path": "/is/image/IMGDIR/danialkafee"
     },
     {
-      "path": "/content/screens/media_18e06290ebf341e0f0a59361f775cd853892b382b.jpeg",
-      "hash": "18e06290ebf341e0f0a59361f775cd853892b382b"
+      "path": "/is/image/IMGDIR/khushbookum"
     },
     {
-      "path": "/content/screens/managers/varun/recognitions.json",
-      "timestamp": 1694689190000
+      "path": "/content/screens/managers/kasingh/recognitions.json",
+      "timestamp": 1695722952000
     },
     {
-      "path": "/is/image/IMGDIR/mochanda"
+      "path": "/is/image/IMGDIR/sachinb"
     },
     {
-      "path": "/is/image/IMGDIR/anujmaha"
+      "path": "/is/image/IMGDIR/musagarw"
+    },
+    {
+      "path": "/is/image/IMGDIR/shreyb"
+    },
+    {
+      "path": "/is/image/IMGDIR/nkundra"
+    },
+    {
+      "path": "/content/screens/managers/habansal/recognitions.json",
+      "timestamp": 1695723186000
+    },
+    {
+      "path": "/content/screens/managers/bansalabhish/recognitions.json",
+      "timestamp": 1695716653000
+    },
+    {
+      "path": "/is/image/IMGDIR/thirumalaivm"
+    },
+    {
+      "path": "/is/image/IMGDIR/dee"
+    },
+    {
+      "path": "/content/screens/managers/arora/recognitions.json",
+      "timestamp": 1695722718000
+    },
+    {
+      "path": "/is/image/IMGDIR/somyaj"
+    },
+    {
+      "path": "/is/image/IMGDIR/chiki"
+    },
+    {
+      "path": "/is/image/IMGDIR/igurjar"
+    },
+    {
+      "path": "/content/screens/managers/abhayj/recognitions.json",
+      "timestamp": 1695724703000
+    },
+    {
+      "path": "/is/image/IMGDIR/sakshamg"
+    },
+    {
+      "path": "/is/image/IMGDIR/gubhatia"
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1694688044000
+      "timestamp": 1695632067000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1694688044000
+      "timestamp": 1695632067000
     },
     {
-      "path": "/content/screens/managers/hanish/main.html",
-      "timestamp": 1694520792000
+      "path": "/content/screens/managers/varu/main.html",
+      "timestamp": 1695722488000
     },
     {
       "path": "/content/screens/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
       "hash": "11a5509560b392b69ae5de441d8b7f273372939bd"
     },
     {
-      "path": "/content/screens/managers/hanish/main.plain.html",
-      "timestamp": 1694520792000
+      "path": "/content/screens/managers/varu/main.plain.html",
+      "timestamp": 1695722488000
     },
     {
-      "path": "/content/screens/managers/varun/main.html",
-      "timestamp": 1694520920000
+      "path": "/content/screens/managers/kasingh/main.html",
+      "timestamp": 1695721745000
     },
     {
-      "path": "/content/screens/managers/varun/main.plain.html",
-      "timestamp": 1694520920000
+      "path": "/content/screens/managers/kasingh/main.plain.html",
+      "timestamp": 1695721745000
+    },
+    {
+      "path": "/content/screens/managers/habansal/main.html",
+      "timestamp": 1694520797000
+    },
+    {
+      "path": "/content/screens/managers/habansal/main.plain.html",
+      "timestamp": 1694520797000
+    },
+    {
+      "path": "/content/screens/managers/bansalabhish/main.html",
+      "timestamp": 1695715539000
+    },
+    {
+      "path": "/content/screens/managers/bansalabhish/main.plain.html",
+      "timestamp": 1695715539000
+    },
+    {
+      "path": "/content/screens/managers/arora/main.html",
+      "timestamp": 1695722176000
+    },
+    {
+      "path": "/content/screens/managers/arora/main.plain.html",
+      "timestamp": 1695722176000
+    },
+    {
+      "path": "/content/screens/managers/abhayj/main.html",
+      "timestamp": 1695720513000
+    },
+    {
+      "path": "/content/screens/managers/abhayj/main.plain.html",
+      "timestamp": 1695720513000
     }
   ],
   "contentDelivery": {

@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1695726349000,
+  "timestamp": 1695726678190,
   "entries": [
     {
-      "path": "/content/screens/managers/hanish/main.html",
-      "timestamp": 1694520792000
+      "path": "/content/screens/managers/habansal/main.html",
+      "timestamp": 1695726678190
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -19,7 +19,7 @@
       "timestamp": 1695632067000
     },
     {
-      "path": "/content/screens/managers/hanish/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
+      "path": "/content/screens/managers/habansal/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
       "hash": "11a5509560b392b69ae5de441d8b7f273372939bd"
     },
     {
@@ -27,15 +27,8 @@
       "timestamp": 1695632067000
     },
     {
-      "path": "/content/screens/managers/hanish/recognitions.json",
-      "timestamp": 1695637974000
-    },
-    {
-      "path": "/is/image/IMGDIR/sandsinh"
-    },
-    {
-      "path": "/content/screens/managers/hanish/media_18e06290ebf341e0f0a59361f775cd853892b382b.jpeg",
-      "hash": "18e06290ebf341e0f0a59361f775cd853892b382b"
+      "path": "/content/screens/managers/habansal/recognitions.json",
+      "timestamp": 1695723186000
     },
     {
       "path": "/blocks/carousel/carousel.js",
