@@ -17,6 +17,14 @@
       "url": "/tools/preview-sheet/index.html",
       "excludePaths": [ "**" ],
       "includePaths": [ "**spreadsheets**" ]
+    },
+    {
+      "id": "publish-channel",
+      "title": "Publish Channel",
+      "event": "publish-channel",
+      "passConfig": true,
+      "passReferrer": true,
+      "environments": ["preview"]
     }
   ]
 }
