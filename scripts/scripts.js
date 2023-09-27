@@ -70,9 +70,9 @@ async function loadEager(doc) {
   }
 
   if (document.querySelector('helix-sidekick')) {
-    await import('../tools/sidekick/plugins.js');
+    await import('../tools/sidekick/plugin.js');
   } else {
-    document.addEventListener('helix-sidekick-ready', () => import('../tools/sidekick/plugins.js'), { once: true });
+    document.addEventListener('helix-sidekick-ready', () => import('../tools/sidekick/plugin.js'), { once: true });
   }
 }
 
