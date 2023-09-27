@@ -46,7 +46,7 @@ sk.addEventListener('custom:publish-channel', async (e) => {
         throw new Error(`Could not purge cache. Status: ${response.status}`);
     }
 
-    const sheetPath = `${path}.json`;
+    const sheetPath = `${path.slice(0, -4)}recognitions.json`;
 
     response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
 
