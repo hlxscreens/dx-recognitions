@@ -8,6 +8,11 @@
       "excludePaths": [ "**spreadsheets**" ]
     },
     {
+      "id": "publish",
+      "excludePaths": [ "**" ],
+      "environments": ["preview"]
+    },
+    {
       "id": "preview-sheet",
       "title": "Preview Sheet",
       "passConfig": true,
@@ -15,19 +20,6 @@
       "url": "/tools/preview-sheet/index.html",
       "excludePaths": [ "**" ],
       "includePaths": [ "**spreadsheets**" ]
-    },
-    {
-      "id": "publish-channel",
-      "title": "Publish Channel",
-      "passConfig": true,
-      "passReferrer": true,
-      "url": "/tools/publish-sheet/index.html",
-      "excludePaths": [
-        "**"
-      ],
-      "includePaths": [
-        "**spreadsheets**"
-      ]
     },
     {
       "id": "publish-channel-doc",
