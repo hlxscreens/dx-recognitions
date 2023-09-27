@@ -45,7 +45,7 @@
     }
     50% {
         transform: scaleY(1);
-        background: yellowgreen;
+        background: red;
     }
     100% {
         transform: scaleY(0.1);

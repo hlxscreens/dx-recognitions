@@ -1,1 +1,33 @@
-{}
+{
+  "project": "My Screen Project",
+  "host": "dx-recognitions.aem-screens.net",
+  "previewUrl": "dx-recognitions-prev.aem-screens.net",
+  "plugins": [
+    {
+      "id": "edit-preview",
+      "excludePaths": [ "**spreadsheets**" ]
+    },
+    {
+      "id": "preview-sheet",
+      "title": "Preview Sheet",
+      "passConfig": true,
+      "passReferrer": true,
+      "url": "/tools/preview-sheet/index.html",
+      "excludePaths": [ "**" ],
+      "includePaths": [ "**spreadsheets**" ]
+    },
+    {
+      "id": "publish-channel",
+      "title": "Publish Channel",
+      "passConfig": true,
+      "passReferrer": true,
+      "url": "/tools/preview-sheet/index.html",
+      "excludePaths": [
+        "**"
+      ],
+      "includePaths": [
+        "**spreadsheets**"
+      ]
+    }
+  ]
+}

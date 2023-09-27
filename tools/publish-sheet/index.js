@@ -26,42 +26,48 @@ const fetchData = async (url, option = {}) => {
   }
 };
 
-const preview = async (owner, repo, ref, path) => {
+const publishAndCacheClear = async (owner, repo, ref, path) => {
+  let response;
   const options = {
     method: 'POST',
   };
 
-  const response = await fetch(`https://admin.hlx.page/preview/${owner}/${repo}/${ref}/${path}`, options);
+  response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${path}`, options);
 
   if (response.ok) {
     console.log(`Document Previewed at ${new Date().toLocaleString()}`);
   } else {
     throw new Error(`Could not previewed. Status: ${response.status}`);
   }
+
+  response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
+
+  if (response.ok) {
+    console.log(`Purge cache ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not purge cache. Status: ${response.status}`);
+  }
 };
 
-const previewAndRedirect = async () => {
+const publishAndRedirect = async () => {
   const params = new URLSearchParams(window.location.search);
   const ref = params.get('ref');
   const repo = params.get('repo');
   const owner = params.get('owner');
   const referrer = params.get('referrer');
+  const host = params.get('host');
 
   const statusUrl = `https://admin.hlx.page/status/${owner}/${repo}/${ref}?editUrl=${referrer}`;
   const status = JSON.parse(await fetchData(statusUrl));
-  if (status.preview && status.preview.url) {
-    const hlxPageUrl = status.preview.url;
-    const url = new URL(hlxPageUrl);
+  if (status.live && status.live.url) {
+    const hlxLiveUrl = status.preview.url;
+    const url = new URL(hlxLiveUrl);
     const sheetPath = url.pathname;
     const pagePath = `${sheetPath.slice(0, -17)}main`;// remove recognitions.json
-    await preview(owner, repo, ref, sheetPath);
+    await publishAndCacheClear(owner, repo, ref, sheetPath);
 
-    const configUrl = `https://admin.hlx.page/sidekick/${owner}/${repo}/${ref}/config.json`;
-    const config = JSON.parse(await fetchData(configUrl));
-    const { previewUrl } = config;
-
-    window.location.replace(`https://${previewUrl}${pagePath}`);
+    window.location.replace(`https://${host}${pagePath}`);
   }
 };
 
-previewAndRedirect();
+publishAndRedirect();
