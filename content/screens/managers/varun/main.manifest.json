@@ -8,11 +8,11 @@
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1695812762000
+      "timestamp": 1695813096000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1695812609000
+      "timestamp": 1695813096000
     },
     {
       "path": "/styles/styles.css",
@@ -24,7 +24,7 @@
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1693984897000
+      "timestamp": 1695813096000
     },
     {
       "path": "/content/screens/managers/varun/recognitions.json",
@@ -53,11 +53,11 @@
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1695813093000
+      "timestamp": 1695812759000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1695813093000
+      "timestamp": 1694688044000
     },
     {
       "path": "/blocks/carousel/carousel.css",
@@ -85,7 +85,7 @@
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1695813094000
+      "timestamp": 1694688044000
     }
   ],
   "contentDelivery": {

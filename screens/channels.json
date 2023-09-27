@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-09-27T11:11:39.000Z",
+      "lastModified": "2023-09-27T11:28:00.000Z",
       "externalId": "/content/screens/main",
       "title": "Dx India Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/main.html"
@@ -37,7 +37,7 @@
     },
     {
       "manifestPath": "/content/screens/managers/kasingh/main.manifest.json",
-      "lastModified": "2023-09-27T11:11:39.000Z",
+      "lastModified": "2023-09-27T11:28:00.000Z",
       "externalId": "/content/screens/managers/kasingh/main",
       "title": "Org Karanjeet Singh Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/kasingh/main.html"
@@ -51,10 +51,10 @@
     },
     {
       "manifestPath": "/content/screens/managers/varu/main.manifest.json",
-      "lastModified": "2023-09-27T11:11:39.000Z",
+      "lastModified": "2023-09-27T11:22:24.000Z",
       "externalId": "/content/screens/managers/varu/main",
       "title": "Org Varun Bhatia Recognitions",
-      "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/varu/main.html"
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/varu/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/habansal/main.manifest.json",
