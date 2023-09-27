@@ -21,7 +21,7 @@
       "title": "Publish Channel",
       "passConfig": true,
       "passReferrer": true,
-      "url": "/tools/preview-sheet/index.html",
+      "url": "/tools/publish-sheet/index.html",
       "excludePaths": [
         "**"
       ],
