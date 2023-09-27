@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1695736493895,
+  "timestamp": 1695807947000,
   "entries": [
     {
       "path": "/content/screens/main.html",
-      "timestamp": 1695736493895
+      "timestamp": 1695723370000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -12,7 +12,7 @@
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1693984897000
+      "timestamp": 1695738499000
     },
     {
       "path": "/styles/styles.css",
@@ -52,7 +52,7 @@
     },
     {
       "path": "/content/screens/managers/varu/recognitions.json",
-      "timestamp": 1695722902000
+      "timestamp": 1695807947000
     },
     {
       "path": "/is/image/IMGDIR/danialkafee"
@@ -123,7 +123,7 @@
     },
     {
       "path": "/content/screens/managers/varu/main.html",
-      "timestamp": 1695722488000
+      "timestamp": 1695807325000
     },
     {
       "path": "/content/screens/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
@@ -159,7 +159,7 @@
     },
     {
       "path": "/content/screens/managers/arora/main.html",
-      "timestamp": 1695722176000
+      "timestamp": 1695807325000
     },
     {
       "path": "/content/screens/managers/arora/main.plain.html",

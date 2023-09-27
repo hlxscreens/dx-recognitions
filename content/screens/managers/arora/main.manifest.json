@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1695736506583,
+  "timestamp": 1695807325000,
   "entries": [
     {
       "path": "/content/screens/managers/arora/main.html",
-      "timestamp": 1695736506583
+      "timestamp": 1695807325000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -12,7 +12,7 @@
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1693984897000
+      "timestamp": 1695738499000
     },
     {
       "path": "/styles/styles.css",
