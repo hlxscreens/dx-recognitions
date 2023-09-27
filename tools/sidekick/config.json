@@ -14,7 +14,7 @@
     },
     {
       "id": "preview-sheet",
-      "title": "Preview Sheet",
+      "title": "Preview",
       "passConfig": true,
       "passReferrer": true,
       "url": "/tools/preview-sheet/index.html",
@@ -23,7 +23,7 @@
     },
     {
       "id": "publish-channel-doc",
-      "title": "Publish Channel",
+      "title": "Publish",
       "event": "publish-channel",
       "passConfig": true,
       "passReferrer": true,
