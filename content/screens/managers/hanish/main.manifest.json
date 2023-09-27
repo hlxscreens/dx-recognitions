@@ -1,22 +1,22 @@
 {
   "version": "3.0",
-  "timestamp": 1695812609000,
+  "timestamp": 1695812765000,
   "entries": [
     {
       "path": "/content/screens/managers/hanish/main.html",
-      "timestamp": 1695811478000
+      "timestamp": 1695812765000
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1693984897000
+      "timestamp": 1695812762000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1695812609000
+      "timestamp": 1695812763000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1694693520000
+      "timestamp": 1695812763000
     },
     {
       "path": "/content/screens/managers/hanish/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
@@ -24,7 +24,7 @@
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1693984897000
+      "timestamp": 1695812763000
     },
     {
       "path": "/content/screens/managers/hanish/recognitions.json",
@@ -39,39 +39,39 @@
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1695736200000
+      "timestamp": 1695812759000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1694688044000
+      "timestamp": 1695812759000
     },
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1695736200000
+      "timestamp": 1695812759000
     },
     {
       "path": "/icons/not-found.png",
-      "timestamp": 1695736200000
+      "timestamp": 1695812762000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1694693520000
+      "timestamp": 1695812762000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1694693520000
+      "timestamp": 1695812762000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1694693520000
+      "timestamp": 1695812762000
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1694688044000
+      "timestamp": 1695812760000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1694688044000
+      "timestamp": 1695812760000
     }
   ],
   "contentDelivery": {

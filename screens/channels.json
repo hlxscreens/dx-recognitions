@@ -2,63 +2,63 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-09-27T11:03:29.000Z",
+      "lastModified": "2023-09-27T11:06:12.000Z",
       "externalId": "/content/screens/main",
       "title": "Dx India Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/varun/main.manifest.json",
-      "lastModified": "2023-09-27T11:03:29.000Z",
+      "lastModified": "2023-09-27T11:06:05.000Z",
       "externalId": "/content/screens/managers/varun/main",
       "title": "Org Varun Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/varun/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/hanish/main.manifest.json",
-      "lastModified": "2023-09-27T11:03:29.000Z",
+      "lastModified": "2023-09-27T11:06:05.000Z",
       "externalId": "/content/screens/managers/hanish/main",
       "title": "Org Hanish Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/hanish/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/bansalabhish/main.manifest.json",
-      "lastModified": "2023-09-27T11:03:29.000Z",
+      "lastModified": "2023-09-27T11:06:05.000Z",
       "externalId": "/content/screens/managers/bansalabhish/main",
       "title": "Org Abhishek Bansal Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/bansalabhish/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/abhayj/main.manifest.json",
-      "lastModified": "2023-09-27T11:03:29.000Z",
+      "lastModified": "2023-09-27T11:06:05.000Z",
       "externalId": "/content/screens/managers/abhayj/main",
       "title": "Org Abhay Jindal Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/abhayj/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/kasingh/main.manifest.json",
-      "lastModified": "2023-09-27T11:03:29.000Z",
+      "lastModified": "2023-09-27T11:06:12.000Z",
       "externalId": "/content/screens/managers/kasingh/main",
       "title": "Org Karanjeet Singh Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/kasingh/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/arora/main.manifest.json",
-      "lastModified": "2023-09-27T11:03:29.000Z",
+      "lastModified": "2023-09-27T11:06:05.000Z",
       "externalId": "/content/screens/managers/arora/main",
       "title": "Org Ankur Arora Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/arora/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/varu/main.manifest.json",
-      "lastModified": "2023-09-27T11:03:29.000Z",
+      "lastModified": "2023-09-27T11:06:05.000Z",
       "externalId": "/content/screens/managers/varu/main",
       "title": "Org Varun Bhatia Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/varu/main.html"
     },
     {
       "manifestPath": "/content/screens/managers/habansal/main.manifest.json",
-      "lastModified": "2023-09-27T11:03:29.000Z",
+      "lastModified": "2023-09-27T11:06:05.000Z",
       "externalId": "/content/screens/managers/habansal/main",
       "title": "Org Hanish Bansal Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/habansal/main.html"
