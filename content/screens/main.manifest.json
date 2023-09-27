@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1695808845000,
+  "timestamp": 1695812609000,
   "entries": [
     {
       "path": "/content/screens/main.html",
-      "timestamp": 1695723370000
+      "timestamp": 1695811478000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -12,7 +12,7 @@
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1695738499000
+      "timestamp": 1695812609000
     },
     {
       "path": "/styles/styles.css",
@@ -123,7 +123,7 @@
     },
     {
       "path": "/content/screens/managers/varu/main.html",
-      "timestamp": 1695807325000
+      "timestamp": 1695811478000
     },
     {
       "path": "/content/screens/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
@@ -135,7 +135,7 @@
     },
     {
       "path": "/content/screens/managers/kasingh/main.html",
-      "timestamp": 1695721745000
+      "timestamp": 1695811478000
     },
     {
       "path": "/content/screens/managers/kasingh/main.plain.html",
@@ -143,7 +143,7 @@
     },
     {
       "path": "/content/screens/managers/habansal/main.html",
-      "timestamp": 1694520797000
+      "timestamp": 1695811478000
     },
     {
       "path": "/content/screens/managers/habansal/main.plain.html",
@@ -151,7 +151,7 @@
     },
     {
       "path": "/content/screens/managers/bansalabhish/main.html",
-      "timestamp": 1695715539000
+      "timestamp": 1695811478000
     },
     {
       "path": "/content/screens/managers/bansalabhish/main.plain.html",
@@ -159,7 +159,7 @@
     },
     {
       "path": "/content/screens/managers/arora/main.html",
-      "timestamp": 1695807325000
+      "timestamp": 1695811478000
     },
     {
       "path": "/content/screens/managers/arora/main.plain.html",
@@ -167,7 +167,7 @@
     },
     {
       "path": "/content/screens/managers/abhayj/main.html",
-      "timestamp": 1695720513000
+      "timestamp": 1695811478000
     },
     {
       "path": "/content/screens/managers/abhayj/main.plain.html",

@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1695738499000,
+  "timestamp": 1695812609000,
   "entries": [
     {
       "path": "/content/screens/managers/bansalabhish/main.html",
-      "timestamp": 1695715539000
+      "timestamp": 1695811478000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -12,7 +12,7 @@
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1695738499000
+      "timestamp": 1695812609000
     },
     {
       "path": "/styles/styles.css",
