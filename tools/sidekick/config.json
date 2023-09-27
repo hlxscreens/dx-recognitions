@@ -28,6 +28,14 @@
       "includePaths": [
         "**spreadsheets**"
       ]
+    },
+    {
+      "id": "publish-channel-doc",
+      "title": "Publish Channel",
+      "event": "publish-channel",
+      "passConfig": true,
+      "passReferrer": true,
+      "environments": ["preview"]
     }
   ]
 }
