@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1695812765000,
+  "timestamp": 1695813099000,
   "entries": [
     {
       "path": "/content/screens/managers/habansal/main.html",
-      "timestamp": 1695812765000
+      "timestamp": 1695813099000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -12,7 +12,7 @@
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1695812763000
+      "timestamp": 1695812609000
     },
     {
       "path": "/styles/styles.css",
@@ -24,7 +24,7 @@
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1695812763000
+      "timestamp": 1693984897000
     },
     {
       "path": "/content/screens/managers/habansal/recognitions.json",
@@ -32,23 +32,23 @@
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1695812759000
+      "timestamp": 1695813093000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1695812759000
+      "timestamp": 1695813093000
     },
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1695812759000
+      "timestamp": 1695813093000
     },
     {
       "path": "/icons/not-found.png",
-      "timestamp": 1695812762000
+      "timestamp": 1695813096000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1695812762000
+      "timestamp": 1695813095000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
@@ -56,15 +56,15 @@
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1695812762000
+      "timestamp": 1695813095000
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1695812760000
+      "timestamp": 1695813094000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1695812760000
+      "timestamp": 1695813094000
     }
   ],
   "contentDelivery": {
