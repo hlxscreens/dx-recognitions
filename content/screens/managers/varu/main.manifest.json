@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1695883320000,
+  "timestamp": 1695884991000,
   "entries": [
     {
       "path": "/content/screens/managers/varu/main.html",
@@ -8,7 +8,7 @@
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1695813096000
+      "timestamp": 1693984897000
     },
     {
       "path": "/scripts/scripts.js",
@@ -28,13 +28,17 @@
     },
     {
       "path": "/content/screens/managers/varu/recognitions.json",
-      "timestamp": 1695883320000
+      "timestamp": 1695884991000
     },
     {
       "path": "/is/image/IMGDIR/danialkafee"
     },
     {
       "path": "/is/image/IMGDIR/khushbookum"
+    },
+    {
+      "path": "/content/screens/managers/varu/media_1d5c646537bebc6e8f9f3ab728b28aeb997e63db8.jpeg#width=586&height=421",
+      "hash": "1d5c646537bebc6e8f9f3ab728b28aeb997e63db8"
     },
     {
       "path": "/blocks/carousel/carousel.js",
