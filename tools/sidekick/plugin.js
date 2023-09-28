@@ -12,58 +12,57 @@
 
 const sk = document.querySelector('helix-sidekick');
 sk.addEventListener('custom:publish-channel', async (e) => {
-    if(e.detail) {
-        console.log(JSON.stringify(e.detail));
-    } else {
-        console.log("details not available");
-    }
-    let response;
-    const options = {
-        method: 'POST',
-    };
-    const config = e.detail.data.config;
-    const ref = config.ref;
-    const repo = config.repo;
-    const owner = config.owner;
-    const host = config.host;
-    const status = e.detail.data.status;
-    const path = status.webPath;
+  if (e.detail) {
+    console.log(JSON.stringify(e.detail));
+  } else {
+    console.log('details not available');
+  }
+  let response;
+  const options = {
+    method: 'POST',
+  };
+  const { config } = e.detail.data;
+  const { ref } = config;
+  const { repo } = config;
+  const { owner } = config;
+  const { host } = config;
+  const { status } = e.detail.data;
+  const path = status.webPath;
 
-    response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${path}`, options);
+  response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${path}`, options);
 
-    if (response.ok) {
-        console.log(`Document Published at ${new Date().toLocaleString()}`);
-    } else {
-        throw new Error(`Could not previewed. Status: ${response.status}`);
-    }
+  if (response.ok) {
+    console.log(`Document Published at ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not previewed. Status: ${response.status}`);
+  }
 
+  response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
 
-    response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
+  if (response.ok) {
+    console.log(`Purge cache ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not purge cache. Status: ${response.status}`);
+  }
 
-    if (response.ok) {
-        console.log(`Purge cache ${new Date().toLocaleString()}`);
-    } else {
-        throw new Error(`Could not purge cache. Status: ${response.status}`);
-    }
+  const sheetPath = `${path.slice(0, -4)}recognitions.json`;
 
-    const sheetPath = `${path.slice(0, -4)}recognitions.json`;
+  response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
 
-    response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
+  if (response.ok) {
+    console.log(`Document Published at ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not previewed. Status: ${response.status}`);
+  }
 
-    if (response.ok) {
-        console.log(`Document Published at ${new Date().toLocaleString()}`);
-    } else {
-        throw new Error(`Could not previewed. Status: ${response.status}`);
-    }
+  response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${sheetPath}`, options);
 
-    response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${sheetPath}`, options);
+  if (response.ok) {
+    console.log(`Purge cache ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not purge cache. Status: ${response.status}`);
+  }
 
-    if (response.ok) {
-        console.log(`Purge cache ${new Date().toLocaleString()}`);
-    } else {
-        throw new Error(`Could not purge cache. Status: ${response.status}`);
-    }
-
-    const prodUrl = `https://${host}${path}`;
-    window.location.href = prodUrl;
+  const prodUrl = `https://${host}${path}`;
+  window.location.href = prodUrl;
 });

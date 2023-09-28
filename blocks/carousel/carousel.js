@@ -92,13 +92,13 @@ async function buildCarouselFromSheet(block) {
               const assetDetails = sheetData[row];
               validateDateFormat(assetDetails['Start Date']);
               validateDateFormat(assetDetails['End Date']);
-              const profileImages = assetDetails.LDAP ? assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap}`) : [];
+              const profileImages = assetDetails.LDAP ? assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap.trim()}`) : [];
               carouselItems.push({
                 images: assetDetails['Image URL'] ? [extractMediaFromPath(assetDetails['Image URL'])] : profileImages,
                 startDate: assetDetails['Start Date'],
                 endDate: assetDetails['End Date'],
                 description: assetDetails.Description,
-                names: assetDetails.Name.split(','),
+                names: assetDetails.Name.split(',').map((name) => name.trim()),
                 heading: assetDetails.Heading,
                 title: assetDetails.Title,
                 background,
@@ -148,8 +148,8 @@ async function buildCarouselFromSheet(block) {
           const notFoundImg = createOptimizedPicture('/icons/not-found.png');
           // set equal width if more than one image
           if (asset.images.length > 1) {
-            notFoundImg.querySelector('img').style.width = '20vmin';
-            notFoundImg.querySelector('img').style.height = '20vmin';
+            notFoundImg.querySelector('img').style.width = '25vmin';
+            notFoundImg.querySelector('img').style.height = '25vmin';
           }
           img.replaceWith(notFoundImg);
         };
@@ -158,8 +158,8 @@ async function buildCarouselFromSheet(block) {
 
         // set equal width if more than one image
         if (asset.images.length > 1) {
-          img.querySelector('img').style.width = '20vmin';
-          img.querySelector('img').style.height = '20vmin';
+          img.querySelector('img').style.width = '25vmin';
+          img.querySelector('img').style.height = '25vmin';
           // names in caption for multiple images
           const figureCaption = createDivWithClass('carousel-item-figure-caption');
           figureCaption.innerText = asset.names[index];
