@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1695813099000,
+  "timestamp": 1695879255000,
   "entries": [
     {
       "path": "/content/screens/managers/varun/main.html",
@@ -12,7 +12,7 @@
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1695812609000
+      "timestamp": 1695813096000
     },
     {
       "path": "/styles/styles.css",
@@ -53,15 +53,15 @@
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1695812759000
+      "timestamp": 1695879255000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1694688044000
+      "timestamp": 1695813093000
     },
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1695813093000
+      "timestamp": 1695879255000
     },
     {
       "path": "/icons/not-found.png",
@@ -73,15 +73,15 @@
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1695813095000
+      "timestamp": 1695812762000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1695813095000
+      "timestamp": 1695812762000
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1695813094000
+      "timestamp": 1695812760000
     },
     {
       "path": "/blocks/fragment/fragment.css",
