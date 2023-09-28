@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-09-28T07:09:51.000Z",
+      "lastModified": "2023-09-28T07:19:01.000Z",
       "externalId": "/content/screens/main",
       "title": "Dx India Recognitions",
       "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/main.html"
@@ -51,7 +51,7 @@
     },
     {
       "manifestPath": "/content/screens/managers/varu/main.manifest.json",
-      "lastModified": "2023-09-28T07:09:51.000Z",
+      "lastModified": "2023-09-28T07:19:01.000Z",
       "externalId": "/content/screens/managers/varu/main",
       "title": "Org Varun Bhatia Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/varu/main.html"

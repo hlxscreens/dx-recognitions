@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1695884991000,
+  "timestamp": 1695885541000,
   "entries": [
     {
       "path": "/content/screens/main.html",
@@ -12,7 +12,7 @@
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1695813096000
+      "timestamp": 1695812609000
     },
     {
       "path": "/styles/styles.css",
@@ -20,7 +20,7 @@
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1695813096000
+      "timestamp": 1693984897000
     },
     {
       "path": "/blocks/carousel/carousel.js",
@@ -40,7 +40,7 @@
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1695813095000
+      "timestamp": 1695812762000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
@@ -52,7 +52,7 @@
     },
     {
       "path": "/content/screens/managers/varu/recognitions.json",
-      "timestamp": 1695884991000
+      "timestamp": 1695885541000
     },
     {
       "path": "/is/image/IMGDIR/danialkafee"
@@ -61,7 +61,7 @@
       "path": "/is/image/IMGDIR/khushbookum"
     },
     {
-      "path": "/content/screens/media_1d5c646537bebc6e8f9f3ab728b28aeb997e63db8.jpeg#width=586&height=421",
+      "path": "/content/screens/media_1d5c646537bebc6e8f9f3ab728b28aeb997e63db8.jpeg",
       "hash": "1d5c646537bebc6e8f9f3ab728b28aeb997e63db8"
     },
     {
@@ -123,7 +123,7 @@
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1695813094000
+      "timestamp": 1695812760000
     },
     {
       "path": "/content/screens/managers/varu/main.html",
