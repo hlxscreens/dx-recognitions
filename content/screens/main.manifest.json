@@ -44,11 +44,11 @@
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1695812762000
+      "timestamp": 1695813095000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1695812762000
+      "timestamp": 1695813095000
     },
     {
       "path": "/content/screens/managers/varu/recognitions.json",
@@ -58,7 +58,7 @@
       "path": "/is/image/IMGDIR/danialkafee"
     },
     {
-      "path": "/is/image/IMGDIR/ khushbookum"
+      "path": "/is/image/IMGDIR/khushbookum"
     },
     {
       "path": "/content/screens/managers/kasingh/recognitions.json",
@@ -115,7 +115,7 @@
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1695812760000
+      "timestamp": 1695813094000
     },
     {
       "path": "/blocks/fragment/fragment.css",
