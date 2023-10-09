@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1696503028000,
+  "timestamp": 1696826990000,
   "entries": [
     {
       "path": "/content/screens/managers/varu/main.html",
@@ -32,7 +32,7 @@
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1695897980000
+      "timestamp": 1696826990000
     },
     {
       "path": "/blocks/carousel/utils.js",
