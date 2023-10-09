@@ -9,7 +9,12 @@ const getFranklinMarkup = async (host, path) => {
   return resp.text();
 };
 
-const extractMediaFromPath = (path) => `${path.trim().substring(path.indexOf('/media_'), path.indexOf('#'))}`;
+const extractMediaFromPath = (path) => {
+  if (path.indexOf('#') >= 0) {
+    return `${path.trim().substring(path.indexOf('/media_'), path.indexOf('#'))}`;
+  }
+  return `${path.trim().substring(path.indexOf('/media_'))}`;
+};
 
 const extractSheetData = async (host, path) => {
   // Get default franklin markup for path
