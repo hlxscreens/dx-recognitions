@@ -45,7 +45,7 @@ html {
     padding: 10vh 5vw;
 }
 
-.carousel-item-inner-container .more-than-three-images {
+.carousel-item-inner-container.more-than-three-images {
     flex-wrap: wrap;
 }
 
@@ -87,7 +87,7 @@ html {
     margin: 3vw;
 }
 
-.carousel-item-description .more-than-three-images {
+.more-than-three-images .carousel-item-description{
     flex-direction: row;
     align-items: center;
 }
@@ -98,7 +98,7 @@ html {
     padding-left: 21px;
 }
 
-.carousel-item-description .title .more-than-three-images {
+.more-than-three-images .carousel-item-description .title {
     min-width: max-content;
 }
 
