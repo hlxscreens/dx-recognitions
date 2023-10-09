@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1696878972344,
+  "timestamp": 1696878834000,
   "entries": [
     {
       "path": "/content/screens/managers/kasingh/main.html",
-      "timestamp": 1696878972344
+      "timestamp": 1696863058000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -31,8 +31,8 @@
       "timestamp": 1696878834000
     },
     {
-      "path": "/content/screens/managers/kasingh./media_15d5d0963738d57e7a826e9e4acfab1efadfe4ed5.jpeg",
-      "hash": "./media"
+      "path": "/content/screens/managers/kasingh/media_15d5d0963738d57e7a826e9e4acfab1efadfe4ed5.jpeg",
+      "hash": "15d5d0963738d57e7a826e9e4acfab1efadfe4ed5"
     },
     {
       "path": "/blocks/carousel/carousel.js",
