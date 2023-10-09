@@ -85,11 +85,13 @@ html {
     flex-direction: column; 
     gap: 2rem;
     margin: 3vw;
+    max-width: 40vw;
 }
 
 .more-than-three-images .carousel-item-description{
     flex-direction: row;
     align-items: center;
+    max-width: unset;
 }
 
 .carousel-item-description .title {
