@@ -57,9 +57,11 @@ async function buildCarouselFromSheet(block) {
         const link = divs[1].getElementsByTagName('a')[0].href;
         const linkUrl = new URL(link);
         const background = divs[0].querySelector('picture');
+        const teamName = divs[2]?.innerText;
         sheetDetails.push({
           link: linkUrl,
           background,
+          teamName,
         });
       } catch (err) {
         console.warn(`Exception while processing row ${i}`, err);
@@ -91,7 +93,7 @@ async function buildCarouselFromSheet(block) {
           console.warn(`Invalid sheet Link ${JSON.stringify(sheetDetails[sheetIndex])}.Skipping processing this one.`);
         } else {
           const sheetData = processSheetDataResponse(sheetDataResponse);
-          const { background } = sheetDetails[sheetIndex];
+          const { background, teamName } = sheetDetails[sheetIndex];
           for (let row = 0; row < sheetData.length; row += 1) {
             try {
               const assetDetails = sheetData[row];
@@ -107,6 +109,7 @@ async function buildCarouselFromSheet(block) {
                 heading: assetDetails.Heading,
                 title: assetDetails.Title,
                 background,
+                teamName,
               });
             } catch (err) {
               console.warn(`Error while processing asset ${JSON.stringify(sheetData[row])}`, err);
@@ -177,9 +180,9 @@ async function buildCarouselFromSheet(block) {
       // Create the description
       const descriptionContainer = createDivWithClass('carousel-item-description');
       // title if present
-      if (asset.title || getMetadata('team')) {
+      if (asset.title || asset.teamName) {
         const name = createDivWithClass('title');
-        name.innerText = asset.title || getMetadata('team');
+        name.innerText = asset.title || asset.teamName;
         descriptionContainer.appendChild(name);
       }
       const descriptionText = createDivWithClass('description-text');
