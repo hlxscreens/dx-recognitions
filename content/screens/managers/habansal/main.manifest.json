@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1696881279000,
+  "timestamp": 1696882607000,
   "entries": [
     {
       "path": "/content/screens/managers/habansal/main.html",
@@ -32,7 +32,7 @@
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1696881279000
+      "timestamp": 1696882607000
     },
     {
       "path": "/blocks/carousel/utils.js",

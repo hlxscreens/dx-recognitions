@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1696881337000,
+  "timestamp": 1696882844000,
   "entries": [
     {
       "path": "/content/screens/main.html",
@@ -24,7 +24,7 @@
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1696881279000
+      "timestamp": 1696882607000
     },
     {
       "path": "/blocks/carousel/utils.js",
@@ -97,7 +97,7 @@
     },
     {
       "path": "/content/screens/managers/ssahni/recognitions.json",
-      "timestamp": 1696503604000
+      "timestamp": 1696882844000
     },
     {
       "path": "/is/image/IMGDIR/malpani"
@@ -168,11 +168,11 @@
     },
     {
       "path": "/content/screens/managers/ssahni/main.html",
-      "timestamp": 1696503464000
+      "timestamp": 1696882799000
     },
     {
       "path": "/content/screens/managers/ssahni/main.plain.html",
-      "timestamp": 1696503464000
+      "timestamp": 1696882799000
     }
   ],
   "contentDelivery": {
