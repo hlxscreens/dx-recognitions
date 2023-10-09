@@ -211,7 +211,7 @@ export default async function decorate(block) {
   const carouselItems = carouselTrack.querySelectorAll('.carousel-item');
   const totalItems = carouselItems.length;
   let currentIndex = -1;
-  const DEFAULT_ITEM_DURATION = 10 * 1000;
+  const DEFAULT_ITEM_DURATION = 8 * 1000;
 
   if (totalItems === 0) {
     return;
@@ -236,20 +236,20 @@ export default async function decorate(block) {
     const itemWidth = carouselItems[0].offsetWidth;
     const translateX = -itemIndex * itemWidth;
     carouselTrack.style.transform = `translateX(${translateX}px)`;
-    currentIndex = itemIndex;
   }
 
   function nextSlide() {
-    const newIndex = (currentIndex + 1) % totalItems;
-    if (!isActive(newIndex)) {
+    // Stop the previous carousels
+    TIMEOUTS.clearAllTimeouts();
+    currentIndex = (currentIndex + 1) % totalItems;
+    if (!isActive(currentIndex)) {
       nextSlide();
+    } else {
+      showSlide(currentIndex);
+      TIMEOUTS.setTimeout(nextSlide, DEFAULT_ITEM_DURATION);
     }
-    showSlide(newIndex);
-    TIMEOUTS.setTimeout(nextSlide, DEFAULT_ITEM_DURATION);
   }
 
-  // Stop the previous carousels
-  TIMEOUTS.clearAllTimeouts();
   // Start the carousel
   nextSlide();
 }
