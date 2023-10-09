@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1696826990000,
+  "timestamp": 1696881467447,
   "entries": [
     {
       "path": "/content/screens/managers/abhayj/main.html",
-      "timestamp": 1695813099000
+      "timestamp": 1696881467447
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -19,8 +19,8 @@
       "timestamp": 1695813096000
     },
     {
-      "path": "/content/screens/managers/abhayj/media_11a5509560b392b69ae5de441d8b7f273372939bd.png",
-      "hash": "11a5509560b392b69ae5de441d8b7f273372939bd"
+      "path": "/content/screens/managers/abhayj/media_13b36a93e275a75ee0fff25d0be7a9475262531e1.png",
+      "hash": "13b36a93e275a75ee0fff25d0be7a9475262531e1"
     },
     {
       "path": "/styles/lazy-styles.css",
@@ -28,11 +28,26 @@
     },
     {
       "path": "/content/screens/managers/abhayj/recognitions.json",
-      "timestamp": 1696503715000
+      "timestamp": 1696881306000
+    },
+    {
+      "path": "/is/image/IMGDIR/sakshamg"
+    },
+    {
+      "path": "/is/image/IMGDIR/shubhanshuk"
+    },
+    {
+      "path": "/is/image/IMGDIR/gubhatia"
+    },
+    {
+      "path": "/is/image/IMGDIR/lakshyabans"
+    },
+    {
+      "path": "/is/image/IMGDIR/nkundra"
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1696826990000
+      "timestamp": 1696881279000
     },
     {
       "path": "/blocks/carousel/utils.js",
@@ -40,7 +55,7 @@
     },
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1695897013000
+      "timestamp": 1696881279000
     },
     {
       "path": "/icons/not-found.png",
