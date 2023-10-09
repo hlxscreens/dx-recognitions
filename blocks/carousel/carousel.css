@@ -53,6 +53,7 @@ html {
 .carousel-item-images {
     display: flex;
     justify-content: center;
+    flex: 0;
 }
 
 .carousel-item-figure {
