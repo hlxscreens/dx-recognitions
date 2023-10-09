@@ -6,8 +6,6 @@
 
 body,
 html {
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
@@ -20,17 +18,6 @@ html {
 
 .carousel-item {
     flex: 0 0 100%;
-    display: grid;
-    grid-template-columns: 1fr 4fr 3fr 1fr;
-    grid-template-areas:
-        "...... header header ......"
-        "...... figure  description   ......"
-        "...... figure  description   ......"
-        "...... figure  description  ......"
-        "...... figure  description ......"
-        "...... ...... ......  ......";
-    align-items: center;
-    gap: 3vmax;
     color: white;
 }
 
@@ -43,66 +30,86 @@ html {
 
 /* header */
 .carousel-item-heading {
-    grid-area: header;
-    justify-self: center;
     font-family: 'AdobeCleanExtraBold';
-    font-size: var(--heading-font-size-xxl);
+    font-size: 4rem;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+/* inner container area */
+.carousel-item-inner-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85vh;
+    padding: 10vh 5vw;
+}
+
+.carousel-item-inner-container.more-than-three-images {
+    flex-wrap: wrap;
 }
 
 /* figure */
 .carousel-item-images {
-    grid-area: figure;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    /* flex-direction: row-reverse; */
+    flex: 0;
 }
 
 .carousel-item-figure {
     padding: 1rem;
     margin: 1rem;
-    max-inline-size: 25vmax;
-    flex: 1;
-    text-align: center;
-    font-family: 'AdobeCleanBold';
-    font-size: var(--heading-font-size-m);
 }
 
 .carousel-item-figure picture {
     z-index: 100;
     display: block;
     position: relative;
-    /* max-width: 100%; */
-    /* border-radius: 50%; */
 }
 
 .carousel-item-figure img{
     object-fit: contain;
     background-color: white;
-    width: 100%;
-    height: 100%;
     border: white solid 2px;
     border-radius: 50%;
+}
+
+.carousel-item-figure .carousel-item-figure-caption {
+    text-align: center;
+    font-family: 'AdobeCleanBold';
+    font-size: 2.25rem;
 }
 
 /* description */
 .carousel-item-description {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 2rem;
-    grid-area: description;
-    justify-self: center;
-    justify-items: center;
-    font-family: 'AdobeClean';
-    font-size: var(--heading-font-size-m);
+    margin: 3vw;
+    max-width: 40vw;
+}
+
+.more-than-three-images .carousel-item-description{
+    flex-direction: row;
+    align-items: center;
+    max-width: unset;
 }
 
 .carousel-item-description .title {
-    font-size: var(--heading-font-size-l);
-    font-family: 'AdobeCleanBold';
+    font-family: 'AdobeCleanExtraBold';
+    font-size: 2.5rem;
+    padding-left: 21px;
 }
 
-.line {
-    border-bottom: 1px solid white;
-    width: 40%;
+.more-than-three-images .carousel-item-description .title {
+    min-width: max-content;
+}
+
+.carousel-item-description .description-text {
+    font-family: 'AdobeClean';
+    font-size: 2.25rem;
+    line-height: 3rem;
+    font-style: italic;
+    border-left: 3px solid white;
+    padding-left: 21px;
 }

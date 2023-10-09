@@ -5,8 +5,11 @@ import {
   createDivWithClass,
 } from './utils.js';
 
-import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
+import { createOptimizedPicture, getMetadata } from '../../scripts/lib-franklin.js';
 
+const DEFAULT_HEADING = 'Recognition for DX India';
+// 1 image - 400x400, 2 images - 330x330, 3 images - 273x273, 4 images - 256x256, 5 images - 227x227
+const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 const TIMEOUTS = {
   timeouts: [],
   setTimeout(fn, delay) {
@@ -54,9 +57,11 @@ async function buildCarouselFromSheet(block) {
         const link = divs[1].getElementsByTagName('a')[0].href;
         const linkUrl = new URL(link);
         const background = divs[0].querySelector('picture');
+        const teamName = divs[2]?.innerText;
         sheetDetails.push({
           link: linkUrl,
           background,
+          teamName,
         });
       } catch (err) {
         console.warn(`Exception while processing row ${i}`, err);
@@ -88,7 +93,7 @@ async function buildCarouselFromSheet(block) {
           console.warn(`Invalid sheet Link ${JSON.stringify(sheetDetails[sheetIndex])}.Skipping processing this one.`);
         } else {
           const sheetData = processSheetDataResponse(sheetDataResponse);
-          const { background } = sheetDetails[sheetIndex];
+          const { background, teamName } = sheetDetails[sheetIndex];
           for (let row = 0; row < sheetData.length; row += 1) {
             try {
               const assetDetails = sheetData[row];
@@ -104,6 +109,7 @@ async function buildCarouselFromSheet(block) {
                 heading: assetDetails.Heading,
                 title: assetDetails.Title,
                 background,
+                teamName,
               });
             } catch (err) {
               console.warn(`Error while processing asset ${JSON.stringify(sheetData[row])}`, err);
@@ -134,9 +140,10 @@ async function buildCarouselFromSheet(block) {
       if (asset.heading) {
         heading.innerText = asset.heading;
       } else {
-        heading.innerText = 'DX India Recognitions';
+        heading.innerText = DEFAULT_HEADING;
       }
 
+      const innerContainer = createDivWithClass('carousel-item-inner-container');
       const imgContainer = createDivWithClass('carousel-item-images');
 
       // Create the image(s)
@@ -146,47 +153,46 @@ async function buildCarouselFromSheet(block) {
 
         img.querySelector('img').onerror = (event) => {
           event.target.onerror = null;
-          console.log(event);
           const notFoundImg = createOptimizedPicture('/icons/not-found.png');
-          // set equal width if more than one image
-          if (asset.images.length > 1) {
-            notFoundImg.querySelector('img').style.width = '25vmin';
-            notFoundImg.querySelector('img').style.height = '25vmin';
-          }
+          notFoundImg.querySelector('img').style.width = IMAGE_SIZES[asset.images.length - 1];
+          notFoundImg.querySelector('img').style.height = IMAGE_SIZES[asset.images.length - 1];
+
           img.replaceWith(notFoundImg);
         };
 
         figure.appendChild(img);
 
-        // set equal width if more than one image
-        if (asset.images.length > 1) {
-          img.querySelector('img').style.width = '25vmin';
-          img.querySelector('img').style.height = '25vmin';
-          // names in caption for multiple images
-          const figureCaption = createDivWithClass('carousel-item-figure-caption');
-          figureCaption.innerText = asset.names[index];
-          figure.appendChild(figureCaption);
-        }
+        img.querySelector('img').style.width = IMAGE_SIZES[asset.images.length - 1];
+        img.querySelector('img').style.height = IMAGE_SIZES[asset.images.length - 1];
+
+        const figureCaption = createDivWithClass('carousel-item-figure-caption');
+        figureCaption.innerText = asset.names[index];
+        figure.appendChild(figureCaption);
+
         imgContainer.appendChild(figure);
       });
 
+      if (asset.images.length > 3) {
+        innerContainer.classList.add('more-than-three-images');
+      }
+      innerContainer.appendChild(imgContainer);
+
       // Create the description
       const descriptionContainer = createDivWithClass('carousel-item-description');
-      // title if present or name if single name
-      if (asset.title || (asset.names.length === 1 && asset.names[0] !== '')) {
+      // title if present
+      if (asset.title || asset.teamName) {
         const name = createDivWithClass('title');
-        const line = createDivWithClass('line');
-        name.innerText = asset.title || asset.names[0];
+        name.innerText = asset.title || asset.teamName;
         descriptionContainer.appendChild(name);
-        descriptionContainer.appendChild(line);
       }
+      const descriptionText = createDivWithClass('description-text');
+      descriptionText.innerText = asset.description;
+      descriptionContainer.appendChild(descriptionText);
+      innerContainer.appendChild(descriptionContainer);
 
-      descriptionContainer.appendChild(document.createTextNode(asset.description));
-
-      carouselItem.appendChild(heading);
-      carouselItem.appendChild(imgContainer);
-      carouselItem.appendChild(descriptionContainer);
       carouselItem.appendChild(asset.background.cloneNode(true));
+      carouselItem.appendChild(heading);
+      carouselItem.appendChild(innerContainer);
       carouselItems.push(carouselItem);
     });
     return carouselItems;
