@@ -5,7 +5,7 @@ import {
   createDivWithClass,
 } from './utils.js';
 
-import { createOptimizedPicture, getMetadata } from '../../scripts/lib-franklin.js';
+import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
 const DEFAULT_HEADING = 'Recognition for DX India';
 // 1 image - 400x400, 2 images - 330x330, 3 images - 273x273, 4 images - 256x256, 5 images - 227x227
@@ -25,7 +25,12 @@ const TIMEOUTS = {
 
 // franklin bot gives url like - https://main--dx-recognitions--hlxscreens.hlx.page/media_1d5c646537bebc6e8f9f3ab728b28aeb997e63db8.jpeg#width=586&height=421
 // extract the media path from it
-const extractMediaFromPath = (path) => `.${path.trim().substring(path.indexOf('/media_'), path.indexOf('#'))}`;
+const extractMediaFromPath = (path) => {
+  if (path.indexOf('#') >= 0) {
+    return `.${path.trim().substring(path.indexOf('/media_'), path.indexOf('#'))}`;
+  }
+  return `.${path.trim().substring(path.indexOf('/media_'))}`;
+};
 
 async function buildCarouselFromSheet(block) {
   const fetchData = async (url) => {
