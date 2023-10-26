@@ -7,7 +7,7 @@ import {
 
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
-const DEFAULT_HEADING = 'Recognition for DX India';
+const DEFAULT_HEADING = 'DX India Recognitions';
 // 1 image - 400x400, 2 images - 330x330, 3 images - 273x273, 4 images - 256x256, 5 images - 227x227
 const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 const TIMEOUTS = {
