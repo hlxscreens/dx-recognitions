@@ -2,59 +2,73 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-10-09T20:20:44.000Z",
+      "lastModified": "2023-10-26T12:49:43.996Z",
       "externalId": "/content/screens/main",
-      "title": "Dx India Recognitions",
+      "title": "Adobe Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/main.html"
     },
     {
-      "manifestPath": "/content/screens/managers/bansalabhish/main.manifest.json",
-      "lastModified": "2023-10-09T20:16:47.000Z",
-      "externalId": "/content/screens/managers/bansalabhish/main",
-      "title": "Org Abhishek Bansal Recognitions",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/bansalabhish/main.html"
-    },
-    {
-      "manifestPath": "/content/screens/managers/abhayj/main.manifest.json",
-      "lastModified": "2023-10-09T20:16:47.000Z",
-      "externalId": "/content/screens/managers/abhayj/main",
+      "manifestPath": "/content/screens/org-amitabh/org-gitesh/abhayj/main.manifest.json",
+      "lastModified": "2023-10-26T12:49:50.031Z",
+      "externalId": "/content/screens/org-amitabh/org-gitesh/abhayj/main",
       "title": "Org Abhay Jindal Recognitions",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/abhayj/main.html"
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/abhayj/main.html"
     },
     {
-      "manifestPath": "/content/screens/managers/kasingh/main.manifest.json",
-      "lastModified": "2023-10-09T20:16:47.000Z",
-      "externalId": "/content/screens/managers/kasingh/main",
-      "title": "Org Karanjeet Singh Recognitions",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/kasingh/main.html"
-    },
-    {
-      "manifestPath": "/content/screens/managers/arora/main.manifest.json",
-      "lastModified": "2023-10-09T20:16:47.000Z",
-      "externalId": "/content/screens/managers/arora/main",
+      "manifestPath": "/content/screens/org-amitabh/org-gitesh/arora/main.manifest.json",
+      "lastModified": "2023-10-26T12:49:50.659Z",
+      "externalId": "/content/screens/org-amitabh/org-gitesh/arora/main",
       "title": "Org Ankur Arora Recognitions",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/arora/main.html"
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/arora/main.html"
     },
     {
-      "manifestPath": "/content/screens/managers/varu/main.manifest.json",
-      "lastModified": "2023-10-09T20:16:47.000Z",
-      "externalId": "/content/screens/managers/varu/main",
+      "manifestPath": "/content/screens/org-amitabh/org-gitesh/bansalabhish/main.manifest.json",
+      "lastModified": "2023-10-26T12:49:51.138Z",
+      "externalId": "/content/screens/org-amitabh/org-gitesh/bansalabhish/main",
+      "title": "Org Abhishek Bansal Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/bansalabhish/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-gitesh/kasingh/main.manifest.json",
+      "lastModified": "2023-10-26T12:49:51.580Z",
+      "externalId": "/content/screens/org-amitabh/org-gitesh/kasingh/main",
+      "title": "Org Karanjeet Singh Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/kasingh/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-gitesh/varu/main.manifest.json",
+      "lastModified": "2023-10-26T12:49:52.412Z",
+      "externalId": "/content/screens/org-amitabh/org-gitesh/varu/main",
       "title": "Org Varun Bhatia Recognitions",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/varu/main.html"
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/varu/main.html"
     },
     {
-      "manifestPath": "/content/screens/managers/habansal/main.manifest.json",
-      "lastModified": "2023-10-09T20:16:47.000Z",
-      "externalId": "/content/screens/managers/habansal/main",
+      "manifestPath": "/content/screens/org-amitabh/org-gitesh/main.manifest.json",
+      "lastModified": "2023-10-26T12:49:53.058Z",
+      "externalId": "/content/screens/org-amitabh/org-gitesh/main",
+      "title": "Org Gitesh Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
+      "lastModified": "2023-10-26T12:49:53.445Z",
+      "externalId": "/content/screens/org-amitabh/main",
+      "title": "DX India Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-gitesh/habansal/main.manifest.json",
+      "lastModified": "2023-10-26T12:49:53.669Z",
+      "externalId": "/content/screens/org-amitabh/org-gitesh/habansal/main",
       "title": "Org Hanish Bansal Recognitions",
-      "liveUrl": "https://main--dx-recognitions--hlxscreens.hlx.live/content/screens/managers/habansal/main.html"
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/habansal/main.html"
     },
     {
-      "manifestPath": "/content/screens/managers/ssahni/main.manifest.json",
-      "lastModified": "2023-10-09T20:20:44.000Z",
-      "externalId": "/content/screens/managers/ssahni/main",
+      "manifestPath": "/content/screens/org-amitabh/org-gitesh/ssahni/main.manifest.json",
+      "lastModified": "2023-10-26T12:49:53.864Z",
+      "externalId": "/content/screens/org-amitabh/org-gitesh/ssahni/main",
       "title": "Org Siddharth Sahni Recognitions",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/managers/ssahni/main.html"
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/ssahni/main.html"
     }
   ],
   "metadata": {

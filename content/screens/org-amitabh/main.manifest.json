@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1698324583996,
+  "timestamp": 1698324593445,
   "entries": [
     {
-      "path": "/content/screens/main.html",
-      "timestamp": 1698324583996
+      "path": "/content/screens/org-amitabh/main.html",
+      "timestamp": 1698324593445
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -59,14 +59,6 @@
       "timestamp": 1695813094000
     },
     {
-      "path": "/content/screens/org-amitabh/main.html",
-      "timestamp": 1698323018000
-    },
-    {
-      "path": "/content/screens/org-amitabh/main.plain.html",
-      "timestamp": 1698323018000
-    },
-    {
       "path": "/content/screens/org-amitabh/org-gitesh/main.html",
       "timestamp": 1698321440000
     },
@@ -79,7 +71,7 @@
       "timestamp": 1698320263000
     },
     {
-      "path": "/content/screens/media_13b36a93e275a75ee0fff25d0be7a9475262531e1.png",
+      "path": "/content/screens/org-amitabh/media_13b36a93e275a75ee0fff25d0be7a9475262531e1.png",
       "hash": "13b36a93e275a75ee0fff25d0be7a9475262531e1"
     },
     {

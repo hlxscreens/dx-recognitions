@@ -1,0 +1,79 @@
+{
+  "version": "3.0",
+  "timestamp": 1698324592412,
+  "entries": [
+    {
+      "path": "/content/screens/org-amitabh/org-gitesh/varu/main.html",
+      "timestamp": 1698324592412
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-gitesh/varu/media_13b36a93e275a75ee0fff25d0be7a9475262531e1.png",
+      "hash": "13b36a93e275a75ee0fff25d0be7a9475262531e1"
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-gitesh/varu/recognitions.json",
+      "timestamp": 1698320314000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1698324416000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1695813093000
+    },
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1698324416000
+    },
+    {
+      "path": "/icons/not-found.png",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
+      "timestamp": 1695813095000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
+      "timestamp": 1695813095000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
+      "timestamp": 1695813095000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1695813094000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1695813094000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
