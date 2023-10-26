@@ -5,7 +5,7 @@
   "plugins": [
     {
       "id": "edit-preview",
-      "excludePaths": [ "**spreadsheets**" ]
+      "excludePaths": [ "**recognitions.xlsx**" ]
     },
     {
       "id": "publish",
@@ -19,7 +19,7 @@
       "passReferrer": true,
       "url": "/tools/preview-sheet/index.html",
       "excludePaths": [ "**" ],
-      "includePaths": [ "**spreadsheets**" ]
+      "includePaths": [ "**recognitions.xlsx**" ]
     },
     {
       "id": "publish-channel-doc",
