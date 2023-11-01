@@ -4,22 +4,9 @@
   "previewUrl": "dx-recognitions-prev.aem-screens.net",
   "plugins": [
     {
-      "id": "edit-preview",
-      "excludePaths": [ "**recognitions.xlsx**" ]
-    },
-    {
       "id": "publish",
       "excludePaths": [ "**" ],
       "environments": ["preview"]
-    },
-    {
-      "id": "preview-sheet",
-      "title": "Preview",
-      "passConfig": true,
-      "passReferrer": true,
-      "url": "/tools/preview-sheet/index.html",
-      "excludePaths": [ "**" ],
-      "includePaths": [ "**recognitions.xlsx**" ]
     },
     {
       "id": "publish-channel-doc",
