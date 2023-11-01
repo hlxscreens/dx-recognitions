@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1698836354000,
+  "timestamp": 1698836775000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-gitesh/main.html",
@@ -95,13 +95,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/arora/recognitions.json",
-      "timestamp": 1698336528000
-    },
-    {
-      "path": "/is/image/IMGDIR/chiki"
-    },
-    {
-      "path": "/is/image/IMGDIR/mohiaror"
+      "timestamp": 1698836775000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/abhayj/recognitions.json",
