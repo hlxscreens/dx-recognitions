@@ -57,7 +57,7 @@ const getAssets = async (host, path) => {
   for (let sheetIndex = 0; sheetIndex < sheetDetails.length; sheetIndex += 1) {
     try {
       assets.push(sheetDetails[sheetIndex].link);
-      const resp = await FetchUtils.fetchDataWithMethod(host, sheetDetails[sheetIndex].link, 'GET');
+      const resp = await FetchUtils.fetchDataWithMethod(host, sheetDetails[sheetIndex].link, 'GET', {'X-Client-Type': "franklin"});
       const sheetDataResponse = await resp.json();
       if (!sheetDataResponse) {
         console.warn(`Invalid sheet Link ${JSON.stringify(sheetDetails[sheetIndex])}. Skipping processing this one.`);
