@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1698835779000,
+  "timestamp": 1698837287000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-gitesh/ssahni/main.html",
@@ -8,7 +8,7 @@
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1695813096000
+      "timestamp": 1693984897000
     },
     {
       "path": "/scripts/scripts.js",
@@ -28,10 +28,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/ssahni/recognitions.json",
-      "timestamp": 1698380219000
-    },
-    {
-      "path": "/is/image/IMGDIR/malpani"
+      "timestamp": 1698837287000
     },
     {
       "path": "/blocks/carousel/carousel.js",
