@@ -33,10 +33,10 @@ const extractMediaFromPath = (path) => {
 };
 
 async function buildCarouselFromSheet(block) {
-  const fetchData = async (url) => {
+  const fetchData = async (url, options = {}) => {
     let result = '';
     try {
-      result = fetch(url)
+      result = fetch(url, options)
         .then((response) => {
           if (!response.ok) {
             throw new Error(`request to fetch ${url} failed with status code ${response.status}`);
@@ -93,7 +93,7 @@ async function buildCarouselFromSheet(block) {
     for (let sheetIndex = 0; sheetIndex < sheetDetails.length; sheetIndex += 1) {
       try {
         // eslint-disable-next-line no-await-in-loop
-        const sheetDataResponse = JSON.parse(await fetchData(sheetDetails[sheetIndex].link));
+        const sheetDataResponse = JSON.parse(await fetchData(sheetDetails[sheetIndex].link, {redirect: "manual"}));
         if (!sheetDataResponse) {
           console.warn(`Invalid sheet Link ${JSON.stringify(sheetDetails[sheetIndex])}.Skipping processing this one.`);
         } else {
