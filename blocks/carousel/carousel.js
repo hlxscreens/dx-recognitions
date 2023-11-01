@@ -97,7 +97,7 @@ async function buildCarouselFromSheet(block) {
     for (let sheetIndex = 0; sheetIndex < sheetDetails.length; sheetIndex += 1) {
       try {
         // eslint-disable-next-line no-await-in-loop
-        const sheetDataResponse = JSON.parse(await fetchData(sheetDetails[sheetIndex].link, 'GET', {'User-Agent': "franklin"}));
+        const sheetDataResponse = JSON.parse(await fetchData(sheetDetails[sheetIndex].link, 'GET', {'X-Client-Type': "franklin"}));
         if (!sheetDataResponse) {
           console.warn(`Invalid sheet Link ${JSON.stringify(sheetDetails[sheetIndex])}.Skipping processing this one.`);
         } else {
