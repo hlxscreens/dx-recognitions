@@ -86,18 +86,31 @@ const getAssets = async (host, path) => {
 };
 
 async function processFragments($, host) {
-  const links = $('main .fragment a');
-  const fragmentPaths = [];
-  $(links).each(async (_i, link) => {
-    fragmentPaths.push($(link).attr('href'));
-  });
-
   const assets = [];
-  // eslint-disable-next-line no-restricted-syntax
-  for (const fragmentPath of fragmentPaths) {
-    const fragmentAssets = await getAssets(host, fragmentPath);
-    assets.push(...fragmentAssets);
+
+  const links = $('main .fragment a');
+  if (links.length > 0) {
+    const fragmentPaths = [];
+    $(links).each(async (_i, link) => {
+      fragmentPaths.push($(link).attr('href'));
+    });
+
+    // eslint-disable-next-line no-restricted-syntax
+    for (const path of fragmentPaths) {
+      const fragmentFranklinMarkup = await getFranklinMarkup(host, path);
+      console.log('loading fragmentFranklinMarkup=', fragmentFranklinMarkup);
+      const nestedMarkup = load(fragmentFranklinMarkup);
+      const nestedLinks = nestedMarkup('main .fragment a');
+      if (nestedLinks.length > 0) {
+        const nestedAssets = await processFragments(nestedMarkup, host);
+        assets.push(...nestedAssets);
+      } else {
+        const singleFragmentAssets = await getAssets(host, path);
+        assets.push(...singleFragmentAssets);
+      }
+    }
   }
+
   assets.push('/blocks/fragment/fragment.js');
   assets.push('/blocks/fragment/fragment.css');
   return assets;
