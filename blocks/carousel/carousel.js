@@ -8,6 +8,7 @@ import {
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
 const DEFAULT_HEADING = 'DX India Recognitions';
+const NO_HEADING = 'No Heading';
 // 1 image - 400x400, 2 images - 330x330, 3 images - 273x273, 4 images - 256x256, 5 images - 227x227
 const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 const TIMEOUTS = {
@@ -147,7 +148,9 @@ async function buildCarouselFromSheet(block) {
 
       const heading = createDivWithClass('carousel-item-heading');
       if (asset.heading) {
-        heading.innerText = asset.heading;
+        if (asset.heading.toLowerCase() !== NO_HEADING.toLowerCase()) {
+          heading.innerText = asset.heading;
+        }
       } else {
         heading.innerText = DEFAULT_HEADING;
       }
