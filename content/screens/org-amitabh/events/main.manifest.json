@@ -1,0 +1,87 @@
+{
+  "version": "3.0",
+  "timestamp": 1699378773800,
+  "entries": [
+    {
+      "path": "/content/screens/org-amitabh/events/main.html",
+      "timestamp": 1699378773800
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1699357222000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1695813093000
+    },
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1698324416000
+    },
+    {
+      "path": "/icons/not-found.png",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
+      "timestamp": 1695813095000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
+      "timestamp": 1695813095000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
+      "timestamp": 1695813095000
+    },
+    {
+      "path": "/content/screens/org-amitabh/events/happy-diwali/recognitions.json",
+      "timestamp": 1699366296000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1695813094000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1695813094000
+    },
+    {
+      "path": "/content/screens/org-amitabh/events/happy-diwali/main.html",
+      "timestamp": 1699354788000
+    },
+    {
+      "path": "/content/screens/org-amitabh/events/media_153dbe33648bbf68ee007ec428b2cb72a42eac8a6.png",
+      "hash": "153dbe33648bbf68ee007ec428b2cb72a42eac8a6"
+    },
+    {
+      "path": "/content/screens/org-amitabh/events/happy-diwali/main.plain.html",
+      "timestamp": 1699354788000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}

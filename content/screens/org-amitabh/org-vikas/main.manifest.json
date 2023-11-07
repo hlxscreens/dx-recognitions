@@ -1,0 +1,79 @@
+{
+  "version": "3.0",
+  "timestamp": 1699378774802,
+  "entries": [
+    {
+      "path": "/content/screens/org-amitabh/org-vikas/main.html",
+      "timestamp": 1699378774802
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-vikas/media_1faab2c06d663faadc55a27e2102f012522ff958b.png",
+      "hash": "1faab2c06d663faadc55a27e2102f012522ff958b"
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-vikas/recognitions.json",
+      "timestamp": 1699350381000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1699357222000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1695813093000
+    },
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1698324416000
+    },
+    {
+      "path": "/icons/not-found.png",
+      "timestamp": 1695813096000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
+      "timestamp": 1695813095000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
+      "timestamp": 1695813095000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
+      "timestamp": 1695813095000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1695813094000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1695813094000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}

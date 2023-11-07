@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-11-07T11:40:22.000Z",
+      "lastModified": "2023-11-07T14:04:16.000Z",
       "externalId": "/content/screens/main",
       "title": "Adobe Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/main.html"
@@ -51,7 +51,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2023-11-07T11:40:22.000Z",
+      "lastModified": "2023-11-07T17:39:31.922Z",
       "externalId": "/content/screens/org-amitabh/main",
       "title": "DX India Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html"
@@ -69,6 +69,76 @@
       "externalId": "/content/screens/org-amitabh/org-gitesh/ssahni/main",
       "title": "Org Siddharth Sahni Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/ssahni/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-anup/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:32.991Z",
+      "externalId": "/content/screens/org-amitabh/org-anup/main",
+      "title": "Org Anup Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-anup/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-balaji/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:33.164Z",
+      "externalId": "/content/screens/org-amitabh/org-balaji/main",
+      "title": "Org Balaji Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-balaji/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/events/happy-diwali/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:33.536Z",
+      "externalId": "/content/screens/org-amitabh/events/happy-diwali/main",
+      "title": "DX India Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/events/happy-diwali/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/events/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:33.800Z",
+      "externalId": "/content/screens/org-amitabh/events/main",
+      "title": "DX India Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/events/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-manoj/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:33.959Z",
+      "externalId": "/content/screens/org-amitabh/org-manoj/main",
+      "title": "Org Manoj Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-manoj/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:34.140Z",
+      "externalId": "/content/screens/org-amitabh/org-sanjay-kaluskar/main",
+      "title": "Org Sanjay Kaluskar Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-sanjay-kaluskar/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-sanjay-kumar/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:34.299Z",
+      "externalId": "/content/screens/org-amitabh/org-sanjay-kumar/main",
+      "title": "Org Sanjay Kumar Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-sanjay-kumar/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-gaurav/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:34.464Z",
+      "externalId": "/content/screens/org-amitabh/org-gaurav/main",
+      "title": "Org Gaurav Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gaurav/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-suvrat/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:34.630Z",
+      "externalId": "/content/screens/org-amitabh/org-suvrat/main",
+      "title": "Org Suvrat Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-suvrat/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-vikas/main.manifest.json",
+      "lastModified": "2023-11-07T17:39:34.802Z",
+      "externalId": "/content/screens/org-amitabh/org-vikas/main",
+      "title": "Org Vikas Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-vikas/main.html"
     }
   ],
   "metadata": {
