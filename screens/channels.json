@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-11-08T06:34:21.000Z",
+      "lastModified": "2023-11-08T10:20:26.000Z",
       "externalId": "/content/screens/main",
       "title": "Adobe Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/main.html"
@@ -51,7 +51,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2023-11-08T06:34:21.000Z",
+      "lastModified": "2023-11-08T10:20:26.000Z",
       "externalId": "/content/screens/org-amitabh/main",
       "title": "DX India Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html"
@@ -86,14 +86,14 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/happy-diwali/main.manifest.json",
-      "lastModified": "2023-11-08T06:36:55.934Z",
+      "lastModified": "2023-11-08T10:24:16.799Z",
       "externalId": "/content/screens/org-amitabh/events/happy-diwali/main",
       "title": "DX India Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/events/happy-diwali/main.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/main.manifest.json",
-      "lastModified": "2023-11-08T06:34:21.000Z",
+      "lastModified": "2023-11-08T10:20:26.000Z",
       "externalId": "/content/screens/org-amitabh/events/main",
       "title": "DX India Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/events/main.html"
