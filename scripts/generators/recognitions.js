@@ -66,7 +66,7 @@ const getAssets = async (host, path) => {
         for (let row = 0; row < sheetData.length; row += 1) {
           try {
             const assetDetails = sheetData[row];
-            const profileImages = assetDetails.LDAP ? assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap.trim()}`) : [];
+            const profileImages = assetDetails.LDAP ? assetDetails.LDAP.split(',').map((ldap) => `/is/image/IMGDIR/${ldap.toLowerCase().trim()}`) : [];
             if (assetDetails['Image URL']) {
               assets.push(extractMediaFromPath(assetDetails['Image URL']));
             }
