@@ -10,8 +10,12 @@ const getFranklinMarkup = async (host, path) => {
 };
 
 const checkIfProfileImageExists = async (path) => {
-  const resp = await FetchUtils.fetchDataWithMethod('https://s7d2.scene7.com', path, 'GET', { referer: 'https://inside.corp.adobe.com/' });
-  return resp.status === 200;
+  try {
+    const resp = await FetchUtils.fetchDataWithMethod('https://s7d2.scene7.com', path, 'GET', { referer: 'https://inside.corp.adobe.com/' });    
+    return resp.status === 200;
+  } catch (e) {
+    return false;
+  }
 };
 
 const extractMediaFromPath = (path) => {
@@ -107,7 +111,7 @@ async function processFragments($, host) {
     // eslint-disable-next-line no-restricted-syntax
     for (const path of fragmentPaths) {
       const fragmentFranklinMarkup = await getFranklinMarkup(host, path);
-      console.log('loading fragmentFranklinMarkup=', fragmentFranklinMarkup);
+      // console.log('loading fragmentFranklinMarkup=', fragmentFranklinMarkup);
       const nestedMarkup = load(fragmentFranklinMarkup);
       const nestedLinks = nestedMarkup('main .fragment a');
       if (nestedLinks.length > 0) {
