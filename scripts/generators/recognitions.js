@@ -9,6 +9,11 @@ const getFranklinMarkup = async (host, path) => {
   return resp.text();
 };
 
+const checkIfProfileImageExists = async (path) => {
+  const resp = await FetchUtils.fetchDataWithMethod('https://s7d2.scene7.com', path, 'GET', { referer: 'https://inside.corp.adobe.com/' });
+  return resp.status === 200;
+};
+
 const extractMediaFromPath = (path) => {
   if (path.indexOf('#') >= 0) {
     return `${path.trim().substring(path.indexOf('/media_'), path.indexOf('#'))}`;
@@ -70,8 +75,12 @@ const getAssets = async (host, path) => {
             if (assetDetails['Image URL']) {
               assets.push(extractMediaFromPath(assetDetails['Image URL']));
             }
-            if (profileImages.length > 0) {
-              assets.push(...profileImages);
+
+            for (let i = 0; i < profileImages.length; i++) {
+              const profileImageExists = await checkIfProfileImageExists(profileImages[i]);
+              if (profileImageExists) {
+                assets.push(profileImages[i]);
+              }
             }
           } catch (err) {
             console.warn(`Error while processing asset ${JSON.stringify(sheetData[row])}`, err);
