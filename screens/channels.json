@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-11-16T08:35:15.000Z",
+      "lastModified": "2023-11-16T08:46:24.000Z",
       "externalId": "/content/screens/main",
       "title": "Adobe Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/main.html"
@@ -37,21 +37,21 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/varu/main.manifest.json",
-      "lastModified": "2023-11-16T08:35:15.000Z",
+      "lastModified": "2023-11-16T08:44:30.000Z",
       "externalId": "/content/screens/org-amitabh/org-gitesh/varu/main",
       "title": "Org Varun Bhatia Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/varu/main.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/main.manifest.json",
-      "lastModified": "2023-11-16T08:35:15.000Z",
+      "lastModified": "2023-11-16T09:07:36.767Z",
       "externalId": "/content/screens/org-amitabh/org-gitesh/main",
       "title": "Org Gitesh Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/main.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2023-11-16T08:35:15.000Z",
+      "lastModified": "2023-11-16T08:46:24.000Z",
       "externalId": "/content/screens/org-amitabh/main",
       "title": "DX India Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html"
@@ -139,6 +139,13 @@
       "externalId": "/content/screens/org-amitabh/org-vikas/main",
       "title": "Org Vikas Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-vikas/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-gitesh/all/main.manifest.json",
+      "lastModified": "2023-11-16T09:07:39.060Z",
+      "externalId": "/content/screens/org-amitabh/org-gitesh/all/main",
+      "title": "Org Gitesh direct Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/all/main.html"
     }
   ],
   "metadata": {
