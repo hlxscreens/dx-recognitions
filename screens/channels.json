@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-11-16T07:52:54.000Z",
+      "lastModified": "2023-11-16T08:35:15.000Z",
       "externalId": "/content/screens/main",
       "title": "Adobe Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/main.html"
@@ -37,21 +37,21 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/varu/main.manifest.json",
-      "lastModified": "2023-11-16T07:52:54.000Z",
+      "lastModified": "2023-11-16T08:35:15.000Z",
       "externalId": "/content/screens/org-amitabh/org-gitesh/varu/main",
       "title": "Org Varun Bhatia Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/varu/main.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/main.manifest.json",
-      "lastModified": "2023-11-16T08:13:41.000Z",
+      "lastModified": "2023-11-16T08:35:15.000Z",
       "externalId": "/content/screens/org-amitabh/org-gitesh/main",
       "title": "Org Gitesh Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/main.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2023-11-16T07:52:54.000Z",
+      "lastModified": "2023-11-16T08:35:15.000Z",
       "externalId": "/content/screens/org-amitabh/main",
       "title": "DX India Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html"
