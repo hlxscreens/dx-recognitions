@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1700127714000,
+  "timestamp": 1700128743000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-gitesh/all/main.html",
@@ -28,16 +28,13 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/all/recognitions.json",
-      "timestamp": 1700127714000
+      "timestamp": 1700128743000
     },
     {
       "path": "/is/image/IMGDIR/shaifali"
     },
     {
       "path": "/is/image/IMGDIR/shivani"
-    },
-    {
-      "path": "/is/image/IMGDIR/anujmaha"
     },
     {
       "path": "/blocks/carousel/carousel.js",
