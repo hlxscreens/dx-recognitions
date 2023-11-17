@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-11-16T14:48:47.000Z",
+      "lastModified": "2023-11-17T08:14:18.000Z",
       "externalId": "/content/screens/main",
       "title": "Adobe Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/main.html"
@@ -51,7 +51,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2023-11-16T14:48:47.000Z",
+      "lastModified": "2023-11-17T08:14:18.000Z",
       "externalId": "/content/screens/org-amitabh/main",
       "title": "DX India Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html"
@@ -72,7 +72,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-anup/main.manifest.json",
-      "lastModified": "2023-11-16T11:14:37.000Z",
+      "lastModified": "2023-11-17T05:32:02.000Z",
       "externalId": "/content/screens/org-amitabh/org-anup/main",
       "title": "Org Anup Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-anup/main.html"
@@ -135,7 +135,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-vikas/main.manifest.json",
-      "lastModified": "2023-11-16T14:48:47.000Z",
+      "lastModified": "2023-11-17T08:14:18.000Z",
       "externalId": "/content/screens/org-amitabh/org-vikas/main",
       "title": "Org Vikas Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-vikas/main.html"
