@@ -1,14 +1,14 @@
 {
   "version": "3.0",
-  "timestamp": 1700045484000,
+  "timestamp": 1700461723608,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/events/main.html",
-      "timestamp": 1699365856000
+      "timestamp": 1700461723608
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1693984897000
+      "timestamp": 1695813096000
     },
     {
       "path": "/scripts/scripts.js",
@@ -51,28 +51,12 @@
       "timestamp": 1695813095000
     },
     {
-      "path": "/content/screens/org-amitabh/events/happy-diwali/recognitions.json",
-      "timestamp": 1699423341000
-    },
-    {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1694688044000
+      "timestamp": 1695813094000
     },
     {
       "path": "/blocks/fragment/fragment.css",
       "timestamp": 1695813094000
-    },
-    {
-      "path": "/content/screens/org-amitabh/events/happy-diwali/main.html",
-      "timestamp": 1699438826000
-    },
-    {
-      "path": "/content/screens/org-amitabh/events/media_153dbe33648bbf68ee007ec428b2cb72a42eac8a6.png",
-      "hash": "153dbe33648bbf68ee007ec428b2cb72a42eac8a6"
-    },
-    {
-      "path": "/content/screens/org-amitabh/events/happy-diwali/main.plain.html",
-      "timestamp": 1699438826000
     }
   ],
   "contentDelivery": {
