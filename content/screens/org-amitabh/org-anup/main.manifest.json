@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1700220167000,
+  "timestamp": 1700562823000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-anup/main.html",
@@ -28,7 +28,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-anup/recognitions.json",
-      "timestamp": 1700220167000
+      "timestamp": 1700562823000
     },
     {
       "path": "/is/image/IMGDIR/utkarshsingh"
@@ -44,6 +44,12 @@
     },
     {
       "path": "/is/image/IMGDIR/prashantr"
+    },
+    {
+      "path": "/is/image/IMGDIR/anathani"
+    },
+    {
+      "path": "/is/image/IMGDIR/raghugup"
     },
     {
       "path": "/blocks/carousel/carousel.js",
