@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1700045484000,
+  "timestamp": 1700645274000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-manoj/main.html",
@@ -28,7 +28,11 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-manoj/recognitions.json",
-      "timestamp": 1699344375000
+      "timestamp": 1700645274000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-manoj/media_1290ad08f7a321d63552df0efa980409597c99328.jpeg",
+      "hash": "1290ad08f7a321d63552df0efa980409597c99328"
     },
     {
       "path": "/blocks/carousel/carousel.js",
