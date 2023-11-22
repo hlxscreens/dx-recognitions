@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-11-22T04:18:29.000Z",
+      "lastModified": "2023-11-22T06:16:24.000Z",
       "externalId": "/content/screens/main",
       "title": "Adobe Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/main.html"
@@ -51,7 +51,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2023-11-22T04:18:29.000Z",
+      "lastModified": "2023-11-22T06:16:24.000Z",
       "externalId": "/content/screens/org-amitabh/main",
       "title": "DX India Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html"
@@ -128,7 +128,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-suvrat/main.manifest.json",
-      "lastModified": "2023-11-15T10:51:24.000Z",
+      "lastModified": "2023-11-22T06:16:24.000Z",
       "externalId": "/content/screens/org-amitabh/org-suvrat/main",
       "title": "Org Suvrat Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-suvrat/main.html"
