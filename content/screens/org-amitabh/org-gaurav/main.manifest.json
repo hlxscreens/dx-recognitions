@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1700045484000,
+  "timestamp": 1700737169908,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-gaurav/main.html",
-      "timestamp": 1699285284000
+      "timestamp": 1700737169908
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -19,8 +19,8 @@
       "timestamp": 1695813096000
     },
     {
-      "path": "/content/screens/org-amitabh/org-gaurav/media_1faab2c06d663faadc55a27e2102f012522ff958b.png",
-      "hash": "1faab2c06d663faadc55a27e2102f012522ff958b"
+      "path": "/content/screens/org-amitabh/org-gaurav/media_17dfdf41852715fee8124ac6d1e9c54332c4afe67.png",
+      "hash": "17dfdf41852715fee8124ac6d1e9c54332c4afe67"
     },
     {
       "path": "/styles/lazy-styles.css",
@@ -28,7 +28,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gaurav/recognitions.json",
-      "timestamp": 1700033448000
+      "timestamp": 1700115345000
     },
     {
       "path": "/is/image/IMGDIR/shathaku"
@@ -77,6 +77,9 @@
     },
     {
       "path": "/is/image/IMGDIR/vipverma"
+    },
+    {
+      "path": "/is/image/IMGDIR/naveenk"
     },
     {
       "path": "/blocks/carousel/carousel.js",
