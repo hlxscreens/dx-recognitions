@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1700735489000,
+  "timestamp": 1700801121000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/main.html",
@@ -200,7 +200,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kumar/recognitions.json",
-      "timestamp": 1700735489000
+      "timestamp": 1700801121000
     },
     {
       "path": "/is/image/IMGDIR/paahuja"
@@ -219,6 +219,9 @@
     },
     {
       "path": "/is/image/IMGDIR/mekumari"
+    },
+    {
+      "path": "/is/image/IMGDIR/skathuria"
     },
     {
       "path": "/content/screens/org-amitabh/org-suvrat/recognitions.json",
