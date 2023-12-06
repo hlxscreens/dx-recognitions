@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2023-12-06T06:20:53.000Z",
+      "lastModified": "2023-12-06T07:01:14.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -161,7 +161,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2023-12-06T06:20:53.000Z",
+      "lastModified": "2023-12-06T07:01:14.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -249,7 +249,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-balaji/main.manifest.json",
-      "lastModified": "2023-12-06T06:20:53.000Z",
+      "lastModified": "2023-12-06T07:01:14.000Z",
       "hierarchy": [
         {
           "title": "screens",
