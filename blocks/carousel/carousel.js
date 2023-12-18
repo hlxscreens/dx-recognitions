@@ -229,7 +229,7 @@ export default async function decorate(block) {
   const carouselItems = carouselTrack.querySelectorAll('.carousel-item');
   const totalItems = carouselItems.length;
   let currentIndex = -1;
-  const DEFAULT_ITEM_DURATION = 8 * 1000;
+  const DEFAULT_ITEM_DURATION = 10 * 1000;
 
   if (totalItems === 0) {
     return;
