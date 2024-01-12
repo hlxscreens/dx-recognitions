@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1705048343159,
+  "timestamp": 1705048782000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-gitesh/main.html",
@@ -68,10 +68,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/varu/recognitions.json",
-      "timestamp": 1705048049000
-    },
-    {
-      "path": "/is/image/IMGDIR/anujmaha"
+      "timestamp": 1705048782000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/kasingh/recognitions.json",
@@ -119,7 +116,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/varu/main.html",
-      "timestamp": 1705048343159
+      "timestamp": 1705048343000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/varu/main.plain.html",
