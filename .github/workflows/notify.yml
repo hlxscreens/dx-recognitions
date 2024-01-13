@@ -22,13 +22,17 @@ jobs:
     - name: Identify Changes
       run: |
         # Get the SHA of the last commit
+        echo "Starting..."
         LAST_COMMIT_SHA=$(git rev-parse HEAD)
+        echo "Last Commit SHA: $LAST_COMMIT_SHA"
         
         # Get the URL of the last commit
         LAST_COMMIT_URL=$(git log -1 --pretty=format:'%b' | grep -o 'https://github.com/.*' | head -n1)
+        echo "Last Commit URL: $LAST_COMMIT_URL"
         
         # Get the list of changed files in the last commit
         CHANGED_FILES=$(git diff --name-only $LAST_COMMIT_SHA^ $LAST_COMMIT_SHA)
+        echo "CHANGED FILES: $CHANGED_FILES"
         
         # Print the list of changed files
         echo "Changed Files:"
