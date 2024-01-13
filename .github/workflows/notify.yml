@@ -1,0 +1,44 @@
+name: Notify Changes
+
+on:
+  workflow_run:
+    workflows: ["Generate Screens offline resources for franklin channels"]
+    types:
+      - completed
+
+jobs:
+  identify-changes:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Identify Changes
+      run: |
+        # Get the SHA of the last commit
+        LAST_COMMIT_SHA=$(git rev-parse HEAD)
+        
+        # Get the URL of the last commit
+        LAST_COMMIT_URL=$(git log -1 --pretty=format:'%b' | grep -o 'https://github.com/.*' | head -n1)
+        
+        # Get the list of changed files in the last commit
+        CHANGED_FILES=$(git diff --name-only $LAST_COMMIT_SHA^ $LAST_COMMIT_SHA)
+        
+        # Print the list of changed files
+        echo "Changed Files:"
+        echo "$CHANGED_FILES"
+
+        # Extract the desired part of the path
+        EXTRACTED_PATH=$(echo "$CHANGED_FILES" | sed -n 's|^content/screens/org-amitabh/\(.*\)/main\.manifest\.json$|\1|p')
+        
+        # Print the extracted path
+        echo "Extracted Path:"
+        echo "$EXTRACTED_PATH"
+
+        # Send email notification with commit link to multiple email addresses
+        SUBJECT="DX Recognition - Orgs updated"
+        BODY="Orgs updated: $EXTRACTED_PATH\n\nLast Commit URL: $LAST_COMMIT_URL"
+        echo -e "$BODY" | mail -s "$SUBJECT" anujmaha@adobe.com
+
+      shell: bash
