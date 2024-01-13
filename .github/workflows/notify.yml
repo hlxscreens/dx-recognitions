@@ -44,6 +44,6 @@ jobs:
         # Send email notification with commit link to multiple email addresses
         SUBJECT="DX Recognition - Orgs updated"
         BODY="Orgs updated: $EXTRACTED_PATH\n\nLast Commit URL: $LAST_COMMIT_URL"
-        echo -e "$BODY" | mail -s "$SUBJECT" anujmaha@adobe.com
+        # echo -e "$BODY" | mail -s "$SUBJECT" anujmaha@adobe.com
 
       shell: bash
