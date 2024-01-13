@@ -40,13 +40,14 @@ const publishAndCacheClear = async (owner, repo, ref, path) => {
     throw new Error(`Could not previewed. Status: ${response.status}`);
   }
 
-  response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
+  //cache purge failing with 401 error
+  /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
 
   if (response.ok) {
     console.log(`Purge cache ${new Date().toLocaleString()}`);
   } else {
     throw new Error(`Could not purge cache. Status: ${response.status}`);
-  }
+  }*/
 };
 
 const publishAndRedirect = async () => {
