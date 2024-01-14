@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1705137587000,
+  "timestamp": 1705247987000,
   "entries": [
     {
       "path": "/content/screens/main.html",
@@ -221,10 +221,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/varu/recognitions.json",
-      "timestamp": 1705137587000
-    },
-    {
-      "path": "/is/image/IMGDIR/anujmaha"
+      "timestamp": 1705247987000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/kasingh/recognitions.json",
