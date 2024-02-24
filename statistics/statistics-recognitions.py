@@ -27,7 +27,7 @@ def analyze_recognitions(data):
 
     return total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions
 
-def plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions):
+def plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time):
     labels = ['Total Recognitions', 'Active Recognitions', 'Custom Image URLs', 'Descriptions > 50', 'End Date Missing']
     values = [total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions]
 
