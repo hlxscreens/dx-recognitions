@@ -32,7 +32,7 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
     values = [total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions]
 
     plt.figure(figsize=(10, 6))
-    plt.bar(labels, values, color=['blue', 'green', 'orange', 'red', 'red'])
+    bars = plt.bar(labels, values, color=['blue', 'green', 'orange', 'red', 'red'])
     plt.title(f'Statistics for {org_name}')
     plt.xlabel('Categories')
     plt.ylabel('Counts')
