@@ -1,0 +1,26 @@
+name: Recognitions Status
+
+on:
+  push:
+    branches:
+      - statusTracking
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Dependencies
+      run: |
+        pip install requests matplotlib  # Add other dependencies as needed
+
+    - name: Run Python Script
+      run: python compare_json.py  # Replace with your Python script name
