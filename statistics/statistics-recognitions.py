@@ -43,7 +43,7 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
             plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom')
 
     # Add modified time text
-    plt.text(0, -0.2, f"Last Modified: {modified_time}", transform=plt.gca().transAxes)
+    plt.text(0.05, 1.05, f"Last Modified Recognitions: {modified_time}", ha='left', va='center', transform=plt.gca().transAxes)
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
