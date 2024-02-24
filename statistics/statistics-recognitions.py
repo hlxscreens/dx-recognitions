@@ -28,18 +28,29 @@ def analyze_recognitions(data):
     return total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions
 
 def plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions):
-    labels = ['Total Recognitions', 'Active Recognitions', 'Descriptions > 50', 'Custom Image URLs']
-    values = [total_recognitions, active_recognitions, descriptions_over_50, custom_image_urls]
+    labels = ['Total Recognitions', 'Active Recognitions', 'Custom Image URLs', 'Descriptions > 50', 'End Date Missing']
+    values = [total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions]
 
     plt.figure(figsize=(10, 6))
-    plt.bar(labels, values, color=['blue', 'green', 'orange', 'red'])
+    plt.bar(labels, values, color=['blue', 'green', 'orange', 'red', 'red'])
     plt.title(f'Statistics for {org_name}')
     plt.xlabel('Categories')
     plt.ylabel('Counts')
     plt.xticks(rotation=45)
+
+    for bar, value in zip(bars, values):
+        if value != 0:
+            plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom')
+
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
     plt.show()
+
+def get_org_name(org_url):
+    parts = org_url.split('/')
+    for part in reversed(parts):
+        if part.startswith("org-"):
+            return part
 
 def main():
     org_urls = [
@@ -59,7 +70,7 @@ def main():
 
         if data:
             total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions = analyze_recognitions(data)
-            org_name = org_url.split('/')[-2]  # Extract org name from URL
+            org_name = get_org_name(org_url)[len("org-"):]  # Extract org name from URL
             plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions)
 
 if __name__ == "__main__":
