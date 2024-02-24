@@ -69,10 +69,10 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
                 response = requests.get(image_url, headers=headers)
                 if response.status_code == 200:
                     image_data = Image.open(BytesIO(response.content))
-                    ax = axs[1].subplots(num_rows, num_cols, i+1)
-                    ax.imshow(image_data)
-                    ax.axis('off')
-                    ax.set_title(f'Image {i+1}')
+                    row = i // num_cols
+                    col = i % num_cols
+                    axs[1].imshow(image_data, extent=[col, col+1, row, row+1])
+                    axs[1].axis('off')
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
