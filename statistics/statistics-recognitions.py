@@ -34,7 +34,7 @@ def plot_data(org_name, total_recognitions, active_recognitions, descriptions_ov
     plt.ylabel('Counts')
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig(f'../status/{org_name}_statistics.png')
+    plt.savefig(f'{org_name}_statistics.png')
     plt.show()
 
 def main():

@@ -1,6 +1,9 @@
-name: Recognitions Status
+name: Recognitions Statistics
 
 on:
+  push:
+    branches:
+      - statusTracking
   workflow_dispatch:
 
 jobs:
@@ -10,6 +13,11 @@ jobs:
       contents: write
 
     steps:
+    - name: Check if commit is by GitHub Actions
+      run: |
+        echo "Commit author: ${{ github.event.head_commit.author.username }}"
+      id: check_commit_author
+
     - name: Checkout Repository
       uses: actions/checkout@v2
 
@@ -23,15 +31,17 @@ jobs:
         pip install requests matplotlib  # Add other dependencies as needed
 
     - name: Run Python Script
-      run: python ./scripts/compare_json.py
+      run: python ./statistics/statistics-recognitions.py
 
-    - name: Commit files # transfer the generated manifest files back into the repository
+    - name: Commit files # transfer the generated files back into the repository
+      if: ${{ steps.check_commit_author.outputs.commit_author != 'github-actions' }}
       run: |
         git config --local user.name  ${{ github.actor }}
         git config --local user.email "<>"
         git add .
-        git commit -m "Recognition Status"
-    - name: Push changes  # push the generated Screens offline resources to your repo
+        git commit -m "Recognitions Statistics"
+    - name: Push changes  # push the generated files to your repo
+      if: ${{ steps.check_commit_author.outputs.commit_author != 'github-actions' }}
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
