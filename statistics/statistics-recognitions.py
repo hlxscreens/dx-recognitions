@@ -96,7 +96,7 @@ def main():
         data = fetch_json_data(org_url)
 
         if data:
-            org_manifest_url = generate_manifest_url(recognition_url)
+            org_manifest_url = generate_manifest_url(org_url)
             modified_time = fetch_last_modified_time(org_manifest_url, org_url)
             total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions = analyze_recognitions(data)
             org_name = get_org_name(org_url)[len("org-"):]  # Extract org name from URL
