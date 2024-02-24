@@ -33,7 +33,7 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
 
     plt.figure(figsize=(10, 6))
     bars = plt.bar(labels, values, color=['blue', 'green', 'orange', 'red', 'red'])
-    plt.title(f'Statistics for {org_name}')
+    plt.title(f'Statistics for org-{org_name}')
     plt.xlabel('Categories')
     plt.ylabel('Counts')
     plt.xticks(rotation=45)
@@ -41,6 +41,9 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
     for bar, value in zip(bars, values):
         if value != 0:
             plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom')
+
+    # Add modified time text
+    plt.text(0, -0.2, f"Last Modified: {modified_time}", transform=plt.gca().transAxes)
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
@@ -51,6 +54,30 @@ def get_org_name(org_url):
     for part in reversed(parts):
         if part.startswith("org-"):
             return part
+
+def generate_manifest_url(recognition_url):
+    parts = recognition_url.split('/')
+    parts[-1] = 'main.manifest.json'
+    return '/'.join(parts)
+
+def extract_path_from_url(url):
+    # Remove the domain part from the URL
+    path = url.split('https://dx-recognitions.aem-screens.net')[1]
+    return path
+
+def fetch_last_modified_time(org_manifest_url, org_recognition_url):
+    response = requests.get(org_manifest_url)
+    if response.status_code == 200:
+        manifest_data = response.json()
+        for entry in manifest_data.get('entries', []):
+            if entry.get('path') == extract_path_from_url(org_recognition_url):
+                timestamp = entry.get('timestamp')
+                if timestamp:
+                    # Convert timestamp from milliseconds to seconds
+                    modified_time = datetime.utcfromtimestamp(timestamp / 1000).strftime('%Y-%m-%d %H:%M:%S')
+                    return modified_time
+    else:
+        print(f"Failed to fetch manifest data for {org_manifest_url}")
 
 def main():
     org_urls = [
@@ -69,9 +96,11 @@ def main():
         data = fetch_json_data(org_url)
 
         if data:
+            org_manifest_url = generate_manifest_url(recognition_url)
+            modified_time = fetch_last_modified_time(org_manifest_url, org_url)
             total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions = analyze_recognitions(data)
             org_name = get_org_name(org_url)[len("org-"):]  # Extract org name from URL
-            plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions)
+            plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time)
 
 if __name__ == "__main__":
     main()
