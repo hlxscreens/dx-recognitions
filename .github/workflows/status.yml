@@ -23,4 +23,4 @@ jobs:
         pip install requests matplotlib  # Add other dependencies as needed
 
     - name: Run Python Script
-      run: python compare_json.py  # Replace with your Python script name
+      run: python ./scripts/compare_json.py
