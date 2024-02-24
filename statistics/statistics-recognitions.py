@@ -37,11 +37,11 @@ def analyze_recognitions(data):
     descriptions_over_50_count = sum(1 for recognition in recognitions if len(recognition['Description'].split()) > 50)
     no_end_date_recognitions_count = sum(1 for recognition in recognitions if not recognition.get('End Date'))
 
-    return total_recognitions_count, active_recognitions_count, custom_image_urls_count, descriptions_over_50_count, no_end_date_recognitions_count, images
+    return total_recognitions_count, active_recognitions_count, custom_image_urls_count, descriptions_over_50_count, no_end_date_recognitions_count, active_recognitions
 
-def plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time, image_urls):
+def plot_data(org_name, total_recognitions, active_recognitions_count, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time, active_recognitions):
     labels = ['Total Recognitions', 'Active Recognitions', 'Custom Image URLs', 'Descriptions > 50', 'End Date Missing']
-    values = [total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions]
+    values = [total_recognitions, active_recognitions_count, custom_image_urls, descriptions_over_50, no_end_date_recognitions]
 
     # Create figure and axes for top row (bar plot)
     fig, axs = plt.subplots(2, 1, figsize=(14, 10))
@@ -55,24 +55,15 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
     # Add modified time text
     axs[0].text(0.0, 1.05, f"Last Modified: {modified_time}", ha='left', va='center', transform=axs[0].transAxes)
 
-    # Create axes for bottom row (recognition images grid)
+    # Create axes for bottom row (recognition images grid or table)
     axs[1].axis('off')  # Hide axis for images
 
-    num_images = len(image_urls)
-    if num_images > 0:
-        num_cols = min(num_images, 4)
-        num_rows = math.ceil(num_images / num_cols)
-
-        for i, image_url in enumerate(image_urls):
-            if image_url:
-                headers = {'Referer': 'https://inside.corp.adobe.com/'}
-                response = requests.get(image_url, headers=headers)
-                if response.status_code == 200:
-                    image_data = Image.open(BytesIO(response.content))
-                    row = i // num_cols
-                    col = i % num_cols
-                    axs[1].imshow(image_data, extent=[col, col+1, row, row+1])
-                    axs[1].axis('off')
+    # If there are no images, display a table in the second subplot
+    if active_recognitions_count > 0:
+        col_labels = ['LDAP', 'Name']
+        row_labels = [recognition['LDAP'] for recognition in active_recognitions]
+        cell_text = [[recognition['LDAP'], recognition['Name']] for recognition in active_recognitions]
+        axs[1].table(cellText=cell_text, colLabels=col_labels, rowLabels=row_labels, loc='center')
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
@@ -127,9 +118,9 @@ def main():
         if data:
             org_manifest_url = generate_manifest_url(org_url)
             modified_time = fetch_last_modified_time(org_manifest_url, org_url)
-            total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, images = analyze_recognitions(data)
+            total_recognitions, active_recognitions_count, custom_image_urls, descriptions_over_50, no_end_date_recognitions, active_recognitions = analyze_recognitions(data)
             org_name = get_org_name(org_url)[len("org-"):]  # Extract org name from URL
-            plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time, images)
+            plot_data(org_name, total_recognitions, active_recognitions_count, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time, active_recognitions)
 
 if __name__ == "__main__":
     main()
