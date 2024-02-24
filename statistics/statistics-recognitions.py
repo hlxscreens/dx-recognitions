@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 from PIL import Image
 from io import BytesIO
+import math
 
 def fetch_json_data(url):
     response = requests.get(url)
@@ -42,28 +43,41 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
     labels = ['Total Recognitions', 'Active Recognitions', 'Custom Image URLs', 'Descriptions > 50', 'End Date Missing']
     values = [total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions]
 
-    plt.figure(figsize=(10, 6))
-    bars = plt.bar(labels, values, color=['blue', 'green', 'orange', 'red', 'red'])
-    plt.title(f'Statistics for org-{org_name}')
-    plt.xlabel('Categories')
-    plt.ylabel('Counts')
-    plt.xticks(rotation=45)
+    plt.figure(figsize=(14, 10))
+
+    # Create subplot for the main graph
+    ax1 = plt.subplot(2, 1, 1)
+    bars = ax1.bar(labels, values, color=['blue', 'green', 'orange', 'red', 'red'])
+    ax1.set_title(f'Statistics for org-{org_name}')
+    ax1.set_xlabel('Categories')
+    ax1.set_ylabel('Counts')
+    ax1.tick_params(axis='x', rotation=45)
 
     for bar, value in zip(bars, values):
         if value != 0:
-            plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom')
+            ax1.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom')
 
     # Add modified time text
-    plt.text(0.0, 1.05, f"Last Modified: {modified_time}", ha='left', va='center', transform=plt.gca().transAxes)
+    ax1.text(0.0, 1.0, f"Last Modified: {modified_time}", ha='left', va='center', transform=ax1.transAxes)
 
-    # Overlay images onto the plot
+    # Create subplot for the images
+    ax2 = plt.subplot(2, 1, 2)
+    ax2.axis('off')  # Hide axis for images
+
+    num_images = len(image_urls)
+    num_cols = min(num_images, 4)
+    num_rows = math.ceil(num_images / 4)
+
     for i, image_url in enumerate(image_urls):
         if image_url:
             headers = {'Referer': 'https://inside.corp.adobe.com/'}
             response = requests.get(image_url, headers=headers)
             if response.status_code == 200:
                 image_data = Image.open(BytesIO(response.content))
-                plt.imshow(image_data, extent=[i-0.2, i+0.2, 0, 0.5], aspect='auto')  # Adjust position and size as needed
+                ax2.imshow(image_data)
+                col = i % num_cols
+                row = num_rows - 1 - i // num_cols
+                ax2.set_position([col * 0.25, row * 0.25, 0.25, 0.25])
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
