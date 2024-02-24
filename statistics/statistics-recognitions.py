@@ -58,6 +58,7 @@ def plot_data(org_name, total_recognitions, active_recognitions_count, custom_im
         col_labels = ['LDAP', 'Name']
         cell_text = [[recognition['LDAP'], recognition['Name']] for recognition in active_recognitions]
         axs[1].table(cellText=cell_text, colLabels=col_labels, loc='center')
+        axs[1].set_title('Active Recognitions')
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
