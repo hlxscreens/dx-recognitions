@@ -21,7 +21,7 @@ def analyze_recognitions(data):
 
     active_recognitions = []
     for recognition in recognitions:
-        if not recognition.get('Start Date') or recognition['Start Date'] <= current_date and (not recognition.get('End Date') or recognition['End Date'] >= current_date)
+        if not recognition.get('Start Date') or recognition['Start Date'] <= current_date and (not recognition.get('End Date') or recognition['End Date'] >= current_date):
             active_recognitions.append(recognition)
 
     active_recognitions_count = len(active_recognitions)
