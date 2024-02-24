@@ -15,13 +15,16 @@ def fetch_json_data(url):
         return None
 
 def analyze_recognitions(data):
-    current_date = datetime.now().strftime("%d/%m/%Y")
+    current_date = datetime.now()
     total_recognitions_count = data['total']
     recognitions = data['data']
 
     active_recognitions = []
     for recognition in recognitions:
-        if not recognition.get('Start Date') or recognition['Start Date'] <= current_date and (not recognition.get('End Date') or recognition['End Date'] >= current_date):
+        start_date_str = recognition.get('Start Date')
+        end_date_str = recognition.get('End Date')
+
+        if not start_date_str or datetime.strptime(start_date_str, "%d/%m/%Y") <= current_date and (not end_date_str or datetime.strptime(end_date_str, "%d/%m/%Y") >= current_date):
             active_recognitions.append(recognition)
 
     active_recognitions_count = len(active_recognitions)
