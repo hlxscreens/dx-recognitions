@@ -1,9 +1,9 @@
 name: Recognitions Status
 
-on:
-  push:
-    branches:
-      - statusTracking
+#on:
+#  push:
+#    branches:
+#      - statusTracking
 
 jobs:
   build:
@@ -24,3 +24,16 @@ jobs:
 
     - name: Run Python Script
       run: python ./scripts/compare_json.py
+
+    - name: Commit files # transfer the generated manifest files back into the repository
+      run: |
+        git config --local user.name  ${{ github.actor }}
+        git config --local user.email "<>"
+        git add .
+        git commit -m "Recognition Status"
+    - name: Push changes  # push the generated Screens offline resources to your repo
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: statusTracking
+        force: true
