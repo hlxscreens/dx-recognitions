@@ -1,9 +1,7 @@
 name: Recognitions Status
 
-#on:
-#  push:
-#    branches:
-#      - statusTracking
+on:
+  workflow_dispatch:
 
 jobs:
   build:
