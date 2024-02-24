@@ -43,33 +43,25 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
     labels = ['Total Recognitions', 'Active Recognitions', 'Custom Image URLs', 'Descriptions > 50', 'End Date Missing']
     values = [total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions]
 
-    plt.figure(figsize=(14, 10))
+    # Create figure and axes for top row (bar plot)
+    fig, axs = plt.subplots(2, 1, figsize=(14, 10))
 
-    # Create subplot for the main graph
-    ax1 = plt.subplot(2, 1, 1)
-    bars = ax1.bar(labels, values, color=['blue', 'green', 'orange', 'red', 'red'])
-    ax1.set_title(f'Statistics for org-{org_name}')
-    ax1.set_xlabel('Categories')
-    ax1.set_ylabel('Counts')
-    ax1.tick_params(axis='x', rotation=45)
-
-    for bar, value in zip(bars, values):
-        if value != 0:
-            ax1.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom')
+    # Plot bar plot on the top row
+    axs[0].bar(labels, values, color=['blue', 'green', 'orange', 'red', 'red'])
+    axs[0].set_title(f'Statistics for org-{org_name}')
+    axs[0].set_ylabel('Counts')
+    axs[0].tick_params(axis='x', rotation=45)
 
     # Add modified time text
-    ax1.text(0.0, 1.05, f"Last Modified: {modified_time}", ha='left', va='center', transform=ax1.transAxes)
+    axs[0].text(0.0, 1.05, f"Last Modified: {modified_time}", ha='left', va='center', transform=axs[0].transAxes)
 
-    # Create subplot for the images
-    ax2 = plt.subplot(2, 1, 2)
-    ax2.axis('off')  # Hide axis for images
+    # Create axes for bottom row (recognition images grid)
+    axs[1].axis('off')  # Hide axis for images
 
     num_images = len(image_urls)
     if num_images > 0:
         num_cols = min(num_images, 4)
         num_rows = math.ceil(num_images / num_cols)
-        image_height = 0.8 / num_rows
-        image_width = 0.8 / num_cols
 
         for i, image_url in enumerate(image_urls):
             if image_url:
@@ -77,12 +69,10 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
                 response = requests.get(image_url, headers=headers)
                 if response.status_code == 200:
                     image_data = Image.open(BytesIO(response.content))
-                    col = i % num_cols
-                    row = i // num_cols
-                    ax2.imshow(image_data, extent=[col * image_width, (col + 1) * image_width, row * image_height, (row + 1) * image_height])
-                    ax2.set_position([0.1, 0.05, 0.8, 0.8])  # Adjust the position of the subplot
-    else:
-        ax2.text(0.5, 0.5, 'No images available', horizontalalignment='center', verticalalignment='center')
+                    ax = axs[1].subplots(num_rows, num_cols, i+1)
+                    ax.imshow(image_data)
+                    ax.axis('off')
+                    ax.set_title(f'Image {i+1}')
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
