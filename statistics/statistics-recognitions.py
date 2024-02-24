@@ -20,17 +20,9 @@ def analyze_recognitions(data):
     recognitions = data['data']
 
     active_recognitions = []
-    images = []
     for recognition in recognitions:
-        if not recognition.get('Start Date') or recognition['Start Date'] <= current_date:
-            if not recognition.get('End Date') or recognition['End Date'] >= current_date:
-                active_recognitions.append(recognition)
-                if recognition.get('Image URL'):
-                    images.append(recognition['Image URL'])
-                else:
-                    ldap = recognition.get('LDAP', '').lower().strip()
-                    image_url = f"https://s7d2.scene7.com/is/image/IMGDIR/{ldap}"
-                    images.append(image_url)
+        if not recognition.get('Start Date') or recognition['Start Date'] <= current_date and (not recognition.get('End Date') or recognition['End Date'] >= current_date)
+            active_recognitions.append(recognition)
 
     active_recognitions_count = len(active_recognitions)
     custom_image_urls_count = sum(1 for recognition in recognitions if recognition.get('Image URL'))
@@ -61,9 +53,8 @@ def plot_data(org_name, total_recognitions, active_recognitions_count, custom_im
     # If there are no images, display a table in the second subplot
     if active_recognitions_count > 0:
         col_labels = ['LDAP', 'Name']
-        row_labels = [recognition['LDAP'] for recognition in active_recognitions]
         cell_text = [[recognition['LDAP'], recognition['Name']] for recognition in active_recognitions]
-        axs[1].table(cellText=cell_text, colLabels=col_labels, rowLabels=row_labels, loc='center')
+        axs[1].table(cellText=cell_text, colLabels=col_labels, loc='center')
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
