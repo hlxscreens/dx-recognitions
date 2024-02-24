@@ -64,9 +64,12 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
     ax2 = plt.subplot(2, 1, 2)
     ax2.axis('off')  # Hide axis for images
 
-    num_images = len(image_urls)
-    num_cols = min(num_images, 4)
-    num_rows = math.ceil(num_images / num_cols)
+    if num_images > 0:
+        num_cols = min(num_images, 4)
+        num_rows = math.ceil(num_images / num_cols)
+    else:
+        num_cols = 0
+        num_rows = 0
 
     for i, image_url in enumerate(image_urls):
         if image_url:
