@@ -15,7 +15,7 @@ def fetch_json_data(url):
 
 def analyze_recognitions(data):
     current_date = datetime.now().strftime("%d/%m/%Y")
-    total_recognitions = data['total']
+    total_recognitions_count = data['total']
     recognitions = data['data']
 
     active_recognitions = []
@@ -36,7 +36,7 @@ def analyze_recognitions(data):
     descriptions_over_50_count = sum(1 for recognition in recognitions if len(recognition['Description'].split()) > 50)
     no_end_date_recognitions_count = sum(1 for recognition in recognitions if not recognition.get('End Date'))
 
-    return total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, images
+    return total_recognitions_count, active_recognitions_count, custom_image_urls_count, descriptions_over_50_count, no_end_date_recognitions_count, images
 
 def plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time, images):
     labels = ['Total Recognitions', 'Active Recognitions', 'Custom Image URLs', 'Descriptions > 50', 'End Date Missing']
