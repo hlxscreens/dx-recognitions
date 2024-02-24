@@ -2,6 +2,8 @@ import requests
 import json
 import matplotlib.pyplot as plt
 from datetime import datetime
+from PIL import Image
+from io import BytesIO
 
 def fetch_json_data(url):
     response = requests.get(url)
@@ -16,18 +18,27 @@ def analyze_recognitions(data):
     total_recognitions = data['total']
     recognitions = data['data']
 
-    active_recognitions = sum(1 for recognition in recognitions
-                            if not recognition.get('Start Date') or recognition['Start Date'] <= current_date
-                            and (not recognition.get('End Date') or recognition['End Date'] >= current_date))
-    custom_image_urls = sum(1 for recognition in recognitions if recognition['Image URL'])
+    active_recognitions = []
+    images = []
+    for recognition in recognitions:
+        if not recognition.get('Start Date') or recognition['Start Date'] <= current_date:
+            if not recognition.get('End Date') or recognition['End Date'] >= current_date:
+                active_recognitions.append(recognition)
+                if recognition.get('Image URL'):
+                    images.append(recognition['Image URL'])
+                else:
+                    ldap = recognition.get('LDAP', '').lower().strip()
+                    image_url = f"https://s7d2.scene7.com/is/image/IMGDIR/{ldap}"
+                    images.append(image_url)
 
-    descriptions_over_50 = sum(1 for recognition in recognitions if len(recognition['Description'].split()) > 50)
+    active_recognitions_count = len(active_recognitions)
+    custom_image_urls_count = sum(1 for recognition in recognitions if recognition.get('Image URL'))
+    descriptions_over_50_count = sum(1 for recognition in recognitions if len(recognition['Description'].split()) > 50)
+    no_end_date_recognitions_count = sum(1 for recognition in recognitions if not recognition.get('End Date'))
 
-    no_end_date_recognitions = sum(1 for recognition in recognitions if not recognition.get('End Date'))
+    return total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, images
 
-    return total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions
-
-def plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time):
+def plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time, images):
     labels = ['Total Recognitions', 'Active Recognitions', 'Custom Image URLs', 'Descriptions > 50', 'End Date Missing']
     values = [total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions]
 
@@ -43,7 +54,16 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
             plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom')
 
     # Add modified time text
-    plt.text(0.05, 1.05, f"Last Modified Recognitions: {modified_time}", ha='left', va='center', transform=plt.gca().transAxes)
+    plt.text(0.0, 1.05, f"Last Modified: {modified_time}", ha='left', va='center', transform=plt.gca().transAxes)
+
+    # Overlay images onto the plot
+    for i, image_url in enumerate(image_urls):
+        if image_url:
+            headers = {'Referer': 'https://inside.corp.adobe.com/'}
+            response = requests.get(image_url, headers=headers)
+            if response.status_code == 200:
+                image_data = Image.open(BytesIO(response.content))
+                plt.imshow(image_data, extent=[i-0.2, i+0.2, 0, 0.5], aspect='auto')  # Adjust position and size as needed
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
@@ -98,9 +118,9 @@ def main():
         if data:
             org_manifest_url = generate_manifest_url(org_url)
             modified_time = fetch_last_modified_time(org_manifest_url, org_url)
-            total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions = analyze_recognitions(data)
+            total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, images = analyze_recognitions(data)
             org_name = get_org_name(org_url)[len("org-"):]  # Extract org name from URL
-            plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time)
+            plot_data(org_name, total_recognitions, active_recognitions, custom_image_urls, descriptions_over_50, no_end_date_recognitions, modified_time, images)
 
 if __name__ == "__main__":
     main()
