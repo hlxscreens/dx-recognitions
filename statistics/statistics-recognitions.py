@@ -58,7 +58,7 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
             ax1.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(value), ha='center', va='bottom')
 
     # Add modified time text
-    ax1.text(0.0, 1.0, f"Last Modified: {modified_time}", ha='left', va='center', transform=ax1.transAxes)
+    ax1.text(0.0, 1.05, f"Last Modified: {modified_time}", ha='left', va='center', transform=ax1.transAxes)
 
     # Create subplot for the images
     ax2 = plt.subplot(2, 1, 2)
@@ -66,7 +66,7 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
 
     num_images = len(image_urls)
     num_cols = min(num_images, 4)
-    num_rows = math.ceil(num_images / 4)
+    num_rows = math.ceil(num_images / num_cols)
 
     for i, image_url in enumerate(image_urls):
         if image_url:
@@ -74,10 +74,10 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
             response = requests.get(image_url, headers=headers)
             if response.status_code == 200:
                 image_data = Image.open(BytesIO(response.content))
-                ax2.imshow(image_data)
                 col = i % num_cols
                 row = num_rows - 1 - i // num_cols
-                ax2.set_position([col * 0.25, row * 0.25, 0.25, 0.25])
+                ax2.imshow(image_data, extent=[col * 0.25, (col + 1) * 0.25, row * 0.25, (row + 1) * 0.25])
+                ax2.set_position([0, 0, 1, 0.5])  # Adjust the position of the subplot
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
