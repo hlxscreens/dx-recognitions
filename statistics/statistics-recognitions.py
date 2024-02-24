@@ -68,20 +68,21 @@ def plot_data(org_name, total_recognitions, active_recognitions, custom_image_ur
     if num_images > 0:
         num_cols = min(num_images, 4)
         num_rows = math.ceil(num_images / num_cols)
-    else:
-        num_cols = 0
-        num_rows = 0
+        image_height = 0.8 / num_rows
+        image_width = 0.8 / num_cols
 
-    for i, image_url in enumerate(image_urls):
-        if image_url:
-            headers = {'Referer': 'https://inside.corp.adobe.com/'}
-            response = requests.get(image_url, headers=headers)
-            if response.status_code == 200:
-                image_data = Image.open(BytesIO(response.content))
-                col = i % num_cols
-                row = num_rows - 1 - i // num_cols
-                ax2.imshow(image_data, extent=[col * 0.25, (col + 1) * 0.25, row * 0.25, (row + 1) * 0.25])
-                ax2.set_position([0, 0, 1, 0.5])  # Adjust the position of the subplot
+        for i, image_url in enumerate(image_urls):
+            if image_url:
+                headers = {'Referer': 'https://inside.corp.adobe.com/'}
+                response = requests.get(image_url, headers=headers)
+                if response.status_code == 200:
+                    image_data = Image.open(BytesIO(response.content))
+                    col = i % num_cols
+                    row = i // num_cols
+                    ax2.imshow(image_data, extent=[col * image_width, (col + 1) * image_width, row * image_height, (row + 1) * image_height])
+                    ax2.set_position([0.1, 0.05, 0.8, 0.8])  # Adjust the position of the subplot
+    else:
+        ax2.text(0.5, 0.5, 'No images available', horizontalalignment='center', verticalalignment='center')
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
