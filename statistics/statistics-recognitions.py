@@ -55,7 +55,7 @@ def plot_data(org_name, total_recognitions, active_recognitions_count, custom_im
 
     # If there are no images, display a table in the second subplot
     if active_recognitions_count > 0:
-        col_labels = ['LDAP', 'Name']
+        col_labels = ['LDAP', 'Name', 'Heading', 'Title', 'Description']
         cell_text = [[recognition['LDAP'], recognition['Name'], recognition['Heading'], recognition['Title'], recognition['Description']] for recognition in active_recognitions]
         table = axs[1].table(cellText=cell_text, colLabels=col_labels, loc='center')
         table._cells[(0, -1)].set_fontweight('bold')
