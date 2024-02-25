@@ -33,15 +33,22 @@ jobs:
     - name: Run Python Script
       run: python ./statistics/statistics-recognitions.py
 
-    - name: Commit files # transfer the generated files back into the repository
+    - name: Check for changes
+      id: check_changes
       if: ${{ steps.check_commit_author.outputs.commit_author != 'github-actions' }}
       run: |
-        git config --local user.name  ${{ github.actor }}
-        git config --local user.email "<>"
-        git add .
-        git commit -m "Recognitions Statistics"
+        if ! git diff --quiet; then
+          git config --local user.name  ${{ github.actor }}
+          git config --local user.email "<>"
+          git add .
+          git commit -m "Recognitions Statistics"
+        else
+          echo "No changes to commit."
+          exit 1  # Exit with a non-zero status code to indicate no changes
+        fi
+
     - name: Push changes  # push the generated files to your repo
-      if: ${{ steps.check_commit_author.outputs.commit_author != 'github-actions' }}
+      if: ${{ steps.check_changes.outcome == 'success' }}
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
