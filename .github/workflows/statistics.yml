@@ -42,13 +42,14 @@ jobs:
           git config --local user.email "<>"
           git add .
           git commit -m "Recognitions Statistics"
+          echo "::set-output name=changes::true"
         else
           echo "No changes to commit."
-          exit 1  # Exit with a non-zero status code to indicate no changes
+          echo "::set-output name=changes::false"
         fi
 
     - name: Push changes  # push the generated files to your repo
-      if: ${{ steps.check_changes.outcome == 'success' }}
+      if: ${{ steps.check_changes.outputs.changes == 'true' }}
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
