@@ -60,7 +60,7 @@ def plot_data(org_name, total_recognitions, active_recognitions_count, custom_im
         table = axs[1].table(cellText=cell_text, colLabels=col_labels, loc='center')
         table.auto_set_font_size(False)
         table.set_fontsize(10)  # Adjust font size of the table content
-        table.scale(1, 1.5)  # Adjust scaling of the table content
+        table.scale(1.5, 1.5)  # Adjust scaling of the table content
         # Set font properties for table cells
 #         for cell in table.get_celld().values():
 #             cell.set_fontsize(10)
@@ -68,7 +68,7 @@ def plot_data(org_name, total_recognitions, active_recognitions_count, custom_im
 #         title_text = title_cell.get_text()
 #         title_text.set_fontweight('bold')
 #         title_text.set_fontsize(12)
-        axs[1].set_title('Active Recognitions', y=2)
+        axs[1].set_title('Active Recognitions', y=2, fontweight='bold', fontsize=14, pad=10)
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
