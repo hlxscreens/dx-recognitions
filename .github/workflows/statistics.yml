@@ -3,7 +3,7 @@ name: Recognitions Statistics
 on:
   push:
     branches:
-      - statusTracking
+      - main
   workflow_dispatch:
 
 jobs:
@@ -45,5 +45,5 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: statusTracking
+        branch: main
         force: true
