@@ -68,7 +68,7 @@ def plot_data(org_name, total_recognitions, active_recognitions_count, custom_im
 #         title_text = title_cell.get_text()
 #         title_text.set_fontweight('bold')
 #         title_text.set_fontsize(12)
-        axs[1].set_title('Active Recognitions', y=2, fontweight='bold', fontsize=14)
+        axs[1].set_title('Active Recognitions', y=2, fontweight='bold')
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
