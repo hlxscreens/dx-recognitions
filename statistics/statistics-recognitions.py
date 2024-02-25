@@ -57,7 +57,10 @@ def plot_data(org_name, total_recognitions, active_recognitions_count, custom_im
     if active_recognitions_count > 0:
         col_labels = ['LDAP', 'Name', 'Heading', 'Title']
         cell_text = [[recognition['LDAP'], recognition['Name'], recognition['Heading'], recognition['Title']] for recognition in active_recognitions]
-        axs[1].table(cellText=cell_text, colLabels=col_labels, loc='center')
+        table = axs[1].table(cellText=cell_text, colLabels=col_labels, loc='center')
+        table.auto_set_font_size(False)
+        table.set_fontsize(10)  # Adjust font size of the table content
+        table.scale(1, 1.5)  # Adjust scaling of the table content
         # Set font properties for table cells
 #         for cell in table.get_celld().values():
 #             cell.set_fontsize(10)
