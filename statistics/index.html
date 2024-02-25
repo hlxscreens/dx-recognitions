@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <style>
+            /* Style for the image grid */
+            .image-grid {
+                display: flex;
+                flex-direction: column; /* Display images in a column */
+                gap: 10px;
+            }
+
+            /* Style for individual image rows */
+            .image-row {
+                width: 100%; /* Each row occupies the full width */
+                border-bottom: 3px solid #ccc; /* Border to separate rows */
+                padding-bottom: 10px; /* Add padding to create space between images and borders */
+                margin-bottom: 10px; /* Add margin to compensate for padding */
+            }
+
+            /* Style for individual images */
+            .image-item {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+
+            .image-item img {
+                width: 100%;
+                height: auto;
+                object-fit: cover; /* Cover the entire container */
+            }
+        </style>
+</head>
+<body>
+    <div class="image-grid">
+        <!-- Replace the URLs in src attribute with your image URLs -->
+        <div class="image-row">
+            <div class="image-item"><img src="https://dx-recognitions.aem-screens.net/statistics/anup-statistics.png" alt="anup-statistics"></div>
+        </div>
+        <div class="image-row">
+            <div class="image-item"><img src="https://dx-recognitions.aem-screens.net/statistics/balaji-statistics.png" alt="balaji-statistics"></div>
+        </div>
+        <div class="image-row">
+            <div class="image-item"><img src="https://dx-recognitions.aem-screens.net/statistics/gaurav-statistics.png" alt="gaurav-statistics"></div>
+        </div>
+        <div class="image-row">
+            <div class="image-item"><img src="https://dx-recognitions.aem-screens.net/statistics/gitesh-statistics.png" alt="gitesh-statistics"></div>
+        </div>
+        <div class="image-row">
+            <div class="image-item"><img src="https://dx-recognitions.aem-screens.net/statistics/sanjay-kaluskar-statistics.png" alt="sanjay-kaluskar-statistics"></div>
+        </div>
+        <div class="image-row">
+            <div class="image-item"><img src="https://dx-recognitions.aem-screens.net/statistics/sanjay-kumar-statistics.png" alt="sanjay-kumar-statistics"></div>
+        </div>
+        <div class="image-row">
+            <div class="image-item"><img src="https://dx-recognitions.aem-screens.net/statistics/suvrat-statistics.png" alt="suvrat-statistics"></div>
+        </div>
+        <div class="image-row">
+            <div class="image-item"><img src="https://dx-recognitions.aem-screens.net/statistics/vikas-statistics.png" alt="vikas-statistics"></div>
+        </div>
+    </div>
+</body>
+</html>
