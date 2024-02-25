@@ -48,7 +48,7 @@ def plot_data(org_name, total_recognitions, active_recognitions_count, custom_im
     axs[0].tick_params(axis='x', rotation=45)
 
     # Add modified time text
-    axs[0].text(0.0, 1.05, f"Last Modified: {modified_time}", ha='left', va='center', transform=axs[0].transAxes)
+    axs[0].text(0.0, 1.05, f"Last Modified: {modified_time}", ha='left', va='center', transform=axs[0].transAxes, fontweight='bold')
 
     # Create axes for bottom row (recognition images grid or table)
     axs[1].axis('off')  # Hide axis for images
@@ -56,9 +56,10 @@ def plot_data(org_name, total_recognitions, active_recognitions_count, custom_im
     # If there are no images, display a table in the second subplot
     if active_recognitions_count > 0:
         col_labels = ['LDAP', 'Name']
-        cell_text = [[recognition['LDAP'], recognition['Name']] for recognition in active_recognitions]
-        axs[1].table(cellText=cell_text, colLabels=col_labels, loc='center')
-        axs[1].set_title('Active Recognitions', y=1.1)
+        cell_text = [[recognition['LDAP'], recognition['Name'], recognition['Heading'], recognition['Title'], recognition['Description']] for recognition in active_recognitions]
+        table = axs[1].table(cellText=cell_text, colLabels=col_labels, loc='center')
+        table._cells[(0, -1)].set_fontweight('bold')
+        axs[1].set_title('Active Recognitions', y=4, fontweight='bold')
 
     plt.tight_layout()
     plt.savefig(f'statistics/{org_name}-statistics.png')
