@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1710927755000,
+  "timestamp": 1711015767000,
   "entries": [
     {
       "path": "/content/screens/main.html",
@@ -265,7 +265,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-suvrat/recognitions.json",
-      "timestamp": 1710927755000
+      "timestamp": 1711015767000
     },
     {
       "path": "/is/image/IMGDIR/barshatr"
@@ -290,6 +290,9 @@
     },
     {
       "path": "/is/image/IMGDIR/rajanshriva"
+    },
+    {
+      "path": "/is/image/IMGDIR/kgoel"
     },
     {
       "path": "/content/screens/org-amitabh/org-vikas/recognitions.json",
