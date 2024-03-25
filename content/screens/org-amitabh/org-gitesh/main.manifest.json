@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1709023504000,
+  "timestamp": 1711385275000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-gitesh/main.html",
@@ -52,7 +52,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/all/recognitions.json",
-      "timestamp": 1709023504000
+      "timestamp": 1711385275000
     },
     {
       "path": "/is/image/IMGDIR/gubhatia"
@@ -87,6 +87,21 @@
     },
     {
       "path": "/is/image/IMGDIR/anirudhsingh"
+    },
+    {
+      "path": "/is/image/IMGDIR/shroti"
+    },
+    {
+      "path": "/is/image/IMGDIR/chiki"
+    },
+    {
+      "path": "/is/image/IMGDIR/mohiaror"
+    },
+    {
+      "path": "/is/image/IMGDIR/satyam"
+    },
+    {
+      "path": "/is/image/IMGDIR/somyaj"
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/varu/recognitions.json",
