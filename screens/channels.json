@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2024-03-27T06:27:37.000Z",
+      "lastModified": "2024-04-01T06:34:08.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -161,7 +161,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2024-03-27T06:27:37.000Z",
+      "lastModified": "2024-04-01T06:34:08.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -400,7 +400,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-suvrat/main.manifest.json",
-      "lastModified": "2024-03-21T10:09:27.000Z",
+      "lastModified": "2024-04-01T06:34:08.000Z",
       "hierarchy": [
         {
           "title": "screens",
