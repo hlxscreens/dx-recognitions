@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1714461186000,
+  "timestamp": 1714461795000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-suvrat/main.html",
@@ -28,7 +28,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-suvrat/recognitions.json",
-      "timestamp": 1714461186000
+      "timestamp": 1714461795000
     },
     {
       "path": "/is/image/IMGDIR/barshatr"
@@ -59,6 +59,9 @@
     },
     {
       "path": "/is/image/IMGDIR/namishra"
+    },
+    {
+      "path": "/is/image/IMGDIR/kritiksh"
     },
     {
       "path": "/blocks/carousel/carousel.js",
