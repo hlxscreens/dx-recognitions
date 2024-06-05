@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2024-06-04T03:59:01.000Z",
+      "lastModified": "2024-06-05T21:15:37.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -161,7 +161,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2024-06-04T03:59:01.000Z",
+      "lastModified": "2024-06-05T21:15:37.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -228,7 +228,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-anup/main.manifest.json",
-      "lastModified": "2024-06-04T03:59:01.000Z",
+      "lastModified": "2024-06-05T21:15:37.000Z",
       "hierarchy": [
         {
           "title": "screens",
