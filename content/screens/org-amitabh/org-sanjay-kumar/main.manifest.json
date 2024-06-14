@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1715949478000,
+  "timestamp": 1718290115000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kumar/main.html",
@@ -28,7 +28,10 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kumar/recognitions.json",
-      "timestamp": 1715949478000
+      "timestamp": 1718290115000
+    },
+    {
+      "path": "/is/image/IMGDIR/komala"
     },
     {
       "path": "/is/image/IMGDIR/himanshig"
@@ -41,9 +44,6 @@
     },
     {
       "path": "/is/image/IMGDIR/mekumari"
-    },
-    {
-      "path": "/is/image/IMGDIR/skathuria"
     },
     {
       "path": "/is/image/IMGDIR/shauryac"

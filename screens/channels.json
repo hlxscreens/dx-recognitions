@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2024-06-05T21:15:37.000Z",
+      "lastModified": "2024-06-13T14:48:35.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -161,7 +161,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2024-06-05T21:15:37.000Z",
+      "lastModified": "2024-06-13T14:48:35.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -358,7 +358,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-sanjay-kumar/main.manifest.json",
-      "lastModified": "2024-05-17T12:37:58.000Z",
+      "lastModified": "2024-06-13T14:48:35.000Z",
       "hierarchy": [
         {
           "title": "screens",
