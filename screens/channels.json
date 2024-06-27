@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2024-06-13T14:48:35.000Z",
+      "lastModified": "2024-06-27T12:29:57.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -15,7 +15,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/abhayj/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -40,7 +40,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/arora/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -65,7 +65,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/bansalabhish/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -90,7 +90,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/kasingh/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -115,7 +115,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/varu/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -161,7 +161,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2024-06-13T14:48:35.000Z",
+      "lastModified": "2024-06-27T12:29:57.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -178,7 +178,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/habansal/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -203,7 +203,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/ssahni/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -228,7 +228,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-anup/main.manifest.json",
-      "lastModified": "2024-06-05T21:15:37.000Z",
+      "lastModified": "2024-06-26T06:25:09.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -270,7 +270,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/happy-diwali/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -295,7 +295,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -337,7 +337,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -358,7 +358,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-sanjay-kumar/main.manifest.json",
-      "lastModified": "2024-06-13T14:48:35.000Z",
+      "lastModified": "2024-06-27T12:29:57.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -379,7 +379,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gaurav/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -421,7 +421,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-vikas/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
