@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2024-07-08T12:31:05.000Z",
+      "lastModified": "2024-07-19T12:55:17.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -161,7 +161,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2024-07-08T12:31:05.000Z",
+      "lastModified": "2024-07-19T12:55:17.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -270,7 +270,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/happy-diwali/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -295,7 +295,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/main.manifest.json",
-      "lastModified": "2024-04-08T05:33:06.000Z",
+      "lastModified": "2024-04-08T05:29:33.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -358,7 +358,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-sanjay-kumar/main.manifest.json",
-      "lastModified": "2024-07-08T12:31:05.000Z",
+      "lastModified": "2024-07-19T12:55:17.000Z",
       "hierarchy": [
         {
           "title": "screens",
