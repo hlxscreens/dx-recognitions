@@ -16,7 +16,7 @@
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1705043615000
+      "timestamp": 1694691630000
     },
     {
       "path": "/styles/lazy-styles.css",
@@ -28,11 +28,11 @@
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1705043606000
+      "timestamp": 1694524112000
     },
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1705043606000
+      "timestamp": 1698324404000
     },
     {
       "path": "/icons/not-found.png",
@@ -44,7 +44,7 @@
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1705043613000
+      "timestamp": 1694691630000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
@@ -52,11 +52,11 @@
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1705043607000
+      "timestamp": 1694524112000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1705043606000
+      "timestamp": 1694524112000
     }
   ],
   "contentDelivery": {
