@@ -8,11 +8,11 @@
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1705043615000
+      "timestamp": 1693917738000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1705043615000
+      "timestamp": 1695812605000
     },
     {
       "path": "/styles/styles.css",
@@ -20,11 +20,11 @@
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1705043615000
+      "timestamp": 1693917738000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1705043606000
+      "timestamp": 1702901481000
     },
     {
       "path": "/blocks/carousel/utils.js",
@@ -36,11 +36,11 @@
     },
     {
       "path": "/icons/not-found.png",
-      "timestamp": 1705043614000
+      "timestamp": 1695736194000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1705043614000
+      "timestamp": 1694691630000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
@@ -48,7 +48,7 @@
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1705043613000
+      "timestamp": 1694691630000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/all/recognitions.json",
