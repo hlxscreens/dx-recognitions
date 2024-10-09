@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1725992943000,
+  "timestamp": 1728491513000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kumar/main.html",
@@ -28,7 +28,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kumar/recognitions.json",
-      "timestamp": 1725992943000
+      "timestamp": 1728491513000
     },
     {
       "path": "/is/image/IMGDIR/komala"
@@ -59,10 +59,7 @@
       "path": "/is/image/IMGDIR/naseem"
     },
     {
-      "path": "/is/image/IMGDIR/tarsingh"
-    },
-    {
-      "path": "/is/image/IMGDIR/monik"
+      "path": "/is/image/IMGDIR/rohitsrivast"
     },
     {
       "path": "/blocks/carousel/carousel.js",
