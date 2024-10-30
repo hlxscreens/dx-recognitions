@@ -214,6 +214,21 @@ async function buildCarouselFromSheet(block) {
   return createContainerFromData(assets);
 }
 
+async function buildCarouselItems(block) {
+  const assets = block.querySelectorAll('picture');
+  const carouselItems = [];
+  assets.forEach((asset) => {
+    const carouselItem = createDivWithClass('carousel-item');
+    carouselItem.classList.add('carousel-item-analytics');
+    carouselItem.setAttribute('start-date', '23/09/2024');
+    carouselItem.setAttribute('end-date', '23/09/2030');
+    carouselItem.appendChild(asset.cloneNode(true));
+
+    carouselItems.push(carouselItem);
+  });
+  return carouselItems;
+}
+
 export default async function decorate(block) {
   const main = document.querySelector('main');
   if (main.querySelector('.carousel-track') === null) {
@@ -222,8 +237,15 @@ export default async function decorate(block) {
     main.appendChild(carouselTrack);
   }
 
-  const items = await buildCarouselFromSheet(block);
-  main.querySelector('.carousel-track').append(...items);
+  if (block.classList.contains('recognitions')) {
+    const items = await buildCarouselFromSheet(block);
+    main.querySelector('.carousel-track').append(...items);
+  } else if (block.classList.contains('analytics')) {
+    const items = await buildCarouselItems(block);
+    main.querySelector('.carousel-track').append(...items);
+  } else {
+    console.log('Unexpected block structure found.');
+  }
 
   const carouselTrack = document.querySelector('.carousel-track');
   const carouselItems = carouselTrack.querySelectorAll('.carousel-item');
