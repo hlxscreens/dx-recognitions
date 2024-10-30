@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2024-10-18T08:23:55.000Z",
+      "lastModified": "2024-10-30T03:17:23.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -140,7 +140,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/main.manifest.json",
-      "lastModified": "2024-10-14T05:50:01.000Z",
+      "lastModified": "2024-10-30T03:17:23.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -161,7 +161,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2024-10-18T08:23:55.000Z",
+      "lastModified": "2024-10-30T03:17:23.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -442,7 +442,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gitesh/all/main.manifest.json",
-      "lastModified": "2024-10-14T05:50:01.000Z",
+      "lastModified": "2024-10-30T03:17:23.000Z",
       "hierarchy": [
         {
           "title": "screens",
