@@ -219,6 +219,7 @@ async function buildCarouselItems(block) {
   const carouselItems = [];
   assets.forEach((asset) => {
     const carouselItem = createDivWithClass('carousel-item');
+    carouselItem.classList.add('carousel-item-analytics');
     carouselItem.setAttribute('start-date', '23/09/2024');
     carouselItem.setAttribute('end-date', '23/09/2030');
     carouselItem.appendChild(asset.cloneNode(true));
