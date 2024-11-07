@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2024-10-30T03:17:23.000Z",
+      "lastModified": "2024-11-07T14:51:58.330Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -161,7 +161,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2024-10-30T03:17:23.000Z",
+      "lastModified": "2024-11-07T14:52:03.679Z",
       "hierarchy": [
         {
           "title": "screens",
