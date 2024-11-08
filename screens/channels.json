@@ -464,6 +464,48 @@
       "externalId": "/content/screens/org-amitabh/org-gitesh/all/main",
       "title": "Org Gitesh direct Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/all/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/carousel-images/carousel-images.manifest.json",
+      "lastModified": "2024-11-08T07:52:37.916Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "carousel-images",
+          "path": "/content/screens/org-amitabh/carousel-images"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/carousel-images/carousel-images",
+      "title": "GenAI Analytics Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/carousel-images/carousel-images.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/carousel-images/main.manifest.json",
+      "lastModified": "2024-11-08T07:52:39.085Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "carousel-images",
+          "path": "/content/screens/org-amitabh/carousel-images"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/carousel-images/main",
+      "title": "DX India Recognitions Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/carousel-images/main.html"
     }
   ],
   "metadata": {

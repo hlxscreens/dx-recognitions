@@ -1,0 +1,55 @@
+{
+  "version": "3.0",
+  "timestamp": 1731052357916,
+  "entries": [
+    {
+      "path": "/content/screens/org-amitabh/carousel-images/carousel-images.html",
+      "timestamp": 1731052357916
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1695812605000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
+    },
+    {
+      "path": "/content/screens/org-amitabh/carousel-images/media_1641439f5487cae6a27eda535d181c8a7d6d54191.png",
+      "hash": "1641439f5487cae6a27eda535d181c8a7d6d54191"
+    },
+    {
+      "path": "/content/screens/org-amitabh/carousel-images/media_14976d6bdfcc89b577ae4926f402c67b2de6973fe.png",
+      "hash": "14976d6bdfcc89b577ae4926f402c67b2de6973fe"
+    },
+    {
+      "path": "/content/screens/org-amitabh/carousel-images/media_1d65b5a39a0ec9cf24531c7c9bc6d109eeedfc23f.png",
+      "hash": "1d65b5a39a0ec9cf24531c7c9bc6d109eeedfc23f"
+    },
+    {
+      "path": "/content/screens/org-amitabh/carousel-images/media_12b1e98cca387e385fe464059d01875f781ebf467.png",
+      "hash": "12b1e98cca387e385fe464059d01875f781ebf467"
+    },
+    {
+      "path": "/content/screens/org-amitabh/carousel-images/media_1e9c5c3a0337b753d3b810576fdacc62e2c41b9a9.png",
+      "hash": "1e9c5c3a0337b753d3b810576fdacc62e2c41b9a9"
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1693917738000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
