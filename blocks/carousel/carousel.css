@@ -28,7 +28,13 @@ html {
     height: 100vh;
 }
 
-.carousel-item-analytics img {
+.carousel-item iframe {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-item-analytics iframe {
     object-fit: contain;
 }
 
