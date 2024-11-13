@@ -214,7 +214,32 @@ async function buildCarouselFromSheet(block) {
   return createContainerFromData(assets);
 }
 
+async function buildCarouselForDashboard(block) {
+  const childDivs = Array.from(block.children);
+  const carouselItems = [];
+  childDivs?.forEach((div) => {
+    const carouselItem = createDivWithClass('carousel-item');
+    carouselItem?.classList.add('carousel-item-analytics');
+    carouselItem?.setAttribute('start-date', '23/09/2024');
+    carouselItem?.setAttribute('end-date', '23/09/2030');
+
+    const link = div.querySelector('a');
+    if (link) {
+      const path = link.getAttribute('href');
+      const iframe = document.createElement('iframe');
+      iframe.src = path;
+      carouselItem.appendChild(iframe);
+    } else {
+      const picture = div.querySelector('picture');
+      carouselItem.appendChild(picture.cloneNode(true));
+    }
+    carouselItems.push(carouselItem);
+  });
+  return carouselItems;
+}
+
 async function buildCarouselItems(block) {
+  buildCarouselForDashboard(block);
   const assets = block.querySelectorAll('picture');
   const carouselItems = [];
   assets.forEach((asset) => {
@@ -241,7 +266,7 @@ export default async function decorate(block) {
     const items = await buildCarouselFromSheet(block);
     main.querySelector('.carousel-track').append(...items);
   } else if (block.classList.contains('analytics')) {
-    const items = await buildCarouselItems(block);
+    const items = await buildCarouselForDashboard(block);
     main.querySelector('.carousel-track').append(...items);
   } else {
     console.log('Unexpected block structure found.');
