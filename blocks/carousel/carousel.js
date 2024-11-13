@@ -11,6 +11,11 @@ const DEFAULT_HEADING = 'DX India Recognitions';
 const NO_HEADING = 'No Heading';
 // 1 image - 400x400, 2 images - 330x330, 3 images - 273x273, 4 images - 256x256, 5 images - 227x227
 const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
+
+const DEFAULT_ITEM_DURATION = 10 * 1000;
+const DEFAULT_DASHBOARD_ITEM_DURATION = 60 * 1000;
+let itemDuration = DEFAULT_ITEM_DURATION;
+
 const TIMEOUTS = {
   timeouts: [],
   setTimeout(fn, delay) {
@@ -235,6 +240,7 @@ async function buildCarouselForDashboard(block) {
     }
     carouselItems.push(carouselItem);
   });
+  itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
   return carouselItems;
 }
 
@@ -276,7 +282,6 @@ export default async function decorate(block) {
   const carouselItems = carouselTrack.querySelectorAll('.carousel-item');
   const totalItems = carouselItems.length;
   let currentIndex = -1;
-  const DEFAULT_ITEM_DURATION = 10 * 1000;
 
   if (totalItems === 0) {
     return;
@@ -311,7 +316,7 @@ export default async function decorate(block) {
       nextSlide();
     } else {
       showSlide(currentIndex);
-      TIMEOUTS.setTimeout(nextSlide, DEFAULT_ITEM_DURATION);
+      TIMEOUTS.setTimeout(nextSlide, itemDuration);
     }
   }
 
