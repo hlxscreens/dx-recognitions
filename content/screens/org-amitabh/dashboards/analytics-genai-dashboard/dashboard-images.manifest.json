@@ -1,0 +1,35 @@
+{
+  "version": "3.0",
+  "timestamp": 1731487314000,
+  "entries": [
+    {
+      "path": "/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.html",
+      "timestamp": 1731487314000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1695812605000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1693917738000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}

@@ -1,10 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1731486798000,
+  "timestamp": 1731487314000,
   "entries": [
     {
-      "path": "/content/screens/org-amitabh/main.html",
-      "timestamp": 1731435983000
+      "path": "/content/screens/org-amitabh/dashboards/main.html",
+      "timestamp": 1731486568000
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -19,7 +19,7 @@
       "timestamp": 1694691630000
     },
     {
-      "path": "/content/screens/org-amitabh/media_17dfdf41852715fee8124ac6d1e9c54332c4afe67.png",
+      "path": "/content/screens/org-amitabh/dashboards/media_17dfdf41852715fee8124ac6d1e9c54332c4afe67.png",
       "hash": "17dfdf41852715fee8124ac6d1e9c54332c4afe67"
     },
     {
@@ -215,7 +215,7 @@
       "path": "/is/image/IMGDIR/akishore"
     },
     {
-      "path": "/content/screens/org-amitabh/media_1b8762bb2443e3f45b62507dfa1f4e069fa841bb5.jpeg",
+      "path": "/content/screens/org-amitabh/dashboards/media_1b8762bb2443e3f45b62507dfa1f4e069fa841bb5.jpeg",
       "hash": "1b8762bb2443e3f45b62507dfa1f4e069fa841bb5"
     },
     {
@@ -237,11 +237,11 @@
       "path": "/is/image/IMGDIR/dewnani"
     },
     {
-      "path": "/content/screens/org-amitabh/media_122fabd91e0c6e7524ff9d5023e3c5809bd5d784a.png",
+      "path": "/content/screens/org-amitabh/dashboards/media_122fabd91e0c6e7524ff9d5023e3c5809bd5d784a.png",
       "hash": "122fabd91e0c6e7524ff9d5023e3c5809bd5d784a"
     },
     {
-      "path": "/content/screens/org-amitabh/media_1f07c299dfc6e4f75af20badf23c1b1319595112d.png",
+      "path": "/content/screens/org-amitabh/dashboards/media_1f07c299dfc6e4f75af20badf23c1b1319595112d.png",
       "hash": "1f07c299dfc6e4f75af20badf23c1b1319595112d"
     },
     {
@@ -273,7 +273,7 @@
       "path": "/is/image/IMGDIR/sneh"
     },
     {
-      "path": "/content/screens/org-amitabh/media_1804fd867c245517dc7396f5f1adef433f0d7b16c.png",
+      "path": "/content/screens/org-amitabh/dashboards/media_1804fd867c245517dc7396f5f1adef433f0d7b16c.png",
       "hash": "1804fd867c245517dc7396f5f1adef433f0d7b16c"
     },
     {
@@ -397,7 +397,7 @@
       "path": "/is/image/IMGDIR/mdekramulan"
     },
     {
-      "path": "/content/screens/org-amitabh/media_15b149a01c46bd1aed4117b6091140262d15e030a.jpeg",
+      "path": "/content/screens/org-amitabh/dashboards/media_15b149a01c46bd1aed4117b6091140262d15e030a.jpeg",
       "hash": "15b149a01c46bd1aed4117b6091140262d15e030a"
     },
     {
@@ -502,6 +502,14 @@
       "path": "/is/image/IMGDIR/avannarath"
     },
     {
+      "path": "/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.html",
+      "timestamp": 1731487314000
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.plain.html",
+      "timestamp": 1731487125000
+    },
+    {
       "path": "/content/screens/org-amitabh/events/main.html",
       "timestamp": 1731435983000
     },
@@ -514,7 +522,7 @@
       "timestamp": 1731435983000
     },
     {
-      "path": "/content/screens/org-amitabh/media_1ef212998b85831c41df552fc8db9831fee5042ca.png",
+      "path": "/content/screens/org-amitabh/dashboards/media_1ef212998b85831c41df552fc8db9831fee5042ca.png",
       "hash": "1ef212998b85831c41df552fc8db9831fee5042ca"
     },
     {
@@ -566,7 +574,7 @@
       "timestamp": 1731435983000
     },
     {
-      "path": "/content/screens/org-amitabh/media_1faab2c06d663faadc55a27e2102f012522ff958b.png",
+      "path": "/content/screens/org-amitabh/dashboards/media_1faab2c06d663faadc55a27e2102f012522ff958b.png",
       "hash": "1faab2c06d663faadc55a27e2102f012522ff958b"
     },
     {
