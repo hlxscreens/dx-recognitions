@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1731487314612,
+  "timestamp": 1731487314000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/dashboards/main.html",
@@ -503,7 +503,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.html",
-      "timestamp": 1731487314612
+      "timestamp": 1731487314000
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.plain.html",
