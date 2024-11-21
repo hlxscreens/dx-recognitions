@@ -32,8 +32,8 @@ indices:
         select: head > link[rel="canonical"]
         value: |
           attribute(el, 'href')
-      channelType:
-        select: head > meta[name="channeltype"]
+      isOnlineChannel:
+        select: head > meta[name="is-online-channel"]
         value:  |
           attribute(el, 'content')
   channel-manifest:
