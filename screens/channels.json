@@ -537,8 +537,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/stage/dashboards/analytics-genai-dashboard/dashboard-images.html"
     },
     {
-      "manifestPath": null,
-      "lastModified": "2024-11-20T05:37:47.153Z",
+      "manifestPath": "/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.manifest.json",
+      "lastModified": "2024-11-20T05:37:47.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -563,7 +563,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/main.manifest.json",
-      "lastModified": "2024-11-20T05:37:47.412Z",
+      "lastModified": "2024-11-20T05:37:47.000Z",
       "hierarchy": [
         {
           "title": "screens",
