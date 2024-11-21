@@ -32,6 +32,10 @@ indices:
         select: head > link[rel="canonical"]
         value: |
           attribute(el, 'href')
+      channelType:
+        select: head > meta[name="channeltype"]
+        value:  |
+          attribute(el, 'content')
   channel-manifest:
     include:
       - '/content/screens/**'
