@@ -16,8 +16,8 @@ const DEFAULT_ITEM_DURATION = 10 * 1000;
 const DEFAULT_DASHBOARD_ITEM_DURATION = 60 * 1000;
 let itemDuration = DEFAULT_ITEM_DURATION;
 
-const DASHBOARDS = 'dashboards'
-const CAROUSEL_ITEM_DASHBOARDS = `carousel-item-${DASHBOARDS}`;
+const DASHBOARDS_BLOCK_NAME = 'dashboards'
+const CAROUSEL_ITEM_DASHBOARDS_CLASS = `carousel-item-${DASHBOARDS_BLOCK_NAME}`;
 
 const TIMEOUTS = {
   timeouts: [],
@@ -227,7 +227,7 @@ async function buildCarouselForDashboard(block) {
   const carouselItems = [];
   childDivs?.forEach((div) => {
     const carouselItem = createDivWithClass('carousel-item');
-    carouselItem?.classList.add(CAROUSEL_ITEM_DASHBOARDS);
+    carouselItem?.classList.add(CAROUSEL_ITEM_DASHBOARDS_CLASS);
     carouselItem?.setAttribute('start-date', '23/09/2024');
     carouselItem?.setAttribute('end-date', '23/09/2030');
 
@@ -258,7 +258,7 @@ export default async function decorate(block) {
   if (block.classList.contains('recognitions')) {
     const items = await buildCarouselFromSheet(block);
     main.querySelector('.carousel-track').append(...items);
-  } else if (block.classList.contains(DASHBOARDS)) {
+  } else if (block.classList.contains(DASHBOARDS_BLOCK_NAME)) {
     const items = await buildCarouselForDashboard(block);
     main.querySelector('.carousel-track').append(...items);
   } else {
