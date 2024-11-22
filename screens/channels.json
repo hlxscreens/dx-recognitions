@@ -82,7 +82,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2024-11-22T13:50:28.561Z",
+      "lastModified": "2024-11-22T13:55:12.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -285,8 +285,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/stage/channel-with-sheet.html"
     },
     {
-      "manifestPath": null,
-      "lastModified": "2024-11-22T13:50:28.559Z",
+      "manifestPath": "/content/screens/org-amitabh/dashboards/varu-dashboards.manifest.json",
+      "lastModified": "2024-11-22T14:01:56.501Z",
       "hierarchy": [
         {
           "title": "screens",
