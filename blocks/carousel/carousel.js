@@ -247,22 +247,6 @@ async function buildCarouselForDashboard(block) {
   return carouselItems;
 }
 
-async function buildCarouselItems(block) {
-  buildCarouselForDashboard(block);
-  const assets = block.querySelectorAll('picture');
-  const carouselItems = [];
-  assets.forEach((asset) => {
-    const carouselItem = createDivWithClass('carousel-item');
-    carouselItem.classList.add(CAROUSEL_ITEM_DASHBOARDS);
-    carouselItem.setAttribute('start-date', '23/09/2024');
-    carouselItem.setAttribute('end-date', '23/09/2030');
-    carouselItem.appendChild(asset.cloneNode(true));
-
-    carouselItems.push(carouselItem);
-  });
-  return carouselItems;
-}
-
 export default async function decorate(block) {
   const main = document.querySelector('main');
   if (main.querySelector('.carousel-track') === null) {
