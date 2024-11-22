@@ -4,11 +4,12 @@ import {
   decorateButtons,
   decorateIcons,
   decorateSections,
+  decorateBlock,
   decorateBlocks,
   decorateTemplateAndTheme,
   waitForLCP,
   loadBlocks,
-  loadCSS,
+  loadCSS, loadBlock,
 } from './lib-franklin.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -55,11 +56,35 @@ export function decorateMain(main) {
   decorateBlocks(main);
 }
 
+async function buildSpinnerBlock() {
+  const spinnerBlock = `
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>Loading.....</div>`;
+  const spinnerContainer = buildBlock('spinner', spinnerBlock);
+  const spinnerContainerEle = document.createElement('div');
+  spinnerContainerEle.append(spinnerContainer);
+  decorateBlock(spinnerContainer);
+  const body = document.querySelector('body');
+  body.append(spinnerContainerEle);
+  return spinnerContainer;
+}
+
 /**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
+  const spinnerBlock = await buildSpinnerBlock();
+  await loadBlock(spinnerBlock);
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
@@ -99,7 +124,10 @@ export function addFavIcon(href) {
  */
 async function loadLazy(doc) {
   const main = doc.querySelector('main');
+  main.style.opacity = '0';
   await loadBlocks(main);
+  document.querySelector('.spinner').style.display = 'none';
+  main.style.opacity = '1';
 
   const { hash } = window.location;
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
