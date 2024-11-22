@@ -228,8 +228,6 @@ async function buildCarouselForDashboard(block) {
   childDivs?.forEach((div) => {
     const carouselItem = createDivWithClass('carousel-item');
     carouselItem?.classList.add(CAROUSEL_ITEM_DASHBOARDS_CLASS);
-    carouselItem?.setAttribute('start-date', '23/09/2024');
-    carouselItem?.setAttribute('end-date', '23/09/2030');
 
     const link = div.querySelector('a');
     if (link) {
