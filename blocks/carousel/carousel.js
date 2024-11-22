@@ -16,6 +16,9 @@ const DEFAULT_ITEM_DURATION = 10 * 1000;
 const DEFAULT_DASHBOARD_ITEM_DURATION = 60 * 1000;
 let itemDuration = DEFAULT_ITEM_DURATION;
 
+const DASHBOARDS = 'dashboards'
+const CAROUSEL_ITEM_DASHBOARDS = `carousel-item-${DASHBOARDS}`;
+
 const TIMEOUTS = {
   timeouts: [],
   setTimeout(fn, delay) {
@@ -224,7 +227,7 @@ async function buildCarouselForDashboard(block) {
   const carouselItems = [];
   childDivs?.forEach((div) => {
     const carouselItem = createDivWithClass('carousel-item');
-    carouselItem?.classList.add('carousel-item-analytics');
+    carouselItem?.classList.add(CAROUSEL_ITEM_DASHBOARDS);
     carouselItem?.setAttribute('start-date', '23/09/2024');
     carouselItem?.setAttribute('end-date', '23/09/2030');
 
@@ -250,7 +253,7 @@ async function buildCarouselItems(block) {
   const carouselItems = [];
   assets.forEach((asset) => {
     const carouselItem = createDivWithClass('carousel-item');
-    carouselItem.classList.add('carousel-item-analytics');
+    carouselItem.classList.add(CAROUSEL_ITEM_DASHBOARDS);
     carouselItem.setAttribute('start-date', '23/09/2024');
     carouselItem.setAttribute('end-date', '23/09/2030');
     carouselItem.appendChild(asset.cloneNode(true));
@@ -271,7 +274,7 @@ export default async function decorate(block) {
   if (block.classList.contains('recognitions')) {
     const items = await buildCarouselFromSheet(block);
     main.querySelector('.carousel-track').append(...items);
-  } else if (block.classList.contains('analytics')) {
+  } else if (block.classList.contains(DASHBOARDS)) {
     const items = await buildCarouselForDashboard(block);
     main.querySelector('.carousel-track').append(...items);
   } else {
