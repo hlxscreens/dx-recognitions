@@ -1,14 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1731486568000,
+  "timestamp": 1732175373000,
   "entries": [
     {
-      "path": "/content/screens/org-amitabh/stage/dashboards/analytics-genai-dashboard/dashboard-images.html",
-      "timestamp": 1731486568000
-    },
-    {
-      "path": "/content/screens/org-amitabh/stage/dashboards/analytics-genai-dashboard/media_109acfd935cc24c7091eeefbb73146136423a1a4b.png",
-      "hash": "109acfd935cc24c7091eeefbb73146136423a1a4b"
+      "path": "/content/screens/org-amitabh/dashboards/org-gitesh/habansal/habansal-live-dashboards.html",
+      "timestamp": 1732175373000
     },
     {
       "path": "/scripts/lib-franklin.js",

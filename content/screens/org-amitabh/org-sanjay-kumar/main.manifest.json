@@ -1,97 +1,42 @@
 {
   "version": "3.0",
-  "timestamp": 1731486798000,
+  "timestamp": 1731486721000,
   "entries": [
     {
-      "path": "/content/screens/org-amitabh/org-sanjay-kumar/main.html",
-      "timestamp": 1731435983000
-    },
-    {
-      "path": "/scripts/lib-franklin.js",
-      "timestamp": 1693917738000
-    },
-    {
-      "path": "/scripts/scripts.js",
-      "timestamp": 1695812605000
-    },
-    {
-      "path": "/styles/styles.css",
-      "timestamp": 1694691630000
-    },
-    {
-      "path": "/content/screens/org-amitabh/org-sanjay-kumar/media_17dfdf41852715fee8124ac6d1e9c54332c4afe67.png",
-      "hash": "17dfdf41852715fee8124ac6d1e9c54332c4afe67"
-    },
-    {
-      "path": "/styles/lazy-styles.css",
-      "timestamp": 1693917738000
-    },
-    {
-      "path": "/content/screens/org-amitabh/org-sanjay-kumar/recognitions.json",
-      "timestamp": 1729239835000
-    },
-    {
-      "path": "/is/image/IMGDIR/komala"
-    },
-    {
-      "path": "/is/image/IMGDIR/mdekramulan"
-    },
-    {
-      "path": "/content/screens/org-amitabh/org-sanjay-kumar/media_15b149a01c46bd1aed4117b6091140262d15e030a.jpeg",
-      "hash": "15b149a01c46bd1aed4117b6091140262d15e030a"
-    },
-    {
-      "path": "/is/image/IMGDIR/shivgoel"
-    },
-    {
-      "path": "/is/image/IMGDIR/mekumari"
-    },
-    {
-      "path": "/is/image/IMGDIR/shauryac"
-    },
-    {
-      "path": "/is/image/IMGDIR/srivatsanr"
-    },
-    {
-      "path": "/is/image/IMGDIR/ritusaini"
-    },
-    {
-      "path": "/is/image/IMGDIR/naseem"
-    },
-    {
-      "path": "/is/image/IMGDIR/rohitsrivast"
-    },
-    {
-      "path": "/is/image/IMGDIR/akshatja"
-    },
-    {
-      "path": "/is/image/IMGDIR/shubhanshua"
-    },
-    {
-      "path": "/is/image/IMGDIR/rdaga"
-    },
-    {
-      "path": "/is/image/IMGDIR/rohku"
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1731486721000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1731480716000
+      "timestamp": 1731439785000
     },
     {
       "path": "/blocks/carousel/utils.js",
       "timestamp": 1694524112000
     },
     {
-      "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1731486798000
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1694524112000
     },
     {
-      "path": "/icons/not-found.png",
-      "timestamp": 1695736194000
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1694524112000
     },
     {
-      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1694691630000
+      "path": "/content/screens/org-amitabh/org-sanjay-kumar/main.html",
+      "timestamp": 1700737170000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-sanjay-kumar/media_15b149a01c46bd1aed4117b6091140262d15e030a.jpeg",
+      "hash": "15b149a01c46bd1aed4117b6091140262d15e030a"
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-sanjay-kumar/media_17dfdf41852715fee8124ac6d1e9c54332c4afe67.png",
+      "hash": "17dfdf41852715fee8124ac6d1e9c54332c4afe67"
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-sanjay-kumar/recognitions.json",
+      "timestamp": 1729239864000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
@@ -102,12 +47,28 @@
       "timestamp": 1694691630000
     },
     {
-      "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1694524112000
+      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
+      "timestamp": 1694691630000
     },
     {
-      "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1694524112000
+      "path": "/icons/not-found.png",
+      "timestamp": 1695736194000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1695812605000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
     }
   ],
   "contentDelivery": {

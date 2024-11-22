@@ -1,54 +1,38 @@
 {
   "version": "3.0",
-  "timestamp": 1731486798000,
+  "timestamp": 1731486721000,
   "entries": [
     {
-      "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.html",
-      "timestamp": 1731435983000
-    },
-    {
-      "path": "/scripts/lib-franklin.js",
-      "timestamp": 1693917738000
-    },
-    {
-      "path": "/scripts/scripts.js",
-      "timestamp": 1695812605000
-    },
-    {
-      "path": "/styles/styles.css",
-      "timestamp": 1694691630000
-    },
-    {
-      "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/media_1faab2c06d663faadc55a27e2102f012522ff958b.png",
-      "hash": "1faab2c06d663faadc55a27e2102f012522ff958b"
-    },
-    {
-      "path": "/styles/lazy-styles.css",
-      "timestamp": 1693917738000
-    },
-    {
-      "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/recognitions.json",
-      "timestamp": 1699351440000
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1731486721000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1731480716000
+      "timestamp": 1731439785000
     },
     {
       "path": "/blocks/carousel/utils.js",
       "timestamp": 1694524112000
     },
     {
-      "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1731486798000
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1694524112000
     },
     {
-      "path": "/icons/not-found.png",
-      "timestamp": 1695736194000
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1694524112000
     },
     {
-      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1694691630000
+      "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.html",
+      "timestamp": 1699378774000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/media_1faab2c06d663faadc55a27e2102f012522ff958b.png",
+      "hash": "1faab2c06d663faadc55a27e2102f012522ff958b"
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/recognitions.json",
+      "timestamp": 1700735113000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
@@ -59,12 +43,28 @@
       "timestamp": 1694691630000
     },
     {
-      "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1694524112000
+      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
+      "timestamp": 1694691630000
     },
     {
-      "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1694524112000
+      "path": "/icons/not-found.png",
+      "timestamp": 1695736194000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1695812605000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
     }
   ],
   "contentDelivery": {
