@@ -28,18 +28,10 @@ html {
     height: 100vh;
 }
 
-.carousel-item-analytics img {
-    object-fit: contain;
-}
-
 .carousel-item iframe {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
-}
-
-.carousel-item-analytics iframe {
-    object-fit: contain;
 }
 
 /* header */
