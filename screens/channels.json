@@ -81,6 +81,27 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.html"
     },
     {
+      "manifestPath": "/content/screens/org-amitabh/dashboards/habansal-dashboards.manifest.json",
+      "lastModified": "2024-11-22T12:59:21.103Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/habansal-dashboards",
+      "title": "Hanish Bansal Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/habansal-dashboards.html"
+    },
+    {
       "manifestPath": "/content/screens/org-amitabh/dashboards/live-dashboards/live-dashboards.manifest.json",
       "lastModified": "2024-11-22T11:36:35.000Z",
       "hierarchy": [
@@ -104,6 +125,31 @@
       "externalId": "/content/screens/org-amitabh/dashboards/live-dashboards/live-dashboards",
       "title": "DX India Live Dashboards",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/live-dashboards/live-dashboards.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/dashboards/live-dashboards/live-dashboards1.manifest.json",
+      "lastModified": "2024-11-22T12:59:21.101Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        },
+        {
+          "title": "live-dashboards",
+          "path": "/content/screens/org-amitabh/dashboards/live-dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/live-dashboards/live-dashboards1",
+      "title": "DX India Live Dashboards 1",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/live-dashboards/live-dashboards1.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/main.manifest.json",
@@ -156,6 +202,35 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/org-gitesh/habansal/habansal-live-dashboards.html"
     },
     {
+      "manifestPath": "/content/screens/org-amitabh/dashboards/org-gitesh/habansal/habansal-live-dashboards1.manifest.json",
+      "lastModified": "2024-11-22T12:59:21.097Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        },
+        {
+          "title": "org-gitesh",
+          "path": "/content/screens/org-amitabh/dashboards/org-gitesh"
+        },
+        {
+          "title": "habansal",
+          "path": "/content/screens/org-amitabh/dashboards/org-gitesh/habansal"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/org-gitesh/habansal/habansal-live-dashboards1",
+      "title": "DX India Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/org-gitesh/habansal/habansal-live-dashboards1.html"
+    },
+    {
       "manifestPath": null,
       "lastModified": "2024-11-22T11:36:35.000Z",
       "hierarchy": [
@@ -183,6 +258,52 @@
       "externalId": "/content/screens/org-amitabh/dashboards/org-gitesh/varu/varu-live-dashboards1",
       "title": "DX India Live Dashboards",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/org-gitesh/varu/varu-live-dashboards1.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/dashboards/stage/channel-with-sheet.manifest.json",
+      "lastModified": "2024-11-22T12:59:21.106Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        },
+        {
+          "title": "stage",
+          "path": "/content/screens/org-amitabh/dashboards/stage"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/stage/channel-with-sheet",
+      "title": "DX India Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/stage/channel-with-sheet.html"
+    },
+    {
+      "manifestPath": null,
+      "lastModified": "2024-11-22T12:59:21.102Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/varu-dashboards",
+      "title": "Varun Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/varu-dashboards.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/happy-diwali/main.manifest.json",
