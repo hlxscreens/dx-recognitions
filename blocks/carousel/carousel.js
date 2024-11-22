@@ -217,7 +217,7 @@ async function buildCarouselFromSheet(block) {
 async function buildCarouselForDashboard(block) {
   const childDivs = Array.from(block.children);
   const carouselItems = [];
-  childDivs?.forEach((div) => {
+  childDivs?.forEach(async (div) => {
     const carouselItem = createDivWithClass('carousel-item');
     carouselItem?.classList.add('carousel-item-analytics');
     carouselItem?.setAttribute('start-date', '23/09/2024');
@@ -226,14 +226,73 @@ async function buildCarouselForDashboard(block) {
     const link = div.querySelector('a');
     if (link) {
       const path = link.getAttribute('href');
-      const iframe = document.createElement('iframe');
-      iframe.src = path;
-      carouselItem.appendChild(iframe);
+      const processSheetDataResponse = (sheetDataResponse) => {
+        if (sheetDataResponse[':type'] === 'sheet') {
+          return sheetDataResponse.data;
+        }
+        throw new Error(`Invalid sheet type: ${sheetDataResponse[':type']}`);
+      };
+      const fetchData = async (url, method = 'GET', additionalHeaders = {}) => {
+        let result = '';
+        try {
+          result = fetch(url, {
+            method,
+            headers: {
+              ...additionalHeaders
+            }}
+          ).then((response) => {
+            if (!response.ok) {
+              throw new Error(`request to fetch ${url} failed with status code ${response.status}`);
+            }
+            return response.text();
+          });
+          return Promise.resolve(result);
+        } catch (e) {
+          throw new Error(`request to fetch ${url} failed with status code with error ${e}`);
+        }
+      };
+      const getCarouselItems = async () => {
+        let errorFlag = false;
+        try {
+          // eslint-disable-next-line no-await-in-loop
+          const sheetDataResponse = JSON.parse(await fetchData(path, 'GET', {'X-Client-Type': "franklin"}));
+          console.log(sheetDataResponse);
+          if (!sheetDataResponse) {
+            console.warn(`Invalid sheet Link ${JSON.stringify(sheetDetails[sheetIndex])}.Skipping processing this one.`);
+          } else {
+            const sheetData = processSheetDataResponse(sheetDataResponse);
+            console.log(sheetData);
+            for (let row = 0; row < sheetData.length; row += 1) {
+              try {
+                const assetDetails = sheetData[row];
+                console.log('asset details', assetDetails);
+                const iframe = document.createElement('iframe');
+                const dashboardURL = assetDetails['Dashboard URL'];
+                iframe.src = dashboardURL;
+                carouselItem.appendChild(iframe);
+                carouselItems.push(carouselItem);
+              } catch (err) {
+                console.warn(`Error while processing asset ${JSON.stringify(sheetData[row])}`, err);
+              }
+            }
+          }
+        } catch (err) {
+            errorFlag = true;
+            console.warn(`Error while processing sheet ${JSON.stringify(sheetDetails[sheetIndex])}`, err);
+          }
+        if (carouselItems.length === 0 && errorFlag) {
+          // Don't create HTML with no assets when there was an error
+          console.log('Skipping HTML generation due to assets length zero along with error occurrence');
+          return carouselItems;
+        }
+        return carouselItems;
+      };
+      await getCarouselItems();
     } else {
       const picture = div.querySelector('picture');
       carouselItem.appendChild(picture.cloneNode(true));
+      carouselItems.push(carouselItem);
     }
-    carouselItems.push(carouselItem);
   });
   return carouselItems;
 }
