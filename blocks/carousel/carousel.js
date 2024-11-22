@@ -16,7 +16,7 @@ const DEFAULT_ITEM_DURATION = 10 * 1000; // 10 seconds
 const DEFAULT_DASHBOARD_ITEM_DURATION = 60 * 1000; // 60 seconds
 let itemDuration = DEFAULT_ITEM_DURATION;
 
-const DASHBOARDS_BLOCK_NAME = 'dashboards'
+const DASHBOARDS_BLOCK_NAME = 'dashboards';
 const CAROUSEL_ITEM_DASHBOARDS_CLASS = `carousel-item-${DASHBOARDS_BLOCK_NAME}`;
 
 const TIMEOUTS = {
