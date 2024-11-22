@@ -1,34 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1732192939000,
+  "timestamp": 1731486721000,
   "entries": [
     {
-      "path": "/content/screens/org-amitabh/org-gitesh/varu/main.html",
-      "timestamp": 1732192939000
-    },
-    {
-      "path": "/scripts/lib-franklin.js",
-      "timestamp": 1693917738000
-    },
-    {
-      "path": "/scripts/scripts.js",
-      "timestamp": 1695812605000
-    },
-    {
-      "path": "/styles/styles.css",
-      "timestamp": 1694691630000
-    },
-    {
-      "path": "/content/screens/org-amitabh/org-gitesh/varu/media_1ef212998b85831c41df552fc8db9831fee5042ca.png",
-      "hash": "1ef212998b85831c41df552fc8db9831fee5042ca"
-    },
-    {
-      "path": "/styles/lazy-styles.css",
-      "timestamp": 1693917738000
-    },
-    {
-      "path": "/content/screens/org-amitabh/org-gitesh/varu/recognitions.json",
-      "timestamp": 1705247987000
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1731486721000
     },
     {
       "path": "/blocks/carousel/carousel.js",
@@ -39,16 +15,24 @@
       "timestamp": 1694524112000
     },
     {
-      "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1731486721000
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1694524112000
     },
     {
-      "path": "/icons/not-found.png",
-      "timestamp": 1695736194000
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1694524112000
     },
     {
-      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1694691630000
+      "path": "/content/screens/org-amitabh/org-gitesh/varu/main.html",
+      "timestamp": 1705048343000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-gitesh/varu/media_1ef212998b85831c41df552fc8db9831fee5042ca.png",
+      "hash": "1ef212998b85831c41df552fc8db9831fee5042ca"
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-gitesh/varu/recognitions.json",
+      "timestamp": 1705248060000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
@@ -59,12 +43,28 @@
       "timestamp": 1694691630000
     },
     {
-      "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1694524112000
+      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
+      "timestamp": 1694691630000
     },
     {
-      "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1694524112000
+      "path": "/icons/not-found.png",
+      "timestamp": 1695736194000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1695812605000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
     }
   ],
   "contentDelivery": {

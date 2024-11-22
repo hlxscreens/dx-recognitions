@@ -1,10 +1,14 @@
 {
   "version": "3.0",
-  "timestamp": 1732192939000,
+  "timestamp": 1731486568000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/stage/dashboards/analytics-genai-dashboard/dashboard-images.html",
-      "timestamp": 1732192939000
+      "timestamp": 1731486568000
+    },
+    {
+      "path": "/content/screens/org-amitabh/stage/dashboards/analytics-genai-dashboard/media_109acfd935cc24c7091eeefbb73146136423a1a4b.png",
+      "hash": "109acfd935cc24c7091eeefbb73146136423a1a4b"
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -15,16 +19,12 @@
       "timestamp": 1695812605000
     },
     {
-      "path": "/styles/styles.css",
-      "timestamp": 1694691630000
-    },
-    {
-      "path": "/content/screens/org-amitabh/stage/dashboards/analytics-genai-dashboard/media_109acfd935cc24c7091eeefbb73146136423a1a4b.png",
-      "hash": "109acfd935cc24c7091eeefbb73146136423a1a4b"
-    },
-    {
       "path": "/styles/lazy-styles.css",
       "timestamp": 1693917738000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
     }
   ],
   "contentDelivery": {
