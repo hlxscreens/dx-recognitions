@@ -285,8 +285,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/stage/channel-with-sheet.html"
     },
     {
-      "manifestPath": "/content/screens/org-amitabh/dashboards/varu-dashboards.manifest.json",
-      "lastModified": "2024-11-22T14:14:55.364Z",
+      "manifestPath": null,
+      "lastModified": "2024-11-23T13:57:08.270Z",
       "hierarchy": [
         {
           "title": "screens",
