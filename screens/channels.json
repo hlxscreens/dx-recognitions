@@ -81,8 +81,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.html"
     },
     {
-      "manifestPath": "/content/screens/org-amitabh/dashboards/anup-dashboards.manifest.json",
-      "lastModified": "2024-11-25T11:10:07.970Z",
+      "manifestPath": null,
+      "lastModified": "2024-11-25T11:15:05.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -102,8 +102,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/anup-dashboards.html"
     },
     {
-      "manifestPath": null,
-      "lastModified": "2024-11-25T11:10:07.968Z",
+      "manifestPath": "/content/screens/org-amitabh/dashboards/gitesh-dashboards.manifest.json",
+      "lastModified": "2024-11-25T11:36:28.886Z",
       "hierarchy": [
         {
           "title": "screens",
