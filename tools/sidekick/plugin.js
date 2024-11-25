@@ -44,7 +44,7 @@ sk.addEventListener('custom:publish-channel', async (e) => {
     response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
 
     if (response.ok) {
-      console.log(`Document Published at ${new Date().toLocaleString()}`);
+      console.log(`Sheet Published at ${new Date().toLocaleString()}`);
     } else {
       throw new Error(`Could not previewed. Status: ${response.status}`);
     }
