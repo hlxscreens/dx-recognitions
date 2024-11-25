@@ -278,6 +278,27 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/manoj-dashboards.html"
     },
     {
+      "manifestPath": null,
+      "lastModified": "2024-11-25T14:26:51.734Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/mayankg-dashboards",
+      "title": "Mayank Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/mayankg-dashboards.html"
+    },
+    {
       "manifestPath": "/content/screens/org-amitabh/dashboards/org-gitesh/habansal/habansal-live-dashboards.manifest.json",
       "lastModified": "2024-11-22T11:36:35.000Z",
       "hierarchy": [
