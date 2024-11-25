@@ -103,6 +103,48 @@
     },
     {
       "manifestPath": null,
+      "lastModified": "2024-11-25T12:45:28.687Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/balaji-dashboards",
+      "title": "Balaji Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/balaji-dashboards.html"
+    },
+    {
+      "manifestPath": null,
+      "lastModified": "2024-11-25T12:45:28.691Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/gaurav-dashboards",
+      "title": "Gaurav Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/gaurav-dashboards.html"
+    },
+    {
+      "manifestPath": null,
       "lastModified": "2024-11-25T11:41:31.000Z",
       "hierarchy": [
         {
@@ -215,6 +257,27 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/main.html"
     },
     {
+      "manifestPath": null,
+      "lastModified": "2024-11-25T12:45:28.694Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/manoj-dashboards",
+      "title": "Manoj Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/manoj-dashboards.html"
+    },
+    {
       "manifestPath": "/content/screens/org-amitabh/dashboards/org-gitesh/habansal/habansal-live-dashboards.manifest.json",
       "lastModified": "2024-11-22T11:36:35.000Z",
       "hierarchy": [
@@ -302,6 +365,48 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/org-gitesh/varu/varu-live-dashboards1.html"
     },
     {
+      "manifestPath": null,
+      "lastModified": "2024-11-25T12:45:28.683Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/sanjay-kaluskar-dashboards",
+      "title": "Sanjay Kaluskar Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/sanjay-kaluskar-dashboards.html"
+    },
+    {
+      "manifestPath": null,
+      "lastModified": "2024-11-25T12:45:28.690Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/sanjay-kumar-dashboards",
+      "title": "Sanjay Kumar Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/sanjay-kumar-dashboards.html"
+    },
+    {
       "manifestPath": "/content/screens/org-amitabh/dashboards/stage/channel-with-sheet.manifest.json",
       "lastModified": "2024-11-22T13:04:27.000Z",
       "hierarchy": [
@@ -328,6 +433,27 @@
     },
     {
       "manifestPath": null,
+      "lastModified": "2024-11-25T12:45:28.676Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/suvrat-dashboards",
+      "title": "Suvrat Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/suvrat-dashboards.html"
+    },
+    {
+      "manifestPath": null,
       "lastModified": "2024-11-25T11:03:13.000Z",
       "hierarchy": [
         {
@@ -346,6 +472,27 @@
       "externalId": "/content/screens/org-amitabh/dashboards/varu-dashboards",
       "title": "Varun Live Dashboards",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/varu-dashboards.html"
+    },
+    {
+      "manifestPath": null,
+      "lastModified": "2024-11-25T12:45:28.696Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/vikas-dashboards",
+      "title": "Vikas Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/vikas-dashboards.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/happy-diwali/main.manifest.json",
