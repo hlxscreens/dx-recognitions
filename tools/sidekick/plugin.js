@@ -37,32 +37,18 @@ sk.addEventListener('custom:publish-channel', async (e) => {
     throw new Error(`Could not previewed. Status: ${response.status}`);
   }
 
-  //Getting 401 error while purging cache
-  /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
+  const isDashboardDocument = path.includes('dashboards');
+  if (!isDashboardDocument) {
+    const sheetPath = `${path.slice(0, -4)}recognitions.json`;
 
-  if (response.ok) {
-    console.log(`Purge cache ${new Date().toLocaleString()}`);
-  } else {
-    throw new Error(`Could not purge cache. Status: ${response.status}`);
-  }*/
+    response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
 
-  const sheetPath = `${path.slice(0, -4)}recognitions.json`;
-
-  response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
-
-  if (response.ok) {
-    console.log(`Document Published at ${new Date().toLocaleString()}`);
-  } else {
-    throw new Error(`Could not previewed. Status: ${response.status}`);
+    if (response.ok) {
+      console.log(`Document Published at ${new Date().toLocaleString()}`);
+    } else {
+      throw new Error(`Could not previewed. Status: ${response.status}`);
+    }
   }
-  //Getting 401 error while purging cache
-  /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${sheetPath}`, options);
-
-  if (response.ok) {
-    console.log(`Purge cache ${new Date().toLocaleString()}`);
-  } else {
-    throw new Error(`Could not purge cache. Status: ${response.status}`);
-  }*/
 
   const prodUrl = `https://${host}${path}`;
   window.location.href = prodUrl;
