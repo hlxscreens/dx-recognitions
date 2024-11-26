@@ -1,0 +1,35 @@
+{
+  "version": "3.0",
+  "timestamp": 1732626011752,
+  "entries": [
+    {
+      "path": "/content/screens/org-amitabh/dashboards/n132-06-61nw.html",
+      "timestamp": 1732626011752
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1732275395000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
