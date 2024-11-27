@@ -15,9 +15,10 @@ function adjustScale() {
 }
 
 // Adjust scale on load and when the window is resized
-window.addEventListener("load", adjustScale);
-window.addEventListener("resize", adjustScale);
-
-// load the dashboard
-const dashboardURL = new URL(window.location.href).searchParams.get('dashboardURL');
-document.querySelector('#viewport iframe').src = dashboardURL;
+window.addEventListener('load', adjustScale);
+window.addEventListener('load', () => {
+  // load the dashboard
+  const dashboardURL = new URL(window.location.href).searchParams.get('dashboardURL');
+  document.querySelector('#viewport iframe').src = dashboardURL;
+});
+window.addEventListener('resize', adjustScale);
