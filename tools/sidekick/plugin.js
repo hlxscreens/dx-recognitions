@@ -70,3 +70,12 @@ sk.addEventListener('custom:publish-channel', async (e) => {
   const prodUrl = `https://${host}${path}`;
   window.location.href = prodUrl;
 });
+
+sk.addEventListener('custom:preview-dashboard', async (e) => {
+  if (e.detail) {
+    console.log(JSON.stringify(e.detail));
+  } else {
+    console.log('details not available');
+  }
+  window.open('../preview-dashboard/index.html', '_blank');
+});
