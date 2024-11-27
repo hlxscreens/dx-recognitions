@@ -73,9 +73,9 @@ sk.addEventListener('custom:publish-channel', async (e) => {
 
 sk.addEventListener('custom:preview-dashboard', async (e) => {
   if (e.detail) {
-    console.log(JSON.stringify(e.detail));
+    console.log('event details:', JSON.stringify(e.detail));
   } else {
     console.log('details not available');
   }
-  window.open('../preview-dashboard/index.html', '_blank');
+  window.open(window.location.origin + '/tools/preview-sheet/index.html?dashboardURL' + window.location.href);
 });
