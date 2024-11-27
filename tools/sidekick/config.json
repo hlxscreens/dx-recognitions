@@ -21,7 +21,7 @@
       "title": "Preview for Signage",
       "event": "preview-for-signage",
       "environments": ["preview"],
-      "excludePaths": [ "**/tools/**" ]
+      "excludePaths": [ "**/tools/preview-dashboard/**" ]
     }
   ]
 }
