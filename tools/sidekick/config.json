@@ -14,7 +14,8 @@
       "event": "publish-channel",
       "passConfig": true,
       "passReferrer": true,
-      "environments": ["preview"]
+      "environments": ["preview"],
+      "excludePaths": [ "**/tools/preview-dashboard/**" ]
     },
     {
       "id": "preview-for-signage",
