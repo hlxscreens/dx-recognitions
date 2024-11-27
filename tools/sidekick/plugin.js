@@ -71,7 +71,7 @@ sk.addEventListener('custom:publish-channel', async (e) => {
   window.location.href = prodUrl;
 });
 
-sk.addEventListener('custom:preview-dashboard', async (e) => {
+sk.addEventListener('custom:preview-for-signage', async (e) => {
   if (e.detail) {
     console.log('event details:', JSON.stringify(e.detail));
   } else {

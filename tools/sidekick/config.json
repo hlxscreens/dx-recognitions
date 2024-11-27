@@ -17,12 +17,10 @@
       "environments": ["preview"]
     },
     {
-      "id": "preview-dashboard",
-        "title": "Preview-Dashboard",
-        "event": "preview-dashboard",
-        "passConfig": true,
-        "passReferrer": true,
-        "environments": ["preview"]
+      "id": "preview-for-signage",
+      "title": "Preview for Signage",
+      "event": "preview-for-signage",
+      "environments": ["preview"]
     }
   ]
 }
