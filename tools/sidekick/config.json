@@ -20,7 +20,8 @@
       "id": "preview-for-signage",
       "title": "Preview for Signage",
       "event": "preview-for-signage",
-      "environments": ["preview"]
+      "environments": ["preview"],
+      "excludePaths": [ "**" ]
     }
   ]
 }
