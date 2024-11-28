@@ -8,9 +8,10 @@ function adjustScale() {
   const scaleX = windowWidth / targetWidth;
   const scaleY = windowHeight / targetHeight;
   const scale = Math.min(scaleX, scaleY); // Choose the smaller scale to fit
+  console.info('scale: ', scale, '; scaleX: ', scaleX, '; scaleY', scaleY, '; windowWidth', windowWidth, '; windowHeight', windowHeight);
 
   // Apply the scaling
-  const viewport = document.getElementById("viewport");
+  const viewport = document.getElementById('viewport');
   viewport.style.transform = `scale(${scale})`;
 }
 
