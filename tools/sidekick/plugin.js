@@ -77,5 +77,5 @@ sk.addEventListener('custom:preview-for-signage', async (e) => {
   } else {
     console.log('details not available');
   }
-  window.open(window.location.origin + '/tools/preview-dashboard/index.html?url=' + window.location.href);
+  window.open(window.location.origin + '/tools/preview-for-signage/index.html?url=' + window.location.href);
 });
