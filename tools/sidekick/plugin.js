@@ -70,3 +70,12 @@ sk.addEventListener('custom:publish-channel', async (e) => {
   const prodUrl = `https://${host}${path}`;
   window.location.href = prodUrl;
 });
+
+sk.addEventListener('custom:preview-for-signage', async (e) => {
+  if (e.detail) {
+    console.log('event details:', JSON.stringify(e.detail));
+  } else {
+    console.log('details not available');
+  }
+  window.open(window.location.origin + '/tools/preview-for-signage/index.html?url=' + window.location.href);
+});

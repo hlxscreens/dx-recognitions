@@ -14,7 +14,15 @@
       "event": "publish-channel",
       "passConfig": true,
       "passReferrer": true,
-      "environments": ["preview"]
+      "environments": ["preview"],
+      "excludePaths": [ "**/tools/preview-for-signage/**" ]
+    },
+    {
+      "id": "preview-for-signage",
+      "title": "Preview for Signage",
+      "event": "preview-for-signage",
+      "environments": ["preview"],
+      "excludePaths": [ "**/tools/preview-for-signage/**" ]
     }
   ]
 }
