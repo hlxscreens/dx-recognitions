@@ -12,7 +12,7 @@ function adjustScale() {
   console.info('scale: ', scale, '; scaleX: ', scaleX, '; scaleY', scaleY, '; windowWidth', windowWidth, '; windowHeight', windowHeight);
 
   // Apply the scaling
-  const viewport = document.getElementById('viewport');
+  const viewport = document.getElementById('signage-viewport');
   viewport.style.transform = `scale(${scale})`;
 }
 
