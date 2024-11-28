@@ -21,6 +21,6 @@ window.addEventListener('load', adjustScale);
 window.addEventListener('load', () => {
   // load the dashboard
   const url = new URL(window.location.href).searchParams.get('url');
-  document.querySelector('#viewport iframe').src = url;
+  document.querySelector('#signage-viewport iframe').src = url;
 });
 window.addEventListener('resize', adjustScale);
