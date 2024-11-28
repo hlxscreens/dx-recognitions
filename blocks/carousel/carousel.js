@@ -289,7 +289,7 @@ export default async function decorate(block) {
     }
     const currentItem = carouselItems[itemIndex];
     const currentIframe = currentItem.querySelector('iframe');
-    currentIframe.src = currentIframe.src;
+    currentIframe.src = currentIframe.src; // reassigning src will reload iframe
   }
 
   function showSlide(itemIndex) {
