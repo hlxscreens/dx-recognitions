@@ -1,12 +1,13 @@
+const TARGET_WIDTH = 1920; // Target resolution width
+const TARGET_HEIGHT = 1080; // Target resolution height
+
 function adjustScale() {
-  const targetWidth = 1920; // Target resolution width
-  const targetHeight = 1080; // Target resolution height
   const windowWidth = window.innerWidth; // Current window width
   const windowHeight = window.innerHeight; // Current window height
 
   // Calculate scaling factors
-  const scaleX = windowWidth / targetWidth;
-  const scaleY = windowHeight / targetHeight;
+  const scaleX = windowWidth / TARGET_WIDTH;
+  const scaleY = windowHeight / TARGET_HEIGHT;
   const scale = Math.min(scaleX, scaleY); // Choose the smaller scale to fit
   console.info('scale: ', scale, '; scaleX: ', scaleX, '; scaleY', scaleY, '; windowWidth', windowWidth, '; windowHeight', windowHeight);
 
@@ -19,7 +20,7 @@ function adjustScale() {
 window.addEventListener('load', adjustScale);
 window.addEventListener('load', () => {
   // load the dashboard
-  const dashboardURL = new URL(window.location.href).searchParams.get('dashboardURL');
-  document.querySelector('#viewport iframe').src = dashboardURL;
+  const url = new URL(window.location.href).searchParams.get('url');
+  document.querySelector('#viewport iframe').src = url;
 });
 window.addEventListener('resize', adjustScale);
