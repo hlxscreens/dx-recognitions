@@ -283,6 +283,15 @@ export default async function decorate(block) {
     return false;
   }
 
+  function reloadSlide(itemIndex) {
+    if (itemIndex < 0 || itemIndex >= totalItems) {
+      return;
+    }
+    const currentItem = carouselItems[itemIndex];
+    const currentIframe = currentItem.querySelector('iframe');
+    currentIframe.src = currentIframe.src;
+  }
+
   function showSlide(itemIndex) {
     if (itemIndex < 0 || itemIndex >= totalItems) {
       return;
@@ -300,6 +309,7 @@ export default async function decorate(block) {
     if (!isActive(currentIndex)) {
       nextSlide();
     } else {
+      reloadSlide(currentIndex);
       showSlide(currentIndex);
       TIMEOUTS.setTimeout(nextSlide, itemDuration);
     }
