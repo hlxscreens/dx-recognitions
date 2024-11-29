@@ -283,18 +283,19 @@ export default async function decorate(block) {
     return false;
   }
 
+
+  function reloadIframe(currentIframe) {
+    if (currentIframe && currentIframe.src) {
+      currentIframe.src = currentIframe.src; // reassigning src will reload iframe
+    }
+  }
+
   function reloadSlide(itemIndex) {
     if (itemIndex < 0 || itemIndex >= totalItems) {
       return;
     }
     const currentItem = carouselItems[itemIndex];
     const currentIframe = currentItem?.querySelector('iframe');
-
-    function reloadIframe(currentIframe) {
-      if (currentIframe && currentIframe.src) {
-        currentIframe.src = currentIframe.src; // reassigning src will reload iframe
-      }
-    }
 
     reloadIframe(currentIframe);
   }
