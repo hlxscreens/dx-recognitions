@@ -283,6 +283,9 @@ export default async function decorate(block) {
     return false;
   }
 
+  function getNextItemIndex(itemIndex) {
+    return (itemIndex + 1) % totalItems;
+  }
 
   function reloadIframe(currentIframe) {
     if (currentIframe && currentIframe.src) {
@@ -291,13 +294,16 @@ export default async function decorate(block) {
   }
 
   function reloadSlide(itemIndex) {
-    if (itemIndex < 0 || itemIndex >= totalItems) {
-      return;
+    function getIframeInSlide(index) {
+      if (index < 0 || index >= totalItems) {
+        return;
+      }
+      const currentItem = carouselItems[index];
+      return currentItem?.querySelector('iframe');
     }
-    const currentItem = carouselItems[itemIndex];
-    const currentIframe = currentItem?.querySelector('iframe');
 
-    reloadIframe(currentIframe);
+    const iframeInSlide = getIframeInSlide(itemIndex);
+    reloadIframe(iframeInSlide);
   }
 
   function showSlide(itemIndex) {
@@ -310,14 +316,19 @@ export default async function decorate(block) {
     carouselTrack.style.transform = `translateX(${translateX}px)`;
   }
 
+  function preloadNextSlide(itemIndex) {
+    const nextItemIndex = getNextItemIndex(itemIndex);
+    reloadSlide(nextItemIndex);
+  }
+
   function nextSlide() {
     // Stop the previous carousels
     TIMEOUTS.clearAllTimeouts();
-    currentIndex = (currentIndex + 1) % totalItems;
+    currentIndex = getNextItemIndex(currentIndex, totalItems);
     if (!isActive(currentIndex)) {
       nextSlide();
     } else {
-      reloadSlide(currentIndex);
+      preloadNextSlide(currentIndex);
       showSlide(currentIndex);
       TIMEOUTS.setTimeout(nextSlide, itemDuration);
     }
