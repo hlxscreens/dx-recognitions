@@ -242,6 +242,10 @@ async function buildCarouselForDashboard(block) {
     carouselItems.push(carouselItem);
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
+  if(carouselItems.length === 1) {
+    const firstCarouselItem = carouselItems[0];
+    carouselItems.push(firstCarouselItem.cloneNode(true));
+  }
   return carouselItems;
 }
 
@@ -283,6 +287,29 @@ export default async function decorate(block) {
     return false;
   }
 
+  function getNextItemIndex(itemIndex) {
+    return (itemIndex + 1) % totalItems;
+  }
+
+  function reloadIframe(iframe) {
+    if (iframe && iframe.src) {
+      iframe.src = iframe.src; // reassigning src will reload iframe
+    }
+  }
+
+  function reloadSlide(itemIndex) {
+    function getIframeInSlide(index) {
+      if (index < 0 || index >= totalItems) {
+        return null;
+      }
+      const currentItem = carouselItems[index];
+      return currentItem?.querySelector('iframe');
+    }
+
+    const iframeInSlide = getIframeInSlide(itemIndex);
+    reloadIframe(iframeInSlide);
+  }
+
   function showSlide(itemIndex) {
     if (itemIndex < 0 || itemIndex >= totalItems) {
       return;
@@ -293,13 +320,19 @@ export default async function decorate(block) {
     carouselTrack.style.transform = `translateX(${translateX}px)`;
   }
 
+  function preloadNextSlide(itemIndex) {
+    const nextItemIndex = getNextItemIndex(itemIndex);
+    reloadSlide(nextItemIndex);
+  }
+
   function nextSlide() {
     // Stop the previous carousels
     TIMEOUTS.clearAllTimeouts();
-    currentIndex = (currentIndex + 1) % totalItems;
+    currentIndex = getNextItemIndex(currentIndex);
     if (!isActive(currentIndex)) {
       nextSlide();
     } else {
+      preloadNextSlide(currentIndex);
       showSlide(currentIndex);
       TIMEOUTS.setTimeout(nextSlide, itemDuration);
     }
