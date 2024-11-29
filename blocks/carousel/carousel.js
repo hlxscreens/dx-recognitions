@@ -242,6 +242,10 @@ async function buildCarouselForDashboard(block) {
     carouselItems.push(carouselItem);
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
+  if(carouselItems.length === 1) {
+    const firstCarouselItem = carouselItems[0];
+    carouselItems.push(firstCarouselItem.cloneNode(true));
+  }
   return carouselItems;
 }
 
