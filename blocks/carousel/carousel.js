@@ -291,16 +291,16 @@ export default async function decorate(block) {
     return (itemIndex + 1) % totalItems;
   }
 
-  function reloadIframe(currentIframe) {
-    if (currentIframe && currentIframe.src) {
-      currentIframe.src = currentIframe.src; // reassigning src will reload iframe
+  function reloadIframe(iframe) {
+    if (iframe && iframe.src) {
+      iframe.src = iframe.src; // reassigning src will reload iframe
     }
   }
 
   function reloadSlide(itemIndex) {
     function getIframeInSlide(index) {
       if (index < 0 || index >= totalItems) {
-        return;
+        return null;
       }
       const currentItem = carouselItems[index];
       return currentItem?.querySelector('iframe');
@@ -328,7 +328,7 @@ export default async function decorate(block) {
   function nextSlide() {
     // Stop the previous carousels
     TIMEOUTS.clearAllTimeouts();
-    currentIndex = getNextItemIndex(currentIndex, totalItems);
+    currentIndex = getNextItemIndex(currentIndex);
     if (!isActive(currentIndex)) {
       nextSlide();
     } else {
