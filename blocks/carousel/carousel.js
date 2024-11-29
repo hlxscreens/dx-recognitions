@@ -288,8 +288,15 @@ export default async function decorate(block) {
       return;
     }
     const currentItem = carouselItems[itemIndex];
-    const currentIframe = currentItem.querySelector('iframe');
-    currentIframe.src = currentIframe.src; // reassigning src will reload iframe
+    const currentIframe = currentItem?.querySelector('iframe');
+
+    function reloadIframe(currentIframe) {
+      if (currentIframe && currentIframe.src) {
+        currentIframe.src = currentIframe.src; // reassigning src will reload iframe
+      }
+    }
+
+    reloadIframe(currentIframe);
   }
 
   function showSlide(itemIndex) {
