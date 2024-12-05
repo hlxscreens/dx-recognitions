@@ -1640,6 +1640,48 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-vikas/main.html"
     },
     {
+      "manifestPath": "/content/screens/org-amitabh/posters/imagedashboards-n132-05-282-se.manifest.json",
+      "lastModified": "2024-12-05T10:53:19.078Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-amitabh/posters"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/posters/imagedashboards-n132-05-282-se",
+      "title": "N132-05-282-SE ImageDashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/posters/imagedashboards-n132-05-282-se.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/posters/posters-n132-05-282-se.manifest.json",
+      "lastModified": "2024-12-05T10:53:19.076Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-amitabh/posters"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/posters/posters-n132-05-282-se",
+      "title": "N132-05-282-SE Live Dashboards",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/posters/posters-n132-05-282-se.html"
+    },
+    {
       "manifestPath": "/content/screens/org-amitabh/stage/dashboards/analytics-genai-dashboard/dashboard-images.manifest.json",
       "lastModified": "2024-11-22T11:36:35.000Z",
       "hierarchy": [
