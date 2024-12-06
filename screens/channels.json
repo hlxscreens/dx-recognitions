@@ -1058,6 +1058,31 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/org-gitesh/varu/varu-live-dashboards1.html"
     },
     {
+      "manifestPath": "/content/screens/org-amitabh/dashboards/posters/posters-n132-05-282-se.manifest.json",
+      "lastModified": "2024-12-06T11:56:44.759Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-amitabh/dashboards/posters"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/posters/posters-n132-05-282-se",
+      "title": "N132-05-282-SE Posters",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/posters/posters-n132-05-282-se.html"
+    },
+    {
       "manifestPath": null,
       "lastModified": "2024-11-25T12:50:36.000Z",
       "hierarchy": [
