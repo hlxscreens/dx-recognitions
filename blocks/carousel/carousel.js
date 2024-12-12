@@ -16,6 +16,8 @@ const DEFAULT_ITEM_DURATION = 10 * 1000; // 10 seconds
 const DEFAULT_DASHBOARD_ITEM_DURATION = 60 * 1000; // 60 seconds
 let itemDuration = DEFAULT_ITEM_DURATION;
 
+let skipReload = false;
+
 const DASHBOARDS_BLOCK_NAME = 'dashboards';
 const CAROUSEL_ITEM_DASHBOARDS_CLASS = `carousel-item-${DASHBOARDS_BLOCK_NAME}`;
 
@@ -235,16 +237,30 @@ async function buildCarouselForDashboard(block) {
       const iframe = document.createElement('iframe');
       iframe.src = path;
       carouselItem.appendChild(iframe);
+      carouselItems.push(carouselItem);
     } else {
       const picture = div.querySelector('picture');
-      carouselItem.appendChild(picture.cloneNode(true));
+      if (picture) {
+        carouselItem.appendChild(picture.cloneNode(true));
+        carouselItems.push(carouselItem);
+      }
     }
-    carouselItems.push(carouselItem);
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
+
   if(carouselItems.length === 1) {
     const firstCarouselItem = carouselItems[0];
     carouselItems.push(firstCarouselItem.cloneNode(true));
+  }
+
+  if (carouselItems.length === 0) {
+    const carouselItem = createDivWithClass('carousel-item');
+    carouselItem?.classList.add(CAROUSEL_ITEM_DASHBOARDS_CLASS);
+    const iframe = document.createElement('iframe');
+    iframe.src = "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html";
+    carouselItem.appendChild(iframe);
+    carouselItems.push(carouselItem);
+    skipReload = true;
   }
   return carouselItems;
 }
@@ -292,6 +308,7 @@ export default async function decorate(block) {
   }
 
   function reloadIframe(iframe) {
+    if (skipReload) return;
     if (iframe && iframe.src) {
       iframe.src = iframe.src; // reassigning src will reload iframe
     }
