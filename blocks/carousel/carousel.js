@@ -32,6 +32,8 @@ const TIMEOUTS = {
   },
 };
 
+let skipIframeReload = false;
+
 // franklin bot gives url like - https://main--dx-recognitions--hlxscreens.hlx.page/media_1d5c646537bebc6e8f9f3ab728b28aeb997e63db8.jpeg#width=586&height=421
 // extract the media path from it
 const extractMediaFromPath = (path) => {
@@ -292,6 +294,9 @@ export default async function decorate(block) {
   }
 
   function reloadIframe(iframe) {
+    if (skipIframeReload) {
+      return;
+    }
     if (iframe && iframe.src) {
       iframe.src = iframe.src; // reassigning src will reload iframe
     }
