@@ -237,11 +237,14 @@ async function buildCarouselForDashboard(block) {
       const iframe = document.createElement('iframe');
       iframe.src = path;
       carouselItem.appendChild(iframe);
+      carouselItems.push(carouselItem);
     } else {
       const picture = div.querySelector('picture');
-      carouselItem.appendChild(picture.cloneNode(true));
+      if (picture) {
+        carouselItem.appendChild(picture.cloneNode(true));
+        carouselItems.push(carouselItem);
+      }
     }
-    carouselItems.push(carouselItem);
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
   if(carouselItems.length === 1) {
