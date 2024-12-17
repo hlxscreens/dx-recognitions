@@ -1,0 +1,47 @@
+{
+  "version": "3.0",
+  "timestamp": 1733897845000,
+  "entries": [
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/dx-india-posters.html",
+      "timestamp": 1733897845000
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/media_12a96c4cbff5bad07ef9f93336ecbb99b627d8e32.jpeg",
+      "hash": "12a96c4cbff5bad07ef9f93336ecbb99b627d8e32"
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/media_156fe446347d00a113e53f97cec7a37bcee557c65.jpeg",
+      "hash": "156fe446347d00a113e53f97cec7a37bcee557c65"
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/media_16e78d276bf4bb1f988247dece315ae7a0d44763b.jpeg",
+      "hash": "16e78d276bf4bb1f988247dece315ae7a0d44763b"
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1732275395000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
