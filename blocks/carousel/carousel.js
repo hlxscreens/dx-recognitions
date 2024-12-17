@@ -12,6 +12,8 @@ const NO_HEADING = 'No Heading';
 // 1 image - 400x400, 2 images - 330x330, 3 images - 273x273, 4 images - 256x256, 5 images - 227x227
 const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 
+const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html';
+
 const DEFAULT_ITEM_DURATION = 10 * 1000; // 10 seconds
 const DEFAULT_DASHBOARD_ITEM_DURATION = 60 * 1000; // 60 seconds
 let itemDuration = DEFAULT_ITEM_DURATION;
@@ -250,6 +252,15 @@ async function buildCarouselForDashboard(block) {
   if(carouselItems.length === 1) {
     const firstCarouselItem = carouselItems[0];
     carouselItems.push(firstCarouselItem.cloneNode(true));
+  }
+  if (carouselItems.length === 0) {
+    const carouselItem = createDivWithClass('carousel-item');
+    const iframe = document.createElement('iframe');
+    let fallbackPath = RECOGNITIONS_MAIN_URL;
+    iframe.src = fallbackPath;
+    carouselItem.appendChild(iframe);
+    carouselItems.push(carouselItem);
+    skipIframeReload = true;
   }
   return carouselItems;
 }
