@@ -234,26 +234,27 @@ async function buildCarouselForDashboard(block) {
     carouselItem?.classList.add(CAROUSEL_ITEM_DASHBOARDS_CLASS);
 
     const link = div.querySelector('a');
+    const picture = div.querySelector('picture');
     if (link) {
       const path = link.getAttribute('href');
       const iframe = document.createElement('iframe');
       iframe.src = path;
       carouselItem.appendChild(iframe);
       carouselItems.push(carouselItem);
-    } else {
-      const picture = div.querySelector('picture');
-      if (picture) {
-        carouselItem.appendChild(picture.cloneNode(true));
-        carouselItems.push(carouselItem);
-      }
+    } else if (picture) {
+      carouselItem.appendChild(picture.cloneNode(true));
+      carouselItems.push(carouselItem);
     }
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
   if(carouselItems.length === 1) {
+    // added this to achieve a preload of next item in case of only 1 item to show
     const firstCarouselItem = carouselItems[0];
     carouselItems.push(firstCarouselItem.cloneNode(true));
   }
   if (carouselItems.length === 0) {
+    // if no dashboard or image to show in the carousel
+    // then fallback to showing recognitions channel in iframe without any iframe reload
     const carouselItem = createDivWithClass('carousel-item');
     const iframe = document.createElement('iframe');
     let fallbackPath = RECOGNITIONS_MAIN_URL;
