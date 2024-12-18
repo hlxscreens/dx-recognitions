@@ -12,6 +12,8 @@ const NO_HEADING = 'No Heading';
 // 1 image - 400x400, 2 images - 330x330, 3 images - 273x273, 4 images - 256x256, 5 images - 227x227
 const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 
+const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html';
+
 const DEFAULT_ITEM_DURATION = 10 * 1000; // 10 seconds
 const DEFAULT_DASHBOARD_ITEM_DURATION = 60 * 1000; // 60 seconds
 let itemDuration = DEFAULT_ITEM_DURATION;
@@ -31,6 +33,8 @@ const TIMEOUTS = {
     }
   },
 };
+
+let skipIframeReload = false;
 
 // franklin bot gives url like - https://main--dx-recognitions--hlxscreens.hlx.page/media_1d5c646537bebc6e8f9f3ab728b28aeb997e63db8.jpeg#width=586&height=421
 // extract the media path from it
@@ -230,21 +234,34 @@ async function buildCarouselForDashboard(block) {
     carouselItem?.classList.add(CAROUSEL_ITEM_DASHBOARDS_CLASS);
 
     const link = div.querySelector('a');
+    const picture = div.querySelector('picture');
     if (link) {
       const path = link.getAttribute('href');
       const iframe = document.createElement('iframe');
       iframe.src = path;
       carouselItem.appendChild(iframe);
-    } else {
-      const picture = div.querySelector('picture');
+      carouselItems.push(carouselItem);
+    } else if (picture) {
       carouselItem.appendChild(picture.cloneNode(true));
+      carouselItems.push(carouselItem);
     }
-    carouselItems.push(carouselItem);
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
   if(carouselItems.length === 1) {
+    // added this to achieve a preload of next item in case of only 1 item to show
     const firstCarouselItem = carouselItems[0];
     carouselItems.push(firstCarouselItem.cloneNode(true));
+  }
+  if (carouselItems.length === 0) {
+    // if no dashboard or image to show in the carousel
+    // then fallback to showing recognitions channel in iframe without any iframe reload
+    const carouselItem = createDivWithClass('carousel-item');
+    const iframe = document.createElement('iframe');
+    let fallbackPath = RECOGNITIONS_MAIN_URL;
+    iframe.src = fallbackPath;
+    carouselItem.appendChild(iframe);
+    carouselItems.push(carouselItem);
+    skipIframeReload = true;
   }
   return carouselItems;
 }
@@ -292,6 +309,9 @@ export default async function decorate(block) {
   }
 
   function reloadIframe(iframe) {
+    if (skipIframeReload) {
+      return;
+    }
     if (iframe && iframe.src) {
       iframe.src = iframe.src; // reassigning src will reload iframe
     }
