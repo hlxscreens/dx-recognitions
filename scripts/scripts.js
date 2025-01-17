@@ -94,10 +94,10 @@ async function loadEager(doc) {
     await waitForLCP(LCP_BLOCKS);
   }
 
-  if (document.querySelector('helix-sidekick')) {
+  if (document.querySelector('aem-sidekick')) {
     await import('../tools/sidekick/plugin.js');
   } else {
-    document.addEventListener('helix-sidekick-ready', () => import('../tools/sidekick/plugin.js'), { once: true });
+    document.addEventListener('sidekick-ready', () => import('../tools/sidekick/plugin.js'), { once: true });
   }
 }
 
