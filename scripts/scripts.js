@@ -99,11 +99,6 @@ async function loadEager(doc) {
   } else {
     document.addEventListener('sidekick-ready', () => import('../tools/sidekick/plugin.js'), { once: true });
   }
-  if (document.querySelector('helix-sidekick')) {
-    await import('../tools/sidekick/plugin.js');
-  } else {
-    document.addEventListener('helix-sidekick-ready', () => import('../tools/sidekick/plugin.js'), { once: true });
-  }
 }
 
 /**
