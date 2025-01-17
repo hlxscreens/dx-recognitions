@@ -1,7 +1,7 @@
 {
   "project": "My Screen Project",
   "host": "dx-recognitions.aem-screens.net",
-  "previewUrl": "dx-recognitions-prev.aem-screens.net",
+  "previewHost": "dx-recognitions-prev.aem-screens.net",
   "plugins": [
     {
       "id": "publish",
@@ -12,17 +12,15 @@
       "id": "publish-channel-doc",
       "title": "Publish",
       "event": "publish-channel",
-      "passConfig": true,
-      "passReferrer": true,
       "environments": ["preview"],
-      "exclude_paths": [ "**/tools/preview-for-signage/**" ]
+      "excludePaths": [ "**/tools/preview-for-signage/**" ]
     },
     {
       "id": "preview-for-signage",
       "title": "Preview for Signage",
       "event": "preview-for-signage",
       "environments": ["preview"],
-      "exclude_paths": [ "**/tools/preview-for-signage/**" ]
+      "excludePaths": [ "**/tools/preview-for-signage/**" ]
     }
   ]
 }
