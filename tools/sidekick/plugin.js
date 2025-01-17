@@ -10,77 +10,72 @@
  * governing permissions and limitations under the License.
  */
 
-const skv6 = document.querySelector('helix-sidekick');
-const skv7 = document.querySelector('aem-sidekick');
-const sidekicks = [skv6, skv7];
+const sk = document.querySelector('aem-sidekick');
+sk.addEventListener('custom:publish-channel', async (e) => {
+  if (e.detail) {
+    console.log(JSON.stringify(e.detail));
+  } else {
+    console.log('details not available');
+  }
+  let response;
+  const options = {
+    method: 'POST',
+  };
+  const { config } = e.detail.data;
+  const { ref } = config;
+  const { repo } = config;
+  const { owner } = config;
+  const { host } = config;
+  const { status } = e.detail.data;
+  const path = status.webPath;
 
-sidekicks.forEach((sk) => {
-  sk.addEventListener('custom:publish-channel', async (e) => {
-    if (e.detail) {
-      console.log(JSON.stringify(e.detail));
-    } else {
-      console.log('details not available');
-    }
-    let response;
-    const options = {
-      method: 'POST',
-    };
-    const {config} = e.detail.data;
-    const {ref} = config;
-    const {repo} = config;
-    const {owner} = config;
-    const {host} = config;
-    const {status} = e.detail.data;
-    const path = status.webPath;
+  response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${path}`, options);
 
-    response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${path}`, options);
+  if (response.ok) {
+    console.log(`Document Published at ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not previewed. Status: ${response.status}`);
+  }
+
+  //Getting 401 error while purging cache
+  /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
+
+  if (response.ok) {
+    console.log(`Purge cache ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not purge cache. Status: ${response.status}`);
+  }*/
+
+  const isDashboardDocument = path.includes('dashboards');
+  if (!isDashboardDocument) {
+    const sheetPath = `${path.slice(0, -4)}recognitions.json`;
+
+    response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
 
     if (response.ok) {
-      console.log(`Document Published at ${new Date().toLocaleString()}`);
+      console.log(`Sheet Published at ${new Date().toLocaleString()}`);
     } else {
       throw new Error(`Could not previewed. Status: ${response.status}`);
     }
+  }
+  //Getting 401 error while purging cache
+  /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${sheetPath}`, options);
 
-    //Getting 401 error while purging cache
-    /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
+  if (response.ok) {
+    console.log(`Purge cache ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not purge cache. Status: ${response.status}`);
+  }*/
 
-    if (response.ok) {
-      console.log(`Purge cache ${new Date().toLocaleString()}`);
-    } else {
-      throw new Error(`Could not purge cache. Status: ${response.status}`);
-    }*/
+  const prodUrl = `https://${host}${path}`;
+  window.location.href = prodUrl;
+});
 
-    const isDashboardDocument = path.includes('dashboards');
-    if (!isDashboardDocument) {
-      const sheetPath = `${path.slice(0, -4)}recognitions.json`;
-
-      response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
-
-      if (response.ok) {
-        console.log(`Sheet Published at ${new Date().toLocaleString()}`);
-      } else {
-        throw new Error(`Could not previewed. Status: ${response.status}`);
-      }
-    }
-    //Getting 401 error while purging cache
-    /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${sheetPath}`, options);
-
-    if (response.ok) {
-      console.log(`Purge cache ${new Date().toLocaleString()}`);
-    } else {
-      throw new Error(`Could not purge cache. Status: ${response.status}`);
-    }*/
-
-    const prodUrl = `https://${host}${path}`;
-    window.location.href = prodUrl;
-  });
-
-  sk.addEventListener('custom:preview-for-signage', async (e) => {
-    if (e.detail) {
-      console.log('event details:', JSON.stringify(e.detail));
-    } else {
-      console.log('details not available');
-    }
-    window.open(window.location.origin + '/tools/preview-for-signage/index.html?url=' + window.location.href);
-  });
+sk.addEventListener('custom:preview-for-signage', async (e) => {
+  if (e.detail) {
+    console.log('event details:', JSON.stringify(e.detail));
+  } else {
+    console.log('details not available');
+  }
+  window.open(window.location.origin + '/tools/preview-for-signage/index.html?url=' + window.location.href);
 });
