@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
-const sk = document.querySelector('helix-sidekick');
+const sk = document.querySelector('aem-sidekick');
 sk.addEventListener('custom:publish-channel', async (e) => {
   if (e.detail) {
     console.log(JSON.stringify(e.detail));
