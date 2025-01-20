@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1737115166000,
+  "timestamp": 1737124361000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -324,7 +324,7 @@
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1737113368000
+      "timestamp": 1737124361000
     },
     {
       "path": "/styles/lazy-styles.css",
