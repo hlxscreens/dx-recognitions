@@ -236,18 +236,31 @@ async function buildCarouselForDashboard(block) {
     const link = div.querySelector('a');
     const picture = div.querySelector('picture');
     if (link) {
-      const path = link.getAttribute('href');
-      const iframe = document.createElement('iframe');
-      iframe.src = path;
-      carouselItem.appendChild(iframe);
-      carouselItems.push(carouselItem);
+      if (link.getAttribute('href').includes('.mp4')) {
+        const videoElement = document.createElement('video');
+        videoElement.setAttribute('controls', '');
+        videoElement.setAttribute('autoplay', '');
+        videoElement.setAttribute('muted', '');
+        videoElement.setAttribute('loop', '');
+        videoElement.setAttribute('height', '100%');
+        videoElement.setAttribute('width', '100%');
+        videoElement.setAttribute('src', link.getAttribute('title'));
+        carouselItem.appendChild(videoElement);
+        carouselItems.push(carouselItem);
+      } else {
+        const path = link.getAttribute('href');
+        const iframe = document.createElement('iframe');
+        iframe.src = path;
+        carouselItem.appendChild(iframe);
+        carouselItems.push(carouselItem);
+      }
     } else if (picture) {
       carouselItem.appendChild(picture.cloneNode(true));
       carouselItems.push(carouselItem);
     }
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
-  if(carouselItems.length === 1) {
+  if (carouselItems.length === 1) {
     // added this to achieve a preload of next item in case of only 1 item to show
     const firstCarouselItem = carouselItems[0];
     carouselItems.push(firstCarouselItem.cloneNode(true));
