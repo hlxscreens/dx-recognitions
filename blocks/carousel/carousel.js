@@ -15,7 +15,7 @@ const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html';
 
 const DEFAULT_ITEM_DURATION = 10 * 1000; // 10 seconds
-const DEFAULT_DASHBOARD_ITEM_DURATION = 60 * 1000; // 60 seconds
+const DEFAULT_DASHBOARD_ITEM_DURATION = 6 * 1000; // 60 seconds
 let itemDuration = DEFAULT_ITEM_DURATION;
 
 const DASHBOARDS_BLOCK_NAME = 'dashboards';
@@ -238,10 +238,9 @@ async function buildCarouselForDashboard(block) {
     if (link) {
       if (link.getAttribute('href').includes('.mp4')) {
         const videoElement = document.createElement('video');
-        videoElement.setAttribute('controls', '');
-        videoElement.setAttribute('autoplay', '');
-        videoElement.setAttribute('muted', '');
-        videoElement.setAttribute('loop', '');
+        videoElement.setAttribute('controls', false);
+        videoElement.setAttribute('autoplay', true);
+        videoElement.setAttribute('muted', true);
         videoElement.setAttribute('height', '100%');
         videoElement.setAttribute('width', '100%');
         videoElement.setAttribute('src', link.getAttribute('title'));
@@ -358,6 +357,10 @@ export default async function decorate(block) {
     reloadSlide(nextItemIndex);
   }
 
+  function isCurrentSlideIsVideo() {
+    return carouselItems[currentIndex].querySelector('video') !== null;
+  }
+
   function nextSlide() {
     // Stop the previous carousels
     TIMEOUTS.clearAllTimeouts();
@@ -367,7 +370,15 @@ export default async function decorate(block) {
     } else {
       preloadNextSlide(currentIndex);
       showSlide(currentIndex);
-      TIMEOUTS.setTimeout(nextSlide, itemDuration);
+      if (isCurrentSlideIsVideo()) {
+        // call nextSlide when video ends or ends with error
+        const video = carouselItems[currentIndex].querySelector('video');
+        video.play();
+        video.onended = nextSlide;
+        video.onerror = nextSlide;
+      } else {
+        TIMEOUTS.setTimeout(nextSlide, itemDuration);
+      }
     }
   }
 
