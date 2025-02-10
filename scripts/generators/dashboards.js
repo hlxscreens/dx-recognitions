@@ -5,29 +5,39 @@ import { load } from 'cheerio';
 import FetchUtils from '@aem-screens/screens-offlineresources-generator/src/utils/fetchUtils.js';
 
 const getVideoAssets = async ($) => {
-  const videoUrlsSet = new Set();
+  const videoAssetsSet = new Set();
   const carouselDivs = $('div.carousel.dashboards');
 
   if (carouselDivs && carouselDivs.length > 0) {
     // Find all <div> elements containing "Video:" that are descendants of the carousel dashboards
-    carouselDivs.find('div:contains("Video:")').each((index, element) => {
-      const aTag = $(element).find('a');
-      if (aTag && aTag.length > 0) {
-        const url = aTag.text();
-        if (url !== undefined && url !== null && url.trim() !== '') {
-          console.log(`Found video URL: ${url}`);
-          videoUrlsSet.add(url);
+    carouselDivs.find('div:contains("Video:")').each((_, element) => {
+      console.log('Found video element:', $(element).text());
+      try {
+        const urlRegex = /https?:\/\/[^\s'"]+/;
+        const match = $(element).text().match(urlRegex);
+        if (match) {
+          let videoUrl = match[0];
+          // remove trailing punctuation
+          videoUrl = videoUrl.replace(/[.,;:]$/, '');
+          const { pathname } = new URL(videoUrl);
+          const lastSegment = pathname.substring(pathname.lastIndexOf('/'));
+          videoAssetsSet.add(lastSegment);
+          console.log('Extracted video URL:', videoUrl);
+        } else {
+          console.log('No video URL found.');
         }
+      } catch (err) {
+        console.warn('Error extracting video URL:', err);
       }
     });
   }
 
-  const videoUrls = Array.from(videoUrlsSet);
-  if (!videoUrls.length) {
+  const videoAssets = Array.from(videoAssetsSet);
+  if (!videoAssets.length) {
     console.warn('No video data found while extracting video assets.');
-    return videoUrls;
+    return videoAssets;
   }
-  return videoUrls;
+  return videoAssets;
 };
 
 export default class HtmlGenerator {

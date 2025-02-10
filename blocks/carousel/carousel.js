@@ -21,6 +21,8 @@ let itemDuration = DEFAULT_ITEM_DURATION;
 const DASHBOARDS_BLOCK_NAME = 'dashboards';
 const CAROUSEL_ITEM_DASHBOARDS_CLASS = `carousel-item-${DASHBOARDS_BLOCK_NAME}`;
 
+const MEDIA_PREFIX = '/media_';
+
 const TIMEOUTS = {
   timeouts: [],
   setTimeout(fn, delay) {
@@ -110,7 +112,7 @@ async function buildCarouselFromSheet(block) {
     for (let sheetIndex = 0; sheetIndex < sheetDetails.length; sheetIndex += 1) {
       try {
         // eslint-disable-next-line no-await-in-loop
-        const sheetDataResponse = JSON.parse(await fetchData(sheetDetails[sheetIndex].link, 'GET', {'X-Client-Type': "franklin"}));
+        const sheetDataResponse = JSON.parse(await fetchData(sheetDetails[sheetIndex].link, 'GET', { 'X-Client-Type': 'franklin' }));
         if (!sheetDataResponse) {
           console.warn(`Invalid sheet Link ${JSON.stringify(sheetDetails[sheetIndex])}.Skipping processing this one.`);
         } else {
@@ -236,22 +238,28 @@ async function buildCarouselForDashboard(block) {
     const link = div.querySelector('a');
     const picture = div.querySelector('picture');
     if (link) {
-      if (link.getAttribute('href').includes('.mp4')) {
-        const videoElement = document.createElement('video');
-        videoElement.setAttribute('controls', false);
-        videoElement.setAttribute('autoplay', true);
-        videoElement.setAttribute('muted', true);
-        videoElement.setAttribute('height', '100%');
-        videoElement.setAttribute('width', '100%');
-        videoElement.setAttribute('src', link.getAttribute('title'));
-        carouselItem.appendChild(videoElement);
-        carouselItems.push(carouselItem);
-      } else {
-        const path = link.getAttribute('href');
-        const iframe = document.createElement('iframe');
-        iframe.src = path;
-        carouselItem.appendChild(iframe);
-        carouselItems.push(carouselItem);
+      try {
+        // check if link is not for dashboard by /media_ prefix that is added by EDS for media files
+        const url = new URL(link.getAttribute('href'));
+        if (url.pathname.includes(MEDIA_PREFIX) && url.origin.includes('dx-recognitions')) {
+          const videoElement = document.createElement('video');
+          videoElement.controls = false;
+          videoElement.muted = true;
+          videoElement.style.width = '100%';
+          videoElement.style.height = '100%';
+          videoElement.src = url.pathname;
+
+          carouselItem.appendChild(videoElement);
+          carouselItems.push(carouselItem);
+        } else {
+          const path = link.getAttribute('href');
+          const iframe = document.createElement('iframe');
+          iframe.src = path;
+          carouselItem.appendChild(iframe);
+          carouselItems.push(carouselItem);
+        }
+      } catch (e) {
+        console.warn('Error while processing dashboard/video link', e);
       }
     } else if (picture) {
       carouselItem.appendChild(picture.cloneNode(true));
@@ -269,7 +277,7 @@ async function buildCarouselForDashboard(block) {
     // then fallback to showing recognitions channel in iframe without any iframe reload
     const carouselItem = createDivWithClass('carousel-item');
     const iframe = document.createElement('iframe');
-    let fallbackPath = RECOGNITIONS_MAIN_URL;
+    const fallbackPath = RECOGNITIONS_MAIN_URL;
     iframe.src = fallbackPath;
     carouselItem.appendChild(iframe);
     carouselItems.push(carouselItem);
