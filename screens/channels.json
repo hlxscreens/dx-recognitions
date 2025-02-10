@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-02-05T08:21:15.000Z",
+      "lastModified": "2025-02-10T11:17:34.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -36,7 +36,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/carousel-images/main.manifest.json",
-      "lastModified": "2025-02-05T08:21:15.000Z",
+      "lastModified": "2025-02-10T11:17:34.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -426,7 +426,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/main.manifest.json",
-      "lastModified": "2025-02-05T08:21:15.000Z",
+      "lastModified": "2025-02-10T11:17:34.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1083,6 +1083,31 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/posters/dx-india-posters.html"
     },
     {
+      "manifestPath": "/content/screens/org-amitabh/dashboards/posters/dx-india-posters-1.manifest.json",
+      "lastModified": "2025-02-10T11:20:04.794Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-amitabh/dashboards/posters"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/posters/dx-india-posters-1",
+      "title": "DX India Posters-1",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/posters/dx-india-posters-1.html"
+    },
+    {
       "manifestPath": "/content/screens/org-amitabh/dashboards/posters/posters-n132-05-282-se.manifest.json",
       "lastModified": "2025-01-29T09:17:34.000Z",
       "hierarchy": [
@@ -1285,7 +1310,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2025-02-05T08:21:15.000Z",
+      "lastModified": "2025-02-10T11:17:34.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1344,7 +1369,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gaurav/main.manifest.json",
-      "lastModified": "2025-02-05T08:21:15.000Z",
+      "lastModified": "2025-02-10T11:17:34.000Z",
       "hierarchy": [
         {
           "title": "screens",

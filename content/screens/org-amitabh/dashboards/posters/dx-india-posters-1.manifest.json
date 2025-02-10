@@ -1,0 +1,39 @@
+{
+  "version": "3.0",
+  "timestamp": 1739186404794,
+  "entries": [
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/dx-india-posters-1.html",
+      "timestamp": 1739186404794
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/media_16854f017e625d7e7239792b41eb52aa792d1ceaf.jpeg",
+      "hash": "16854f017e625d7e7239792b41eb52aa792d1ceaf"
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1738142254000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
