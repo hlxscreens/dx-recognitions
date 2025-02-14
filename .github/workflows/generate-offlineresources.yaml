@@ -1,6 +1,8 @@
 name: Generate Screens offline resources for franklin channels
 
 on:
+  schedule:
+    - cron: '0 */2 * * *'  # Runs every 2 hours
   repository_dispatch:
     types:
       - resource-published
