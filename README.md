@@ -1,9 +1,9 @@
 # Franklin Screens Project Boilerplate
 This project is based on [helix-project-boilerplate](https://github.com/adobe/helix-project-boilerplate). 
-The tutorial guide to use this boilerplate code is present [here](https://main--screens-franklin-documentation--hlxscreens.hlx.live/developer/tutorial).
+The tutorial guide to use this boilerplate code is present [here](https://main--screens-franklin-documentation--hlxscreens.aem.live/developer/tutorial).
 
 ## Environments
-- Preview: https://main--dx-recognitions--hlxscreens.hlx.page/
+- Preview: https://main--dx-recognitions--hlxscreens.aem.page/
 - Live: https://dx-recognitions.aem-screens.net/content/screens/main
 
 ## Installation
