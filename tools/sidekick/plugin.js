@@ -35,7 +35,7 @@ sidekicks.forEach((sk) => {
     } = config;
     const path = status.webPath;
 
-    response = await fetch(`https://admin.aem.page/live/${owner}/${repo}/${ref}/${path}`, options);
+    response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${path}`, options);
 
     if (response.ok) {
       console.log(`Document Published at ${new Date().toLocaleString()}`);
@@ -44,7 +44,7 @@ sidekicks.forEach((sk) => {
     }
 
     //Getting 401 error while purging cache
-    /*response = await fetch(`https://admin.aem.page/cache/${owner}/${repo}/${ref}/${path}`, options);
+    /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
 
     if (response.ok) {
       console.log(`Purge cache ${new Date().toLocaleString()}`);
@@ -56,7 +56,7 @@ sidekicks.forEach((sk) => {
     if (!isDashboardDocument) {
       const sheetPath = `${path.slice(0, -4)}recognitions.json`;
 
-      response = await fetch(`https://admin.aem.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
+      response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
 
       if (response.ok) {
         console.log(`Sheet Published at ${new Date().toLocaleString()}`);
@@ -65,7 +65,7 @@ sidekicks.forEach((sk) => {
       }
     }
     //Getting 401 error while purging cache
-    /*response = await fetch(`https://admin.aem.page/cache/${owner}/${repo}/${ref}/${sheetPath}`, options);
+    /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${sheetPath}`, options);
 
     if (response.ok) {
       console.log(`Purge cache ${new Date().toLocaleString()}`);

@@ -38,7 +38,7 @@ const TIMEOUTS = {
 
 let skipIframeReload = false;
 
-// franklin bot gives url like - https://main--dx-recognitions--hlxscreens.aem.page/media_1d5c646537bebc6e8f9f3ab728b28aeb997e63db8.jpeg#width=586&height=421
+// franklin bot gives url like - https://main--dx-recognitions--hlxscreens.hlx.page/media_1d5c646537bebc6e8f9f3ab728b28aeb997e63db8.jpeg#width=586&height=421
 // extract the media path from it
 const extractMediaFromPath = (path) => {
   if (path.indexOf('#') >= 0) {

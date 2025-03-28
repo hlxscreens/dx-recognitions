@@ -31,7 +31,7 @@ const preview = async (owner, repo, ref, path) => {
     method: 'POST',
   };
 
-  const response = await fetch(`https://admin.aem.page/preview/${owner}/${repo}/${ref}/${path}`, options);
+  const response = await fetch(`https://admin.hlx.page/preview/${owner}/${repo}/${ref}/${path}`, options);
 
   if (response.ok) {
     console.log(`Document Previewed at ${new Date().toLocaleString()}`);
@@ -47,7 +47,7 @@ const previewAndRedirect = async () => {
   const owner = params.get('owner');
   const referrer = params.get('referrer');
 
-  const statusUrl = `https://admin.aem.page/status/${owner}/${repo}/${ref}?editUrl=${referrer}`;
+  const statusUrl = `https://admin.hlx.page/status/${owner}/${repo}/${ref}?editUrl=${referrer}`;
   const status = JSON.parse(await fetchData(statusUrl));
   if (status.preview && status.preview.url) {
     const hlxPageUrl = status.preview.url;
@@ -56,7 +56,7 @@ const previewAndRedirect = async () => {
     const pagePath = `${sheetPath.slice(0, -17)}main`;// remove recognitions.json
     await preview(owner, repo, ref, sheetPath);
 
-    const configUrl = `https://admin.aem.page/sidekick/${owner}/${repo}/${ref}/config.json`;
+    const configUrl = `https://admin.hlx.page/sidekick/${owner}/${repo}/${ref}/config.json`;
     const config = JSON.parse(await fetchData(configUrl));
     const { previewUrl } = config;
 

@@ -32,7 +32,7 @@ const publishAndCacheClear = async (owner, repo, ref, path) => {
     method: 'POST',
   };
 
-  response = await fetch(`https://admin.aem.page/live/${owner}/${repo}/${ref}/${path}`, options);
+  response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${path}`, options);
 
   if (response.ok) {
     console.log(`Document Previewed at ${new Date().toLocaleString()}`);
@@ -41,7 +41,7 @@ const publishAndCacheClear = async (owner, repo, ref, path) => {
   }
 
   //cache purge failing with 401 error
-  /*response = await fetch(`https://admin.aem.page/cache/${owner}/${repo}/${ref}/${path}`, options);
+  /*response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
 
   if (response.ok) {
     console.log(`Purge cache ${new Date().toLocaleString()}`);
@@ -58,7 +58,7 @@ const publishAndRedirect = async () => {
   const referrer = params.get('referrer');
   const host = params.get('host');
 
-  const statusUrl = `https://admin.aem.page/status/${owner}/${repo}/${ref}?editUrl=${referrer}`;
+  const statusUrl = `https://admin.hlx.page/status/${owner}/${repo}/${ref}?editUrl=${referrer}`;
   const status = JSON.parse(await fetchData(statusUrl));
   if (status.live && status.live.url) {
     const hlxLiveUrl = status.preview.url;
