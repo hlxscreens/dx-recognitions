@@ -37,7 +37,12 @@ jobs:
           git config --local user.name  ${{ github.actor }}
           git config --local user.email "<>"
           git add .
-          git commit -m "Generating Screens offline resources"
+          if git diff --staged --quiet; then
+            echo "No changes to commit. Skipping..."
+            exit 0
+          else
+            git commit -m "Generating Screens offline resources"
+          fi
       - name: Push changes  # push the generated Screens offline resources to your repo
         uses: ad-m/github-push-action@master
         with:
