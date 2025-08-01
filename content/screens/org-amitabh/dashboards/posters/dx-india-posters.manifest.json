@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1753678467000,
+  "timestamp": 1754049034150,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -16,15 +16,15 @@
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/dx-india-posters.html",
-      "timestamp": 1753678467000
+      "timestamp": 1754049034150
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/media_11698843ad58739024f37f23ecb4ecabcad810f42.png",
+      "hash": "11698843ad58739024f37f23ecb4ecabcad810f42"
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/media_11919b565768b1c85bda4ea36e8c44ef2aaf88d39.png",
       "hash": "11919b565768b1c85bda4ea36e8c44ef2aaf88d39"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/posters/media_11e97b67220120d0cfcbbd9d8f952b16940c18f89.png",
-      "hash": "11e97b67220120d0cfcbbd9d8f952b16940c18f89"
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/media_12ed2ce55907739ed9161903f7ab51f0f70719186.mp4",
@@ -33,30 +33,6 @@
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/media_146c2eae385b138b868b4d1184072f87ca206eef7.mp4",
       "hash": "146c2eae385b138b868b4d1184072f87ca206eef7"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/posters/media_15ddfed8082354fe43f93127e2a8ff5a56d05bac3.png",
-      "hash": "15ddfed8082354fe43f93127e2a8ff5a56d05bac3"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/posters/media_179f680981ad63593d8191fee611de3d7fc1a328e.png",
-      "hash": "179f680981ad63593d8191fee611de3d7fc1a328e"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/posters/media_17f22c69f1693009e5a08ad1c03245844c526da81.png",
-      "hash": "17f22c69f1693009e5a08ad1c03245844c526da81"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/posters/media_1bc313cc81951ad2a588bcfd058af45e4e4004b50.png",
-      "hash": "1bc313cc81951ad2a588bcfd058af45e4e4004b50"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/posters/media_1bf03591e36903bdf300638307a729eda767e8f5b.png",
-      "hash": "1bf03591e36903bdf300638307a729eda767e8f5b"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/posters/media_1c7f8a9f3ab2e4a1a41a51fe1f409862edfdd262d.png",
-      "hash": "1c7f8a9f3ab2e4a1a41a51fe1f409862edfdd262d"
     },
     {
       "path": "/scripts/lib-franklin.js",
