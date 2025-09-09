@@ -40,6 +40,7 @@ html {
     font-size: 4rem;
     margin-top: 5vh;
     text-align: center;
+    color: black;
 }
 
 /* inner container area */
@@ -84,6 +85,7 @@ html {
     text-align: center;
     font-family: 'AdobeCleanBold';
     font-size: 2.25rem;
+    color: black;
 }
 
 /* description */
@@ -105,6 +107,7 @@ html {
     font-family: 'AdobeCleanExtraBold';
     font-size: 2.5rem;
     padding-left: 21px;
+    color: black;
 }
 
 .more-than-three-images .carousel-item-description .title {
@@ -116,7 +119,8 @@ html {
     font-size: 2.25rem;
     line-height: 3rem;
     font-style: italic;
-    border-left: 3px solid white;
+    border-left: 3px solid black;
     padding-left: 21px;
+    color: black;
     /* text-align: justify; */
 }
