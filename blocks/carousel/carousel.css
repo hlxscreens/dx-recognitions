@@ -41,11 +41,6 @@ html {
     margin-top: 5vh;
     text-align: center;
     color: black;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 255, 255, 0.7);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.6));
-    padding: 1rem 2rem;
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
 }
 
 /* inner container area */
@@ -91,12 +86,6 @@ html {
     font-family: 'AdobeCleanBold';
     font-size: 2.25rem;
     color: black;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
-    background: rgba(255, 255, 255, 0.8);
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    margin-top: 0.5rem;
-    backdrop-filter: blur(3px);
 }
 
 /* description */
@@ -106,23 +95,12 @@ html {
     gap: 2rem;
     margin: 3vw;
     max-width: 40vw;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .more-than-three-images .carousel-item-description{
     flex-direction: row;
     align-items: center;
     max-width: unset;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 1.5rem;
-    border-radius: 15px;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-item-description .title {
@@ -130,11 +108,6 @@ html {
     font-size: 2.5rem;
     padding-left: 21px;
     color: black;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    border-left: 4px solid #007acc;
 }
 
 .more-than-three-images .carousel-item-description .title {
@@ -146,12 +119,8 @@ html {
     font-size: 2.25rem;
     line-height: 3rem;
     font-style: italic;
-    border-left: 4px solid #007acc;
+    border-left: 3px solid black;
     padding-left: 21px;
     color: black;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
-    background: rgba(0, 122, 204, 0.05);
-    padding: 1.5rem;
-    border-radius: 0 12px 12px 0;
     /* text-align: justify; */
 }
