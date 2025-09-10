@@ -104,7 +104,7 @@ html {
 .carousel-item-description {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 13rem;
     max-width: 40vw;
     align-items: flex-start;
     justify-content: flex-start;
@@ -135,8 +135,8 @@ html {
 
 .carousel-item-description .description-text {
     font-family: 'AdobeClean', sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.6rem;
+    font-size: 1.95rem;
+    line-height: 2.2rem;
     font-style: italic;
     padding: 1rem;
     color: #000000;
