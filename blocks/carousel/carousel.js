@@ -160,7 +160,7 @@ async function buildCarouselFromSheet(block) {
       carouselItem.setAttribute('start-date', asset.startDate);
       carouselItem.setAttribute('end-date', asset.endDate);
 
-      const heading = createDivWithClass('carousel-item-heading');
+     // const heading = createDivWithClass('carousel-item-heading');
       if (asset.heading) {
         if (asset.heading.toLowerCase() !== NO_HEADING.toLowerCase()) {
           heading.innerText = asset.heading;

@@ -117,7 +117,7 @@ html {
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
-    bottom: 18vh;
+    bottom: 20vh;
     right: 5vw;
 }
 
@@ -128,14 +128,18 @@ html {
 }
 
 .carousel-item-description .title {
-    font-family: 'AdobeCleanExtraBold';
+    font-family: 'AdobeCleanExtraBold', sans-serif;
     font-size: 3rem;
     padding: 0;
-    color: white;
+    color: #ffffff;
     background: none;
-    text-shadow: none;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #008080;
+    text-stroke: 2px #008080;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
+
 
 .more-than-three-images .carousel-item-description .title {
     min-width: max-content;
@@ -143,13 +147,12 @@ html {
 
 .carousel-item-description .description-text {
     font-family: 'AdobeClean', sans-serif;
-    font-size: 1.25rem;   
-    line-height: 1.6rem;  
+    font-size: 1.75rem;   
+    line-height: 1.9rem;  
     font-style: italic;
     padding: 1rem;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.25); 
     color: #000000;
-    background: #ffffff;
     text-align: left;
     font-weight: 400;    
 }
