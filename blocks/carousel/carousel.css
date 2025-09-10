@@ -35,13 +35,13 @@ html {
 }
 
 /* header */
-.carousel-item-heading {
+/* .carousel-item-heading {
     font-family: 'AdobeCleanExtraBold';
     font-size: 4rem;
     margin-top: 5vh;
     text-align: center;
     color: black;
-}
+} */
 
 /* inner container area */
 .carousel-item-inner-container {
@@ -93,7 +93,7 @@ html {
 
 .carousel-item-figure .carousel-item-figure-caption {
     text-align: center;
-    font-family: 'AdobeCleanBold';
+    font-family: 'AdobeCleanBold', sans-serif;
     font-size: 1.2rem;
     color: black;
     background: white;
@@ -101,19 +101,23 @@ html {
     border: 1px solid black;
     margin-top: 0.5rem;
     min-width: 120px;
+    text-transform: uppercase;  
+    font-weight: bold;          
+    letter-spacing: 1px;       
+
 }
 
 /* description */
 .carousel-item-description {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 15rem;
     margin: 0;
     max-width: 40vw;
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
-    bottom: 10vh;
+    bottom: 18vh;
     right: 5vw;
 }
 
@@ -138,13 +142,14 @@ html {
 }
 
 .carousel-item-description .description-text {
-    font-family: 'AdobeClean';
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    font-style: normal;
-    border: 1px solid black;
+    font-family: 'AdobeClean', sans-serif;
+    font-size: 1.25rem;   
+    line-height: 1.6rem;  
+    font-style: italic;
     padding: 1rem;
-    color: black;
-    background: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.25); 
+    color: #000000;
+    background: #ffffff;
     text-align: left;
+    font-weight: 400;    
 }
