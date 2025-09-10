@@ -35,13 +35,9 @@ html {
 }
 
 /* header */
-/* .carousel-item-heading {
-    font-family: 'AdobeCleanExtraBold';
-    font-size: 4rem;
-    margin-top: 5vh;
-    text-align: center;
-    color: black;
-} */
+.carousel-item-heading {
+    display: none;
+}
 
 /* inner container area */
 .carousel-item-inner-container {
