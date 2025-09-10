@@ -5,10 +5,12 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     overflow: hidden;
 }
 
+/* Carousel Structure */
 .carousel-track {
     display: flex;
     width: 100vw;
@@ -28,11 +30,12 @@ body, html {
     height: 100vh;
 }
 
-/* Hide Item Heading */
+/* Hide optional item heading */
 .carousel-item-heading {
     display: none;
 }
 
+/* Inner content layout */
 .carousel-item-inner-container {
     display: flex;
     flex-direction: row;
@@ -47,36 +50,43 @@ body, html {
     flex-wrap: wrap;
 }
 
-/* Images Container with Top and Bottom Rows */
+/* Image rows logic */
+
+/* Default: up to 3 images in one row */
 .carousel-item-images {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     gap: 1.5rem;
     margin-top: -11vh;
     max-width: 60vw;
 }
 
-.carousel-item-images .image-row {
+/* For >3 images, vertical stacking: 3 top, rest bottom */
+.more-than-three-images .carousel-item-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 80vw;
+}
+
+/* Top and bottom rows for >3 images */
+.image-row {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
 }
 
-.carousel-item-images .top-row {
+.top-row {
     margin-bottom: 1.5rem;
 }
 
-.carousel-item-images .bottom-row {
+.bottom-row {
     margin-top: 0;
 }
 
-/* Responsive Layout for >3 Images */
-.more-than-three-images .carousel-item-images {
-    max-width: 80vw;
-}
-
-/* Individual Image Figure Styling */
+/* Individual figures */
 .carousel-item-figure {
     padding: 0.5rem;
     margin: 0.5rem;
@@ -116,7 +126,7 @@ body, html {
     display: inline-block;
 }
 
-/* Description Styling */
+/* Description styling */
 .carousel-item-description {
     display: flex;
     flex-direction: column;
