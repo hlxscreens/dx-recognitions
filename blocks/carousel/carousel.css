@@ -21,7 +21,6 @@ html {
     color: black;
 }
 
-/* background image */
 .carousel-item img {
     object-fit: cover;
     width: 100vw;
@@ -34,19 +33,17 @@ html {
     height: 100vh;
 }
 
-/* header */
 .carousel-item-heading {
     display: none;
 }
 
-/* inner container area */
 .carousel-item-inner-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     height: 85vh;
-    padding: 10vh 5vw;
+    padding: 12vh 5vw 8vh 5vw;
     gap: 3rem;
 }
 
@@ -54,17 +51,16 @@ html {
     flex-wrap: wrap;
 }
 
-/* figure */
 .carousel-item-images {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex: 0 0 auto;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-top: 3vh;
 }
-
 
 .carousel-item-figure {
     padding: 0.5rem;
@@ -80,35 +76,35 @@ html {
     position: relative;
 }
 
-.carousel-item-figure img{
-    object-fit: contain;
-    background-color: white;
-    border: white solid 2px;
+.carousel-item-figure img {
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
 }
 
 .carousel-item-figure .carousel-item-figure-caption {
     text-align: center;
     font-family: 'AdobeCleanBold', sans-serif;
-    font-size: 1.2rem;
-    color: black;
-    background: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #ffffff;
+    color: #000000;
     padding: 0.5rem 1rem;
-    border: 1px solid black;
-    margin-top: 0.5rem;
-    min-width: 120px;
-    text-transform: uppercase;  
-    font-weight: bold;          
-    letter-spacing: 1px;       
-
+    border: 2px solid #000000;
+    margin-top: 0.75rem;
+    min-width: 140px;
+    display: inline-block;
 }
 
-/* description */
 .carousel-item-description {
     display: flex;
     flex-direction: column;
-    gap: 15rem;
-    margin: 0;
+    gap: 2rem;
     max-width: 40vw;
     align-items: flex-start;
     justify-content: flex-start;
@@ -117,7 +113,7 @@ html {
     right: 5vw;
 }
 
-.more-than-three-images .carousel-item-description{
+.more-than-three-images .carousel-item-description {
     flex-direction: row;
     align-items: center;
     max-width: unset;
@@ -125,16 +121,13 @@ html {
 
 .carousel-item-description .title {
     font-family: 'AdobeCleanExtraBold', sans-serif;
-    font-size: 3rem;
-    padding: 0;
-    color: #ffffff;
-    background: none;
-    margin-bottom: 1rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
-    -webkit-text-stroke: 2px #008080;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    -webkit-text-stroke: 1.5px #008080;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
 }
-
 
 .more-than-three-images .carousel-item-description .title {
     min-width: max-content;
@@ -142,12 +135,12 @@ html {
 
 .carousel-item-description .description-text {
     font-family: 'AdobeClean', sans-serif;
-    font-size: 1.75rem;   
-    line-height: 1.9rem;  
+    font-size: 1.25rem;
+    line-height: 1.6rem;
     font-style: italic;
     padding: 1rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.25); 
     color: #000000;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     text-align: left;
-    font-weight: 400;    
 }
