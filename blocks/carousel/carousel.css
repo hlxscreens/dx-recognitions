@@ -64,10 +64,9 @@ html {
 /* Special handling for >3 images */
 .more-than-three-images .carousel-item-images {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    max-width: 80vw;
+    max-width: 45vw;
 }
 
 /* Top and bottom rows for >3 images */
