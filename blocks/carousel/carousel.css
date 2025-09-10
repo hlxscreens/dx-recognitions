@@ -1,11 +1,11 @@
+/* Core Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body,
-html {
+body, html {
     overflow: hidden;
 }
 
@@ -21,18 +21,14 @@ html {
     color: black;
 }
 
-.carousel-item img {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-}
-
+.carousel-item img,
 .carousel-item iframe {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
 }
 
+/* Hide Item Heading */
 .carousel-item-heading {
     display: none;
 }
@@ -51,24 +47,36 @@ html {
     flex-wrap: wrap;
 }
 
+/* Images Container with Top and Bottom Rows */
 .carousel-item-images {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 0 0 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
     margin-top: -11vh;
     max-width: 60vw;
 }
 
-.more-than-three-images .carousel-item-images {
+.carousel-item-images .image-row {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 1.5rem;
+}
+
+.carousel-item-images .top-row {
+    margin-bottom: 1.5rem;
+}
+
+.carousel-item-images .bottom-row {
+    margin-top: 0;
+}
+
+/* Responsive Layout for >3 Images */
+.more-than-three-images .carousel-item-images {
     max-width: 80vw;
 }
 
+/* Individual Image Figure Styling */
 .carousel-item-figure {
     padding: 0.5rem;
     margin: 0.5rem;
@@ -108,6 +116,7 @@ html {
     display: inline-block;
 }
 
+/* Description Styling */
 .carousel-item-description {
     display: flex;
     flex-direction: column;
@@ -121,7 +130,6 @@ html {
 }
 
 .more-than-three-images .carousel-item-description {
-    /* Keep the same layout as regular description */
     display: flex;
     flex-direction: column;
     gap: 13rem;
