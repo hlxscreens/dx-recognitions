@@ -46,11 +46,12 @@ html {
 /* inner container area */
 .carousel-item-inner-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     height: 85vh;
     padding: 10vh 5vw;
-    gap: 3vw;
+    gap: 3rem;
 }
 
 .carousel-item-inner-container.more-than-three-images {
@@ -67,6 +68,7 @@ html {
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 
 .carousel-item-figure {
     padding: 0.5rem;
@@ -92,13 +94,12 @@ html {
 .carousel-item-figure .carousel-item-figure-caption {
     text-align: center;
     font-family: 'AdobeCleanBold';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
     background: white;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border: 1px solid black;
     margin-top: 0.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     min-width: 120px;
 }
 
@@ -111,6 +112,9 @@ html {
     max-width: 40vw;
     align-items: flex-start;
     justify-content: flex-start;
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
 }
 
 .more-than-three-images .carousel-item-description{
@@ -121,14 +125,11 @@ html {
 
 .carousel-item-description .title {
     font-family: 'AdobeCleanExtraBold';
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 0;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(135deg, #8B5CF6, #A855F7);
-    padding: 1rem 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    background: none;
+    text-shadow: none;
     margin-bottom: 1rem;
 }
 
@@ -138,14 +139,12 @@ html {
 
 .carousel-item-description .description-text {
     font-family: 'AdobeClean';
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     font-style: normal;
-    border: none;
-    padding: 1.5rem;
+    border: 1px solid black;
+    padding: 1rem;
     color: black;
     background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
