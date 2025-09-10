@@ -60,6 +60,13 @@ html {
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: -11vh;
+    max-width: 60vw;
+}
+
+.more-than-three-images .carousel-item-images {
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
 }
 
 .carousel-item-figure {
@@ -114,9 +121,16 @@ html {
 }
 
 .more-than-three-images .carousel-item-description {
-    flex-direction: row;
-    align-items: center;
-    max-width: unset;
+    /* Keep the same layout as regular description */
+    display: flex;
+    flex-direction: column;
+    gap: 13rem;
+    max-width: 40vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20vh;
+    right: 2vw;
 }
 
 .carousel-item-description .title {
