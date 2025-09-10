@@ -59,7 +59,7 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin-top: 3vh;
+    margin-top: -11vh;
 }
 
 .carousel-item-figure {
@@ -110,7 +110,7 @@ html {
     justify-content: flex-start;
     position: absolute;
     bottom: 20vh;
-    right: 5vw;
+    right: 2vw;
 }
 
 .more-than-three-images .carousel-item-description {
