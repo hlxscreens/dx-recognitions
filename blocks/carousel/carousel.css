@@ -51,20 +51,19 @@ html {
 }
 
 /* Image rows logic */
-
-/* Default: up to 3 images in one row */
 .carousel-item-images {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     gap: 1.5rem;
-    margin-top: -11vh;
-    max-width: 60vw;
+    margin-top: -5vh;
+    max-width: 80vw;
+    flex-wrap: wrap;
 }
 
-/* For >3 images, vertical stacking: 3 top, rest bottom */
+/* Special handling for >3 images */
 .more-than-three-images .carousel-item-images {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
@@ -79,11 +78,16 @@ html {
 }
 
 .top-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 .bottom-row {
-    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 /* Individual figures */
