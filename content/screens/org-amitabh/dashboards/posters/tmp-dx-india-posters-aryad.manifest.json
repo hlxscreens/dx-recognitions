@@ -1,0 +1,51 @@
+{
+  "version": "3.0",
+  "timestamp": 1757051590000,
+  "entries": [
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1732274554000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1743145201000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1694524112000
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/media_11919b565768b1c85bda4ea36e8c44ef2aaf88d39.png",
+      "hash": "11919b565768b1c85bda4ea36e8c44ef2aaf88d39"
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/tmp-dx-india-posters-aryad.html",
+      "timestamp": 1757051590000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1743145201000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1738142254000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1693917738000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1694691630000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}

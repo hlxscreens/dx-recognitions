@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-07-02T08:57:43.000Z",
+      "lastModified": "2025-09-05T07:40:14.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -36,7 +36,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/carousel-images/main.manifest.json",
-      "lastModified": "2025-07-02T08:57:43.000Z",
+      "lastModified": "2025-09-05T07:40:14.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -426,7 +426,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/main.manifest.json",
-      "lastModified": "2025-07-02T08:57:43.000Z",
+      "lastModified": "2025-09-05T07:40:14.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1059,7 +1059,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/posters/dx-india-posters.manifest.json",
-      "lastModified": "2025-09-04T11:52:01.000Z",
+      "lastModified": "2025-09-10T11:20:53.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1131,6 +1131,56 @@
       "externalId": "/content/screens/org-amitabh/dashboards/posters/posters-n132-05-282-se",
       "title": "N132-05-282-SE Posters",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/posters/posters-n132-05-282-se.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/dashboards/posters/test-posters.manifest.json",
+      "lastModified": "2025-09-05T05:53:10.000Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-amitabh/dashboards/posters"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/posters/test-posters",
+      "title": "Test DX India Posters",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/posters/test-posters.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/dashboards/posters/tmp-dx-india-posters-aryad.manifest.json",
+      "lastModified": "2025-09-05T05:53:10.000Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-amitabh/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-amitabh/dashboards/posters"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/dashboards/posters/tmp-dx-india-posters-aryad",
+      "title": "DX India Posters-aryad",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/posters/tmp-dx-india-posters-aryad.html"
     },
     {
       "manifestPath": null,
@@ -1309,8 +1359,33 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/events/main.html"
     },
     {
+      "manifestPath": "/content/screens/org-amitabh/events/powered-by/main.manifest.json",
+      "lastModified": "2025-09-05T05:53:10.000Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "events",
+          "path": "/content/screens/org-amitabh/events"
+        },
+        {
+          "title": "powered-by",
+          "path": "/content/screens/org-amitabh/events/powered-by"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/events/powered-by/main",
+      "title": "DX India Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/events/powered-by/main.html"
+    },
+    {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2025-07-02T08:57:43.000Z",
+      "lastModified": "2025-09-05T07:40:14.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1611,7 +1686,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-manoj/main.manifest.json",
-      "lastModified": "2025-04-07T05:20:55.000Z",
+      "lastModified": "2025-09-05T07:40:14.000Z",
       "hierarchy": [
         {
           "title": "screens",
