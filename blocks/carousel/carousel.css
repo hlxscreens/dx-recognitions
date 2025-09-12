@@ -18,7 +18,7 @@ html {
 
 .carousel-item {
     flex: 0 0 100%;
-    color: black;
+    color: white;
 }
 
 /* background image */
@@ -39,32 +39,115 @@ html {
     font-family: 'AdobeCleanExtraBold';
     font-size: 4rem;
     margin-top: 5vh;
-    text-align: center;
+    text-align: right;
+    color: white;
+    z-index: 10;
+    position: relative;
+    padding-right: 5vw;
 }
 
 /* inner container area */
 .carousel-item-inner-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 85vh;
     padding: 10vh 5vw;
+    gap: 2rem;
 }
 
 .carousel-item-inner-container.more-than-three-images {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
 
-/* figure */
+/* left side - images container */
 .carousel-item-images {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    flex: 0 0 50%;
     justify-content: center;
-    flex: 0;
+    align-items: flex-start;
+    justify-items: center;
+    max-height: 50vh;
+    overflow: hidden;
+    margin-top: -5vh;
+}
+
+/* Move images to top when more than 3 images */
+.carousel-item-inner-container.more-than-three-images .carousel-item-images {
+    margin-top: -10vh;
+    max-height: 70vh;
+}
+
+/* 1 image: center in first row */
+.carousel-item-images:has(.carousel-item-figure:nth-child(1):last-child) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: -20vh;
+}
+
+/* 2 images: center in first row */
+.carousel-item-images:has(.carousel-item-figure:nth-child(2):last-child) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: -10vh;
+}
+
+/* 3 images: all in first row */
+.carousel-item-images:has(.carousel-item-figure:nth-child(3):last-child) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: -10vh;
+}
+
+/* 4 images: 2x2 grid */
+.carousel-item-images:has(.carousel-item-figure:nth-child(4):last-child) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-height: 75vh;
+    margin-top: -12vh;
+}
+
+/* 4 images: position text at bottom */
+.carousel-item-images:has(.carousel-item-figure:nth-child(4):last-child) + .carousel-item-description {
+    margin-top: 20vh;
+    justify-content: flex-end;
+}
+
+/* 5 images: 3 in first row, 2 centered in second row */
+.carousel-item-images:has(.carousel-item-figure:nth-child(5):last-child) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.carousel-item-images:has(.carousel-item-figure:nth-child(5):last-child) .carousel-item-figure:nth-child(4),
+.carousel-item-images:has(.carousel-item-figure:nth-child(5):last-child) .carousel-item-figure:nth-child(5) {
+    grid-row: 2;
+}
+
+.carousel-item-images:has(.carousel-item-figure:nth-child(5):last-child) .carousel-item-figure:nth-child(4) {
+    grid-column: 1;
+}
+
+.carousel-item-images:has(.carousel-item-figure:nth-child(5):last-child) .carousel-item-figure:nth-child(5) {
+    grid-column: 3;
+}
+
+/* 5 images: position text at bottom */
+.carousel-item-images:has(.carousel-item-figure:nth-child(5):last-child) + .carousel-item-description {
+    margin-top: 20vh;
+    justify-content: flex-end;
 }
 
 .carousel-item-figure {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .carousel-item-figure picture {
@@ -78,26 +161,72 @@ html {
     background-color: white;
     border: white solid 2px;
     border-radius: 50%;
+    width: 11.8vw !important;
+    height: 11.8vw !important;
+}
+
+/* Responsive sizing based on number of images using IMAGE_SIZES array */
+.carousel-item-images:has(.carousel-item-figure:nth-child(1):last-child) .carousel-item-figure img {
+    width: 20.6vw !important;
+    height: 20.6vw !important;
+}
+
+.carousel-item-images:has(.carousel-item-figure:nth-child(2):last-child) .carousel-item-figure img {
+    width: 16.9vw !important;
+    height: 16.9vw !important;
+}
+
+.carousel-item-images:has(.carousel-item-figure:nth-child(3):last-child) .carousel-item-figure img {
+    width: 14vw !important;
+    height: 14vw !important;
+}
+
+.carousel-item-images:has(.carousel-item-figure:nth-child(4):last-child) .carousel-item-figure img {
+    width: 13.2vw !important;
+    height: 13.2vw !important;
+}
+
+.carousel-item-images:has(.carousel-item-figure:nth-child(5):last-child) .carousel-item-figure img {
+    width: 11.8vw !important;
+    height: 11.8vw !important;
 }
 
 .carousel-item-figure .carousel-item-figure-caption {
     text-align: center;
     font-family: 'AdobeCleanBold';
-    font-size: 2.25rem;
+    font-size: 1.4rem;
+    background: white;
+    color: black;
+    padding: 0.3rem 0.8rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    display: inline-block;
 }
 
-/* description */
+/* right side - description container */
 .carousel-item-description {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 3vw;
-    max-width: 40vw;
+    flex: 0 0 50%;
+    justify-content: center;
+    padding-left: 2rem;
+    max-height: 70vh;
+    overflow-y: auto;
+    margin-top: 8vh;
+}
+
+/* Adjust text position when more than 3 images */
+.carousel-item-inner-container.more-than-three-images .carousel-item-description {
+    margin-top: 20vh;
+    max-height: 40vh;
+    justify-content: flex-end;
 }
 
 .more-than-three-images .carousel-item-description{
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     max-width: unset;
 }
 
@@ -105,6 +234,7 @@ html {
     font-family: 'AdobeCleanExtraBold';
     font-size: 2.5rem;
     padding-left: 21px;
+    color: black;
 }
 
 .more-than-three-images .carousel-item-description .title {
@@ -116,7 +246,7 @@ html {
     font-size: 2.25rem;
     line-height: 3rem;
     font-style: italic;
-    border-left: 3px solid white;
-    padding-left: 21px;
+    padding-left: 0;
+    color: black;
     /* text-align: justify; */
 }
