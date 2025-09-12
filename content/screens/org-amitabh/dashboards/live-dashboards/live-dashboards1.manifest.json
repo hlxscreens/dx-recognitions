@@ -1,26 +1,26 @@
 {
   "version": "3.0",
-  "timestamp": 1743484997000,
+  "timestamp": 1757577308000,
   "entries": [
     {
       "path": "/content/screens/org-amitabh/dashboards/live-dashboards/live-dashboards1.html",
-      "timestamp": 1737117372000
+      "timestamp": 1757577297000
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1743484997000
+      "timestamp": 1757577307000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1738142263000
+      "timestamp": 1757577307000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1737117381000
+      "timestamp": 1757577308000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1737117381000
+      "timestamp": 1757577308000
     }
   ],
   "contentDelivery": {
