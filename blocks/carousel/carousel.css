@@ -9,6 +9,7 @@ html {
     overflow: hidden;
 }
 
+/* Carousel Structure */
 .carousel-track {
     display: flex;
     width: 100vw;
@@ -18,53 +19,82 @@ html {
 
 .carousel-item {
     flex: 0 0 100%;
-    color: white;
+    color: black;
 }
 
-/* background image */
-.carousel-item img {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-}
-
+.carousel-item img,
 .carousel-item iframe {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
 }
 
-/* header */
+/* Hide optional item heading */
 .carousel-item-heading {
-    font-family: 'AdobeCleanExtraBold';
-    font-size: 4rem;
-    margin-top: 5vh;
-    text-align: center;
+    display: none;
 }
 
-/* inner container area */
+/* Inner content layout */
 .carousel-item-inner-container {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     height: 85vh;
-    padding: 10vh 5vw;
+    padding: 12vh 5vw 8vh 5vw;
+    gap: 3rem;
 }
 
 .carousel-item-inner-container.more-than-three-images {
     flex-wrap: wrap;
 }
 
-/* figure */
+/* Image rows logic */
 .carousel-item-images {
     display: flex;
     justify-content: center;
-    flex: 0;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: -5vh;
+    max-width: 80vw;
+    flex-wrap: wrap;
 }
 
+/* Special handling for >3 images */
+.more-than-three-images .carousel-item-images {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 45vw;
+}
+
+/* Top and bottom rows for >3 images */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.top-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Individual figures */
 .carousel-item-figure {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .carousel-item-figure picture {
@@ -73,38 +103,64 @@ html {
     position: relative;
 }
 
-.carousel-item-figure img{
-    object-fit: contain;
-    background-color: white;
-    border: white solid 2px;
+.carousel-item-figure img {
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
 }
 
 .carousel-item-figure .carousel-item-figure-caption {
     text-align: center;
-    font-family: 'AdobeCleanBold';
-    font-size: 2.25rem;
+    font-family: 'AdobeCleanBold', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #ffffff;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000000;
+    margin-top: 0.75rem;
+    min-width: 140px;
+    display: inline-block;
 }
 
-/* description */
+/* Description styling */
 .carousel-item-description {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin: 3vw;
+    gap: 13rem;
     max-width: 40vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20vh;
+    right: 2vw;
 }
 
-.more-than-three-images .carousel-item-description{
-    flex-direction: row;
-    align-items: center;
-    max-width: unset;
+.more-than-three-images .carousel-item-description {
+    display: flex;
+    flex-direction: column;
+    gap: 13rem;
+    max-width: 40vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20vh;
+    right: 2vw;
 }
 
 .carousel-item-description .title {
-    font-family: 'AdobeCleanExtraBold';
-    font-size: 2.5rem;
-    padding-left: 21px;
+    font-family: 'AdobeCleanExtraBold', sans-serif;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    -webkit-text-stroke: 1.5px #008080;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
 }
 
 .more-than-three-images .carousel-item-description .title {
@@ -112,13 +168,13 @@ html {
 }
 
 .carousel-item-description .description-text {
-    font-family: 'AdobeClean';
-    font-size: 2.25rem;
-    line-height: 3rem;
+    font-family: 'AdobeClean', sans-serif;
+    font-size: 1.95rem;
+    line-height: 2.2rem;
     font-style: italic;
-    border-left: 3px solid white;
-    padding-left: 21px;
-    /* text-align: justify; */
+    padding: 1rem;
+    color: #000000;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-align: left;
 }
-
-/* Carousel Structure */
