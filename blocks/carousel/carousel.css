@@ -56,6 +56,20 @@ html {
     gap: 2rem;
 }
 
+/* right side container */
+.carousel-item-inner-container .right-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex: 0 0 50%;
+}
+
+.carousel-item-inner-container .right-div .carousel-item-description {
+    padding-top: 10rem;
+}
+
 .carousel-item-inner-container.more-than-three-images {
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -78,7 +92,7 @@ html {
 
 /* Move images to top when more than 3 images */
 .carousel-item-inner-container.more-than-three-images .carousel-item-images {
-    margin-top: -10vh;
+    margin-top: 0;
     max-height: 70vh;
 }
 
@@ -105,10 +119,11 @@ html {
 
 /* 4 images: 2x2 grid */
 .carousel-item-images:has(.carousel-item-figure:nth-child(4):last-child) {
+    margin-top: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     max-height: 75vh;
-    margin-top: -12vh;
+    margin-top: 0;
 }
 
 /* 4 images: position text at bottom */
@@ -119,6 +134,7 @@ html {
 
 /* 5 images: 3 in first row, 2 centered in second row */
 .carousel-item-images:has(.carousel-item-figure:nth-child(5):last-child) {
+    margin-top: 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
@@ -219,7 +235,7 @@ html {
 
 /* Adjust text position when more than 3 images */
 .carousel-item-inner-container.more-than-three-images .carousel-item-description {
-    margin-top: 20vh;
+    margin-top: 10vh;
     max-height: 40vh;
     justify-content: flex-end;
 }
