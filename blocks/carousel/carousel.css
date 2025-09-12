@@ -164,7 +164,7 @@ html {
 }
 
 .more-than-three-images .carousel-item-description .title {
-    min-width: max-content;
+    display: inline;
 }
 
 .carousel-item-description .description-text {
@@ -176,5 +176,6 @@ html {
     color: #000000;
     font-weight: 400;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    text-align: left;
+    transform: translate(-14%, -20%);
+    text-align: center;
 }
