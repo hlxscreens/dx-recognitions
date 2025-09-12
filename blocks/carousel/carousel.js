@@ -172,6 +172,20 @@ async function buildCarouselFromSheet(block) {
       const innerContainer = createDivWithClass('carousel-item-inner-container');
       const imgContainer = createDivWithClass('carousel-item-images');
 
+      // Add class based on number of images for Chrome 80 compatibility
+      const imageCount = asset.images.length;
+      if (imageCount === 1) {
+        imgContainer.classList.add('one-image');
+      } else if (imageCount === 2) {
+        imgContainer.classList.add('two-images');
+      } else if (imageCount === 3) {
+        imgContainer.classList.add('three-images');
+      } else if (imageCount === 4) {
+        imgContainer.classList.add('four-images');
+      } else if (imageCount === 5) {
+        imgContainer.classList.add('five-images');
+      }
+
       // Create the image(s)
       asset.images.forEach((image, index) => {
         const figure = createDivWithClass('carousel-item-figure');
