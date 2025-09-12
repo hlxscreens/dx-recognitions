@@ -1,30 +1,30 @@
 {
   "version": "3.0",
-  "timestamp": 1751446663000,
+  "timestamp": 1757577055000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1732274554000
+      "timestamp": 1757577055000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1743145201000
+      "timestamp": 1743484996000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1694524112000
+      "timestamp": 1737117368000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1694524112000
+      "timestamp": 1737117368000
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1743145201000
+      "timestamp": 1743484996000
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.html",
-      "timestamp": 1732081067000
+      "timestamp": 1737117371000
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/analytics-genai-dashboard/dashboard-images.plain.html",
@@ -32,7 +32,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484996000
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/media_1043ce40b41597fe1199e6bcaa97094474ff9909f.png",
@@ -65,6 +65,10 @@
     {
       "path": "/content/screens/org-amitabh/dashboards/media_16dd01c2c622dc3fd1b8cec8d93cd4b32387a45a6.jpeg",
       "hash": "16dd01c2c622dc3fd1b8cec8d93cd4b32387a45a6"
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/media_17d76962aaf1e7e11990bd7317c8075aace82ec4d.png",
+      "hash": "17d76962aaf1e7e11990bd7317c8075aace82ec4d"
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/media_17dfdf41852715fee8124ac6d1e9c54332c4afe67.png",
@@ -104,7 +108,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/events/main.html",
-      "timestamp": 1700461725000
+      "timestamp": 1737117377000
     },
     {
       "path": "/content/screens/org-amitabh/events/main.plain.html",
@@ -112,7 +116,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-anup/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484996000
     },
     {
       "path": "/content/screens/org-amitabh/org-anup/main.plain.html",
@@ -124,7 +128,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-balaji/main.html",
-      "timestamp": 1744005688000
+      "timestamp": 1744005695000
     },
     {
       "path": "/content/screens/org-amitabh/org-balaji/main.plain.html",
@@ -136,7 +140,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gaurav/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484996000
     },
     {
       "path": "/content/screens/org-amitabh/org-gaurav/main.plain.html",
@@ -148,7 +152,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/abhayj/main.html",
-      "timestamp": 1744005688000
+      "timestamp": 1744005696000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/abhayj/main.plain.html",
@@ -160,7 +164,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/all/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484996000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/all/main.plain.html",
@@ -172,7 +176,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/arora/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/arora/main.plain.html",
@@ -184,7 +188,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/bansalabhish/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/bansalabhish/main.plain.html",
@@ -196,7 +200,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/habansal/main.html",
-      "timestamp": 1744005688000
+      "timestamp": 1744005696000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/habansal/main.plain.html",
@@ -208,7 +212,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/kasingh/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/kasingh/main.plain.html",
@@ -220,7 +224,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/main.plain.html",
@@ -228,19 +232,19 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/ssahni/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1757511670000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/ssahni/main.plain.html",
-      "timestamp": 1744004563000
+      "timestamp": 1757511000000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/ssahni/recognitions.json",
-      "timestamp": 1744003069000
+      "timestamp": 1757511003000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/varu/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/varu/main.plain.html",
@@ -252,19 +256,19 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-manoj/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/content/screens/org-amitabh/org-manoj/main.plain.html",
-      "timestamp": 1744004682000
+      "timestamp": 1757058012000
     },
     {
       "path": "/content/screens/org-amitabh/org-manoj/recognitions.json",
-      "timestamp": 1744003255000
+      "timestamp": 1757058014000
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.html",
-      "timestamp": 1744005688000
+      "timestamp": 1744005696000
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.plain.html",
@@ -276,7 +280,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kumar/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kumar/main.plain.html",
@@ -288,7 +292,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-suvrat/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/content/screens/org-amitabh/org-suvrat/main.plain.html",
@@ -300,7 +304,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-vikas/main.html",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/content/screens/org-amitabh/org-vikas/main.plain.html",
@@ -312,39 +316,39 @@
     },
     {
       "path": "/content/screens/org-amitabh/recognitions.json",
-      "timestamp": 1744006574000
+      "timestamp": 1757510960000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1694691630000
+      "timestamp": 1737117379000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1694691630000
+      "timestamp": 1737117380000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1694691630000
+      "timestamp": 1737117380000
     },
     {
       "path": "/icons/not-found.png",
-      "timestamp": 1695736194000
+      "timestamp": 1737117380000
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1743145201000
+      "timestamp": 1743484997000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1738142254000
+      "timestamp": 1738142263000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1693917738000
+      "timestamp": 1737117381000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1694691630000
+      "timestamp": 1737117381000
     }
   ],
   "contentDelivery": {
