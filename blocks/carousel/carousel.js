@@ -213,11 +213,13 @@ async function buildCarouselFromSheet(block) {
       }
       const descriptionText = createDivWithClass('description-text');
       descriptionText.innerText = asset.description;
+      const rightDiv = createDivWithClass('right-div');
+      rightDiv.appendChild(heading);
       descriptionContainer.appendChild(descriptionText);
-      innerContainer.appendChild(descriptionContainer);
-
+      rightDiv.appendChild(descriptionContainer);
+    
+      innerContainer.appendChild(rightDiv);
       carouselItem.appendChild(asset.background.cloneNode(true));
-      carouselItem.appendChild(heading);
       carouselItem.appendChild(innerContainer);
       carouselItems.push(carouselItem);
     });
