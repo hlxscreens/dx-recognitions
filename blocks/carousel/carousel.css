@@ -158,7 +158,6 @@ html {
 }
 
 .carousel-item-figure {
-    padding: 0.5rem;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -174,7 +173,8 @@ html {
 .carousel-item-figure img{
     object-fit: contain;
     background-color: white;
-    border: white solid 2px;
+    border: black solid 2px;
+    box-shadow: 0 0 0 1px black;
     border-radius: 50%;
     width: 11.8vw !important;
     height: 11.8vw !important;
@@ -209,7 +209,8 @@ html {
 .carousel-item-figure .carousel-item-figure-caption {
     text-align: center;
     font-family: 'AdobeCleanBold';
-    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-size: 2.0rem;
     background: white;
     color: black;
     padding: 0.3rem 0.8rem;
