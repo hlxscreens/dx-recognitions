@@ -173,8 +173,6 @@ html {
 .carousel-item-figure img{
     object-fit: contain;
     background-color: white;
-    border: black solid 2px;
-    box-shadow: 0 0 0 1px black;
     border-radius: 50%;
     width: 11.8vw !important;
     height: 11.8vw !important;
