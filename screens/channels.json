@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-09-15T10:28:50.000Z",
+      "lastModified": "2025-09-20T13:22:35.522Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -36,7 +36,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/carousel-images/main.manifest.json",
-      "lastModified": "2025-09-15T10:28:50.000Z",
+      "lastModified": "2025-09-20T13:15:49.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -426,7 +426,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/main.manifest.json",
-      "lastModified": "2025-09-15T10:28:50.000Z",
+      "lastModified": "2025-09-20T13:15:49.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1385,7 +1385,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2025-09-15T10:28:50.000Z",
+      "lastModified": "2025-09-20T13:18:22.073Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1402,7 +1402,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-anup/main.manifest.json",
-      "lastModified": "2025-09-15T09:25:01.000Z",
+      "lastModified": "2025-09-20T12:53:52.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1423,7 +1423,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-balaji/main.manifest.json",
-      "lastModified": "2025-09-15T09:25:01.000Z",
+      "lastModified": "2025-09-20T12:55:01.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1444,7 +1444,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gaurav/main.manifest.json",
-      "lastModified": "2025-09-15T09:25:01.000Z",
+      "lastModified": "2025-09-20T12:57:13.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1686,7 +1686,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-manoj/main.manifest.json",
-      "lastModified": "2025-09-15T09:25:01.000Z",
+      "lastModified": "2025-09-20T12:59:40.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1707,7 +1707,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.manifest.json",
-      "lastModified": "2025-09-15T09:25:01.000Z",
+      "lastModified": "2025-09-20T13:08:55.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1791,7 +1791,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-vikas/main.manifest.json",
-      "lastModified": "2025-09-15T09:25:01.000Z",
+      "lastModified": "2025-09-20T13:10:33.000Z",
       "hierarchy": [
         {
           "title": "screens",

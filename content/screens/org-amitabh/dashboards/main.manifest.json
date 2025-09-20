@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1757932130000,
+  "timestamp": 1758374149000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -35,28 +35,8 @@
       "timestamp": 1757675340000
     },
     {
-      "path": "/content/screens/org-amitabh/dashboards/media_1043ce40b41597fe1199e6bcaa97094474ff9909f.png",
-      "hash": "1043ce40b41597fe1199e6bcaa97094474ff9909f"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_10ee0457a6b121ff20e1935ef39524a2c4d0c9ca4.png",
-      "hash": "10ee0457a6b121ff20e1935ef39524a2c4d0c9ca4"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_122fabd91e0c6e7524ff9d5023e3c5809bd5d784a.png",
-      "hash": "122fabd91e0c6e7524ff9d5023e3c5809bd5d784a"
-    },
-    {
       "path": "/content/screens/org-amitabh/dashboards/media_135e7b7c543684428cb8c327b43fe23fd6f379358.png",
       "hash": "135e7b7c543684428cb8c327b43fe23fd6f379358"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_13af38e453bc42003646d6517aabf75e576f0ecdc.png",
-      "hash": "13af38e453bc42003646d6517aabf75e576f0ecdc"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_13efa2cb6cc91e77f1504024eb28b4a21c545f9c2.png",
-      "hash": "13efa2cb6cc91e77f1504024eb28b4a21c545f9c2"
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/media_15b149a01c46bd1aed4117b6091140262d15e030a.jpeg",
@@ -65,14 +45,6 @@
     {
       "path": "/content/screens/org-amitabh/dashboards/media_167f78281c4c848c39ccdae0b9f579d7b193dcfc3.png",
       "hash": "167f78281c4c848c39ccdae0b9f579d7b193dcfc3"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_1680171479884c5193876e1d44badd71832ec26ca.png",
-      "hash": "1680171479884c5193876e1d44badd71832ec26ca"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_16dd01c2c622dc3fd1b8cec8d93cd4b32387a45a6.jpeg",
-      "hash": "16dd01c2c622dc3fd1b8cec8d93cd4b32387a45a6"
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/media_17dfdf41852715fee8124ac6d1e9c54332c4afe67.png",
@@ -85,22 +57,6 @@
     {
       "path": "/content/screens/org-amitabh/dashboards/media_1871366c4b9df259d9049f8781dc265cfce1f699b.jpg",
       "hash": "1871366c4b9df259d9049f8781dc265cfce1f699b"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_19097e29e276e5cd5c11d0815d66e8dd9545c55be.png",
-      "hash": "19097e29e276e5cd5c11d0815d66e8dd9545c55be"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_1b8762bb2443e3f45b62507dfa1f4e069fa841bb5.jpeg",
-      "hash": "1b8762bb2443e3f45b62507dfa1f4e069fa841bb5"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_1bb1e06eafb6904be7ec8d955e504001d37813c7c.jpeg",
-      "hash": "1bb1e06eafb6904be7ec8d955e504001d37813c7c"
-    },
-    {
-      "path": "/content/screens/org-amitabh/dashboards/media_1f07c299dfc6e4f75af20badf23c1b1319595112d.png",
-      "hash": "1f07c299dfc6e4f75af20badf23c1b1319595112d"
     },
     {
       "path": "/content/screens/org-amitabh/events/main.html",
@@ -116,11 +72,11 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-anup/main.plain.html",
-      "timestamp": 1757837723000
+      "timestamp": 1758372829000
     },
     {
       "path": "/content/screens/org-amitabh/org-anup/recognitions.json",
-      "timestamp": 1757837726000
+      "timestamp": 1758372832000
     },
     {
       "path": "/content/screens/org-amitabh/org-balaji/main.html",
@@ -128,11 +84,11 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-balaji/main.plain.html",
-      "timestamp": 1757837851000
+      "timestamp": 1758372899000
     },
     {
       "path": "/content/screens/org-amitabh/org-balaji/recognitions.json",
-      "timestamp": 1757837853000
+      "timestamp": 1758372901000
     },
     {
       "path": "/content/screens/org-amitabh/org-gaurav/main.html",
@@ -140,11 +96,11 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-gaurav/main.plain.html",
-      "timestamp": 1757837944000
+      "timestamp": 1758373030000
     },
     {
       "path": "/content/screens/org-amitabh/org-gaurav/recognitions.json",
-      "timestamp": 1757837947000
+      "timestamp": 1758373033000
     },
     {
       "path": "/content/screens/org-amitabh/org-gitesh/abhayj/main.html",
@@ -256,11 +212,11 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-manoj/main.plain.html",
-      "timestamp": 1757838306000
+      "timestamp": 1758373183000
     },
     {
       "path": "/content/screens/org-amitabh/org-manoj/recognitions.json",
-      "timestamp": 1757838309000
+      "timestamp": 1758373180000
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.html",
@@ -268,11 +224,11 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.plain.html",
-      "timestamp": 1757838334000
+      "timestamp": 1758373733000
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/recognitions.json",
-      "timestamp": 1757838337000
+      "timestamp": 1758373735000
     },
     {
       "path": "/content/screens/org-amitabh/org-sanjay-kumar/main.html",
@@ -304,15 +260,15 @@
     },
     {
       "path": "/content/screens/org-amitabh/org-vikas/main.plain.html",
-      "timestamp": 1757838400000
+      "timestamp": 1758373830000
     },
     {
       "path": "/content/screens/org-amitabh/org-vikas/recognitions.json",
-      "timestamp": 1757838403000
+      "timestamp": 1758373833000
     },
     {
       "path": "/content/screens/org-amitabh/recognitions.json",
-      "timestamp": 1757838426000
+      "timestamp": 1758374149000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
