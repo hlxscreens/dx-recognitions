@@ -31,6 +31,9 @@ const getVideoAssets = async ($) => {
       }
     });
   }
+  else {
+    console.warn('No carouselDivs');
+  }
 
   const videoAssets = Array.from(videoAssetsSet);
   if (!videoAssets.length) {
