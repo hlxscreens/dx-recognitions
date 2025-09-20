@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-09-20T18:51:48.000Z",
+      "lastModified": "2025-09-20T19:22:12.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -687,7 +687,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/posters/dx-india-posters.manifest.json",
-      "lastModified": "2025-09-20T19:13:14.764Z",
+      "lastModified": "2025-09-20T19:15:15.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -808,7 +808,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2025-09-20T18:51:48.000Z",
+      "lastModified": "2025-09-20T19:22:12.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -867,7 +867,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gaurav/main.manifest.json",
-      "lastModified": "2025-09-20T12:57:13.000Z",
+      "lastModified": "2025-09-20T19:22:12.000Z",
       "hierarchy": [
         {
           "title": "screens",
