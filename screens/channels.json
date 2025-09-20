@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-09-20T18:41:19.851Z",
+      "lastModified": "2025-09-20T18:51:38.294Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -762,7 +762,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/main.manifest.json",
-      "lastModified": "2025-09-15T09:25:01.000Z",
+      "lastModified": "2025-09-20T18:49:44.971Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -778,12 +778,12 @@
         }
       ],
       "externalId": "/content/screens/org-amitabh/events/main",
-      "title": "DX India Recognitions",
+      "title": "DX India Recognitions Events",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/events/main.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/powered-by/main.manifest.json",
-      "lastModified": "2025-09-15T09:25:01.000Z",
+      "lastModified": "2025-09-20T18:49:45.376Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -803,12 +803,12 @@
         }
       ],
       "externalId": "/content/screens/org-amitabh/events/powered-by/main",
-      "title": "DX India Recognitions",
+      "title": "DX India Recognitions Powered By",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/events/powered-by/main.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2025-09-20T18:41:06.912Z",
+      "lastModified": "2025-09-20T18:51:25.261Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -909,7 +909,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-mayank/main.manifest.json",
-      "lastModified": "2025-09-20T18:39:25.649Z",
+      "lastModified": "2025-09-20T18:41:29.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -930,7 +930,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-piyush/main.manifest.json",
-      "lastModified": "2025-09-20T18:39:25.660Z",
+      "lastModified": "2025-09-20T18:41:29.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -951,7 +951,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-salil/main.manifest.json",
-      "lastModified": "2025-09-20T18:39:25.644Z",
+      "lastModified": "2025-09-20T18:41:29.000Z",
       "hierarchy": [
         {
           "title": "screens",
