@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-09-20T16:45:49.000Z",
+      "lastModified": "2025-09-20T18:41:19.851Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -808,7 +808,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2025-09-20T16:45:49.000Z",
+      "lastModified": "2025-09-20T18:41:06.912Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -906,6 +906,69 @@
       "externalId": "/content/screens/org-amitabh/org-manoj/main",
       "title": "Org Manoj Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-manoj/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-mayank/main.manifest.json",
+      "lastModified": "2025-09-20T18:39:25.649Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "org-mayank",
+          "path": "/content/screens/org-amitabh/org-mayank"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/org-mayank/main",
+      "title": "Org Mayank Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-mayank/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-piyush/main.manifest.json",
+      "lastModified": "2025-09-20T18:39:25.660Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "org-piyush",
+          "path": "/content/screens/org-amitabh/org-piyush"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/org-piyush/main",
+      "title": "Org Piyush Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-piyush/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-amitabh/org-salil/main.manifest.json",
+      "lastModified": "2025-09-20T18:39:25.644Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-amitabh",
+          "path": "/content/screens/org-amitabh"
+        },
+        {
+          "title": "org-salil",
+          "path": "/content/screens/org-amitabh/org-salil"
+        }
+      ],
+      "externalId": "/content/screens/org-amitabh/org-salil/main",
+      "title": "Org Salil Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-salil/main.html"
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.manifest.json",
