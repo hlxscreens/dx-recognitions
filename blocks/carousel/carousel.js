@@ -388,11 +388,7 @@ export default async function decorate(block) {
   console.log(`Final carousel setup: ${totalItems} items found`);
 
   if (totalItems === 0) {
-    console.log('No carousel items found, creating fallback...');
-    // Create a fallback item
-    const fallbackItem = createDivWithClass('carousel-item');
-    fallbackItem.innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100vh; font-size: 24px; color: #666;">No content available</div>';
-    carouselTrack.appendChild(fallbackItem);
+    console.log('No carousel items found, exiting...');
     return;
   }
 
