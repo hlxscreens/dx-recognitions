@@ -231,6 +231,7 @@ async function buildCarouselFromSheet(block) {
 }
 
 async function buildCarouselForDashboard(block, isUnifiedMode = false) {
+  console.log(`buildCarouselForDashboard called with isUnifiedMode: ${isUnifiedMode}`);
   const childDivs = Array.from(block.children);
   const carouselItems = [];
   childDivs?.forEach((div) => {
@@ -269,16 +270,17 @@ async function buildCarouselForDashboard(block, isUnifiedMode = false) {
     }
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
-  // Only duplicate single items when NOT in unified carousel mode
-  if (carouselItems.length === 1 && !isUnifiedMode) {
-    // added this to achieve a preload of next item in case of only 1 item to show
-    const firstCarouselItem = carouselItems[0];
-    carouselItems.push(firstCarouselItem.cloneNode(true));
+  console.log(`Found ${carouselItems.length} dashboard items, isUnifiedMode: ${isUnifiedMode}`);
+  
+  // Disable duplication for single dashboard items
+  if (carouselItems.length === 1) {
+    console.log('Single dashboard item found - NOT duplicating');
   }
   if (carouselItems.length === 0) {
     // if no dashboard or image to show in the carousel
     // then fallback to showing recognitions channel in iframe without any iframe reload
     const carouselItem = createDivWithClass('carousel-item');
+    carouselItem.classList.add(CAROUSEL_ITEM_DASHBOARDS_CLASS);
     const iframe = document.createElement('iframe');
     const fallbackPath = RECOGNITIONS_MAIN_URL;
     iframe.src = fallbackPath;
@@ -355,7 +357,6 @@ export default async function decorate(block) {
   const hasMultipleCarousels = allCarouselBlocks.length > 1;
 
   console.log(`Carousel processing: ${allCarouselBlocks.length} blocks found, hasMultipleCarousels: ${hasMultipleCarousels}, current block classes: ${block.className}`);
-
   if (hasMultipleCarousels && block === allCarouselBlocks[0]) {
     // Build unified carousel with all content types
     console.log('Building unified carousel...');
