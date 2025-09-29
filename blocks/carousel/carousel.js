@@ -230,7 +230,7 @@ async function buildCarouselFromSheet(block) {
   return createContainerFromData(assets);
 }
 
-async function buildCarouselForDashboard(block) {
+async function buildCarouselForDashboard(block, isUnifiedMode = false) {
   const childDivs = Array.from(block.children);
   const carouselItems = [];
   childDivs?.forEach((div) => {
@@ -269,7 +269,8 @@ async function buildCarouselForDashboard(block) {
     }
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
-  if (carouselItems.length === 1) {
+  // Only duplicate single items when NOT in unified carousel mode
+  if (carouselItems.length === 1 && !isUnifiedMode) {
     // added this to achieve a preload of next item in case of only 1 item to show
     const firstCarouselItem = carouselItems[0];
     carouselItems.push(firstCarouselItem.cloneNode(true));
@@ -310,16 +311,16 @@ async function buildUnifiedCarousel() {
         });
         return items;
       }
-      if (carouselBlock.classList.contains(DASHBOARDS_BLOCK_NAME)) {
-        console.log('Processing dashboards in unified carousel...');
-        const items = await buildCarouselForDashboard(carouselBlock);
-        console.log(`Got ${items.length} dashboard items`);
-        // Add dashboards class to items for styling
-        items.forEach((item) => {
-          item.classList.add('unified-dashboard-item');
-        });
-        return items;
-      }
+       if (carouselBlock.classList.contains(DASHBOARDS_BLOCK_NAME)) {
+         console.log('Processing dashboards in unified carousel...');
+         const items = await buildCarouselForDashboard(carouselBlock, true);
+         console.log(`Got ${items.length} dashboard items`);
+         // Add dashboards class to items for styling
+         items.forEach((item) => {
+           item.classList.add('unified-dashboard-item');
+         });
+         return items;
+       }
       console.log('No matching carousel type found');
       return [];
     });
