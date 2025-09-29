@@ -92,7 +92,6 @@ async function buildCarouselFromSheet(block) {
         console.warn(`Exception while processing row ${i}`, err);
       }
     }
-    console.log('sheetDetails', JSON.stringify(sheetDetails));
     return sheetDetails;
   };
 
@@ -231,7 +230,6 @@ async function buildCarouselFromSheet(block) {
 }
 
 async function buildCarouselForDashboard(block, isUnifiedMode = false) {
-  console.log(`buildCarouselForDashboard called with isUnifiedMode: ${isUnifiedMode}`);
   const childDivs = Array.from(block.children);
   const carouselItems = [];
   childDivs?.forEach((div) => {
@@ -270,11 +268,10 @@ async function buildCarouselForDashboard(block, isUnifiedMode = false) {
     }
   });
   itemDuration = DEFAULT_DASHBOARD_ITEM_DURATION;
-  console.log(`Found ${carouselItems.length} dashboard items, isUnifiedMode: ${isUnifiedMode}`);
   
   // Disable duplication for single dashboard items
   if (carouselItems.length === 1) {
-    console.log('Single dashboard item found - NOT duplicating');
+    // Single dashboard item found - NOT duplicating
   }
   if (carouselItems.length === 0) {
     // if no dashboard or image to show in the carousel
@@ -296,17 +293,12 @@ async function buildUnifiedCarousel() {
 
   // Get all carousel blocks on the page
   const allCarouselBlocks = document.querySelectorAll('.carousel');
-  console.log(`buildUnifiedCarousel: Found ${allCarouselBlocks.length} carousel blocks`);
 
   // Process all carousel blocks
   const processBlocks = async () => {
     const promises = Array.from(allCarouselBlocks).map(async (carouselBlock, index) => {
-      console.log(`Processing carousel block ${index}: ${carouselBlock.className}`);
-
       if (carouselBlock.classList.contains('recognitions')) {
-        console.log('Processing recognitions in unified carousel...');
         const items = await buildCarouselFromSheet(carouselBlock);
-        console.log(`Got ${items.length} recognition items`);
         // Add recognitions class to items for styling
         items.forEach((item) => {
           item.classList.add('unified-recognition-item');
@@ -314,22 +306,18 @@ async function buildUnifiedCarousel() {
         return items;
       }
        if (carouselBlock.classList.contains(DASHBOARDS_BLOCK_NAME)) {
-         console.log('Processing dashboards in unified carousel...');
          const items = await buildCarouselForDashboard(carouselBlock, true);
-         console.log(`Got ${items.length} dashboard items`);
          // Add dashboards class to items for styling
          items.forEach((item) => {
            item.classList.add('unified-dashboard-item');
          });
          return items;
        }
-      console.log('No matching carousel type found');
       return [];
     });
 
     const results = await Promise.all(promises);
     const flatResults = results.flat();
-    console.log(`Processed blocks returned ${flatResults.length} total items`);
     return flatResults;
   };
 
@@ -338,8 +326,6 @@ async function buildUnifiedCarousel() {
 
   // Set unified duration for all items
   itemDuration = UNIFIED_ITEM_DURATION;
-
-  console.log(`Unified carousel created with ${allItems.length} items (${allItems.filter((item) => item.classList.contains('unified-recognition-item')).length} recognitions, ${allItems.filter((item) => item.classList.contains('unified-dashboard-item')).length} dashboards)`);
 
   return allItems;
 }
@@ -356,29 +342,21 @@ export default async function decorate(block) {
   const allCarouselBlocks = document.querySelectorAll('.carousel');
   const hasMultipleCarousels = allCarouselBlocks.length > 1;
 
-  console.log(`Carousel processing: ${allCarouselBlocks.length} blocks found, hasMultipleCarousels: ${hasMultipleCarousels}, current block classes: ${block.className}`);
   if (hasMultipleCarousels && block === allCarouselBlocks[0]) {
     // Build unified carousel with all content types
-    console.log('Building unified carousel...');
     const items = await buildUnifiedCarousel();
     main.querySelector('.carousel-track').append(...items);
   } else if (!hasMultipleCarousels) {
     // Single carousel - use original logic
-    console.log('Building single carousel...');
     if (block.classList.contains('recognitions')) {
-      console.log('Processing recognitions carousel...');
       const items = await buildCarouselFromSheet(block);
       main.querySelector('.carousel-track').append(...items);
     } else if (block.classList.contains(DASHBOARDS_BLOCK_NAME)) {
-      console.log('Processing dashboards carousel...');
       const items = await buildCarouselForDashboard(block);
       main.querySelector('.carousel-track').append(...items);
-    } else {
-      console.log('Unexpected block structure found.');
     }
   } else {
     // Skip processing for subsequent carousel blocks to avoid duplication
-    console.log('Skipping subsequent carousel block...');
     return;
   }
 
@@ -387,10 +365,7 @@ export default async function decorate(block) {
   const totalItems = carouselItems.length;
   let currentIndex = -1;
 
-  console.log(`Final carousel setup: ${totalItems} items found`);
-
   if (totalItems === 0) {
-    console.log('No carousel items found, exiting...');
     return;
   }
 
