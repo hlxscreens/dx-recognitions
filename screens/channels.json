@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -15,7 +15,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -36,7 +36,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -57,7 +57,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -78,7 +78,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -99,7 +99,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -120,7 +120,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -141,7 +141,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -162,7 +162,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -183,7 +183,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -204,7 +204,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -225,7 +225,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -246,7 +246,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -267,7 +267,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -288,7 +288,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -309,7 +309,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -330,7 +330,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -351,7 +351,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -372,7 +372,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -393,7 +393,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -414,7 +414,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -435,7 +435,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -456,7 +456,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -477,7 +477,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -498,7 +498,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -519,7 +519,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -540,7 +540,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -561,7 +561,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -582,7 +582,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -603,7 +603,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -624,7 +624,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -645,7 +645,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/n132-06-92-bse.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -666,7 +666,7 @@
     },
     {
       "manifestPath": null,
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -687,7 +687,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/posters/dx-india-posters.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -712,7 +712,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/posters/test-posters.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -737,7 +737,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/happy-diwali/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -762,7 +762,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -783,7 +783,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/events/powered-by/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -808,7 +808,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -825,7 +825,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-anup/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -846,7 +846,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-balaji/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -867,7 +867,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-gaurav/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -888,7 +888,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-manoj/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -909,7 +909,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-mayank/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -930,7 +930,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-piyush/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -951,7 +951,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-salil/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -972,7 +972,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -993,7 +993,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-vikas/main.manifest.json",
-      "lastModified": "2025-09-29T15:40:24.000Z",
+      "lastModified": "2025-09-29T17:23:54.000Z",
       "hierarchy": [
         {
           "title": "screens",
