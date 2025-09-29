@@ -15,8 +15,8 @@ const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html';
 
 const DEFAULT_ITEM_DURATION = 10 * 1000; // 10 seconds
-const DEFAULT_DASHBOARD_ITEM_DURATION =30000; // 30 seconds
-const UNIFIED_ITEM_DURATION = 30000; // 30 seconds for unified carousel
+const DEFAULT_DASHBOARD_ITEM_DURATION =60000; // 60 seconds
+const UNIFIED_ITEM_DURATION = 60000; // 60 seconds for unified carousel
 let itemDuration = DEFAULT_ITEM_DURATION;
 
 const DASHBOARDS_BLOCK_NAME = 'dashboards';
