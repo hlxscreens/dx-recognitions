@@ -15,7 +15,7 @@ const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html';
 
 const DEFAULT_ITEM_DURATION = 10 * 1000; // 10 seconds
-const DEFAULT_DASHBOARD_ITEM_DURATION =60000; // 60 seconds
+const DEFAULT_DASHBOARD_ITEM_DURATION = 60000; // 60 seconds
 const UNIFIED_ITEM_DURATION = 60000; // 60 seconds for unified carousel
 let itemDuration = DEFAULT_ITEM_DURATION;
 
@@ -173,6 +173,20 @@ async function buildCarouselFromSheet(block) {
       const innerContainer = createDivWithClass('carousel-item-inner-container');
       const imgContainer = createDivWithClass('carousel-item-images');
 
+      // Add class based on number of images for CSS styling
+      const imageCount = asset.images.length;
+      if (imageCount === 1) {
+        imgContainer.classList.add('one-image');
+      } else if (imageCount === 2) {
+        imgContainer.classList.add('two-images');
+      } else if (imageCount === 3) {
+        imgContainer.classList.add('three-images');
+      } else if (imageCount === 4) {
+        imgContainer.classList.add('four-images');
+      } else if (imageCount === 5) {
+        imgContainer.classList.add('five-images');
+      }
+
       // Create the image(s)
       asset.images.forEach((image, index) => {
         const figure = createDivWithClass('carousel-item-figure');
@@ -215,10 +229,15 @@ async function buildCarouselFromSheet(block) {
       const descriptionText = createDivWithClass('description-text');
       descriptionText.innerText = asset.description;
       descriptionContainer.appendChild(descriptionText);
-      innerContainer.appendChild(descriptionContainer);
+      
+      // Create right-div container as expected by CSS
+      const rightDiv = createDivWithClass('right-div');
+      rightDiv.appendChild(heading);
+      rightDiv.appendChild(descriptionContainer);
+      
+      innerContainer.appendChild(rightDiv);
 
       carouselItem.appendChild(asset.background.cloneNode(true));
-      carouselItem.appendChild(heading);
       carouselItem.appendChild(innerContainer);
       carouselItems.push(carouselItem);
     });
@@ -293,12 +312,14 @@ async function buildUnifiedCarousel() {
 
   // Get all carousel blocks on the page
   const allCarouselBlocks = document.querySelectorAll('.carousel');
+  console.log(`buildUnifiedCarousel: Found ${allCarouselBlocks.length} carousel blocks`);
 
   // Process all carousel blocks
   const processBlocks = async () => {
-    const promises = Array.from(allCarouselBlocks).map(async (carouselBlock, index) => {
+    const promises = Array.from(allCarouselBlocks).map(async (carouselBlock, index) => {      
       if (carouselBlock.classList.contains('recognitions')) {
         const items = await buildCarouselFromSheet(carouselBlock);
+        console.log(`Got ${items.length} recognition items`);
         // Add recognitions class to items for styling
         items.forEach((item) => {
           item.classList.add('unified-recognition-item');
@@ -340,8 +361,7 @@ export default async function decorate(block) {
 
   // Check if there are multiple carousel blocks on the page
   const allCarouselBlocks = document.querySelectorAll('.carousel');
-  const hasMultipleCarousels = allCarouselBlocks.length > 1;
-
+  const hasMultipleCarousels = allCarouselBlocks.length > 1;  
   if (hasMultipleCarousels && block === allCarouselBlocks[0]) {
     // Build unified carousel with all content types
     const items = await buildUnifiedCarousel();
