@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1759225386000,
+  "timestamp": 1759227513000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -16,7 +16,11 @@
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/dxaccoladesandposters/main.html",
-      "timestamp": 1759217942000
+      "timestamp": 1759227513000
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/dxaccoladesandposters/media_1180fea332abdd079b83ee7e544f5e7b4f4ae132d.png",
+      "hash": "1180fea332abdd079b83ee7e544f5e7b4f4ae132d"
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/dxaccoladesandposters/media_135e7b7c543684428cb8c327b43fe23fd6f379358.png",
@@ -113,6 +117,10 @@
     {
       "path": "/content/screens/org-amitabh/org-vikas/main.plain.html",
       "timestamp": 1758373830000
+    },
+    {
+      "path": "/content/screens/org-amitabh/recognitions.json",
+      "timestamp": 1759225389000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
