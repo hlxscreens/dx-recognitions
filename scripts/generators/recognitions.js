@@ -2,11 +2,37 @@
 import fs from 'fs-extra';
 import p from 'path';
 import { load } from 'cheerio';
+import fetch from 'node-fetch-cache';
 import FetchUtils from '@aem-screens/screens-offlineresources-generator/src/utils/fetchUtils.js';
 
 const getFranklinMarkup = async (host, path) => {
-  const resp = await FetchUtils.fetchDataWithMethod(host, path, 'GET');
-  return resp.text();
+  try {
+    // Check if the path is already a full URL or just a path
+    let url = path;
+    if (!path.startsWith('http')) {
+      // If it's just a path, use FetchUtils to construct the full URL
+      url = FetchUtils.createUrlFromHostAndPath(host, path);
+    } else {
+      // If it's already a full URL, use it directly
+      url = path;
+    }
+    
+    const resp = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'x-franklin-allowlist-key': process.env.franklinAllowlistKey
+      }
+    });
+    
+    if (!resp.ok) {
+      throw new Error(`Request to fetch ${url} failed with status code ${resp.status}`);
+    }
+    
+    return resp.text();
+  } catch (error) {
+    console.error(`Error fetching Franklin markup for ${path}:`, error);
+    throw error;
+  }
 };
 
 const checkIfProfileImageExists = async (path) => {
@@ -66,7 +92,26 @@ const getAssets = async (host, path) => {
   for (let sheetIndex = 0; sheetIndex < sheetDetails.length; sheetIndex += 1) {
     try {
       assets.push(sheetDetails[sheetIndex].link);
-      const resp = await FetchUtils.fetchDataWithMethod(host, sheetDetails[sheetIndex].link, 'GET', {'X-Client-Type': "franklin"});
+      
+      // Check if the link is already a full URL or just a path
+      let sheetUrl = sheetDetails[sheetIndex].link;
+      if (!sheetUrl.startsWith('http')) {
+        // If it's just a path, use FetchUtils to construct the full URL
+        sheetUrl = FetchUtils.createUrlFromHostAndPath(host, sheetUrl);
+      }
+      
+      const resp = await fetch(sheetUrl, {
+        method: 'GET',
+        headers: {
+          'X-Client-Type': 'franklin',
+          'x-franklin-allowlist-key': process.env.franklinAllowlistKey
+        }
+      });
+      
+      if (!resp.ok) {
+        throw new Error(`Request to fetch ${sheetUrl} failed with status code ${resp.status}`);
+      }
+      
       const sheetDataResponse = await resp.json();
       if (!sheetDataResponse) {
         console.warn(`Invalid sheet Link ${JSON.stringify(sheetDetails[sheetIndex])}. Skipping processing this one.`);
