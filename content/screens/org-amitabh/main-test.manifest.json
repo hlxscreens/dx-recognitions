@@ -1,0 +1,123 @@
+{
+  "version": "3.0",
+  "timestamp": 1759211178720,
+  "entries": [
+    {
+      "path": "/content/screens/org-amitabh/events/main.html",
+      "timestamp": 1759166628000
+    },
+    {
+      "path": "/content/screens/org-amitabh/events/main.plain.html",
+      "timestamp": 1758394019000
+    },
+    {
+      "path": "/content/screens/org-amitabh/main-test.html",
+      "timestamp": 1759211178720
+    },
+    {
+      "path": "/content/screens/org-amitabh/media_135e7b7c543684428cb8c327b43fe23fd6f379358.png",
+      "hash": "135e7b7c543684428cb8c327b43fe23fd6f379358"
+    },
+    {
+      "path": "/content/screens/org-amitabh/media_1eadbfccc58879933e2bdca0e0f80792cda0f6238.png",
+      "hash": "1eadbfccc58879933e2bdca0e0f80792cda0f6238"
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-anup/main.html",
+      "timestamp": 1759166629000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-anup/main.plain.html",
+      "timestamp": 1759142360000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-balaji/main.html",
+      "timestamp": 1759166629000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-balaji/main.plain.html",
+      "timestamp": 1758372899000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-gaurav/main.html",
+      "timestamp": 1759166629000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-gaurav/main.plain.html",
+      "timestamp": 1758396130000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-manoj/main.html",
+      "timestamp": 1759166630000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-manoj/main.plain.html",
+      "timestamp": 1758373183000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-mayank/main.html",
+      "timestamp": 1759166630000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-mayank/main.plain.html",
+      "timestamp": 1758386747000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-piyush/main.html",
+      "timestamp": 1759166631000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-piyush/main.plain.html",
+      "timestamp": 1758373622000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-salil/main.html",
+      "timestamp": 1759166631000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-salil/main.plain.html",
+      "timestamp": 1759142433000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.html",
+      "timestamp": 1759166631000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-sanjay-kaluskar/main.plain.html",
+      "timestamp": 1758373733000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-vikas/main.html",
+      "timestamp": 1759166632000
+    },
+    {
+      "path": "/content/screens/org-amitabh/org-vikas/main.plain.html",
+      "timestamp": 1758373830000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1759166633000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1759166633000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1759166634000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1759166634000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
