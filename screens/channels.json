@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-09-30T09:43:06.000Z",
+      "lastModified": "2025-10-06T06:30:53.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -712,7 +712,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-09-30T10:18:33.000Z",
+      "lastModified": "2025-10-06T07:29:58.073Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -741,7 +741,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/posters/posters-and-recognitions/main.manifest.json",
-      "lastModified": "2025-09-30T10:09:18.000Z",
+      "lastModified": "2025-10-06T06:30:57.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -770,7 +770,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/posters/postersandaccolades/main.manifest.json",
-      "lastModified": "2025-09-30T09:43:06.000Z",
+      "lastModified": "2025-10-06T07:29:58.052Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -895,7 +895,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/main.manifest.json",
-      "lastModified": "2025-09-30T09:43:09.000Z",
+      "lastModified": "2025-10-06T06:30:57.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1097,7 +1097,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/org-test/main.manifest.json",
-      "lastModified": "2025-09-30T05:49:02.000Z",
+      "lastModified": "2025-10-06T07:27:47.000Z",
       "hierarchy": [
         {
           "title": "screens",
