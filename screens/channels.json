@@ -711,8 +711,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/dashboards/posters/dx-india-posters.html"
     },
     {
-      "manifestPath": "/content/screens/org-amitabh/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-10-06T07:29:58.073Z",
+      "manifestPath": null,
+      "lastModified": "2025-10-06T08:11:27.073Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -770,7 +770,7 @@
     },
     {
       "manifestPath": "/content/screens/org-amitabh/dashboards/posters/postersandaccolades/main.manifest.json",
-      "lastModified": "2025-10-06T07:29:58.052Z",
+      "lastModified": "2025-10-06T07:33:25.000Z",
       "hierarchy": [
         {
           "title": "screens",
