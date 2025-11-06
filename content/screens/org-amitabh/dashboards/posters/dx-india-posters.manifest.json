@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1762317826000,
+  "timestamp": 1762405045253,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -16,7 +16,7 @@
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/dx-india-posters.html",
-      "timestamp": 1762317826000
+      "timestamp": 1762405045253
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/media_1027528f40f9b04a1c297f47e680900036f606f1f.png",
@@ -109,6 +109,10 @@
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/media_1db2f97abd596b63dd0459b918c9dc65793fd1894.png",
       "hash": "1db2f97abd596b63dd0459b918c9dc65793fd1894"
+    },
+    {
+      "path": "/content/screens/org-amitabh/dashboards/posters/media_1dde3acdafa9ea3b120916127d024de6c34e3e1d8.png",
+      "hash": "1dde3acdafa9ea3b120916127d024de6c34e3e1d8"
     },
     {
       "path": "/content/screens/org-amitabh/dashboards/posters/media_1e5955075e55b925cd2a40be73974bb2e687709fe.png",
