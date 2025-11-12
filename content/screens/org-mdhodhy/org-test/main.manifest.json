@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1762929486000,
+  "timestamp": 1762930030631,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -15,8 +15,16 @@
       "timestamp": 1759166618000
     },
     {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1759166618000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1759166618000
+    },
+    {
       "path": "/content/screens/org-mdhodhy/org-test/main.html",
-      "timestamp": 1762929482000
+      "timestamp": 1762930030631
     },
     {
       "path": "/content/screens/org-mdhodhy/org-test/media_135e7b7c543684428cb8c327b43fe23fd6f379358.png",
