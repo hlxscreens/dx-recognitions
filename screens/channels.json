@@ -1298,7 +1298,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/org-dchopra/main.manifest.json",
-      "lastModified": "2025-11-14T09:40:26.078Z",
+      "lastModified": "2025-11-14T09:45:10.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1340,7 +1340,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/org-manoj/main.manifest.json",
-      "lastModified": "2025-11-14T09:40:26.091Z",
+      "lastModified": "2025-11-14T09:45:10.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1358,6 +1358,27 @@
       "externalId": "/content/screens/org-mdhodhy/org-manoj/main",
       "title": "Org Manoj Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-manoj/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-mdhodhy/org-mayank/main.manifest.json",
+      "lastModified": "2025-11-14T09:58:52.526Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "org-mayank",
+          "path": "/content/screens/org-mdhodhy/org-mayank"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/org-mayank/main",
+      "title": "Org Mayank Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-mayank/main.html"
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/org-test/main.manifest.json",
