@@ -1297,6 +1297,27 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-balaji/main.html"
     },
     {
+      "manifestPath": "/content/screens/org-mdhodhy/org-dchopra/main.manifest.json",
+      "lastModified": "2025-11-14T09:40:26.078Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "org-dchopra",
+          "path": "/content/screens/org-mdhodhy/org-dchopra"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/org-dchopra/main",
+      "title": "Org Dipti Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-dchopra/main.html"
+    },
+    {
       "manifestPath": "/content/screens/org-mdhodhy/org-gaurav/main.manifest.json",
       "lastModified": "2025-11-14T06:52:13.000Z",
       "hierarchy": [
@@ -1316,6 +1337,27 @@
       "externalId": "/content/screens/org-mdhodhy/org-gaurav/main",
       "title": "Org Gaurav Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-gaurav/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-mdhodhy/org-manoj/main.manifest.json",
+      "lastModified": "2025-11-14T09:40:26.091Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "org-manoj",
+          "path": "/content/screens/org-mdhodhy/org-manoj"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/org-manoj/main",
+      "title": "Org Manoj Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-manoj/main.html"
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/org-test/main.manifest.json",
