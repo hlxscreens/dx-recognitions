@@ -25,6 +25,43 @@ jobs:
       - name: Sleep for 90 seconds assuming helix index will be updated before
         run: sleep 90s
         shell: bash
+      - name: Check and Sync Manifests
+        run: |
+          echo "Checking if channels.json and manifests.json are in sync..."
+          
+          # Get channels.json count
+          CHANNELS_RESPONSE=$(curl -s "https://dx-recognitions.aem-screens.net/content/internal/channels.json")
+          CHANNELS_COUNT=$(echo "$CHANNELS_RESPONSE" | jq '.data | length')
+          echo "Channels count: $CHANNELS_COUNT"
+          
+          # Get manifests.json count  
+          MANIFESTS_RESPONSE=$(curl -s "https://dx-recognitions.aem-screens.net/content/internal/manifests.json")
+          MANIFESTS_COUNT=$(echo "$MANIFESTS_RESPONSE" | jq '.data | length')
+          echo "Manifests count: $MANIFESTS_COUNT"
+          
+          # Compare counts
+          if [ "$CHANNELS_COUNT" -eq "$MANIFESTS_COUNT" ]; then
+            echo "Counts match, checking content differences..."
+            
+            # Get preview manifests for comparison
+            PREVIEW_MANIFESTS=$(curl -s "https://dx-recognitions-prev.aem-screens.net/content/internal/manifests.json")
+            
+            # Compare the actual content
+            if [ "$PREVIEW_MANIFESTS" != "$MANIFESTS_RESPONSE" ]; then
+              echo "Manifests differ, triggering manual publish..."
+              curl -X POST 'https://admin.hlx.page/live/hlxscreens/dx-recognitions/main/content/internal/manifests.json'
+              echo "Manual publish triggered, waiting 10 seconds..."
+              sleep 10
+            else
+              echo "Manifests are already in sync"
+            fi
+          else
+            echo "Count mismatch - channels: $CHANNELS_COUNT, manifests: $MANIFESTS_COUNT"
+            echo "Triggering manual publish to sync..."
+            curl -X POST 'https://admin.hlx.page/live/hlxscreens/dx-recognitions/main/content/internal/manifests.json'
+            sleep 10
+          fi
+        shell: bash
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
