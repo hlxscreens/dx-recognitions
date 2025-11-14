@@ -1255,6 +1255,69 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/main.html"
     },
     {
+      "manifestPath": "/content/screens/org-mdhodhy/org-anup/main.manifest.json",
+      "lastModified": "2025-11-14T06:47:36.388Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "org-anup",
+          "path": "/content/screens/org-mdhodhy/org-anup"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/org-anup/main",
+      "title": "Org Anup Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-anup/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-mdhodhy/org-balaji/main.manifest.json",
+      "lastModified": "2025-11-14T06:47:36.411Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "org-balaji",
+          "path": "/content/screens/org-mdhodhy/org-balaji"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/org-balaji/main",
+      "title": "Org Balaji Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-balaji/main.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-mdhodhy/org-gaurav/main.manifest.json",
+      "lastModified": "2025-11-14T06:47:36.449Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "org-gaurav",
+          "path": "/content/screens/org-mdhodhy/org-gaurav"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/org-gaurav/main",
+      "title": "Org Gaurav Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-gaurav/main.html"
+    },
+    {
       "manifestPath": "/content/screens/org-mdhodhy/org-test/main.manifest.json",
       "lastModified": "2025-11-13T06:35:48.000Z",
       "hierarchy": [
