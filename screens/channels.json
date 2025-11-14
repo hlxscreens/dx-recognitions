@@ -1423,6 +1423,27 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-salil/main.html"
     },
     {
+      "manifestPath": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.manifest.json",
+      "lastModified": "2025-11-14T11:00:53.119Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "org-sanjay-kaluskar",
+          "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main",
+      "title": "Org Sanjay Kaluskar Recognitions",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.html"
+    },
+    {
       "manifestPath": "/content/screens/org-mdhodhy/org-test/main.manifest.json",
       "lastModified": "2025-11-13T06:35:48.000Z",
       "hierarchy": [
