@@ -1,0 +1,79 @@
+{
+  "version": "3.0",
+  "timestamp": 1763116914748,
+  "entries": [
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1759166618000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1759166618000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1759166618000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1759166618000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1759166618000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-piyush/main.html",
+      "timestamp": 1763116914748
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-piyush/media_1eadbfccc58879933e2bdca0e0f80792cda0f6238.png",
+      "hash": "1eadbfccc58879933e2bdca0e0f80792cda0f6238"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-piyush/recognitions.json",
+      "timestamp": 1763114719000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
+      "timestamp": 1759166632000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
+      "timestamp": 1759166632000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
+      "timestamp": 1759166632000
+    },
+    {
+      "path": "/icons/not-found.png",
+      "timestamp": 1759166633000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1759166633000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1759166633000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1759166634000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1759166634000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
