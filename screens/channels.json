@@ -1932,7 +1932,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-11-19T14:57:22.175Z",
+      "lastModified": "2025-11-19T15:06:31.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1960,8 +1960,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.html"
     },
     {
-      "manifestPath": null,
-      "lastModified": "2025-11-14T13:56:49.000Z",
+      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/posters-and-recognitions/main.manifest.json",
+      "lastModified": "2025-11-19T15:20:35.850Z",
       "hierarchy": [
         {
           "title": "screens",
