@@ -1931,8 +1931,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters-test.html"
     },
     {
-      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-11-20T09:57:18.327Z",
+      "manifestPath": null,
+      "lastModified": "2025-11-20T10:22:24.338Z",
       "hierarchy": [
         {
           "title": "screens",
