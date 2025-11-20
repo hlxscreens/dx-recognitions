@@ -1931,8 +1931,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters-test.html"
     },
     {
-      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-11-19T15:06:31.000Z",
+      "manifestPath": null,
+      "lastModified": "2025-11-20T04:41:59.030Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -1960,8 +1960,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.html"
     },
     {
-      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/posters-and-recognitions/main.manifest.json",
-      "lastModified": "2025-11-19T15:30:58.000Z",
+      "manifestPath": null,
+      "lastModified": "2025-11-20T04:42:00.307Z",
       "hierarchy": [
         {
           "title": "screens",
