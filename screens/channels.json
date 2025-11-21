@@ -44,7 +44,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy-test/org-test/main.manifest.json",
-      "lastModified": "2025-11-21T10:26:53.843Z",
+      "lastModified": "2025-11-21T10:31:43.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -786,8 +786,8 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters-copy.html"
     },
     {
-      "manifestPath": null,
-      "lastModified": "2025-11-21T06:58:50.000Z",
+      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
+      "lastModified": "2025-11-21T10:35:25.899Z",
       "hierarchy": [
         {
           "title": "screens",
