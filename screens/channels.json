@@ -14,6 +14,35 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/main.html"
     },
     {
+      "manifestPath": "/content/screens/org-mdhodhy-test/dashboards/posters/dxaccoladesandposters/main.manifest.json",
+      "lastModified": "2025-11-21T07:45:18.966Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy-test",
+          "path": "/content/screens/org-mdhodhy-test"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-mdhodhy-test/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-mdhodhy-test/dashboards/posters"
+        },
+        {
+          "title": "dxaccoladesandposters",
+          "path": "/content/screens/org-mdhodhy-test/dashboards/posters/dxaccoladesandposters"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy-test/dashboards/posters/dxaccoladesandposters/main",
+      "title": "Adobe Recognitions And Posters [ test]",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy-test/dashboards/posters/dxaccoladesandposters/main.html"
+    },
+    {
       "manifestPath": "/content/screens/org-mdhodhy-test/org-test/main.manifest.json",
       "lastModified": "2025-11-21T07:01:39.000Z",
       "hierarchy": [
