@@ -19,10 +19,27 @@ const checkIfProfileImageExists = async (path) => {
 };
 
 const extractMediaFromPath = (path) => {
-  if (path.indexOf('#') >= 0) {
-    return `${path.trim().substring(path.indexOf('/media_'), path.indexOf('#'))}`;
+  const trimmedPath = path.trim();
+  const mediaStart = trimmedPath.indexOf('/media_');
+  
+  if (mediaStart === -1) {
+    return trimmedPath;
   }
-  return `${path.trim().substring(path.indexOf('/media_'))}`;
+  
+  // Find the end position (either at #, ?, or end of string)
+  let mediaEnd = trimmedPath.length;
+  
+  const hashIndex = trimmedPath.indexOf('#', mediaStart);
+  const queryIndex = trimmedPath.indexOf('?', mediaStart);
+  
+  if (hashIndex !== -1 && hashIndex < mediaEnd) {
+    mediaEnd = hashIndex;
+  }
+  if (queryIndex !== -1 && queryIndex < mediaEnd) {
+    mediaEnd = queryIndex;
+  }
+  
+  return trimmedPath.substring(mediaStart, mediaEnd);
 };
 
 const extractSheetData = async (host, path) => {
@@ -98,6 +115,64 @@ const getAssets = async (host, path) => {
   return assets;
 };
 
+const getImageAssetsFromFragment = async (fragmentMarkup) => {
+  const imageAssetsSet = new Set();
+  
+  // Find all <img> tags
+  fragmentMarkup('img').each((_, element) => {
+    try {
+      const imgSrc = fragmentMarkup(element).attr('src');
+      if (imgSrc && imgSrc.includes('/media_')) {
+        const mediaPath = extractMediaFromPath(imgSrc);
+        imageAssetsSet.add(mediaPath);
+        console.log('Extracted image URL from fragment:', mediaPath);
+      }
+    } catch (err) {
+      console.warn('Error extracting image URL from fragment:', err);
+    }
+  });
+
+  // Also check for picture source tags
+  fragmentMarkup('source').each((_, element) => {
+    try {
+      const srcset = fragmentMarkup(element).attr('srcset');
+      if (srcset && srcset.includes('/media_')) {
+        const mediaPath = extractMediaFromPath(srcset);
+        imageAssetsSet.add(mediaPath);
+        console.log('Extracted image URL from fragment srcset:', mediaPath);
+      }
+    } catch (err) {
+      console.warn('Error extracting srcset URL from fragment:', err);
+    }
+  });
+
+  return Array.from(imageAssetsSet);
+};
+
+const getVideoAssetsFromFragment = async (fragmentMarkup) => {
+  const videoAssetsSet = new Set();
+  
+  // Find all video elements or Video: links
+  fragmentMarkup('div:contains("Video:")').each((_, element) => {
+    try {
+      const urlRegex = /https?:\/\/[^\s'"]+/;
+      const match = fragmentMarkup(element).text().match(urlRegex);
+      if (match) {
+        let videoUrl = match[0];
+        videoUrl = videoUrl.replace(/[.,;:]$/, '');
+        const { pathname } = new URL(videoUrl);
+        const lastSegment = pathname.substring(pathname.lastIndexOf('/'));
+        videoAssetsSet.add(lastSegment);
+        console.log('Extracted video URL from fragment:', videoUrl);
+      }
+    } catch (err) {
+      console.warn('Error extracting video URL from fragment:', err);
+    }
+  });
+
+  return Array.from(videoAssetsSet);
+};
+
 async function processFragments($, host) {
   const assets = [];
 
@@ -110,16 +185,42 @@ async function processFragments($, host) {
 
     // eslint-disable-next-line no-restricted-syntax
     for (const path of fragmentPaths) {
-      const fragmentFranklinMarkup = await getFranklinMarkup(host, path);
-      // console.log('loading fragmentFranklinMarkup=', fragmentFranklinMarkup);
-      const nestedMarkup = load(fragmentFranklinMarkup);
-      const nestedLinks = nestedMarkup('main .fragment a');
-      if (nestedLinks.length > 0) {
-        const nestedAssets = await processFragments(nestedMarkup, host);
-        assets.push(...nestedAssets);
-      } else {
-        const singleFragmentAssets = await getAssets(host, path);
-        assets.push(...singleFragmentAssets);
+      try {
+        const fragmentFranklinMarkup = await getFranklinMarkup(host, path);
+        // console.log('loading fragmentFranklinMarkup=', fragmentFranklinMarkup);
+        const nestedMarkup = load(fragmentFranklinMarkup);
+        
+        // Check if fragment has nested fragments
+        const nestedLinks = nestedMarkup('main .fragment a');
+        if (nestedLinks.length > 0) {
+          const nestedAssets = await processFragments(nestedMarkup, host);
+          assets.push(...nestedAssets);
+        } else {
+          // Check if this fragment has a recognitions carousel
+          const hasRecognitionsCarousel = nestedMarkup('.carousel.recognitions').length > 0;
+          const hasDashboardsCarousel = nestedMarkup('.carousel.dashboards').length > 0;
+          
+          if (hasRecognitionsCarousel) {
+            // Extract assets from recognitions sheets
+            const singleFragmentAssets = await getAssets(host, path);
+            assets.push(...singleFragmentAssets);
+          }
+          
+          if (hasDashboardsCarousel || nestedMarkup('picture').length > 0) {
+            // Extract images and videos from dashboard/poster fragments
+            const fragmentImageAssets = await getImageAssetsFromFragment(nestedMarkup);
+            const fragmentVideoAssets = await getVideoAssetsFromFragment(nestedMarkup);
+            assets.push(...fragmentImageAssets);
+            assets.push(...fragmentVideoAssets);
+            console.log(`Extracted ${fragmentImageAssets.length} images and ${fragmentVideoAssets.length} videos from fragment: ${path}`);
+          }
+        }
+        
+        // Add the HTML files for the fragment
+        assets.push(`${path}.html`);
+        assets.push(`${path}.plain.html`);
+      } catch (err) {
+        console.warn(`Error processing fragment ${path}:`, err);
       }
     }
   }
