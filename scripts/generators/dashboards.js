@@ -137,8 +137,10 @@ async function processFragments($, host) {
           assets.push(...fragmentVideoAssets);
         }
         // Add the HTML files for the fragment
-        assets.push(`${path}.html`);
-        assets.push(`${path}.plain.html`);
+        // Ensure path starts with /
+        const fragmentPath = path.startsWith('/') ? path : `/${path}`;
+        assets.push(`${fragmentPath}.html`);
+        assets.push(`${fragmentPath}.plain.html`);
       } catch (err) {
         console.warn(`Error processing fragment ${path}:`, err);
       }
@@ -176,9 +178,10 @@ export default class HtmlGenerator {
       additionalAssets.push('/blocks/carousel/carousel.js');
       additionalAssets.push('/blocks/carousel/utils.js');
       additionalAssets.push('/blocks/carousel/carousel.css');
-
+      
       // Add the dashboard page's own .plain.html file
-      additionalAssets.push(`${path}.plain.html`);
+      const mainPagePath = path.startsWith('/') ? path : `/${path}`;
+      additionalAssets.push(`${mainPagePath}.plain.html`);
 
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());
