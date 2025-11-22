@@ -255,6 +255,8 @@ export default class HtmlGenerator {
       // get assets from all fragments
       const fragmentAssets = await processFragments($, host);
       additionalAssets.push(...fragmentAssets);
+      // Add the recognition page's own .plain.html file
+      additionalAssets.push(`/${path}.plain.html`);
 
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());
