@@ -14,56 +14,6 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/main.html"
     },
     {
-      "manifestPath": "/content/screens/org-mdhodhy-test/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-11-21T07:48:23.000Z",
-      "hierarchy": [
-        {
-          "title": "screens",
-          "path": "/content/screens"
-        },
-        {
-          "title": "org-mdhodhy-test",
-          "path": "/content/screens/org-mdhodhy-test"
-        },
-        {
-          "title": "dashboards",
-          "path": "/content/screens/org-mdhodhy-test/dashboards"
-        },
-        {
-          "title": "posters",
-          "path": "/content/screens/org-mdhodhy-test/dashboards/posters"
-        },
-        {
-          "title": "dxaccoladesandposters",
-          "path": "/content/screens/org-mdhodhy-test/dashboards/posters/dxaccoladesandposters"
-        }
-      ],
-      "externalId": "/content/screens/org-mdhodhy-test/dashboards/posters/dxaccoladesandposters/main",
-      "title": "Adobe Recognitions And Posters [ test]",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy-test/dashboards/posters/dxaccoladesandposters/main.html"
-    },
-    {
-      "manifestPath": "/content/screens/org-mdhodhy-test/org-test/main.manifest.json",
-      "lastModified": "2025-11-21T10:31:43.000Z",
-      "hierarchy": [
-        {
-          "title": "screens",
-          "path": "/content/screens"
-        },
-        {
-          "title": "org-mdhodhy-test",
-          "path": "/content/screens/org-mdhodhy-test"
-        },
-        {
-          "title": "org-test",
-          "path": "/content/screens/org-mdhodhy-test/org-test"
-        }
-      ],
-      "externalId": "/content/screens/org-mdhodhy-test/org-test/main",
-      "title": "Testing recognition and posters",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy-test/org-test/main.html"
-    },
-    {
       "manifestPath": null,
       "lastModified": "2025-11-14T13:56:49.000Z",
       "hierarchy": [
@@ -761,31 +711,6 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters.html"
     },
     {
-      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters-copy.manifest.json",
-      "lastModified": "2025-11-14T13:56:49.000Z",
-      "hierarchy": [
-        {
-          "title": "screens",
-          "path": "/content/screens"
-        },
-        {
-          "title": "org-mdhodhy",
-          "path": "/content/screens/org-mdhodhy"
-        },
-        {
-          "title": "dashboards",
-          "path": "/content/screens/org-mdhodhy/dashboards"
-        },
-        {
-          "title": "posters",
-          "path": "/content/screens/org-mdhodhy/dashboards/posters"
-        }
-      ],
-      "externalId": "/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters-copy",
-      "title": "DX India Posters",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters-copy.html"
-    },
-    {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
       "lastModified": "2025-11-21T11:33:36.000Z",
       "hierarchy": [
@@ -813,131 +738,6 @@
       "externalId": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main",
       "title": "Adobe Recognitions And Posters",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.html"
-    },
-    {
-      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/posters-and-recognitions/main.manifest.json",
-      "lastModified": "2025-11-21T06:03:53.000Z",
-      "hierarchy": [
-        {
-          "title": "screens",
-          "path": "/content/screens"
-        },
-        {
-          "title": "org-mdhodhy",
-          "path": "/content/screens/org-mdhodhy"
-        },
-        {
-          "title": "dashboards",
-          "path": "/content/screens/org-mdhodhy/dashboards"
-        },
-        {
-          "title": "posters",
-          "path": "/content/screens/org-mdhodhy/dashboards/posters"
-        },
-        {
-          "title": "posters-and-recognitions",
-          "path": "/content/screens/org-mdhodhy/dashboards/posters/posters-and-recognitions"
-        }
-      ],
-      "externalId": "/content/screens/org-mdhodhy/dashboards/posters/posters-and-recognitions/main",
-      "title": "DX India Recognitions",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/posters-and-recognitions/main.html"
-    },
-    {
-      "manifestPath": null,
-      "lastModified": "2025-11-13T06:35:48.000Z",
-      "hierarchy": [
-        {
-          "title": "screens",
-          "path": "/content/screens"
-        },
-        {
-          "title": "org-mdhodhy",
-          "path": "/content/screens/org-mdhodhy"
-        },
-        {
-          "title": "dashboards",
-          "path": "/content/screens/org-mdhodhy/dashboards"
-        },
-        {
-          "title": "posters",
-          "path": "/content/screens/org-mdhodhy/dashboards/posters"
-        }
-      ],
-      "externalId": "/content/screens/org-mdhodhy/dashboards/posters/test-posters",
-      "title": "Test DX India Posters",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/test-posters.html"
-    },
-    {
-      "manifestPath": "/content/screens/org-mdhodhy/events/happy-diwali/main.manifest.json",
-      "lastModified": "2025-11-14T13:56:49.000Z",
-      "hierarchy": [
-        {
-          "title": "screens",
-          "path": "/content/screens"
-        },
-        {
-          "title": "org-mdhodhy",
-          "path": "/content/screens/org-mdhodhy"
-        },
-        {
-          "title": "events",
-          "path": "/content/screens/org-mdhodhy/events"
-        },
-        {
-          "title": "happy-diwali",
-          "path": "/content/screens/org-mdhodhy/events/happy-diwali"
-        }
-      ],
-      "externalId": "/content/screens/org-mdhodhy/events/happy-diwali/main",
-      "title": "DX India Recognitions Happy Diwali",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/events/happy-diwali/main.html"
-    },
-    {
-      "manifestPath": "/content/screens/org-mdhodhy/events/main.manifest.json",
-      "lastModified": "2025-11-14T13:56:49.000Z",
-      "hierarchy": [
-        {
-          "title": "screens",
-          "path": "/content/screens"
-        },
-        {
-          "title": "org-mdhodhy",
-          "path": "/content/screens/org-mdhodhy"
-        },
-        {
-          "title": "events",
-          "path": "/content/screens/org-mdhodhy/events"
-        }
-      ],
-      "externalId": "/content/screens/org-mdhodhy/events/main",
-      "title": "DX India Recognitions Events",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/events/main.html"
-    },
-    {
-      "manifestPath": "/content/screens/org-mdhodhy/events/powered-by/main.manifest.json",
-      "lastModified": "2025-11-14T13:56:49.000Z",
-      "hierarchy": [
-        {
-          "title": "screens",
-          "path": "/content/screens"
-        },
-        {
-          "title": "org-mdhodhy",
-          "path": "/content/screens/org-mdhodhy"
-        },
-        {
-          "title": "events",
-          "path": "/content/screens/org-mdhodhy/events"
-        },
-        {
-          "title": "powered-by",
-          "path": "/content/screens/org-mdhodhy/events/powered-by"
-        }
-      ],
-      "externalId": "/content/screens/org-mdhodhy/events/powered-by/main",
-      "title": "DX India Recognitions Powered By",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/events/powered-by/main.html"
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/main.manifest.json",
@@ -1144,27 +944,6 @@
       "externalId": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main",
       "title": "Org Sanjay Kaluskar Recognitions",
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.html"
-    },
-    {
-      "manifestPath": "/content/screens/org-mdhodhy/org-test/main.manifest.json",
-      "lastModified": "2025-11-13T06:35:48.000Z",
-      "hierarchy": [
-        {
-          "title": "screens",
-          "path": "/content/screens"
-        },
-        {
-          "title": "org-mdhodhy",
-          "path": "/content/screens/org-mdhodhy"
-        },
-        {
-          "title": "org-test",
-          "path": "/content/screens/org-mdhodhy/org-test"
-        }
-      ],
-      "externalId": "/content/screens/org-mdhodhy/org-test/main",
-      "title": "Org Test satnamR ecognitions",
-      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-test/main.html"
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/org-vikas/main.manifest.json",
