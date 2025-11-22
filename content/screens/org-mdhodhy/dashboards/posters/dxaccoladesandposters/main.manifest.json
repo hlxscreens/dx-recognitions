@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1763808572000,
+  "timestamp": 1763810796000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -25,6 +25,10 @@
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.html",
       "timestamp": 1763796976000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.plain.html",
+      "timestamp": 1763810796000
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_1027528f40f9b04a1c297f47e680900036f606f1f.png",
@@ -333,10 +337,6 @@
     {
       "path": "/styles/styles.css",
       "timestamp": 1763788020000
-    },
-    {
-      "path": "content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.plain.html",
-      "timestamp": 1763808572000
     }
   ],
   "contentDelivery": {
