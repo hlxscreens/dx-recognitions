@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-11-21T06:13:29.000Z",
+      "lastModified": "2025-11-22T03:52:09.381Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -712,7 +712,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-11-21T11:33:36.000Z",
+      "lastModified": "2025-11-22T03:47:18.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -741,7 +741,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/main.manifest.json",
-      "lastModified": "2025-11-21T05:52:07.000Z",
+      "lastModified": "2025-11-22T03:49:26.016Z",
       "hierarchy": [
         {
           "title": "screens",
