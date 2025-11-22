@@ -176,7 +176,8 @@ export default class HtmlGenerator {
       additionalAssets.push('/blocks/carousel/carousel.js');
       additionalAssets.push('/blocks/carousel/utils.js');
       additionalAssets.push('/blocks/carousel/carousel.css');
-
+        // Add the dashboard's own .plain.html file
+        additionalAssets.push(`/${path}.plain.html`);
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());
     } catch (error) {
