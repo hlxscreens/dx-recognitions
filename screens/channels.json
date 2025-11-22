@@ -740,6 +740,60 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.html"
     },
     {
+      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dx-india-posters.manifest.json",
+      "lastModified": "2025-11-22T04:45:44.514Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-mdhodhy/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-mdhodhy/dashboards/posters"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dx-india-posters",
+      "title": "QA-Dont-Delete-DX-India-Posters",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dx-india-posters.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.manifest.json",
+      "lastModified": "2025-11-22T04:45:44.525Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-mdhodhy/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-mdhodhy/dashboards/posters"
+        },
+        {
+          "title": "qa-dont-delete-dxaccoladesandposters",
+          "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main",
+      "title": "QA-Dont-Delete-DXAccoladesAndPosters",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.html"
+    },
+    {
       "manifestPath": "/content/screens/org-mdhodhy/main.manifest.json",
       "lastModified": "2025-11-22T03:52:34.000Z",
       "hierarchy": [
