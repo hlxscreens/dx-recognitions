@@ -1,30 +1,30 @@
 {
   "version": "3.0",
-  "timestamp": 1763788121079,
+  "timestamp": 1763792119000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1763787992000
+      "timestamp": 1763788016000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1763787992000
+      "timestamp": 1763788016000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1763787992000
+      "timestamp": 1763788016000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1763787992000
+      "timestamp": 1763788017000
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1763787992000
+      "timestamp": 1763788017000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/main.html",
-      "timestamp": 1763788121079
+      "timestamp": 1763788254000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/media_1eadbfccc58879933e2bdca0e0f80792cda0f6238.png",
@@ -32,39 +32,39 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/recognitions.json",
-      "timestamp": 1763443224000
+      "timestamp": 1763792119000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1763787993000
+      "timestamp": 1763788018000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1763787993000
+      "timestamp": 1763788017000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1763787993000
+      "timestamp": 1763788018000
     },
     {
       "path": "/icons/not-found.png",
-      "timestamp": 1763787993000
+      "timestamp": 1763788018000
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1763787994000
+      "timestamp": 1763788019000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1763787994000
+      "timestamp": 1763788019000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1763787995000
+      "timestamp": 1763788019000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1763787995000
+      "timestamp": 1763788020000
     }
   ],
   "contentDelivery": {
