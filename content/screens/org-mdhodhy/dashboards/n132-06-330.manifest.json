@@ -1,0 +1,55 @@
+{
+  "version": "3.0",
+  "timestamp": 1763788121274,
+  "entries": [
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/n132-06-330.html",
+      "timestamp": 1763788121274
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1763787994000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1763787994000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1763787995000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1763787995000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}

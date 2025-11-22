@@ -1,0 +1,91 @@
+{
+  "version": "3.0",
+  "timestamp": 1763788121470,
+  "entries": [
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1763787992000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.html",
+      "timestamp": 1763788121470
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1180fea332abdd079b83ee7e544f5e7b4f4ae132d.png",
+      "hash": "1180fea332abdd079b83ee7e544f5e7b4f4ae132d"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_124810610f1bf8158af3311e47575e903fc1d258c.png",
+      "hash": "124810610f1bf8158af3311e47575e903fc1d258c"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1988882b5e028614777d095b9075bc8529e3697be.png",
+      "hash": "1988882b5e028614777d095b9075bc8529e3697be"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1f14f554191bbc31ec6243d1fdefb8a1175a878d1.png",
+      "hash": "1f14f554191bbc31ec6243d1fdefb8a1175a878d1"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/recognitions.json",
+      "timestamp": 1763783238000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
+      "timestamp": 1763787993000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
+      "timestamp": 1763787993000
+    },
+    {
+      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
+      "timestamp": 1763787993000
+    },
+    {
+      "path": "/icons/not-found.png",
+      "timestamp": 1763787993000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1763787994000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1763787994000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1763787995000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1763787995000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
