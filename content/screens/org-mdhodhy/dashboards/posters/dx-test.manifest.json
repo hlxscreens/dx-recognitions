@@ -1,0 +1,83 @@
+{
+  "version": "3.0",
+  "timestamp": 1763872406975,
+  "entries": [
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1763788016000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1763788016000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1763788016000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1763788017000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1763788017000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test.html",
+      "timestamp": 1763872406975
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test.plain.html",
+      "timestamp": 1763872122000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_11fe90a2521d81e0ee9394183ad37bee2c935b84b.png",
+      "hash": "11fe90a2521d81e0ee9394183ad37bee2c935b84b"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_18177b03b9a8cbe6b0a175212fe6e2f8af4671511.png",
+      "hash": "18177b03b9a8cbe6b0a175212fe6e2f8af4671511"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_18b1f4f1cae27e90d2d0500c9c618f0dc33251aac.png",
+      "hash": "18b1f4f1cae27e90d2d0500c9c618f0dc33251aac"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_1b6260601b3335d31f6f7315eea896d46a85f32fc.png",
+      "hash": "1b6260601b3335d31f6f7315eea896d46a85f32fc"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-piyush/main.html",
+      "timestamp": 1763793985000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-piyush/main.plain.html",
+      "timestamp": 1763861267000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1763788019000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1763788019000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1763788019000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1763788020000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}
