@@ -221,18 +221,6 @@ async function processFragments($, host) {
         const fragmentPath = path.startsWith('/') ? path : `/${path}`;
         assets.push(`${fragmentPath}.html`);
         assets.push(`${fragmentPath}.plain.html`);
-
-        // Fetch and save fragment .plain.html file 
-        try { 
-          const plainHtmlResponse = await FetchUtils.fetchDataWithMethod(host, `${path}.plain.html`, 'GET'); 
-          const plainHtmlContent = await plainHtmlResponse.text(); 
-          const fragmentFilePath = path.startsWith('/') ? path.substring(1) : path; 
-          await fs.ensureDir(p.dirname(fragmentFilePath)); 
-          await fs.outputFile(`${fragmentFilePath}.plain.html`, plainHtmlContent); 
-          console.log(`Successfully saved fragment ${fragmentFilePath}.plain.html`); 
-        } catch (error) { 
-          console.error(`Error fetching .plain.html for fragment ${path}:`, error); 
-        }
       } catch (err) {
         console.warn(`Error processing fragment ${path}:`, err);
       }
@@ -274,16 +262,6 @@ export default class HtmlGenerator {
       additionalAssets.push(`${mainPagePath}.plain.html`);
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());
-      
-       // Fetch and save the .plain.html file for offline use
-      try {
-        const plainHtmlResponse = await FetchUtils.fetchDataWithMethod(host, `${path}.plain.html`, 'GET');
-        const plainHtmlContent = await plainHtmlResponse.text();
-        await fs.outputFile(`${path}.plain.html`, plainHtmlContent);
-        console.log(`Successfully saved ${path}.plain.html`);
-      } catch (error) {
-        console.error(`Error fetching .plain.html for ${path}:`, error);
-      }
     } catch (error) {
       console.error(error);
     }
