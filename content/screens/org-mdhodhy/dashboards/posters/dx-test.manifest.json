@@ -1,34 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1764053620000,
+  "timestamp": 1764096501881,
   "entries": [
     {
-      "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1763788016000
-    },
-    {
-      "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1763788016000
-    },
-    {
-      "path": "/blocks/carousel/utils.js",
-      "timestamp": 1763788016000
-    },
-    {
-      "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1763788017000
-    },
-    {
-      "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1763788017000
-    },
-    {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test.html",
-      "timestamp": 1764053620000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test.plain.html",
-      "timestamp": 1764053620000
+      "timestamp": 1764096501881
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/media_11fe90a2521d81e0ee9394183ad37bee2c935b84b.png",
