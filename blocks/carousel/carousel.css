@@ -38,12 +38,10 @@ html {
 .carousel-item-heading {
     font-family: 'AdobeCleanExtraBold';
     font-size: 4rem;
-    margin-top: 5vh;
-    text-align: right;
+    text-align: left;
     color: white;
     z-index: 10;
     position: relative;
-    padding-right: 5vw;
 }
 
 /* inner container area */
@@ -61,9 +59,14 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     flex: 0 0 50%;
+}
+
+/* Increase gap when there's no title */
+.carousel-item-inner-container .right-div.no-title {
+    gap: 12rem;
 }
 
 .carousel-item-inner-container .right-div .carousel-item-description {
@@ -225,10 +228,8 @@ html {
     gap: 2rem;
     flex: 0 0 50%;
     justify-content: center;
-    padding-left: 2rem;
     max-height: 70vh;
     overflow-y: auto;
-    margin-top: 8vh;
 }
 
 /* Adjust text position when more than 3 images */
@@ -247,7 +248,6 @@ html {
 .carousel-item-description .title {
     font-family: 'AdobeCleanExtraBold';
     font-size: 2.5rem;
-    padding-left: 21px;
     color: black;
 }
 

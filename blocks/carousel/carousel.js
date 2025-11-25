@@ -14,7 +14,7 @@ const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 
 const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html';
 
-const DEFAULT_ITEM_DURATION = 10 * 1000; // 10 seconds
+const DEFAULT_ITEM_DURATION = 1000 * 1000; // 10 seconds
 const DEFAULT_DASHBOARD_ITEM_DURATION = 60000; // 60 seconds
 const UNIFIED_ITEM_DURATION = 60000; // 60 seconds for unified carousel
 let itemDuration = DEFAULT_ITEM_DURATION;
@@ -221,7 +221,8 @@ async function buildCarouselFromSheet(block) {
       // Create the description
       const descriptionContainer = createDivWithClass('carousel-item-description');
       // title if present
-      if (asset.title || asset.teamName) {
+      const hasTitle = !!(asset.title || asset.teamName);
+      if (hasTitle) {
         const name = createDivWithClass('title');
         name.innerText = asset.title || asset.teamName;
         descriptionContainer.appendChild(name);
@@ -232,6 +233,10 @@ async function buildCarouselFromSheet(block) {
       
       // Create right-div container as expected by CSS
       const rightDiv = createDivWithClass('right-div');
+      // Add class when there's no title for CSS styling
+      if (!hasTitle) {
+        rightDiv.classList.add('no-title');
+      }
       rightDiv.appendChild(heading);
       rightDiv.appendChild(descriptionContainer);
       
