@@ -1,50 +1,50 @@
 {
   "version": "3.0",
-  "timestamp": 1764137481000,
+  "timestamp": 1764138715000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1764137481000
+      "timestamp": 1764138715000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1763788016000
+      "timestamp": 1763788263000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1763788016000
+      "timestamp": 1763788263000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1763788017000
+      "timestamp": 1763788263000
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1763788017000
+      "timestamp": 1763788263000
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/ban2-08-142.html",
-      "timestamp": 1763788254000
+      "timestamp": 1763788264000
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/ban2-08-142.plain.html",
-      "timestamp": 1763988271000
+      "timestamp": 1763988280000
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1763788019000
+      "timestamp": 1763788271000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1763788019000
+      "timestamp": 1763788271000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1763788019000
+      "timestamp": 1763788272000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1763788020000
+      "timestamp": 1763788272000
     }
   ],
   "contentDelivery": {
