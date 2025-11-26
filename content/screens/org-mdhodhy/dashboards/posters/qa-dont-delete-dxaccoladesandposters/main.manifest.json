@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1764164440000,
+  "timestamp": 1764177324000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -65,10 +65,6 @@
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1988882b5e028614777d095b9075bc8529e3697be.png",
       "hash": "1988882b5e028614777d095b9075bc8529e3697be"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1c4da58e50e743ad4141c374016cb92a5a2af6588.jpg",
-      "hash": "1c4da58e50e743ad4141c374016cb92a5a2af6588"
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1f14f554191bbc31ec6243d1fdefb8a1175a878d1.png",
@@ -152,7 +148,7 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/recognitions.json",
-      "timestamp": 1764164440000
+      "timestamp": 1764177324000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/main.html",
