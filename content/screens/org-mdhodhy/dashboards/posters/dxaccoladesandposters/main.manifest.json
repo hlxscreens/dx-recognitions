@@ -1,30 +1,30 @@
 {
   "version": "3.0",
-  "timestamp": 1764138715000,
+  "timestamp": 1764138722000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1764138715000
+      "timestamp": 1764138722000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1763788263000
+      "timestamp": 1764137608000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1763788263000
+      "timestamp": 1764137608000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1763788263000
+      "timestamp": 1764137608000
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1763788263000
+      "timestamp": 1764137608000
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.html",
-      "timestamp": 1763796983000
+      "timestamp": 1764137616000
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.plain.html",
@@ -115,10 +115,6 @@
       "hash": "17681ca24c30ce1e6873a3e62dd9416fe9de2736b"
     },
     {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_1789b56db22546ced495ab99eed47779d2a4580fa.png",
-      "hash": "1789b56db22546ced495ab99eed47779d2a4580fa"
-    },
-    {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_18fcacc87384f01766cfd5f03d768b310304dc3ed.png",
       "hash": "18fcacc87384f01766cfd5f03d768b310304dc3ed"
     },
@@ -167,6 +163,10 @@
       "hash": "1d637338edbb90adc8dfdf3ff28d0dae0ea7d7877"
     },
     {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_1dba48521a526e55040fc38dfff1fda62bf07830b.png",
+      "hash": "1dba48521a526e55040fc38dfff1fda62bf07830b"
+    },
+    {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_1de5676bd03de72794edbb7ad7ff8fa040ed65fb9.png",
       "hash": "1de5676bd03de72794edbb7ad7ff8fa040ed65fb9"
     },
@@ -184,19 +184,19 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/main.html",
-      "timestamp": 1763788269000
+      "timestamp": 1764137616000
     },
     {
       "path": "/content/screens/org-mdhodhy/main.plain.html",
-      "timestamp": 1764053628000
+      "timestamp": 1764137616000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-anup/main.html",
-      "timestamp": 1763788269000
+      "timestamp": 1764137616000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-anup/main.plain.html",
-      "timestamp": 1764053628000
+      "timestamp": 1764137616000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-anup/recognitions.json",
@@ -204,11 +204,11 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-balaji/main.html",
-      "timestamp": 1763788269000
+      "timestamp": 1764137616000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-balaji/main.plain.html",
-      "timestamp": 1764053628000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-balaji/recognitions.json",
@@ -216,11 +216,11 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-gaurav/main.html",
-      "timestamp": 1763788269000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-gaurav/main.plain.html",
-      "timestamp": 1764053628000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-gaurav/recognitions.json",
@@ -228,11 +228,11 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-manoj/main.html",
-      "timestamp": 1763788269000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-manoj/main.plain.html",
-      "timestamp": 1764053628000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-manoj/recognitions.json",
@@ -240,11 +240,11 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/main.html",
-      "timestamp": 1763788269000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/main.plain.html",
-      "timestamp": 1764053628000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/recognitions.json",
@@ -252,11 +252,11 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/main.html",
-      "timestamp": 1763793992000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/main.plain.html",
-      "timestamp": 1763988282000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/recognitions.json",
@@ -264,11 +264,11 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/main.html",
-      "timestamp": 1763788270000
+      "timestamp": 1764137618000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/main.plain.html",
-      "timestamp": 1764053628000
+      "timestamp": 1764137618000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/recognitions.json",
@@ -276,11 +276,11 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.html",
-      "timestamp": 1763788270000
+      "timestamp": 1764137618000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.plain.html",
-      "timestamp": 1764053628000
+      "timestamp": 1764137618000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/recognitions.json",
@@ -288,11 +288,11 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-vikas/main.html",
-      "timestamp": 1763788270000
+      "timestamp": 1764137618000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-vikas/main.plain.html",
-      "timestamp": 1764053628000
+      "timestamp": 1764137618000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-vikas/recognitions.json",
@@ -304,35 +304,35 @@
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1763788270000
+      "timestamp": 1764137618000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1763788270000
+      "timestamp": 1764137618000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1763788270000
+      "timestamp": 1764137618000
     },
     {
       "path": "/icons/not-found.png",
-      "timestamp": 1763788271000
+      "timestamp": 1764137619000
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1763788271000
+      "timestamp": 1764137619000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1763788271000
+      "timestamp": 1764137619000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1763788272000
+      "timestamp": 1764137620000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1763788272000
+      "timestamp": 1764137620000
     }
   ],
   "contentDelivery": {
