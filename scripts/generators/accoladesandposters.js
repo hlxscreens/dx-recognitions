@@ -266,8 +266,8 @@ async function processFragments($, host) {
       fragmentPaths.push($(link).attr('href'));
     });
 
-    // eslint-disable-next-line no-restricted-syntax
-    for (const path of fragmentPaths) {
+    for (let i = 0; i < fragmentPaths.length; i += 1) {
+      const path = fragmentPaths[i];
       try {
         console.log(`Processing fragment: ${path}`);
         const fragmentResponse = await FetchUtils.fetchDataWithMethod(host, path, 'GET');
@@ -312,7 +312,7 @@ async function processFragments($, host) {
         }
 
         // Handle dashboard fragments or fragments with dashboard carousels
-        if (template === 'dashboards' || nestedMarkup('.carousel.dashboards').length > 0) {
+        if (template === 'dashboards') {
           console.log(`Processing DASHBOARD fragment: ${path}`);
           const fragmentImageAssets = await getImageAssets(nestedMarkup);
           const fragmentVideoAssets = await getVideoAssets(nestedMarkup);
@@ -365,11 +365,12 @@ async function processFragments($, host) {
         console.warn(`Error processing fragment ${path}:`, err);
       }
     }
+    // Add fragment block assets
+    assets.push('/blocks/fragment/fragment.js');
+    assets.push('/blocks/fragment/fragment.css');
+  } else {
+    console.log('No fragments found to process.');
   }
-
-  // Add fragment block assets
-  assets.push('/blocks/fragment/fragment.js');
-  assets.push('/blocks/fragment/fragment.css');
 
   return assets;
 }
