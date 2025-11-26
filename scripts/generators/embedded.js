@@ -94,10 +94,8 @@ const processFragment = async (host, fragmentPath) => {
     
     assets.push(...fragmentAssets);
     
-    // Add the fragment's HTML files
-    const fragmentPath2 = fragmentPath.startsWith('/') ? fragmentPath : `/${fragmentPath}`;
-    assets.push(`${fragmentPath2}.html`);
-    assets.push(`${fragmentPath2}.plain.html`);
+    // Note: Fragment HTML files (.html and .plain.html) are automatically handled
+    // by the base package's createManifest.js, so we don't add them here
     
   } catch (error) {
     console.error(`Error processing fragment ${fragmentPath}:`, error);
