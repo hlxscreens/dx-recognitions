@@ -136,23 +136,8 @@ async function processFragments($, host) {
           assets.push(...fragmentImageAssets);
           assets.push(...fragmentVideoAssets);
         }
-        // Add the HTML files for the fragment
-        // Ensure path starts with /
-        const fragmentPath = path.startsWith('/') ? path : `/${path}`;
-        assets.push(`${fragmentPath}.html`);
-        assets.push(`${fragmentPath}.plain.html`);
-        
-        // Fetch and save fragment .plain.html file 
-        try { 
-          const plainHtmlResponse = await FetchUtils.fetchDataWithMethod(host, `${path}.plain.html`, 'GET'); 
-          const plainHtmlContent = await plainHtmlResponse.text(); 
-          const fragmentFilePath = path.startsWith('/') ? path.substring(1) : path; 
-          await fs.ensureDir(p.dirname(fragmentFilePath)); 
-          await fs.outputFile(`${fragmentFilePath}.plain.html`, plainHtmlContent); 
-          console.log(`Successfully saved fragment ${fragmentFilePath}.plain.html`); 
-        } catch (error) { 
-          console.error(`Error fetching .plain.html for fragment ${path}:`, error); 
-        }
+        // Note: Fragment HTML files are automatically handled by base package
+        // (see createManifest.js line 175)
       } catch (err) {
         console.warn(`Error processing fragment ${path}:`, err);
       }
@@ -191,21 +176,8 @@ export default class HtmlGenerator {
       additionalAssets.push('/blocks/carousel/utils.js');
       additionalAssets.push('/blocks/carousel/carousel.css');
       
-      // Add the dashboard page's own .plain.html file
-      const mainPagePath = path.startsWith('/') ? path : `/${path}`;
-      additionalAssets.push(`${mainPagePath}.plain.html`);
-
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());
-       // Fetch and save the .plain.html file for offline use
-      try {
-        const plainHtmlResponse = await FetchUtils.fetchDataWithMethod(host, `${path}.plain.html`, 'GET');
-        const plainHtmlContent = await plainHtmlResponse.text();
-        await fs.outputFile(`${path}.plain.html`, plainHtmlContent);
-        console.log(`Successfully saved ${path}.plain.html`);
-      } catch (error) {
-        console.error(`Error fetching .plain.html for ${path}:`, error);
-      }
     } catch (error) {
       console.error(error);
     }

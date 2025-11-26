@@ -156,23 +156,9 @@ export default class HtmlGenerator {
       console.log(`Found ${fragmentAssets.length} assets from fragments`);
       additionalAssets.push(...fragmentAssets);
       
-      // Add the main page's own .plain.html file
-      const mainPagePath = path.startsWith('/') ? path : `/${path}`;
-      additionalAssets.push(`${mainPagePath}.plain.html`);
-      
       // Save the main HTML
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());
-      
-      // Fetch and save the .plain.html file for offline use
-      try {
-        const plainHtmlResponse = await FetchUtils.fetchDataWithMethod(host, `${path}.plain.html`, 'GET');
-        const plainHtmlContent = await plainHtmlResponse.text();
-        await fs.outputFile(`${path}.plain.html`, plainHtmlContent);
-        console.log(`Successfully saved ${path}.plain.html`);
-      } catch (error) {
-        console.error(`Error fetching .plain.html for ${path}:`, error);
-      }
       
     } catch (error) {
       console.error(`Error in embedded generator for ${path}:`, error);

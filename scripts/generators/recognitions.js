@@ -216,11 +216,8 @@ async function processFragments($, host) {
           // }
         }
         
-        // Add the HTML files for the fragment
-        // Ensure path starts with /
-        const fragmentPath = path.startsWith('/') ? path : `/${path}`;
-        assets.push(`${fragmentPath}.html`);
-        assets.push(`${fragmentPath}.plain.html`);
+        // Note: Fragment HTML files are automatically handled by base package
+        // (see createManifest.js line 175)
       } catch (err) {
         console.warn(`Error processing fragment ${path}:`, err);
       }
@@ -257,9 +254,7 @@ export default class HtmlGenerator {
       // get assets from all fragments
       const fragmentAssets = await processFragments($, host);
       additionalAssets.push(...fragmentAssets);
-      // Add the recognition page's own .plain.html file
-      const mainPagePath = path.startsWith('/') ? path : `/${path}`;
-      additionalAssets.push(`${mainPagePath}.plain.html`);
+      
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());
     } catch (error) {
