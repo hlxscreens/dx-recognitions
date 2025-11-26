@@ -249,6 +249,7 @@ html {
     font-size: 2.5rem;
     padding-left: 21px;
     color: black;
+    display: none;
 }
 
 .more-than-three-images .carousel-item-description .title {
