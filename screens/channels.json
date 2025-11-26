@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-11-26T12:56:51.000Z",
+      "lastModified": "2025-11-26T13:40:40.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -712,7 +712,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dx-test.manifest.json",
-      "lastModified": "2025-11-26T12:56:51.000Z",
+      "lastModified": "2025-11-26T13:40:40.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -737,7 +737,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-11-26T12:56:51.000Z",
+      "lastModified": "2025-11-26T13:40:40.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -791,7 +791,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-11-26T12:56:51.000Z",
+      "lastModified": "2025-11-26T13:40:40.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -820,7 +820,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/main.manifest.json",
-      "lastModified": "2025-11-26T12:56:51.000Z",
+      "lastModified": "2025-11-26T13:40:40.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -942,7 +942,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/org-mayank/main.manifest.json",
-      "lastModified": "2025-11-26T09:49:59.000Z",
+      "lastModified": "2025-11-26T13:39:37.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -963,7 +963,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/org-piyush/main.manifest.json",
-      "lastModified": "2025-11-26T09:49:59.000Z",
+      "lastModified": "2025-11-26T13:40:40.000Z",
       "hierarchy": [
         {
           "title": "screens",

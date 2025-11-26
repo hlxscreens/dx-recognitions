@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1764150599000,
+  "timestamp": 1764164440000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -35,8 +35,12 @@
       "hash": "11fe90a2521d81e0ee9394183ad37bee2c935b84b"
     },
     {
+      "path": "/content/screens/org-mdhodhy/org-piyush/media_1c4da58e50e743ad4141c374016cb92a5a2af6588.jpg",
+      "hash": "1c4da58e50e743ad4141c374016cb92a5a2af6588"
+    },
+    {
       "path": "/content/screens/org-mdhodhy/org-piyush/recognitions.json",
-      "timestamp": 1763861270000
+      "timestamp": 1764164440000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
