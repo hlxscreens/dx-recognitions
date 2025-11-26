@@ -263,7 +263,20 @@ async function processFragments($, host) {
   if (links.length > 0) {
     const fragmentPaths = [];
     $(links).each((_i, link) => {
-      fragmentPaths.push($(link).attr('href'));
+      let href = $(link).attr('href');
+
+      // Extract pathname if it's an absolute URL
+      if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+        try {
+          const url = new URL(href);
+          href = url.pathname; // Extract just the path part
+          console.log(`Normalized absolute URL to: ${href}`);
+        } catch (e) {
+          console.warn(`Error parsing fragment URL: ${href}`, e);
+        }
+      }
+
+      fragmentPaths.push(href);
     });
 
     for (let i = 0; i < fragmentPaths.length; i += 1) {
