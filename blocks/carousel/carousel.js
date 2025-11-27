@@ -12,7 +12,7 @@ const NO_HEADING = 'No Heading';
 // 1 image - 400x400, 2 images - 330x330, 3 images - 273x273, 4 images - 256x256, 5 images - 227x227
 const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 
-const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html';
+const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/main.html';
 
 const DEFAULT_ITEM_DURATION = 10 * 1000; // 10 seconds
 const DEFAULT_DASHBOARD_ITEM_DURATION = 60 * 1000; // 60 seconds
@@ -220,14 +220,33 @@ async function buildCarouselFromSheet(block) {
       // Create the description
       const descriptionContainer = createDivWithClass('carousel-item-description');
       // title if present
-      if (asset.title || asset.teamName) {
+      const hasTitle = !!(asset.title || asset.teamName);
+      if (hasTitle) {
         const name = createDivWithClass('title');
         name.innerText = asset.title || asset.teamName;
         descriptionContainer.appendChild(name);
       }
       const descriptionText = createDivWithClass('description-text');
       descriptionText.innerText = asset.description;
+      
+      // Count words and apply class for line-height and font-size adjustment
+      const wordCount = asset.description.trim().split(/\s+/).length;
+      if (wordCount < 40) {
+        descriptionText.classList.add('short-description');
+      } else if (wordCount > 70) {
+        descriptionText.classList.add('very-long-description');
+      } else {
+        descriptionText.classList.add('long-description');
+      }
+      
+      descriptionContainer.appendChild(descriptionText);
+      
+      // Create right-div container as expected by CSS
       const rightDiv = createDivWithClass('right-div');
+      // Add class when there's no title for CSS styling
+      if (!hasTitle) {
+        rightDiv.classList.add('no-title');
+      }
       rightDiv.appendChild(heading);
       descriptionContainer.appendChild(descriptionText);
       rightDiv.appendChild(descriptionContainer);
