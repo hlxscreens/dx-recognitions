@@ -205,15 +205,6 @@ async function processFragments($, host) {
             const singleFragmentAssets = await getAssets(host, path);
             assets.push(...singleFragmentAssets);
           }
-          
-          // if (hasDashboardsCarousel || nestedMarkup('picture').length > 0) {
-          //   // Extract images and videos from dashboard/poster fragments
-          //   const fragmentImageAssets = await getImageAssetsFromFragment(nestedMarkup);
-          //   const fragmentVideoAssets = await getVideoAssetsFromFragment(nestedMarkup);
-          //   assets.push(...fragmentImageAssets);
-          //   assets.push(...fragmentVideoAssets);
-          //   console.log(`Extracted ${fragmentImageAssets.length} images and ${fragmentVideoAssets.length} videos from fragment: ${path}`);
-          // }
         }
         
         // Note: Fragment HTML files are automatically handled by base package
