@@ -12,7 +12,7 @@ const NO_HEADING = 'No Heading';
 // 1 image - 400x400, 2 images - 330x330, 3 images - 273x273, 4 images - 256x256, 5 images - 227x227
 const IMAGE_SIZES = ['20.6vw', '16.9vw', '14vw', '13.2vw', '11.8vw'];
 
-const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/main.html';
+const RECOGNITIONS_MAIN_URL = 'https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/main.html';
 
 const DEFAULT_ITEM_DURATION = 1000 * 1000; // 10 seconds
 const DEFAULT_DASHBOARD_ITEM_DURATION = 60000; // 60 seconds
@@ -229,6 +229,17 @@ async function buildCarouselFromSheet(block) {
       }
       const descriptionText = createDivWithClass('description-text');
       descriptionText.innerText = asset.description;
+      
+      // Count words and apply class for line-height and font-size adjustment
+      const wordCount = asset.description.trim().split(/\s+/).length;
+      if (wordCount < 40) {
+        descriptionText.classList.add('short-description');
+      } else if (wordCount > 70) {
+        descriptionText.classList.add('very-long-description');
+      } else {
+        descriptionText.classList.add('long-description');
+      }
+      
       descriptionContainer.appendChild(descriptionText);
       
       // Create right-div container as expected by CSS

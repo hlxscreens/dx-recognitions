@@ -36,41 +36,50 @@ html {
 
 /* header */
 .carousel-item-heading {
-    font-family: 'AdobeCleanExtraBold';
+    font-family: AdobeCleanExtraBold, sans-serif;
     font-size: 4rem;
-    text-align: left;
+    text-align: center;
     color: white;
     z-index: 10;
-    position: relative;
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    max-width: 90%;
+    line-height: 1.2;
+    word-wrap: break-word;
 }
 
 /* inner container area */
 .carousel-item-inner-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     height: 85vh;
     padding: 10vh 5vw;
     gap: 2rem;
+    position: relative;
 }
 
 /* right side container */
 .carousel-item-inner-container .right-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-    flex: 0 0 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex: 0 0 55%;
+    margin-left: auto;
+    position: relative;
+    height: 100%;
 }
 
 /* Increase gap when there's no title */
 .carousel-item-inner-container .right-div.no-title {
-    gap: 12rem;
+    gap: 0;
 }
 
 .carousel-item-inner-container .right-div .carousel-item-description {
-    padding-top: 10rem;
+    padding-top: 0;
 }
 
 .carousel-item-inner-container.more-than-three-images {
@@ -78,74 +87,86 @@ html {
     align-items: flex-start;
 }
 
-/* left side - images container */
+/* left side - images container - KEEP ON LEFT ONLY */
 .carousel-item-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     gap: 1rem;
-    flex: 0 0 50%;
+    flex: 0 0 40%;
+    max-width: 40%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     justify-items: center;
-    max-height: 50vh;
-    overflow: hidden;
-    margin-top: -5vh;
+    max-height: 60vh;
+    overflow: visible;
+    margin-top: 0;
+    margin-right: auto;
+    padding-left: 2vw;
 }
 
 /* Move images to top when more than 3 images */
 .carousel-item-inner-container.more-than-three-images .carousel-item-images {
     margin-top: 0;
     max-height: 70vh;
+    align-self: center;
 }
 
-/* 1 image: center in first row */
+/* 1 image: center */
 .carousel-item-images.one-image {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    margin-top: -20vh;
+    place-items: center;
+    align-self: flex-start;
+    margin-top: 8vh;
 }
 
-/* 2 images: center in first row */
+/* 2 images: side by side */
 .carousel-item-images.two-images {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-top: -10vh;
+    grid-template-rows: 1fr 0.2fr;
+    place-items: center;
+    align-self: center;
 }
 
-/* 3 images: all in first row */
+/* 3 images: side by side */
 .carousel-item-images.three-images {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-top: -10vh;
+    grid-template-rows: 1fr 0fr;
+    place-items: center;
+    align-self: center;
 }
 
-/* 4 images: 2x2 grid */
+/* 4 images: 2x2 grid (two up, two down) */
 .carousel-item-images.four-images {
-    margin-top: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    max-height: 75vh;
+    max-height: 70vh;
+    place-items: center;
+    align-self: center;
+    column-gap: 20rem;
 }
 
-/* 4 images: position text at bottom */
+/* 4 images: keep fixed position */
 .carousel-item-images.four-images + .carousel-item-description {
-    margin-top: 20vh;
-    justify-content: flex-end;
+    /* Position is already fixed by absolute positioning */
 }
 
-/* 5 images: 3 in first row, 2 centered in second row */
+/* 5 images: 3 in first row, 2 in second row */
 .carousel-item-images.five-images {
-    margin-top: 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    place-items: center;
+    align-self: center;
 }
 
+/* Position 4th and 5th images in second row */
 .carousel-item-images.five-images .carousel-item-figure:nth-child(4),
 .carousel-item-images.five-images .carousel-item-figure:nth-child(5) {
     grid-row: 2;
 }
 
+/* Center the bottom 2 images by placing them at columns 1 and 3 */
 .carousel-item-images.five-images .carousel-item-figure:nth-child(4) {
     grid-column: 1;
 }
@@ -154,10 +175,9 @@ html {
     grid-column: 3;
 }
 
-/* 5 images: position text at bottom */
+/* 5 images: keep fixed position */
 .carousel-item-images.five-images + .carousel-item-description {
-    margin-top: 20vh;
-    justify-content: flex-end;
+    /* Position is already fixed by absolute positioning */
 }
 
 .carousel-item-figure {
@@ -177,90 +197,278 @@ html {
     object-fit: contain;
     background-color: white;
     border-radius: 50%;
-    width: 11.8vw !important;
-    height: 11.8vw !important;
+    width: 9vw !important;
+    height: 9vw !important;
 }
 
-/* Responsive sizing based on number of images using IMAGE_SIZES array */
+/* Responsive sizing based on number of images - constrained to left 40% */
 .carousel-item-images.one-image .carousel-item-figure img {
-    width: 20.6vw !important;
-    height: 20.6vw !important;
+    width: 18vw !important;
+    height: 18vw !important;
 }
 
 .carousel-item-images.two-images .carousel-item-figure img {
-    width: 16.9vw !important;
-    height: 16.9vw !important;
+    width: 16vw !important;
+    height: 16vw !important;
 }
 
 .carousel-item-images.three-images .carousel-item-figure img {
-    width: 14vw !important;
-    height: 14vw !important;
+    width: 13vw !important;
+    height: 13vw !important;
 }
 
 .carousel-item-images.four-images .carousel-item-figure img {
-    width: 13.2vw !important;
-    height: 13.2vw !important;
+    width: 10vw !important;
+    height: 10vw !important;
 }
 
 .carousel-item-images.five-images .carousel-item-figure img {
-    width: 11.8vw !important;
-    height: 11.8vw !important;
+    width: 9vw !important;
+    height: 9vw !important;
 }
 
 .carousel-item-figure .carousel-item-figure-caption {
     text-align: center;
-    font-family: 'AdobeCleanBold';
+    font-family: AdobeCleanBold, sans-serif;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     background: white;
     color: black;
-    padding: 0.3rem 0.8rem;
+    padding: 0.3rem 0.6rem;
     border: 2px solid black;
     border-radius: 4px;
     margin-top: 0.5rem;
     display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* right side - description container */
 .carousel-item-description {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    flex: 0 0 50%;
+    gap: 1.5rem;
     justify-content: center;
-    max-height: 70vh;
-    overflow-y: auto;
+    max-height: 50vh;
+    overflow: visible;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 2rem;
+    padding-bottom: 8vh;
 }
 
 /* Adjust text position when more than 3 images */
 .carousel-item-inner-container.more-than-three-images .carousel-item-description {
-    margin-top: 10vh;
-    max-height: 40vh;
-    justify-content: flex-end;
+    max-height: 45vh;
 }
 
 .more-than-three-images .carousel-item-description{
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     max-width: unset;
 }
 
 .carousel-item-description .title {
-    font-family: 'AdobeCleanExtraBold';
+    font-family: AdobeCleanExtraBold, sans-serif;
     font-size: 2.5rem;
     color: black;
+    text-align: center;
+    max-height: 8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: none;
 }
 
 .more-than-three-images .carousel-item-description .title {
     min-width: max-content;
+    text-align: center;
 }
 
 .carousel-item-description .description-text {
-    font-family: 'AdobeClean';
+    font-family: AdobeClean, sans-serif;
     font-size: 2.25rem;
-    line-height: 3rem;
     font-style: italic;
     padding-left: 0;
     color: black;
-    /* text-align: justify; */
+    text-align: left;
+}
+
+/* Short description (< 40 words): larger line-height */
+.carousel-item-description .description-text.short-description {
+    line-height: 4rem;
+}
+
+/* Long description (40-100 words): normal line-height */
+.carousel-item-description .description-text.long-description {
+    line-height: 3rem;
+}
+
+/* Very long description (> 100 words): smaller font-size */
+.carousel-item-description .description-text.very-long-description {
+    line-height: 3rem;
+    font-size: 1.25rem;
+}
+
+
+
+/* RESPONSIVE BREAKPOINTS - Keep images on left at all sizes */
+
+/* Tablet landscape and smaller */
+@media (max-width: 1024px) {
+    .carousel-item-images {
+        flex: 0 0 45%;
+        max-width: 45%;
+        gap: 0.8rem;
+    }
+
+    .carousel-item-images.one-image .carousel-item-figure img {
+        width: 18vw !important;
+        height: 18vw !important;
+    }
+
+    .carousel-item-images.two-images .carousel-item-figure img {
+        width: 15vw !important;
+        height: 15vw !important;
+    }
+
+    .carousel-item-images.three-images .carousel-item-figure img {
+        width: 12vw !important;
+        height: 12vw !important;
+    }
+
+    .carousel-item-images.four-images .carousel-item-figure img,
+    .carousel-item-images.five-images .carousel-item-figure img {
+        width: 11vw !important;
+        height: 11vw !important;
+    }
+
+    .carousel-item-figure .carousel-item-figure-caption {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablet portrait */
+@media (max-width: 768px) {
+    .carousel-item-inner-container {
+        flex-direction: column;
+        padding: 8vh 4vw;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .carousel-item-images {
+        flex: 0 0 auto;
+        max-width: 80%;
+        width: 80%;
+        margin-bottom: 2rem;
+        order: 1;
+    }
+
+    .carousel-item-inner-container .right-div {
+        flex: 0 0 auto;
+        width: 90%;
+        order: 2;
+        margin-left: 0;
+    }
+
+    .carousel-item-images.one-image .carousel-item-figure img {
+        width: 28vw !important;
+        height: 28vw !important;
+    }
+
+    .carousel-item-images.two-images .carousel-item-figure img {
+        width: 24vw !important;
+        height: 24vw !important;
+    }
+
+    .carousel-item-images.three-images .carousel-item-figure img {
+        width: 20vw !important;
+        height: 20vw !important;
+    }
+
+    .carousel-item-images.four-images .carousel-item-figure img {
+        width: 18vw !important;
+        height: 18vw !important;
+    }
+
+    .carousel-item-images.five-images .carousel-item-figure img {
+        width: 16vw !important;
+        height: 16vw !important;
+    }
+
+    .carousel-item-figure .carousel-item-figure-caption {
+        font-size: 1.3rem;
+    }
+
+    .carousel-item-heading {
+        font-size: 3rem;
+    }
+
+    .carousel-item-description .title {
+        font-size: 2rem;
+    }
+
+    .carousel-item-description .description-text {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .carousel-item-images {
+        max-width: 90%;
+        width: 90%;
+        gap: 0.6rem;
+    }
+
+    .carousel-item-images.one-image .carousel-item-figure img {
+        width: 35vw !important;
+        height: 35vw !important;
+    }
+
+    .carousel-item-images.two-images .carousel-item-figure img {
+        width: 30vw !important;
+        height: 30vw !important;
+    }
+
+    .carousel-item-images.three-images .carousel-item-figure img {
+        width: 25vw !important;
+        height: 25vw !important;
+    }
+
+    .carousel-item-images.four-images .carousel-item-figure img {
+        width: 22vw !important;
+        height: 22vw !important;
+    }
+
+    .carousel-item-images.five-images .carousel-item-figure img {
+        width: 20vw !important;
+        height: 20vw !important;
+    }
+
+    .carousel-item-figure .carousel-item-figure-caption {
+        font-size: 1.1rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .carousel-item-heading {
+        font-size: 2.5rem;
+    }
+
+    .carousel-item-description .title {
+        font-size: 1.6rem;
+    }
+
+    .carousel-item-description .description-text {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
 }
