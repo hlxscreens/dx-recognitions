@@ -1,74 +1,78 @@
 {
   "version": "3.0",
-  "timestamp": 1763891765000,
+  "timestamp": 1764164377000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1763788016000
+      "timestamp": 1764150599000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1763788016000
+      "timestamp": 1764150599000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1763788016000
+      "timestamp": 1764137608000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1763788017000
+      "timestamp": 1764137608000
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1763788017000
+      "timestamp": 1764137608000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/main.html",
-      "timestamp": 1763788254000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/main.plain.html",
-      "timestamp": 1763891762000
+      "timestamp": 1764137617000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/media_135e7b7c543684428cb8c327b43fe23fd6f379358.png",
       "hash": "135e7b7c543684428cb8c327b43fe23fd6f379358"
     },
     {
+      "path": "/content/screens/org-mdhodhy/org-mayank/media_16ee8431cfe032c8b34ab3daf7f85ebcaa5eaee3d.jpg",
+      "hash": "16ee8431cfe032c8b34ab3daf7f85ebcaa5eaee3d"
+    },
+    {
       "path": "/content/screens/org-mdhodhy/org-mayank/recognitions.json",
-      "timestamp": 1763891765000
+      "timestamp": 1764164377000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1763788018000
+      "timestamp": 1764137618000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1763788017000
+      "timestamp": 1764137618000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1763788018000
+      "timestamp": 1764137618000
     },
     {
       "path": "/icons/not-found.png",
-      "timestamp": 1763788018000
+      "timestamp": 1764137619000
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1763788019000
+      "timestamp": 1764137619000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1763788019000
+      "timestamp": 1764137619000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1763788019000
+      "timestamp": 1764137620000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1763788020000
+      "timestamp": 1764137620000
     }
   ],
   "contentDelivery": {
