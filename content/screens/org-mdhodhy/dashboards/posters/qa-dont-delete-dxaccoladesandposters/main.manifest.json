@@ -1,286 +1,118 @@
 {
   "version": "3.0",
-  "timestamp": 1764245806000,
+  "timestamp": 1764248360572,
   "entries": [
     {
-      "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1764233137000
-    },
-    {
-      "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1764233137000
-    },
-    {
-      "path": "/blocks/carousel/utils.js",
-      "timestamp": 1764137608000
-    },
-    {
-      "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1764137608000
-    },
-    {
-      "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1764137608000
-    },
-    {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.plain.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_10159958bfa3126680de873d017c4d80dfe670005.jpg",
-      "hash": "10159958bfa3126680de873d017c4d80dfe670005"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_109721aa7ca829b50cdb908d225c2b77c1356bca2.jpg",
-      "hash": "109721aa7ca829b50cdb908d225c2b77c1356bca2"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_10f31bda2e8ead286bd60e3590dff0cfb3ff3208a.jpg",
-      "hash": "10f31bda2e8ead286bd60e3590dff0cfb3ff3208a"
+      "timestamp": 1764248360572
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1180fea332abdd079b83ee7e544f5e7b4f4ae132d.png",
       "hash": "1180fea332abdd079b83ee7e544f5e7b4f4ae132d"
     },
     {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_119074e93da90ad83b0e7e31c278c9f67bddfdedc.jpg",
-      "hash": "119074e93da90ad83b0e7e31c278c9f67bddfdedc"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_11e3e3f3dc3e203cbee91b9517ed55fc5173e7016.jpg",
-      "hash": "11e3e3f3dc3e203cbee91b9517ed55fc5173e7016"
-    },
-    {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_11fe90a2521d81e0ee9394183ad37bee2c935b84b.png",
       "hash": "11fe90a2521d81e0ee9394183ad37bee2c935b84b"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1229bca0c818039f8d2ad5ec7e38e187c40de246b.jpg",
-      "hash": "1229bca0c818039f8d2ad5ec7e38e187c40de246b"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_124810610f1bf8158af3311e47575e903fc1d258c.png",
-      "hash": "124810610f1bf8158af3311e47575e903fc1d258c"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_12c68d167278c74ec0168334cdf4a8822517250c8.jpg",
-      "hash": "12c68d167278c74ec0168334cdf4a8822517250c8"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_12f2222c0e58963cff12fcab9bfcadd1b9b41db6f.png",
-      "hash": "12f2222c0e58963cff12fcab9bfcadd1b9b41db6f"
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_135e7b7c543684428cb8c327b43fe23fd6f379358.png",
       "hash": "135e7b7c543684428cb8c327b43fe23fd6f379358"
     },
     {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_13e41fe79a286ae2e43aeeb321871378df839f915.jpg",
-      "hash": "13e41fe79a286ae2e43aeeb321871378df839f915"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_15127d5b3dce51587a2dcaa2443e301385c7c1305.png",
-      "hash": "15127d5b3dce51587a2dcaa2443e301385c7c1305"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_157ee1ea2316676c2e6a50bd01576d24ce2fb24f5.jpg",
-      "hash": "157ee1ea2316676c2e6a50bd01576d24ce2fb24f5"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_16ee8431cfe032c8b34ab3daf7f85ebcaa5eaee3d.jpg",
-      "hash": "16ee8431cfe032c8b34ab3daf7f85ebcaa5eaee3d"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_19062eaf5438a7c0e1c08ae582f596eee12d877d4.jpg",
-      "hash": "19062eaf5438a7c0e1c08ae582f596eee12d877d4"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_19492ea9d9ea923f67fc6491f7079fccc3fb26812.jpg",
-      "hash": "19492ea9d9ea923f67fc6491f7079fccc3fb26812"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1988882b5e028614777d095b9075bc8529e3697be.png",
-      "hash": "1988882b5e028614777d095b9075bc8529e3697be"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1a26579aed639161eb6257ea4ae05ff876ff8a6bc.jpg",
-      "hash": "1a26579aed639161eb6257ea4ae05ff876ff8a6bc"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1ab325e86a70ea034ddebdde02c8cae22f3cdc7cc.jpg",
-      "hash": "1ab325e86a70ea034ddebdde02c8cae22f3cdc7cc"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1c4da58e50e743ad4141c374016cb92a5a2af6588.jpg",
-      "hash": "1c4da58e50e743ad4141c374016cb92a5a2af6588"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1ce4dd08e876f4843892cbc6645cbb0193eba558d.jpg",
-      "hash": "1ce4dd08e876f4843892cbc6645cbb0193eba558d"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1d898a0fdf24029b8c01614b47246f1272682fdc7.jpg",
-      "hash": "1d898a0fdf24029b8c01614b47246f1272682fdc7"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1f14f554191bbc31ec6243d1fdefb8a1175a878d1.png",
-      "hash": "1f14f554191bbc31ec6243d1fdefb8a1175a878d1"
-    },
-    {
       "path": "/content/screens/org-mdhodhy/main.html",
-      "timestamp": 1764137616000
+      "timestamp": 1764138912000
     },
     {
       "path": "/content/screens/org-mdhodhy/main.plain.html",
-      "timestamp": 1764233085000
+      "timestamp": 1764233147000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-anup/main.html",
-      "timestamp": 1764137616000
+      "timestamp": 1764138912000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-anup/main.plain.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/org-anup/recognitions.json",
-      "timestamp": 1763703429000
+      "timestamp": 1764233147000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-balaji/main.html",
-      "timestamp": 1764137616000
+      "timestamp": 1764138912000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-balaji/main.plain.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/org-balaji/recognitions.json",
-      "timestamp": 1763100054000
+      "timestamp": 1764233147000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-gaurav/main.html",
-      "timestamp": 1764137617000
+      "timestamp": 1764138913000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-gaurav/main.plain.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/org-gaurav/recognitions.json",
-      "timestamp": 1763891828000
+      "timestamp": 1764233147000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-manoj/main.html",
-      "timestamp": 1764238081000
+      "timestamp": 1764238089000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-manoj/main.plain.html",
-      "timestamp": 1764238081000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/org-manoj/recognitions.json",
-      "timestamp": 1764237701000
+      "timestamp": 1764238089000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/main.html",
-      "timestamp": 1764137617000
+      "timestamp": 1764138913000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/main.plain.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/org-mayank/recognitions.json",
-      "timestamp": 1764164377000
+      "timestamp": 1764233148000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/main.html",
-      "timestamp": 1764137617000
+      "timestamp": 1764138913000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/main.plain.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/org-piyush/recognitions.json",
-      "timestamp": 1764245806000
+      "timestamp": 1764233148000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/main.html",
-      "timestamp": 1764233085000
+      "timestamp": 1764233151000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/main.plain.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/org-salil/recognitions.json",
-      "timestamp": 1764236221000
+      "timestamp": 1764233148000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.html",
-      "timestamp": 1764137618000
+      "timestamp": 1764138914000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.plain.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/recognitions.json",
-      "timestamp": 1763117323000
+      "timestamp": 1764233148000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-vikas/main.html",
-      "timestamp": 1764137618000
+      "timestamp": 1764138914000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-vikas/main.plain.html",
-      "timestamp": 1764233085000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/org-vikas/recognitions.json",
-      "timestamp": 1763119079000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/recognitions.json",
-      "timestamp": 1763863843000
-    },
-    {
-      "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1764137618000
-    },
-    {
-      "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1764137618000
-    },
-    {
-      "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1764137618000
-    },
-    {
-      "path": "/icons/not-found.png",
-      "timestamp": 1764137619000
+      "timestamp": 1764233148000
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1764137619000
+      "timestamp": 1764138915000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1764137619000
+      "timestamp": 1764138915000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1764137620000
+      "timestamp": 1764138916000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1764137620000
+      "timestamp": 1764138916000
     }
   ],
   "contentDelivery": {
