@@ -198,7 +198,7 @@ async function processFragments($, host) {
         } else {
           // Check if this fragment has a recognitions carousel
           const hasRecognitionsCarousel = nestedMarkup('.carousel.recognitions').length > 0;
-          const hasDashboardsCarousel = nestedMarkup('.carousel.dashboards').length > 0;
+          // const hasDashboardsCarousel = nestedMarkup('.carousel.dashboards').length > 0;
           
           if (hasRecognitionsCarousel) {
             // Extract assets from recognitions sheets
@@ -206,21 +206,18 @@ async function processFragments($, host) {
             assets.push(...singleFragmentAssets);
           }
           
-          if (hasDashboardsCarousel || nestedMarkup('picture').length > 0) {
-            // Extract images and videos from dashboard/poster fragments
-            const fragmentImageAssets = await getImageAssetsFromFragment(nestedMarkup);
-            const fragmentVideoAssets = await getVideoAssetsFromFragment(nestedMarkup);
-            assets.push(...fragmentImageAssets);
-            assets.push(...fragmentVideoAssets);
-            console.log(`Extracted ${fragmentImageAssets.length} images and ${fragmentVideoAssets.length} videos from fragment: ${path}`);
-          }
+          // if (hasDashboardsCarousel || nestedMarkup('picture').length > 0) {
+          //   // Extract images and videos from dashboard/poster fragments
+          //   const fragmentImageAssets = await getImageAssetsFromFragment(nestedMarkup);
+          //   const fragmentVideoAssets = await getVideoAssetsFromFragment(nestedMarkup);
+          //   assets.push(...fragmentImageAssets);
+          //   assets.push(...fragmentVideoAssets);
+          //   console.log(`Extracted ${fragmentImageAssets.length} images and ${fragmentVideoAssets.length} videos from fragment: ${path}`);
+          // }
         }
         
-        // Add the HTML files for the fragment
-        // Ensure path starts with /
-        const fragmentPath = path.startsWith('/') ? path : `/${path}`;
-        assets.push(`${fragmentPath}.html`);
-        assets.push(`${fragmentPath}.plain.html`);
+        // Note: Fragment HTML files are automatically handled by base package
+        // (see createManifest.js line 175)
       } catch (err) {
         console.warn(`Error processing fragment ${path}:`, err);
       }
@@ -257,9 +254,7 @@ export default class HtmlGenerator {
       // get assets from all fragments
       const fragmentAssets = await processFragments($, host);
       additionalAssets.push(...fragmentAssets);
-      // Add the recognition page's own .plain.html file
-      const mainPagePath = path.startsWith('/') ? path : `/${path}`;
-      additionalAssets.push(`${mainPagePath}.plain.html`);
+      
       await fs.ensureDir(p.dirname(path));
       await fs.outputFile(`${path}.html`, $.html());
     } catch (error) {
