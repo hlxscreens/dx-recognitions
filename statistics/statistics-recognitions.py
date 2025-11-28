@@ -106,15 +106,15 @@ def fetch_last_modified_time(org_manifest_url, org_recognition_url):
 
 def main():
     org_urls = [
-        "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-anup/recognitions.json",
-        "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-balaji/recognitions.json",
-        "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gaurav/recognitions.json",
-        "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-gitesh/all/recognitions.json",
-        "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-manoj/recognitions.json",
-        "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-sanjay-kaluskar/recognitions.json",
-        "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-sanjay-kumar/recognitions.json",
-        "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-suvrat/recognitions.json",
-        "https://dx-recognitions.aem-screens.net/content/screens/org-amitabh/org-vikas/recognitions.json"
+        "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-anup/recognitions.json",
+        "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-balaji/recognitions.json",
+        "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-gaurav/recognitions.json",
+        "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-gitesh/all/recognitions.json",
+        "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-manoj/recognitions.json",
+        "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-sanjay-kaluskar/recognitions.json",
+        "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-sanjay-kumar/recognitions.json",
+        "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-suvrat/recognitions.json",
+        "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/org-vikas/recognitions.json"
     ]
 
     for org_url in org_urls:

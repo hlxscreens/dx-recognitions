@@ -41,7 +41,7 @@ jobs:
           echo "$CHANGED_FILES"
   
           # Extract the desired part of the path
-          EXTRACTED_PATH=$(echo "$CHANGED_FILES" | sed -n 's|^content/screens/org-amitabh/\(.*\)/main\.manifest\.json$|\1|p')
+          EXTRACTED_PATH=$(echo "$CHANGED_FILES" | sed -n 's|^content/screens/org-mdhodhy/\(.*\)/main\.manifest\.json$|\1|p')
           
           # Print the extracted path
           echo "Extracted Path:"
