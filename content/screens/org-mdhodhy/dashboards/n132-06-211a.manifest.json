@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1764233146000,
+  "timestamp": 1764233145000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -25,10 +25,6 @@
     {
       "path": "/content/screens/org-mdhodhy/dashboards/n132-06-211a.html",
       "timestamp": 1764138909000
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/n132-06-211a.plain.html",
-      "timestamp": 1764233146000
     },
     {
       "path": "/scripts/lib-franklin.js",
