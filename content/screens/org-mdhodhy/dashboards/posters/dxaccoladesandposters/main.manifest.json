@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1764571807000,
+  "timestamp": 1764583796960,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -165,10 +165,6 @@
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_16bfa1e1d0cd9c35ff73d893dd385e4f3285b7c48.png",
       "hash": "16bfa1e1d0cd9c35ff73d893dd385e4f3285b7c48"
-    },
-    {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_16ee8431cfe032c8b34ab3daf7f85ebcaa5eaee3d.jpg",
-      "hash": "16ee8431cfe032c8b34ab3daf7f85ebcaa5eaee3d"
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_17114cac80d561869c6c933a7f78aed543d107077.png",
@@ -340,7 +336,7 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/main.html",
-      "timestamp": 1764138913000
+      "timestamp": 1764583796960
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/main.plain.html",
@@ -348,7 +344,7 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-mayank/recognitions.json",
-      "timestamp": 1764164377000
+      "timestamp": 1764583522000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-piyush/main.html",
@@ -417,6 +413,70 @@
     {
       "path": "/icons/not-found.png",
       "timestamp": 1764138915000
+    },
+    {
+      "path": "/is/image/IMGDIR/amandeeps",
+      "hash": "scene7-amandeeps"
+    },
+    {
+      "path": "/is/image/IMGDIR/anirudhaggar",
+      "hash": "scene7-anirudhaggar"
+    },
+    {
+      "path": "/is/image/IMGDIR/atadanki",
+      "hash": "scene7-atadanki"
+    },
+    {
+      "path": "/is/image/IMGDIR/dhrsharm",
+      "hash": "scene7-dhrsharm"
+    },
+    {
+      "path": "/is/image/IMGDIR/krishnaa",
+      "hash": "scene7-krishnaa"
+    },
+    {
+      "path": "/is/image/IMGDIR/lakshmendras",
+      "hash": "scene7-lakshmendras"
+    },
+    {
+      "path": "/is/image/IMGDIR/mohiaror",
+      "hash": "scene7-mohiaror"
+    },
+    {
+      "path": "/is/image/IMGDIR/navneeta",
+      "hash": "scene7-navneeta"
+    },
+    {
+      "path": "/is/image/IMGDIR/prateekawast",
+      "hash": "scene7-prateekawast"
+    },
+    {
+      "path": "/is/image/IMGDIR/ravverma",
+      "hash": "scene7-ravverma"
+    },
+    {
+      "path": "/is/image/IMGDIR/rsandeep",
+      "hash": "scene7-rsandeep"
+    },
+    {
+      "path": "/is/image/IMGDIR/sakarora",
+      "hash": "scene7-sakarora"
+    },
+    {
+      "path": "/is/image/IMGDIR/sakshamg",
+      "hash": "scene7-sakshamg"
+    },
+    {
+      "path": "/is/image/IMGDIR/shreyb",
+      "hash": "scene7-shreyb"
+    },
+    {
+      "path": "/is/image/IMGDIR/syr",
+      "hash": "scene7-syr"
+    },
+    {
+      "path": "/is/image/IMGDIR/varu",
+      "hash": "scene7-varu"
     },
     {
       "path": "/scripts/lib-franklin.js",
