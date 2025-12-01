@@ -24,7 +24,7 @@
     "node-fetch": "^3.3.0",
     "cheerio": "1.0.0-rc.12",
     "fs-extra": "^11.1.1",
-    "@aem-screens/screens-offlineresources-generator": "1.0.13"
+    "@aem-screens/screens-offlineresources-generator": "1.0.14"
   },
   "devDependencies": {
     "@babel/core": "7.21.0",
