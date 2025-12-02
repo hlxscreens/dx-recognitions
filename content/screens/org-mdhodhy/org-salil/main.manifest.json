@@ -4,27 +4,27 @@
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1764233145000
+      "timestamp": 1764247519000
     },
     {
       "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1764233145000
+      "timestamp": 1764247519000
     },
     {
       "path": "/blocks/carousel/utils.js",
-      "timestamp": 1764138903000
+      "timestamp": 1764247519000
     },
     {
       "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1764138904000
+      "timestamp": 1764247519000
     },
     {
       "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1764138904000
+      "timestamp": 1764247519000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/main.html",
-      "timestamp": 1764233151000
+      "timestamp": 1764247529000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/media_109721aa7ca829b50cdb908d225c2b77c1356bca2.jpg",
@@ -40,19 +40,19 @@
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
-      "timestamp": 1764138914000
+      "timestamp": 1764247530000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-ExtraBold.otf",
-      "timestamp": 1764138914000
+      "timestamp": 1764247530000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Regular.otf",
-      "timestamp": 1764138914000
+      "timestamp": 1764247530000
     },
     {
       "path": "/icons/not-found.png",
-      "timestamp": 1764138915000
+      "timestamp": 1764247530000
     },
     {
       "path": "/is/image/IMGDIR/abhigarg",
@@ -108,19 +108,19 @@
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1764138915000
+      "timestamp": 1764247531000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1764138915000
+      "timestamp": 1764247531000
     },
     {
       "path": "/styles/lazy-styles.css",
-      "timestamp": 1764138916000
+      "timestamp": 1764247532000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1764138916000
+      "timestamp": 1764247532000
     }
   ],
   "contentDelivery": {
