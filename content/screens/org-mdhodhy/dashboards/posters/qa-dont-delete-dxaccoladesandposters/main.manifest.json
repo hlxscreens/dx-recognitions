@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1764688290000,
+  "timestamp": 1764759109000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -65,6 +65,10 @@
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1988882b5e028614777d095b9075bc8529e3697be.png",
       "hash": "1988882b5e028614777d095b9075bc8529e3697be"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1e9072994070d26ba7ddf12aad8f629f6e37b80ab.png",
+      "hash": "1e9072994070d26ba7ddf12aad8f629f6e37b80ab"
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1f14f554191bbc31ec6243d1fdefb8a1175a878d1.png",
@@ -160,7 +164,7 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/recognitions.json",
-      "timestamp": 1764688290000
+      "timestamp": 1764759109000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.html",
@@ -257,10 +261,6 @@
     {
       "path": "/is/image/IMGDIR/navneeta",
       "hash": "scene7-navneeta"
-    },
-    {
-      "path": "/is/image/IMGDIR/prateekawast",
-      "hash": "scene7-prateekawast"
     },
     {
       "path": "/is/image/IMGDIR/ravverma",

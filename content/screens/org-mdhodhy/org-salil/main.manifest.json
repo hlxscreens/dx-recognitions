@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1764688290000,
+  "timestamp": 1764759109000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -35,8 +35,12 @@
       "hash": "11fe90a2521d81e0ee9394183ad37bee2c935b84b"
     },
     {
+      "path": "/content/screens/org-mdhodhy/org-salil/media_1e9072994070d26ba7ddf12aad8f629f6e37b80ab.png",
+      "hash": "1e9072994070d26ba7ddf12aad8f629f6e37b80ab"
+    },
+    {
       "path": "/content/screens/org-mdhodhy/org-salil/recognitions.json",
-      "timestamp": 1764688290000
+      "timestamp": 1764759109000
     },
     {
       "path": "/fonts/AdobeClean/AdobeClean-Bold.otf",
@@ -81,10 +85,6 @@
     {
       "path": "/is/image/IMGDIR/navneeta",
       "hash": "scene7-navneeta"
-    },
-    {
-      "path": "/is/image/IMGDIR/prateekawast",
-      "hash": "scene7-prateekawast"
     },
     {
       "path": "/is/image/IMGDIR/ravverma",

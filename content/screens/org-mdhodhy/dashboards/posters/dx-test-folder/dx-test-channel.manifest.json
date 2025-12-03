@@ -1,0 +1,135 @@
+{
+  "version": "3.0",
+  "timestamp": 1764759235642,
+  "entries": [
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/dx-test-channel.html",
+      "timestamp": 1764759235642
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/media_11fe90a2521d81e0ee9394183ad37bee2c935b84b.png",
+      "hash": "11fe90a2521d81e0ee9394183ad37bee2c935b84b"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/media_135e7b7c543684428cb8c327b43fe23fd6f379358.png",
+      "hash": "135e7b7c543684428cb8c327b43fe23fd6f379358"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/media_18177b03b9a8cbe6b0a175212fe6e2f8af4671511.png",
+      "hash": "18177b03b9a8cbe6b0a175212fe6e2f8af4671511"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/media_18b1f4f1cae27e90d2d0500c9c618f0dc33251aac.png",
+      "hash": "18b1f4f1cae27e90d2d0500c9c618f0dc33251aac"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/media_1b6260601b3335d31f6f7315eea896d46a85f32fc.png",
+      "hash": "1b6260601b3335d31f6f7315eea896d46a85f32fc"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/main.html",
+      "timestamp": 1764247527000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/main.plain.html",
+      "timestamp": 1764247527000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-anup/main.html",
+      "timestamp": 1764247528000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-anup/main.plain.html",
+      "timestamp": 1764247528000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-balaji/main.html",
+      "timestamp": 1764247528000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-balaji/main.plain.html",
+      "timestamp": 1764247528000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-gaurav/main.html",
+      "timestamp": 1764247528000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-gaurav/main.plain.html",
+      "timestamp": 1764247528000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-manoj/main.html",
+      "timestamp": 1764247528000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-manoj/main.plain.html",
+      "timestamp": 1764247528000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-mayank/main.html",
+      "timestamp": 1764583841000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-mayank/main.plain.html",
+      "timestamp": 1764247529000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-piyush/main.html",
+      "timestamp": 1764247529000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-piyush/main.plain.html",
+      "timestamp": 1764247529000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-salil/main.html",
+      "timestamp": 1764247529000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-salil/main.plain.html",
+      "timestamp": 1764247529000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.html",
+      "timestamp": 1764247529000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.plain.html",
+      "timestamp": 1764247529000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-vikas/main.html",
+      "timestamp": 1764675931000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/org-vikas/main.plain.html",
+      "timestamp": 1764247529000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1764247531000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1764247531000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1764247532000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1764247532000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "version": "3.0",
+  "timestamp": 1764759235644,
+  "entries": [
+    {
+      "path": "/blocks/carousel/carousel.css",
+      "timestamp": 1764247519000
+    },
+    {
+      "path": "/blocks/carousel/carousel.js",
+      "timestamp": 1764247519000
+    },
+    {
+      "path": "/blocks/carousel/utils.js",
+      "timestamp": 1764247519000
+    },
+    {
+      "path": "/blocks/fragment/fragment.css",
+      "timestamp": 1764247519000
+    },
+    {
+      "path": "/blocks/fragment/fragment.js",
+      "timestamp": 1764247519000
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_124810610f1bf8158af3311e47575e903fc1d258c.png",
+      "hash": "124810610f1bf8158af3311e47575e903fc1d258c"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_1988882b5e028614777d095b9075bc8529e3697be.png",
+      "hash": "1988882b5e028614777d095b9075bc8529e3697be"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_1f14f554191bbc31ec6243d1fdefb8a1175a878d1.png",
+      "hash": "1f14f554191bbc31ec6243d1fdefb8a1175a878d1"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/test-posters.html",
+      "timestamp": 1764759235644
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1764247531000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1764247531000
+    },
+    {
+      "path": "/styles/lazy-styles.css",
+      "timestamp": 1764247532000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1764247532000
+    }
+  ],
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  }
+}

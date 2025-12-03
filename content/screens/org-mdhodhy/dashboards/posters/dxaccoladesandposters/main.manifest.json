@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1764757590177,
+  "timestamp": 1764759109000,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -24,7 +24,7 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters.html",
-      "timestamp": 1764757590177
+      "timestamp": 1764757645000
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters.plain.html",
@@ -227,6 +227,10 @@
       "hash": "1e3bae07efb532ca8dfbe64c763efd0a257f7e3b3"
     },
     {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_1e9072994070d26ba7ddf12aad8f629f6e37b80ab.png",
+      "hash": "1e9072994070d26ba7ddf12aad8f629f6e37b80ab"
+    },
+    {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_1fad1291a2ed0072adeeae935ff57e885b5d365f6.png",
       "hash": "1fad1291a2ed0072adeeae935ff57e885b5d365f6"
     },
@@ -328,7 +332,7 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/org-salil/recognitions.json",
-      "timestamp": 1764688290000
+      "timestamp": 1764759109000
     },
     {
       "path": "/content/screens/org-mdhodhy/org-sanjay-kaluskar/main.html",
@@ -425,10 +429,6 @@
     {
       "path": "/is/image/IMGDIR/navneeta",
       "hash": "scene7-navneeta"
-    },
-    {
-      "path": "/is/image/IMGDIR/prateekawast",
-      "hash": "scene7-prateekawast"
     },
     {
       "path": "/is/image/IMGDIR/ravverma",

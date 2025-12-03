@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2025-12-02T15:11:30.000Z",
+      "lastModified": "2025-12-03T10:51:49.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -687,7 +687,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters.manifest.json",
-      "lastModified": "2025-12-03T10:24:30.027Z",
+      "lastModified": "2025-12-03T10:27:25.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -736,8 +736,37 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dx-test.html"
     },
     {
+      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/dx-test-channel.manifest.json",
+      "lastModified": "2025-12-03T10:53:55.642Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-mdhodhy/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-mdhodhy/dashboards/posters"
+        },
+        {
+          "title": "dx-test-folder",
+          "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/dx-test-channel",
+      "title": "DX Test Channel",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/dx-test-channel.html"
+    },
+    {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-12-03T10:26:30.177Z",
+      "lastModified": "2025-12-03T10:51:49.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -791,7 +820,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2025-12-02T15:11:30.000Z",
+      "lastModified": "2025-12-03T10:51:49.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -819,8 +848,58 @@
       "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.html"
     },
     {
+      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/test-posteraccolade.manifest.json",
+      "lastModified": "2025-12-03T10:56:03.216Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-mdhodhy/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-mdhodhy/dashboards/posters"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/dashboards/posters/test-posteraccolade",
+      "title": "Test posteraccolde",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/test-posteraccolade.html"
+    },
+    {
+      "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/test-posters.manifest.json",
+      "lastModified": "2025-12-03T10:53:55.644Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "org-mdhodhy",
+          "path": "/content/screens/org-mdhodhy"
+        },
+        {
+          "title": "dashboards",
+          "path": "/content/screens/org-mdhodhy/dashboards"
+        },
+        {
+          "title": "posters",
+          "path": "/content/screens/org-mdhodhy/dashboards/posters"
+        }
+      ],
+      "externalId": "/content/screens/org-mdhodhy/dashboards/posters/test-posters",
+      "title": "QA-Dont-Delete-DX-India-Posters",
+      "liveUrl": "https://dx-recognitions.aem-screens.net/content/screens/org-mdhodhy/dashboards/posters/test-posters.html"
+    },
+    {
       "manifestPath": "/content/screens/org-mdhodhy/main.manifest.json",
-      "lastModified": "2025-12-02T15:11:30.000Z",
+      "lastModified": "2025-12-03T10:51:49.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -984,7 +1063,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/org-salil/main.manifest.json",
-      "lastModified": "2025-12-02T15:11:30.000Z",
+      "lastModified": "2025-12-03T10:51:49.000Z",
       "hierarchy": [
         {
           "title": "screens",
