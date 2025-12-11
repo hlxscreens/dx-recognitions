@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1765349481000,
+  "timestamp": 1765431522957,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -24,7 +24,7 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters.html",
-      "timestamp": 1765349481000
+      "timestamp": 1765431522957
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters.plain.html",
@@ -141,6 +141,10 @@
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_17feab723f54222838e4e4235579a392ac2c839e2.png",
       "hash": "17feab723f54222838e4e4235579a392ac2c839e2"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_19096e462077edfa974059ca31230d8f17dbd06b4.png",
+      "hash": "19096e462077edfa974059ca31230d8f17dbd06b4"
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/media_19405c5d72af9b1d8f3349ded2460f0e770dec229.png",
