@@ -33,7 +33,7 @@ jobs:
       - name: Generate Screens Offline Resources
         run: npm run generate-offlineresources
         env:
-          franklinAllowlistKey: ${{ secrets.FRANKLIN_ALLOWLIST_KEY }}
+          franklinAllowlistKey: ${{ secrets.FRANKLINALLOWLISTKEY }}
       - name: Commit files # transfer the generated manifest files back into the repository
         run: |
           git config --local user.name  ${{ github.actor }}
