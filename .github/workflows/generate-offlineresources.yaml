@@ -34,6 +34,7 @@ jobs:
         run: npm run generate-offlineresources
         env:
           franklinAllowlistKey: ${{ secrets.FRANKLINALLOWLISTKEY }}
+          x_auth_token: ${{ secrets.X_AUTH_TOKEN }}
       - name: Commit files # transfer the generated manifest files back into the repository
         run: |
           git config --local user.name  ${{ github.actor }}
