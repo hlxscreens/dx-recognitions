@@ -1,30 +1,10 @@
 {
   "version": "3.0",
-  "timestamp": 1765531434000,
+  "timestamp": 1765960776557,
   "entries": [
     {
-      "path": "/blocks/carousel/carousel.css",
-      "timestamp": 1764688921000
-    },
-    {
-      "path": "/blocks/carousel/carousel.js",
-      "timestamp": 1764688921000
-    },
-    {
-      "path": "/blocks/carousel/utils.js",
-      "timestamp": 1764688921000
-    },
-    {
-      "path": "/blocks/fragment/fragment.css",
-      "timestamp": 1764688921000
-    },
-    {
-      "path": "/blocks/fragment/fragment.js",
-      "timestamp": 1764688921000
-    },
-    {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters.html",
-      "timestamp": 1765531434000
+      "timestamp": 1765960776557
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/media_10f5410b09ca1fbcaa6d050760c32134d7934185d.png",
@@ -61,6 +41,10 @@
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/media_139b4d8c6db8bd8cf5b24fb0238fb1c563b1dbe66.png",
       "hash": "139b4d8c6db8bd8cf5b24fb0238fb1c563b1dbe66"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_13f6d833a27681f5c4c6536e42b1f1fb90201c5b1.png",
+      "hash": "13f6d833a27681f5c4c6536e42b1f1fb90201c5b1"
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/media_14d9b06525abd7bd58ceaafdbc22abf705f89b0cb.png",
@@ -163,6 +147,10 @@
       "hash": "1cf2f7675294bf5210a9103282166435124625c79"
     },
     {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_1d27429e17c2dc76e373e7811277e6ffd4d04c2bc.png",
+      "hash": "1d27429e17c2dc76e373e7811277e6ffd4d04c2bc"
+    },
+    {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/media_1dba48521a526e55040fc38dfff1fda62bf07830b.png",
       "hash": "1dba48521a526e55040fc38dfff1fda62bf07830b"
     },
@@ -189,22 +177,6 @@
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/media_1ff95a8f102d058d436a7a9c7e1f24adb4b6717bc.png",
       "hash": "1ff95a8f102d058d436a7a9c7e1f24adb4b6717bc"
-    },
-    {
-      "path": "/scripts/lib-franklin.js",
-      "timestamp": 1764688933000
-    },
-    {
-      "path": "/scripts/scripts.js",
-      "timestamp": 1764688933000
-    },
-    {
-      "path": "/styles/lazy-styles.css",
-      "timestamp": 1764688934000
-    },
-    {
-      "path": "/styles/styles.css",
-      "timestamp": 1764688934000
     }
   ],
   "contentDelivery": {
