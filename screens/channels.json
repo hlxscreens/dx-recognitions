@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/main.manifest.json",
-      "lastModified": "2026-01-07T09:18:42.000Z",
+      "lastModified": "2026-01-07T09:36:15.424Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -712,7 +712,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dx-test.manifest.json",
-      "lastModified": "2025-12-02T15:22:14.000Z",
+      "lastModified": "2026-01-07T09:36:15.426Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -737,7 +737,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dx-test-folder/dx-test-channel.manifest.json",
-      "lastModified": "2025-12-03T10:57:24.000Z",
+      "lastModified": "2026-01-07T09:36:15.436Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -766,7 +766,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2026-01-07T09:18:42.000Z",
+      "lastModified": "2026-01-07T09:36:15.408Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -820,7 +820,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2026-01-07T09:18:42.000Z",
+      "lastModified": "2026-01-07T09:36:15.438Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -899,7 +899,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/main.manifest.json",
-      "lastModified": "2026-01-07T09:18:42.000Z",
+      "lastModified": "2026-01-07T09:34:01.568Z",
       "hierarchy": [
         {
           "title": "screens",
