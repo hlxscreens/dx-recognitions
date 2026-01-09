@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1767949052000,
+  "timestamp": 1767957440431,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -24,15 +24,15 @@
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dx-india-posters.html",
-      "timestamp": 1767949052000
+      "timestamp": 1767957440431
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dx-india-posters.plain.html",
-      "timestamp": 1764688929000
+      "timestamp": 1767957190000
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.html",
-      "timestamp": 1767944877000
+      "timestamp": 1767944584000
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1180fea332abdd079b83ee7e544f5e7b4f4ae132d.png",
@@ -41,6 +41,10 @@
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_124810610f1bf8158af3311e47575e903fc1d258c.png",
       "hash": "124810610f1bf8158af3311e47575e903fc1d258c"
+    },
+    {
+      "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_179435ad45e4f309465522c7f252a176977134dbf.png",
+      "hash": "179435ad45e4f309465522c7f252a176977134dbf"
     },
     {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/media_1874d20ac8f6c3bbafc772050ee90f5195fc385f7.png",
