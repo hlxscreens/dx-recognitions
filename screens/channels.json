@@ -687,7 +687,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dx-india-posters.manifest.json",
-      "lastModified": "2026-01-09T06:54:47.000Z",
+      "lastModified": "2026-01-09T11:28:49.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -766,7 +766,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2026-01-09T06:54:47.000Z",
+      "lastModified": "2026-01-09T11:28:49.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -795,7 +795,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dx-india-posters.manifest.json",
-      "lastModified": "2026-01-09T11:15:19.767Z",
+      "lastModified": "2026-01-09T11:13:10.000Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -820,7 +820,7 @@
     },
     {
       "manifestPath": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dxaccoladesandposters/main.manifest.json",
-      "lastModified": "2026-01-09T11:17:20.431Z",
+      "lastModified": "2026-01-09T11:13:10.000Z",
       "hierarchy": [
         {
           "title": "screens",
