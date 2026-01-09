@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "timestamp": 1765873096000,
+  "timestamp": 1767945186899,
   "entries": [
     {
       "path": "/blocks/carousel/carousel.css",
@@ -27,12 +27,8 @@
       "hash": "124810610f1bf8158af3311e47575e903fc1d258c"
     },
     {
-      "path": "/content/screens/org-mdhodhy/dashboards/posters/media_14c8320a52f50c7945774d9b50e840be677e016fd.png",
-      "hash": "14c8320a52f50c7945774d9b50e840be677e016fd"
-    },
-    {
       "path": "/content/screens/org-mdhodhy/dashboards/posters/qa-dont-delete-dx-india-posters.html",
-      "timestamp": 1765873096000
+      "timestamp": 1767945186899
     },
     {
       "path": "/scripts/lib-franklin.js",
